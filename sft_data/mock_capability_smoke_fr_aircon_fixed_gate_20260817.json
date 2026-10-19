@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_7a876b20",
+      "query": "Je cherche un climatiseur silencieux à moins de 300€ pour une chambre",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_fr_aircon_fixed_20260817.jsonl",
+      "line": 1
+    }
+  ]
+}

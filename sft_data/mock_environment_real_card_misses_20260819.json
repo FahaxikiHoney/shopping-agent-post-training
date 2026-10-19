@@ -1,0 +1,1906 @@
+[
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Coucou, je cherche une idée de cadeau pour ma meilleure amie elle est en quatrième",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "planta",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "etherische olie lavendel",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "80€ Rabattcode ab 300€",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Claws that collect gunk from the sink in one grab to stop clog",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "small ironibg board",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "推荐商品",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "CITYSPORTS PRO\n0–14%\n1–6 km/h\n—\n€129.99\n⭐ Best for walkin",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "car fom wash",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "I am planning a birthday party,i needs some Birthday decorations, tableware, etc., can you recommend some good-selling goods?",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Étagère en inox ECO - 1000 x 490 mm - avec 4 étagères (réglables)",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "置物架",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Welche Hühnerfüsse sind aktuell im Angebot?",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "ik zoek een robotstofzuiger met een anti tangle brush , maar dweilen is niet nodig want ik heb een kleed",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "扫地机",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "noodle toppings",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Clothes washing pods",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "洗衣液",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Finde für mich auf Joybuy eine Matratze mit bestem Preis-Leistungs-Verhältnis und folgenden Kriterien:\n- Körpergröße: 1,95 m, Gewicht: 97 kg (sportliche/athletische Statur, breite Schultern)\n- Härtegrad: H3 (fest) oder H3/H4-Wendematratze\n- Typ: 7-Zonen-Taschenfederkern (TFK) oder 7-Zonen-Kaltschaum mit hoher Schulterabsenkung\n- Kernhöhe: Mindestens 19 bis 22 cm\n- Versand: Schnellstmögliche Lieferung / Express-Zustellung (JoyExpress / Taggleiche Lieferung falls verfügbar)\nGib mir die Top 3 Treffer mit direktem Produktnamen, genauer Härtegrad-Angabe und aktuellen Preisen/Rabatten.",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "pen & paper",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "AOC Q27G4ZD",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "welches ist der beste basmati Reis nach Kundenbewertung",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "吸尘器",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "吸尘器",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Old Spice Captain 3-in-1 Shower Gel for Hair, Face and Body 1000 ml, Long Lasting Freshness, Per",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Hoi ik heb een monitor nodig voor mijn PlayStation 5 pro. Ik wil dat ik er alles uit kan halen dus heb een 4K monitor nodig welke is goedkoop curved en niet klein maar ook niet groot",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "显示器",
+    "constraints": [
+      "4k"
+    ],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "raamafdichting mobile airco",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "空调",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Give me all the hotpot foods on deal",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "给我推荐低性价比高品质软糖",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Welche Produkte sind heute noch lieferbar?",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "tv 95inch 4k",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "电视",
+    "constraints": [
+      "4k"
+    ],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Pour quoi l’objet LEGO Star Wars 75412 est plus chère et en 1 quel quantité",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "給我一些健康的蛋白質來源",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "gebakken rijst saus",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "i want you to find me the most popular switch 2 games",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Ich suche ein 150€ Monitor der groß ist meiner ist 27 Zoll aber bin nicht zufrieden und es sollte curved sein",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "显示器",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "ik zoek een tapijtreiniger met stoomfunctie die krachtig is ook voor bank en matras",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Makita DMR112 Accu-Bouwplaatsradio 7,2V - 18V Met DAB+ En Bluetooth, Zonder Accu en Oplader",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "aspirateur laveur",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "吸尘器",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "getränke aus mekiko oder chrea oder so aus asien heit und es soll so 1-2€ kosten",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "饮料",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "推荐一些下饭菜",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Beko  Wärmepumpe Trockner",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "可折叠洗脸盆",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "auto raam",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "E. Scooter mit guter Federung also die Federung muss sehr weich sein, weil ich wiege 50 Kilo und er muss auch eine hohe Leistung beziehungsweise enormes Drehmoment haben weil ich will im Gelände am Berg hochkommen und er hat ungefähr so 25 % steigung",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "大牌美妆捡漏",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "je veux voir les meilleures offres pour: la ps5 et la ps5 pro, évidemment neuve",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "koptelefoon houder",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "wat is het prijs verschil van redbull tussen joybuy en lidl",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "best TVs 50-55\" for less than 300€",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "composite shoes",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "治疗脚气",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "buttermilch",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "LG RHX1009NWK’",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "父亲节礼物推荐",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Je veux un ecran pc de 27 qui se positionne aussi en mode portrait sue paysage avec des speakers integré pour moi de 200€",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "显示器",
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Ik zoek een matras beschermer en ik zoek ook een waar door me matras en topper niet meer glijden",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "trouve moi des produits avec un prix max 10€ avec une remise de minimum -50% et achète plus de 1000 fois",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Best sellers",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "je cherche un rangement pour chaussures avec épaisseur max de 25 cm, hauteur max 110 et largeur max 55",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "film adhésif meuble",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Best gaming mouses with the latest technologies",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "C mieux colorfull ou msi pour les cartes mère ?",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "kaffe maskin",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "你好 我想找一个适用于180*200cm床的床单或者床笠，有链接推荐吗，我找了一圈只看到成套的或者床笠尺寸150*200的。谢谢",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "traktatie",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Meat with mostly good reviews and cheap price",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "keyboard cable",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "数据线",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "高性价比补水面膜品牌推荐？",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "I’m moving to Edinburgh for a year, rented an apartment with furniture. Check my cart and see what else I need. I would be cooking quite a bit.",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "有哪些不掉屑的卫生纸推荐",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "gaufrier",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "mosquito screen for door",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "ik had een korting bon van 10 korting van 35 euro. maar had het niet geclaimd hoe krijg ik het terug",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Show me the eligible items of 19£ off spending 20£",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Je veux des article pour la cuisine et l’hugiene de la cuisine genre essuie tout etc…",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Je veux des produits pour un petit de 2 ans",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Je cherches des produit en promo à 0,99€",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "推荐几款拌饭酱",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "grin",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Brand: AODI\n4.5\n4.5 out of 5 stars\n(63)\nKids Ride-on Luggage with Seat",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "vieleda",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Ich suche eine Metall Schale in die man Desserts  oder Oliven servieren kann, optisch ähnlich wie eine Champagner Schale",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "macbook air English keyboard",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "键盘鼠标",
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "borden zwart",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "voucher",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "行李箱随机",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Ik zoeken een vakken zak. Lijkt op iets waar je schoenen in kan doen en aan de deur kan hangen",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "我上火了有什么推荐的商品",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Ik heb een acne gevoelige huid die snel vettig is en ik ga op vakantie welke gezichtverzorgings producten moet ik echt halen en op welke stappen gebruik ik ze ochtend middag avond",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "I found this on Joybuy, with delivery as soon as same day: Nespresso Original, De'Longhi EN167.W Citiz, Single Serve Espresso Maker, Coffee Pod Machine, 1.0 Liters - White | €139.99 https://m.joybuy.nl/landingPage/dp/101236551?siteCode=NL-Site , in this one i use milk instead of water",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "valise 55",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "無核紅棗",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "anchovy dried fish",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "水产食品",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "户外露营用的便携电风扇推荐？",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "风扇",
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "tv 4 k 50 ou 55 pouces moins de 309 eur",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "电视",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Show me some item of 19£ off spending 20£",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "I like to get a portable air conditioning unit and quick delivery, what can you recommend",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "bare de son",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "石头扫地机器人扫拖一体P20 Ultra Plus扫拖洗烘一体机自动集尘热水洗拖布补水擦地拖地 P20 Ultra Plus",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "扫地机",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "€10 off over €35",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Je veux accrocher mes savons sur une fixation murale à ventouse ou autre dans ma douche",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "海鲜hun dun",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Wo ist mein 25€ Gutschein bei 100€ Einkaufswert?",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "eau cristalline",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "pteg",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "tefal pan 20",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "大容量保鲜袋品牌推荐？",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "帮我找一下买2送一 或者买3送一的产品",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Ik ben kapper en ik wil hier eens uitproberen hoe goed jullie maschines zijn dus kan je voor mij zoeken een Barber setje met tondeuse clipper, trimmer , shaver, ect",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "帮我推荐几百元的手机",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "手机",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "yaourtière",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "lighter cigarette",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "推荐几款有荷兰特色的伴手礼",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "I want dish sets that are decent quality and not super expensive",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Urban Classics Ladies High Waist Cargo Trousers warna Concrete (Beige)",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "现在有什么好吃的推荐",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Which fabric softner deals are available today?",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "laroche posay",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "zijn er e bike die vouwbaar zijn met banden die groter zijn dan 24 inch",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "I found this on Joybuy, with delivery as soon as same day: SNSP 2 Pieces Of Woven Packing Bags - Luggage Express Bag - 150L - Grey | €5.98 https://m.joybuy.de/landingPage/dp/10145015?siteCode=DE-Site",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "J’ai vu une offre ou on avait un iPhone 17 des air pods et 4 AirTag pour un peu près 800€ où est l’offre",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "手机",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "immun system",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Planche de poussette",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Welcher frische Fisch ist heute reduziert?",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "glasdachreiniger",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "café moulu",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Mattress with size of 1.9m *1.4m, foam, not spring",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "男斜包",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "hisense washer dryer",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "洗衣机",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Je recherche des minéraux",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "张力生煎饼果子",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Bureau électrique réglable en hauteur brun rustique avec 4 mémoires de hauteur - 120 x 60 cm",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "书桌",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "smartphone moins de 200€ meilleur rapport qualité-prix",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "手机",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "I want something like a ball, put in washing machine and it will attached all the hair or thread. What’s this call",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "洗衣机",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "12V tv",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "电视",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "show me tvs with size between 20 inch and 30 inch",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Keukenafvalemmer, 60 liter (3 x 20 liter) roestvrijstalen afval- en recyclebin-",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "kitchen plaits",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "horlogebandje samsung",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "baby weaning set",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "tabletop",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "pantaloon",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Can you find me a cabinet for a living room with not more than 180 length and not more than 200 high with at least 40 depths",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "brille sonnenfinsterniss",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Je cherche des objet ou des boisson chocolat  à vendre dans mon commerce ( tabac )",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "饮料",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "im flying out tomorrow I need a thermal water bottle before 10am on the 22nd of June",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Samsung fold 8",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Je cherche une balance corporelle entre 20 et 40 euros, et je voudrais la meilleure du marché avec des avis positifs et avec le maximum d’options",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "2026年最新香米有哪些推荐？",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "je cherche un climatiseur qui émet moins de 60dB pour une surface de 20m carré disponible rapidement",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "空调",
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "平价洁面组合装哪款更划算？",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Phone hanger for cooking vlog",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Milchpulver portionierer",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "apple pencil pro",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Ik ga 10 dagen op vakantie naar kos van 26juni tot en met 6 juli wat is handig om mee te nemen",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "jeans men",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Samsung Galaxy SmartTag2 Bluetooth + UWB, IP67 water- en stofbestendi",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "有哪些好吃的蛋卷推荐",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "je veux un coupon promo",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "钢丝球",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "ik zoek een waterproof swimming bag. dus een soort zak dienik mee kannnemen bij het zwemmen zodat ik mn waardevolle spullen zoals telefoon en paskes nietnop het strand hoef te laten liggen",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "背包",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Loreal elive  hair mask",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "洗发水",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "かき氷ミツ",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "L'Oréal Men Expert XXL Deoroller für Männer",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "apneau",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "ik wil zwaar worden dus op een bulk, wat zijn goeie producten die mij daarbij kunnen helpen door de calorieën , kolydraten etc . Kip enz hoeft niet dat heb ik al geen vlees",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "esfregona",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Find me under 25 euro birthday day gift for 5 year old girl. Show me good options.",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "ik wil iets waar ik de schone was in kan doen (veel was) als het uit de wasmachine komt (maar geen simpele gewone wasmand)",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "洗衣机",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "哪款充电宝是3c认证",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "充电宝",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Moto G75 5G",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "FR-Site",
+    "query": "Gateau chocolat",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "kullen komode",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Mate-kaart",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "公社花生酥",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "tower fan with alexa",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "风扇",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "meubels tv",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "电视",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "red beans deserts",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "jasmi",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "Loreal elvital hair  mask",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": "洗发水",
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "korean eis",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "sonnenfinstetnisbrille",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "Deodorent",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "reef 33",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "발 받침대",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "高 25cm\n长 62cm或者30cm\n宽 32或者33cm\n帮我寻找这样的收纳盒，最好是可折叠的",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "alternatives_with_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "想要一些冷冻的早餐",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "mf。米粉",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "how to find the joybuy products",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "DE-Site",
+    "query": "把评价4,9 到5分的小吃推荐给我",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "冷冻蔬菜",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "UK-Site",
+    "query": "11 year old bicycle",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  },
+  {
+    "sample_id": "anonymous-session",
+    "site_code": "NL-Site",
+    "query": "Ik zoek naar leuke interessante cadeaus voor een jongen die 10 word, mijn broertje, graag Max 30€",
+    "real_has_cards": true,
+    "mock_count": 0,
+    "normalized_category": null,
+    "constraints": [],
+    "source_outcome": "direct_cards"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "shopping_synthetic": {
+    "file_name": "train.json",
+    "formatting": "sharegpt",
+    "columns": {"messages": "messages"}
+  }
+}

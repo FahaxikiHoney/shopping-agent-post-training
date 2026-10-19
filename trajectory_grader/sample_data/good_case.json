@@ -1,0 +1,32 @@
+{
+  "trajectory_id": "traj_good_001",
+  "user_query": "帮我找一款适合60岁老人用的按摩仪，预算500元以内，操作要简单",
+  "session_context": {"platform": "jd_ai_purchase"},
+  "steps": [
+    {
+      "step_id": 1,
+      "step_type": "tool_call",
+      "tool_name": "product_search",
+      "tool_input": {"query": "按摩仪 老人 简单操作", "max_price": 500},
+      "tool_output": {
+        "status": "SUCCESS",
+        "products": [
+          {"product_id": "jd_11223344", "title": "小米颈部按摩仪 3档强度可调 一键操作", "price": 349.0, "is_jd_self": true, "rating": 4.8},
+          {"product_id": "jd_55667788", "title": "飞利浦肩颈按摩仪 热敷功能 老人礼物", "price": 469.0, "is_jd_self": true, "rating": 4.7},
+          {"product_id": "jd_99001122", "title": "奥克斯腰部按摩仪 家用老人款", "price": 199.0, "is_jd_self": false, "rating": 4.5}
+        ]
+      },
+      "error_type": null
+    },
+    {
+      "step_id": 2,
+      "step_type": "final_response",
+      "content": "为您推荐两款适合老人的按摩仪：\n\n1. **小米颈部按摩仪**（349元）- 一键操作界面简洁，3档力度可调，适合老年人日常颈部放松，京东自营有保障。\n\n2. **飞利浦肩颈按摩仪**（469元）- 带热敷功能，可同时按摩肩颈，送礼首选，品牌信赖度高。\n\n两款均在500元预算内，建议优先选小米款，性价比更高。",
+      "product_cards": [
+        {"card_id": "jd_11223344", "display_price": 349.0, "reason": "一键操作，3档强度，老人友好，京东自营"},
+        {"card_id": "jd_55667788", "display_price": 469.0, "reason": "热敷功能，飞利浦品牌，送礼佳品"}
+      ]
+    }
+  ],
+  "final_response": "为您推荐两款适合老人的按摩仪：\n\n1. **小米颈部按摩仪**（349元）- 一键操作界面简洁，3档力度可调，适合老年人日常颈部放松，京东自营有保障。\n\n2. **飞利浦肩颈按摩仪**（469元）- 带热敷功能，可同时按摩肩颈，送礼首选，品牌信赖度高。\n\n两款均在500元预算内，建议优先选小米款，性价比更高。"
+}

@@ -1,0 +1,412 @@
+{
+  "counts": {
+    "real_card_mock_nonempty": 174,
+    "real_no_card_mock_empty": 304,
+    "real_card_mock_empty": 89,
+    "real_no_card_mock_nonempty": 33
+  },
+  "real_card_recall_rate": 0.6616,
+  "mock_nonempty_precision_against_real_cards": 0.8406,
+  "elapsed_seconds": 0.87,
+  "throughput_qps_4proc": 689.6,
+  "per_call_latency_ms": {
+    "p50": 2.07,
+    "p95": 5.97,
+    "max": 330.47
+  },
+  "by_site": {
+    "DE-Site": {
+      "real_card_mock_nonempty": 42,
+      "real_no_card_mock_empty": 78,
+      "real_card_mock_empty": 22,
+      "real_no_card_mock_nonempty": 8
+    },
+    "FR-Site": {
+      "real_card_mock_nonempty": 39,
+      "real_no_card_mock_empty": 83,
+      "real_card_mock_empty": 21,
+      "real_no_card_mock_nonempty": 7
+    },
+    "NL-Site": {
+      "real_no_card_mock_nonempty": 4,
+      "real_no_card_mock_empty": 80,
+      "real_card_mock_nonempty": 43,
+      "real_card_mock_empty": 23
+    },
+    "UK-Site": {
+      "real_card_mock_nonempty": 50,
+      "real_no_card_mock_empty": 63,
+      "real_card_mock_empty": 23,
+      "real_no_card_mock_nonempty": 14
+    }
+  },
+  "miss_examples": [
+    [
+      "anonymous-session",
+      "FR-Site",
+      "planta"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "80€ Rabattcode ab 300€"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "推荐商品"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "CITYSPORTS PRO\n0–14%\n1–6 km/h\n—\n€129.99\n⭐ Best for walkin"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "Étagère en inox ECO - 1000 x 490 mm - avec 4 étagères (réglables)"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "Welche Hühnerfüsse sind aktuell im Angebot?"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "ik zoek een robotstofzuiger met een anti tangle brush , maar dweilen is niet nodig want ik heb een kleed"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "welches ist der beste basmati Reis nach Kundenbewertung"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "吸尘器"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "给我推荐低性价比高品质软糖"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "Welche Produkte sind heute noch lieferbar?"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "Pour quoi l’objet LEGO Star Wars 75412 est plus chère et en 1 quel quantité"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "getränke aus mekiko oder chrea oder so aus asien heit und es soll so 1-2€ kosten"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "E. Scooter mit guter Federung also die Federung muss sehr weich sein, weil ich wiege 50 Kilo und er muss auch eine hohe Leistung beziehungsweise enormes Drehmoment haben weil ich will im Gelände am Berg hochkommen und er hat ungefähr so 25 % steigung"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "wat is het prijs verschil van redbull tussen joybuy en lidl"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "best TVs 50-55\" for less than 300€"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "LG RHX1009NWK’"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "trouve moi des produits avec un prix max 10€ avec une remise de minimum -50% et achète plus de 1000 fois"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "Best sellers"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "C mieux colorfull ou msi pour les cartes mère ?"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "traktatie"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "I’m moving to Edinburgh for a year, rented an apartment with furniture. Check my cart and see what else I need. I would be cooking quite a bit."
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "ik had een korting bon van 10 korting van 35 euro. maar had het niet geclaimd hoe krijg ik het terug"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "Show me the eligible items of 19£ off spending 20£"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "Je cherches des produit en promo à 0,99€"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "grin"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "vieleda"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "Ich suche eine Metall Schale in die man Desserts  oder Oliven servieren kann, optisch ähnlich wie eine Champagner Schale"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "macbook air English keyboard"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "voucher"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "Ik zoeken een vakken zak. Lijkt op iets waar je schoenen in kan doen en aan de deur kan hangen"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "我上火了有什么推荐的商品"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "Ik heb een acne gevoelige huid die snel vettig is en ik ga op vakantie welke gezichtverzorgings producten moet ik echt halen en op welke stappen gebruik ik ze ochtend middag avond"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "I found this on Joybuy, with delivery as soon as same day: Nespresso Original, De'Longhi EN167.W Citiz, Single Serve Espresso Maker, Coffee Pod Machine, 1.0 Liters - White | €139.99 https://m.joybuy.nl/landingPage/dp/101236551?siteCode=NL-Site , in this one i use milk instead of water"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "無核紅棗"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "anchovy dried fish"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "户外露营用的便携电风扇推荐？"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "tv 4 k 50 ou 55 pouces moins de 309 eur"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "Show me some item of 19£ off spending 20£"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "€10 off over €35"
+    ]
+  ],
+  "addition_examples": [
+    [
+      "anonymous-session",
+      "NL-Site",
+      "Welke laptop past bij mijn budget?"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "Dreame X60 Pro Ultra Complete Noir Robot Aspirateur Laveur"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "analog wecker"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "推荐几款低卡零食"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "interphone"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "DHS 云雾3（Cloud & Fog III"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "Je veux acheter une climatiseur mobile mais tout est en rupture de stock quand il y’a aura des nouveau"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "ash tray"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "wagyo"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "kia car accessories"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "dumpling japanese"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "推荐适合小女孩的益智玩具套装"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "climatiseur mobile avec évacuation 9000 BTU"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "je cherche le meilleur aspirateur laveur pour une famille avec trois enfants un aspiration régulier au moins trois fois par jour un carrelage brillant qui laisse des traces je veux un haut de gamme avec une grosse puissance d'aspiration"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "Football hobby box"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "Kannst du mir Fernseher raus suchen 65-75zoll ab 300€ bis 600€ danke"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "阴茎环"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "3d scanner"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "Käsebrötchen"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "移动空调机窗户配件"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "Klimaanlage verfügbar jetzt"
+    ],
+    [
+      "anonymous-session",
+      "DE-Site",
+      "welche sind die neusten getränke in dosen oder pet flaschen"
+    ],
+    [
+      "anonymous-session",
+      "FR-Site",
+      "Which toasters have the best deals today?"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "hoge zwarte kast"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "i need shoes that help with foot odour"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "Saj for baked goods"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "shoe rack for front door, height 50-70cm, width 60-80cm, wooden"
+    ],
+    [
+      "anonymous-session",
+      "NL-Site",
+      "il fait tres chaud dans ma chambre et je cherche une ventilateur colonne pu une clim sans sortue dair chaude"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "my house tent said you can't drill the wall so but I need a  wall slef without using drill stuff anh other options"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "low noise air conditioner unit"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "给我推荐中国彩妆产品"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "tsujisi matcha powder"
+    ],
+    [
+      "anonymous-session",
+      "UK-Site",
+      "swimming pool heat sheet"
+    ]
+  ]
+}

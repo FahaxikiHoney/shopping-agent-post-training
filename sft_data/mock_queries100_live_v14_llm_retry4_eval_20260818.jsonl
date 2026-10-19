@@ -1,0 +1,1 @@
+{"trajectory_id": "react_a467bbab", "scenario_type": "search_recommend", "user_query": "Find me under 25 euro birthday day gift for 5 year old girl. Show me good options.", "gate_card_id": {"pass": true, "reason": "工具无结果，无需商卡标签"}, "gate_text_quality": {"pass": true, "reason": "文本质量正常"}, "gate_fail": false, "judge": {"error": "HTTP Error 503: Service Unavailable"}, "score": -1.0}

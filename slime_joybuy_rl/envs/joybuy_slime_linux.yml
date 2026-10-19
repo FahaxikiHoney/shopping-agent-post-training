@@ -1,0 +1,22 @@
+name: joybuy-slime
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - pip:
+      - ray
+      - transformers
+      - datasets
+      - accelerate
+      - pydantic
+      - fastapi
+      - uvicorn
+      - sglang[all]

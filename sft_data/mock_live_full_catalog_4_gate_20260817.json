@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_02bc6f24",
+      "query": "I have a Nordic sofa and need cotton-linen curtains plus a modern striped rug",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 2,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_full_catalog_4_20260817.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_8909e6e9",
+      "query": "Ich brauche ein Kamera-Reinigungsset und einen 77-mm-ND-Filter",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 2,
+      "products": 2,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_full_catalog_4_20260817.jsonl",
+      "line": 2
+    },
+    {
+      "trajectory_id": "react_e181ea85",
+      "query": "Je cherche une gourde de sport de 1 L avec paille",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 4,
+      "cards": 4,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_full_catalog_4_20260817.jsonl",
+      "line": 3
+    },
+    {
+      "trajectory_id": "react_76148f5d",
+      "query": "Ik zoek een yogamat van 5 mm en een halterset van 5 kg",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 2,
+      "products": 12,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_full_catalog_4_20260817.jsonl",
+      "line": 4
+    }
+  ]
+}

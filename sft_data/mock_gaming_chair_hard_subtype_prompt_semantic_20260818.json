@@ -1,0 +1,74 @@
+{
+  "model": "GLM-5.2",
+  "input": "sft_data/mock_gaming_chair_hard_subtype_prompt_20260818.jsonl",
+  "complete": true,
+  "summary": {
+    "pass": 0,
+    "warn": 1,
+    "fail": 0
+  },
+  "results": [
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace",
+      "scenario_type": "search_recommend",
+      "tool_calls": [
+        {
+          "name": "sku_recall",
+          "arguments": {
+            "query": "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace"
+          },
+          "result": {
+            "success": true,
+            "count": 1,
+            "products": [
+              {
+                "sku_id": "63612278",
+                "sku_name": "chaise gaming GTPLAYER LOCK CHAIR",
+                "brand_name": "GTPLAYER",
+                "final_price": "90.99",
+                "price": "116.99",
+                "sales": "5 200+ vendus",
+                "keyword": "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace"
+              }
+            ]
+          }
+        },
+        {
+          "name": "scenario_related_recall",
+          "arguments": {
+            "main_item": "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace",
+            "need_items": [
+              "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace"
+            ],
+            "style": "office"
+          },
+          "result": {
+            "status": "SUCCESS",
+            "count": 1,
+            "products": [
+              {
+                "sku_id": "23031018",
+                "sku_name": "chaise ergonomique M57",
+                "brand_name": "",
+                "final_price": "103.99",
+                "price": "103.99",
+                "sales": "21 000+ vendus",
+                "keyword": "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace"
+              }
+            ]
+          }
+        }
+      ],
+      "final_response": "D'après les données produits récupérées, voici les options recommandées :\n\n**chaise gaming GTPLAYER LOCK CHAIR**: prix actuel €90.99, prix d'origine €116.99, ventes 5 200+ vendus.[product:1]\n\nComment souhaitez-vous affiner la sélection ? <ClickText>Budget</ClickText> <ClickText>Marque</ClickText> <ClickText>Ventes</ClickText>",
+      "verdict": "warn",
+      "reason": "The recommended GTPLAYER gaming chair is relevant and its price/sales facts are grounded in the tool results. However, the user's core constraints—compact footprint and 'no small gaps'—are not addressed at all, and the tool results contain no dimension or design data to verify them. The response presents the product without acknowledging that these specific requirements could not be confirmed. The second recalled product (ergonomic M57) is omitted without explanation, though it is arguably not a gaming chair. A clearer disclaimer about missing attribute information would be needed for a pass.",
+      "issue_tags": [
+        "missing_attribute_acknowledgement",
+        "unverified_constraint",
+        "partial_inventory_disclosure"
+      ]
+    }
+  ]
+}

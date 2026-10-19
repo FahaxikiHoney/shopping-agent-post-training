@@ -1,0 +1,69 @@
+{
+  "execution": {
+    "total": 4,
+    "completed": 4,
+    "failed": 0,
+    "failures": []
+  },
+  "quality": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_4c771d50",
+      "query": "my house tent said you can't drill the wall so but I need a  wall slef without using drill stuff anh other options",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_5294c190",
+      "query": "Ich suche eine Power Bank mit mindestens 20.000 mA Stunden und mindestens 65 W Power Output",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_d958acf1",
+      "query": "Je veux un ecran pc de 27 qui se positionne aussi en mode portrait sue paysage avec des speakers integré pour moi de 200€",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_bb2617a0",
+      "query": "ik zoek een waterproof swimming bag. dus een soort zak dienik mee kannnemen bij het zwemmen zodat ik mn waardevolle spullen zoals telefoon en paskes nietnop het strand hoef te laten liggen",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    }
+  ]
+}

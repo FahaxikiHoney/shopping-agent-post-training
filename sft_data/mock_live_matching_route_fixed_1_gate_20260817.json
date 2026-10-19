@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_f6a69c49",
+      "query": "I have a Nordic sofa and need cotton-linen curtains plus a modern striped rug",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 2,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_matching_route_fixed_1_20260817.jsonl",
+      "line": 1
+    }
+  ]
+}

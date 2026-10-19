@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_b2e9ef6a",
+      "query": "I need an ergonomic chair and a desk lamp with a total budget of £300",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 16,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_bundle_natural_4_20260817.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_c0fd75a0",
+      "query": "Ich brauche einen ergonomischen Stuhl und eine Schreibtischlampe, Gesamtbudget 300€",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 16,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_bundle_natural_4_20260817.jsonl",
+      "line": 2
+    },
+    {
+      "trajectory_id": "react_2c0d699d",
+      "query": "Je cherche une chaise ergonomique et une lampe de bureau avec un budget total de 300€",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 16,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_bundle_natural_4_20260817.jsonl",
+      "line": 3
+    },
+    {
+      "trajectory_id": "react_4ea921f4",
+      "query": "Ik zoek een ergonomische stoel en een bureaulamp, totaalbudget €300",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 16,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_bundle_natural_4_20260817.jsonl",
+      "line": 4
+    }
+  ]
+}

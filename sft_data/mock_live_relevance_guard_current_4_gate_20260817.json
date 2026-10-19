@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_7b0f0104",
+      "query": "Welcher frische Fisch ist heute aktuell reduziert?",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_relevance_guard_current_4_20260817.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_928ee5e6",
+      "query": "Je veux une chaise gaming compacte pour un petit espace",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_relevance_guard_current_4_20260817.jsonl",
+      "line": 2
+    },
+    {
+      "trajectory_id": "react_302ad12d",
+      "query": "Ik zoek een rugspray tegen rugpijn en stijve spieren",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_relevance_guard_current_4_20260817.jsonl",
+      "line": 3
+    },
+    {
+      "trajectory_id": "react_cac73dcb",
+      "query": "I need a 70mai 4K front and rear dash cam",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_relevance_guard_current_4_20260817.jsonl",
+      "line": 4
+    }
+  ]
+}

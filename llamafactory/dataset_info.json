@@ -1,0 +1,47 @@
+{
+  "joybuy_react": {
+    "file_name": "train_joybuy_react.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "human",
+      "assistant_tag": "gpt",
+      "system_tag": "system",
+      "observation_tag": "human"
+    }
+  },
+  "joybuy_react_eval": {
+    "file_name": "eval_joybuy_react.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "human",
+      "assistant_tag": "gpt",
+      "system_tag": "system",
+      "observation_tag": "human"
+    }
+  },
+  "joybuy_react_test": {
+    "file_name": "test_joybuy_react.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "human",
+      "assistant_tag": "gpt",
+      "system_tag": "system",
+      "observation_tag": "human"
+    }
+  }
+}

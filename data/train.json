@@ -1,0 +1,146 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "找一个适合带去办公室的保温杯，容量约 500 毫升。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n优先满足容量和便携，再比较杯盖密封与清洗便利性。\n</think>\n\n我会按你的核心条件筛选travel_mug类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "请推荐适合小书桌的护眼台灯，最好能调亮度。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n先确认桌面空间和亮度调节，再比较尺寸与供电方式。\n</think>\n\n我会按你的核心条件筛选desk_lamp类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "需要一把安静的无线键盘，能连接两台设备。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n关键条件是低噪、无线和多设备切换，应逐项核对。\n</think>\n\n我会按你的核心条件筛选keyboard类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "通勤时想要一副轻便的无线耳机，预算 500 元。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n先比较佩戴、续航和降噪需求，再按预算筛选。\n</think>\n\n我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "通勤时想要一副轻便的无线耳机，预算 500 元。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n先比较佩戴、续航和降噪需求，再按预算筛选。\n</think>\n\n我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "通勤时想要一副轻便的无线耳机，预算 500 元。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n先比较佩戴、续航和降噪需求，再按预算筛选。\n</think>\n\n我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "找一个适合带去办公室的保温杯，容量约 500 毫升。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n优先满足容量和便携，再比较杯盖密封与清洗便利性。\n</think>\n\n我会按你的核心条件筛选travel_mug类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "通勤时想要一副轻便的无线耳机，预算 500 元。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n先比较佩戴、续航和降噪需求，再按预算筛选。\n</think>\n\n我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "请推荐适合小书桌的护眼台灯，最好能调亮度。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n先确认桌面空间和亮度调节，再比较尺寸与供电方式。\n</think>\n\n我会按你的核心条件筛选desk_lamp类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "通勤时想要一副轻便的无线耳机，预算 500 元。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n先比较佩戴、续航和降噪需求，再按预算筛选。\n</think>\n\n我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "通勤时想要一副轻便的无线耳机，预算 500 元。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n先比较佩戴、续航和降噪需求，再按预算筛选。\n</think>\n\n我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "需要一把安静的无线键盘，能连接两台设备。"
+      },
+      {
+        "role": "assistant",
+        "content": "<think>\n关键条件是低噪、无线和多设备切换，应逐项核对。\n</think>\n\n我会按你的核心条件筛选keyboard类商品，并优先比较规格、价格和售后信息。"
+      }
+    ]
+  }
+]

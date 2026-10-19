@@ -1,0 +1,31 @@
+{
+  "trajectory_id": "traj_bad_gate1_002",
+  "user_query": "我要买一双防晒透气的夏季跑步鞋，预算300元以内",
+  "session_context": {"platform": "jd_ai_purchase"},
+  "steps": [
+    {
+      "step_id": 1,
+      "step_type": "tool_call",
+      "tool_name": "product_search",
+      "tool_input": {"query": "运动鞋", "max_price": 300},
+      "tool_output": {
+        "status": "SUCCESS",
+        "products": [
+          {"product_id": "jd_33445566", "title": "商务皮鞋 正装男鞋 黑色", "price": 259.0, "is_jd_self": true, "rating": 4.6},
+          {"product_id": "jd_77889900", "title": "休闲帆布鞋 男女通用", "price": 189.0, "is_jd_self": false, "rating": 4.3}
+        ]
+      },
+      "error_type": null
+    },
+    {
+      "step_id": 2,
+      "step_type": "final_response",
+      "content": "为您推荐以下运动鞋：\n\n1. **商务皮鞋**（259元）- 经典款式，适合日常穿着。\n\n2. **休闲帆布鞋**（189元）- 轻便舒适，性价比高。",
+      "product_cards": [
+        {"card_id": "jd_33445566", "display_price": 259.0, "reason": "经典款式"},
+        {"card_id": "jd_77889900", "display_price": 189.0, "reason": "轻便舒适"}
+      ]
+    }
+  ],
+  "final_response": "为您推荐以下运动鞋：\n\n1. **商务皮鞋**（259元）- 经典款式，适合日常穿着。\n\n2. **休闲帆布鞋**（189元）- 轻便舒适，性价比高。"
+}

@@ -1,0 +1,43 @@
+{
+  "execution": {
+    "total": 2,
+    "completed": 2,
+    "failed": 0,
+    "failures": []
+  },
+  "quality": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_34e6a5d0",
+      "query": "My partners cousins are visiting from China. I want to buy them a selection of foods and snacks that they are familiar with that they can eat while they are staying. Select the products for me.",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 4,
+      "cards": 4,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_d4fed94e",
+      "query": "il fait tres chaud dans ma chambre et je cherche une ventilateur colonne pu une clim sans sortue dair chaude",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    }
+  ]
+}

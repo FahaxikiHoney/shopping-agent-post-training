@@ -1,0 +1,815 @@
+{
+  "model": "GLM-5.2",
+  "input": "sft_data/mock_queries600_direct_replay_v8_20260817.json",
+  "summary": {
+    "pass": 26,
+    "warn": 35,
+    "fail": 0
+  },
+  "results": [
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "70mai 4K Dash Cam Front and Rear",
+      "products": [
+        "70mai A800S 4K dash cam"
+      ],
+      "verdict": "warn",
+      "reason": "Product matches brand (70mai), resolution (4K), and type (dash cam), but 'front and rear' capability is not explicitly stated in the product name and cannot be verified from it alone.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "去污效果好的白醋有哪些推荐",
+      "products": [
+        "Heinz 1L weißer Essig Würzmittel"
+      ],
+      "verdict": "warn",
+      "reason": "Product is white vinegar matching the product type, but '去污效果好' (good cleaning effect) is a subjective/quality attribute that cannot be verified from the product name.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "Welke laptop past bij mijn budget?",
+      "products": [
+        "Lenovo Pro16 2024 16 inch laptop",
+        "Huawei MateBook X Pro 14.2 inch OLED laptop",
+        "Apple MacBook Air M3 13.6 inch 4K laptop",
+        "Xiaomi Book Pro 2024 16 inch 4K OLED laptop",
+        "Lenovo ThinkPad X1 Carbon 14 inch OLED laptop",
+        "Apple MacBook Pro M3 14.2 inch laptop",
+        "ASUS ROG 2024 14 inch laptop"
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are laptops matching the product type, but budget suitability is a dynamic constraint that cannot be verified from product names since no specific budget is stated.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "Best snacks",
+      "products": [
+        "peu calorique en-cas THREEPOINTS 8",
+        "bœuf séché en-cas BESTORE 500g",
+        "en-cas OREO 558g",
+        "en-cas LAYS 154g",
+        "en-cas WANGZAI 250ml×24",
+        "en-cas HAOCHIDAI 200g"
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are snacks (en-cas), matching the requested product type. 'Best' is subjective and does not constitute a hard constraint.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "适合机洗的洗衣液推荐？",
+      "products": [
+        "BLUEMOON 3kg laundry detergent",
+        "TIDE 2kg laundry detergent",
+        "ARIEL 3kg laundry detergent",
+        "LAM 2kg laundry detergent",
+        "LIBY 2kg laundry detergent",
+        "DETTOL 2kg laundry detergent"
+      ],
+      "verdict": "warn",
+      "reason": "All products are laundry detergents matching the product type, but '适合机洗' (suitable for machine washing) is a compatibility attribute that cannot be verified from product names alone.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "fan cooling rotating",
+      "products": [
+        "TP07 fan",
+        "Airmate fan",
+        "Xiaomi DC 1X fan"
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are fans, matching the requested product type. 'Cooling rotating' describes inherent fan functionality.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "有什么推荐零食",
+      "products": [
+        "THREEPOINTS 8 caloriearm snack",
+        "BESTORE 500g gedroogd rundvlees snack",
+        "OREO 558g snack",
+        "LAYS 154g snack",
+        "WANGZAI 250ml×24 snack",
+        "HAOCHIDAI 200g snack"
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are snacks, matching the requested product type with no hard constraints to violate.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Ich suche eine Power Bank mit mindestens 20.000 mA Stunden und mindestens 65 W Power Output",
+      "products": [
+        "BASEUS Star-Lord 20000mAh 65W Powerbank"
+      ],
+      "verdict": "pass",
+      "reason": "Product matches all hard constraints: power bank type, 20000mAh capacity (≥20000mAh), and 65W power output (≥65W).",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "推荐几款低卡零食",
+      "products": [
+        "THREEPOINTS 8 kalorienarm Snack"
+      ],
+      "verdict": "pass",
+      "reason": "Product is explicitly labeled 'kalorienarm' (low-calorie) and is a snack, matching both the product type and the low-calorie constraint.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "zwart sojasaus",
+      "products": [
+        "Kikkoman 500ml donkere sojasaus smaakmaker"
+      ],
+      "verdict": "pass",
+      "reason": "Product is dark soy sauce ('donkere sojasaus'), which corresponds to the requested 'zwart sojasaus' (black soy sauce). Product type matches.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "给我推荐个洗衣机",
+      "products": [
+        "Haier EG100MATE89S 10kg Waschmaschine",
+        "LITTLESWAN TG100VT096WDG 10kg Waschmaschine",
+        "SIEMENS WG54A2X00W 10kg Waschmaschine",
+        "Haier EGW100HBDC189U1 10kg Waschmaschine",
+        "Midea MB100V11DY 10kg Waschmaschine",
+        "LITTLESWAN TB80V20 8kg Waschmaschine"
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are washing machines (Waschmaschine), matching the requested product type with no additional hard constraints.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "I want one cool mug for a man so maybe dsrk or beeige color but big and strong one and good quality",
+      "products": [
+        "Le Creuset 400ml mok",
+        "Denby 350ml mok"
+      ],
+      "verdict": "warn",
+      "reason": "Both products are mugs, matching the product type. However, color (dark/beige), size (big), and quality constraints cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "tell me about lego and recommend some",
+      "products": [
+        "LEGO City 60371 766 children's toy"
+      ],
+      "verdict": "pass",
+      "reason": "Returned product is a LEGO children's toy, matching the open-ended request for LEGO recommendations.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "推荐一款笔记本电脑",
+      "products": [
+        "Lenovo Pro16 2024 16 inch laptop",
+        "Huawei MateBook X Pro 14.2 inch OLED laptop",
+        "Apple MacBook Air M3 13.6 inch 4K laptop",
+        "Xiaomi Book Pro 2024 16 inch 4K OLED laptop",
+        "Lenovo ThinkPad X1 Carbon 14 inch OLED laptop",
+        "Apple MacBook Pro M3 14.2 inch laptop",
+        "ASUS ROG 2024 14 inch laptop"
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are laptops, matching the requested product type with no additional hard constraints.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Gib mir den Best möglichen größten Fernseher bis 330€",
+      "products": [
+        "Xiaomi EA65 65 Zoll 4K Fernseher"
+      ],
+      "verdict": "warn",
+      "reason": "Product is a TV matching the product type, but the price constraint (bis 330€) cannot be verified from the product name.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "推荐适合小女孩的益智玩具套装",
+      "products": [
+        "Xiaomi ROBOT CODING children's toy",
+        "DISNEY 100 children's toy"
+      ],
+      "verdict": "warn",
+      "reason": "Products are children's toys, but whether they are educational (益智), sets (套装), or specifically suitable for little girls cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "adaptateur jack usb-c",
+      "products": [
+        "câble de charge UGREEN USB-C 3.5mm"
+      ],
+      "verdict": "warn",
+      "reason": "Product mentions USB-C and 3.5mm which is relevant, but it is labeled as a charging cable (câble de charge) rather than an adapter (adaptateur); exact product subtype cannot be confirmed from name alone.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "nagellak",
+      "products": [
+        "OPI Infinite Shine 15ml nagellak"
+      ],
+      "verdict": "pass",
+      "reason": "Returned product is nail polish (nagellak), matching the requested product type.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "2026年新款电动剃须刀推荐？",
+      "products": [
+        "Philips 9000 Prestige S9986 electric shaver",
+        "BRAUN Series 9 Pro+ electric shaver",
+        "PANASONIC ES-LV67 electric shaver",
+        "Xiaomi S801 electric shaver",
+        "FLYCO FS986 electric shaver",
+        "ROAMER S5 Pro electric shaver"
+      ],
+      "verdict": "warn",
+      "reason": "All products are electric shavers matching the product type, but the freshness constraint (2026年新款 / 2026 new model) cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "推荐肉干零食",
+      "products": [
+        "BESTORE 500g Trockenfleisch Snack"
+      ],
+      "verdict": "pass",
+      "reason": "Returned product is dried meat snack (Trockenfleisch Snack), matching the requested product type (肉干零食).",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "乐高是什么品牌？给我介绍一下",
+      "products": [
+        "LEGO City 60371 766 children's toy"
+      ],
+      "verdict": "warn",
+      "reason": "Query is informational asking about the LEGO brand, not a product search. Returned LEGO product is brand-relevant but does not address the introduction/information request.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Kannst du mir Fernseher raus suchen 65-75zoll ab 300€ bis 600€ danke",
+      "products": [
+        "Hisense U7H ULED 65 Zoll 4K Fernseher",
+        "TCL P745 75 Zoll 4K Fernseher"
+      ],
+      "verdict": "warn",
+      "reason": "Both TVs match the 65-75 inch size range, but the price constraint of €300-600 cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "推荐几款高性价比的平板电脑",
+      "products": [
+        "Apple iPad Pro M4 13 Zoll OLED Tablet",
+        "Apple iPad Air M2 11 Zoll Tablet",
+        "Huawei MatePad Pro 256GB 13.2 Zoll OLED Tablet",
+        "Xiaomi Pad 7 Pro 11.2 Zoll Tablet",
+        "Samsung Galaxy Tab S10+ 12.4 Zoll OLED Tablet",
+        "OPPO Pad 3 Pro 12.1 Zoll OLED Tablet"
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are tablets matching the product type. 'High cost-performance' is a subjective attribute that cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Parfum Angebot",
+      "products": [
+        "CHANEL N°5 EDP 100ml Parfüm",
+        "DIOR Sauvage 100ml Parfüm",
+        "JOMALONE 100ml Parfüm",
+        "LANCOME EDP 50ml Parfüm",
+        "VERSACE EDT 50ml Parfüm",
+        "ARMANI EDT 100ml Parfüm"
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are perfumes matching the product type. 'Angebot' (offer/promotion) is a dynamic pricing attribute that cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "Ik wil een slimme watch die met mijn iPhone kan werken maar echt niet zooooo duur",
+      "products": [
+        "Apple Apple Watch Series OLED smartwatch"
+      ],
+      "verdict": "warn",
+      "reason": "Apple Watch satisfies iPhone compatibility, but 'niet zooooo duur' (not too expensive) is a subjective price preference that cannot be verified from the product name; Apple Watch is typically a premium-priced option.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "brosse a dents électrique",
+      "products": [
+        "brosse à dents électrique ORALB iO9",
+        "brosse à dents électrique Philips Sonicare 9900",
+        "brosse à dents électrique Xiaomi T501",
+        "brosse à dents électrique usmile P10 Pro",
+        "brosse à dents électrique ORALB Pro 2",
+        "brosse à dents électrique Philips Sonicare ProtectClean 4300"
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are electric toothbrushes matching the requested product type.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "je cherche un aspirateur très puissant qui ne laisse pas de trace sur un carrelage brillant j'ai 3 enfants je passe très souvent l'aspirateur j'en cherche un laveur et aspirateur robot",
+      "products": [
+        "aspirateur-laveur aspirateur robot ECOVACS X2 Omni",
+        "aspirateur-laveur aspirateur robot DREAME L20 Ultra",
+        "aspirateur-laveur aspirateur robot Xiaomi S10+",
+        "aspirateur-laveur aspirateur robot ROBOROCK Q7 Max+",
+        "aspirateur-laveur aspirateur robot DREAME D10 Plus 5000Pa",
+        "aspirateur-laveur aspirateur robot ROBOROCK S8 6000Pa"
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are robot vacuum-mop combos matching the product type. 'Ne laisse pas de trace sur un carrelage brillant' is a performance/quality attribute that cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "Quel sont les boisson en promotion",
+      "products": [
+        "boisson Volvic 500ml×24",
+        "boisson Red Bull 250ml×24",
+        "boisson XIANGPIAOPIAO 20"
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are drinks matching the product type. 'En promotion' is a dynamic/freshness attribute that cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "hey Siri difference between iPhone 16 Pro iPhone 15",
+      "products": [
+        "Apple iPhone 16 Pro smartphone"
+      ],
+      "verdict": "warn",
+      "reason": "Query is an informational comparison between iPhone 16 Pro and iPhone 15. Only one of the two compared products is returned, and the comparison intent is not addressed.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "television smart tv 75",
+      "products": [
+        "téléviseur TCL P745 75 pouces 4K"
+      ],
+      "verdict": "pass",
+      "reason": "Returned product is a 75-inch smart TV matching the requested product type and size.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "old  parfum",
+      "products": [
+        "parfum CHANEL N°5 EDP 100ml",
+        "parfum DIOR Sauvage 100ml",
+        "parfum JOMALONE 100ml",
+        "parfum LANCOME EDP 50ml",
+        "parfum VERSACE EDT 50ml",
+        "parfum ARMANI EDT 100ml"
+      ],
+      "verdict": "warn",
+      "reason": "All products are perfumes matching the product type, but 'old' (vintage/classic) is a subjective attribute that cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "ventilateur électrique sur pied",
+      "products": [
+        "ventilateur Airmate",
+        "ventilateur Xiaomi DC 1X"
+      ],
+      "verdict": "warn",
+      "reason": "Both products are fans, but 'sur pied' (pedestal/standing) is a subtype constraint not confirmable from the product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "ich suche Lebensmittel die lange haltbar sind und die man sich auf Vorrat kaufen kann. Haltbarkeit ca drei bis fünf Jahre.",
+      "products": [
+        "Barilla 5kg lange haltbar Grundnahrungsmittel"
+      ],
+      "verdict": "warn",
+      "reason": "Product is a long-lasting staple food matching the general intent, but the specific 3–5 year shelf life cannot be verified from the product name.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "what is the best laptop for engineering, 3d rendering and heavy tasks?",
+      "products": [
+        "Lenovo Pro16 2024 16 Zoll Laptop",
+        "Huawei MateBook X Pro 14.2 Zoll OLED Laptop",
+        "Apple MacBook Air M3 13.6 Zoll 4K Laptop",
+        "Xiaomi Book Pro 2024 16 Zoll 4K OLED Laptop",
+        "Lenovo ThinkPad X1 Carbon 14 Zoll OLED Laptop",
+        "Apple MacBook Pro M3 14.2 Zoll Laptop",
+        "ASUS ROG 2024 14 Zoll Laptop"
+      ],
+      "verdict": "warn",
+      "reason": "All products are laptops matching the product type, but suitability for 3D rendering and heavy engineering tasks depends on specs (GPU, RAM) not visible in product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Klimaanlage verfügbar jetzt",
+      "products": [
+        "Gree KFR-35GW/NhWb3 1,5 PS Klimaanlage",
+        "Midea KFR-35GW/BVDN8 1,5 PS Klimaanlage",
+        "AUX KFR-35GW/BPC1 1,5 PS Klimaanlage",
+        "Haier KFR-35GW/08ECA82 1,5 PS Klimaanlage",
+        "Daikin FTXS335NC 1,5 PS Klimaanlage",
+        "Midea KFR-35GW 1,5 PS Klimaanlage"
+      ],
+      "verdict": "warn",
+      "reason": "All products are air conditioners matching the product type, but 'verfügbar jetzt' (available now) is a dynamic availability constraint that cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "welche sind die neusten getränke in dosen oder pet flaschen",
+      "products": [
+        "Volvic 500ml×24 Getränk",
+        "Red Bull 250ml×24 Getränk",
+        "XIANGPIAOPIAO 20 Getränk"
+      ],
+      "verdict": "warn",
+      "reason": "Products are drinks, but 'neusten' (newest) is a freshness attribute and 'in Dosen oder PET Flaschen' (cans or PET bottles) is a packaging constraint, neither verifiable from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team",
+      "products": [
+        "Xiaomi EA65 65 inch 4K television",
+        "Hisense U7H ULED 65 inch 4K television",
+        "TCL C735 55 inch Mini LED television",
+        "Sony XR-55X90L 55 inch 4K television",
+        "Xiaomi TV MAX86 86 inch 4K television",
+        "Hisense 80L5 80 inch 4K television",
+        "TCL P745 75 inch 4K television"
+      ],
+      "verdict": "warn",
+      "reason": "All products are televisions matching the primary product type, but the query also requests a presenting stand and casting capability; these accessories/attributes cannot be verified from the returned TV product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "multi tools",
+      "products": [
+        "Leatherman Wave+ 18-in-1 Multifunktionswerkzeug",
+        "Victorinox SwissTool Spirit X Multifunktionswerkzeug",
+        "Gerber Suspension NXT 15-in-1 Multifunktionswerkzeug"
+      ],
+      "verdict": "pass",
+      "reason": "All products are multi-tools (Multifunktionswerkzeug) matching the requested product type with no hard constraints to violate.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "10 kg basmoti",
+      "products": [
+        "Tilda Basmati 10kg pantry staple"
+      ],
+      "verdict": "pass",
+      "reason": "Product is Tilda Basmati 10kg, exactly matching the requested product type, brand category, and 10kg weight constraint.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "Réfrigérateur congélateur en bas Samsung RB38C776CS9",
+      "products": [
+        "réfrigérateur Samsung RB38C776CS9 390L"
+      ],
+      "verdict": "pass",
+      "reason": "Product is Samsung RB38C776CS9 refrigerator matching the exact brand and model requested; the bottom-freezer subtype is inherent to this specific model.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Also. Der Monitor soll haben 27zoll gsync, mehr als Full hd und mehr als 144hz",
+      "products": [
+        "LG 27GP850 2K 165Hz 27 Zoll Monitor"
+      ],
+      "verdict": "warn",
+      "reason": "27 inch, 2K, 165Hz all match, but G-Sync compatibility cannot be verified from the product name.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "速溶奶茶囤货哪款活动大？",
+      "products": [
+        "XIANGPIAOPIAO 20 drink"
+      ],
+      "verdict": "warn",
+      "reason": "Xiangpiaopiao is a relevant instant milk tea brand, but the query asks which has the biggest promotion, a dynamic attribute not verifiable from the product name.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "甜酱油",
+      "products": [
+        "sauce soja sucrée condiment ABC Kecap Manis 600ml"
+      ],
+      "verdict": "pass",
+      "reason": "ABC Kecap Manis is sweet soy sauce, directly matching the query.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "My partners cousins are visiting from China. I want to buy them a selection of foods and snacks that they are familiar with that they can eat while they are staying. Select the products for me.",
+      "products": [
+        "THREEPOINTS 8 caloriearm snack",
+        "BESTORE 500g gedroogd rundvlees snack",
+        "WANGZAI 250ml×24 snack",
+        "HAOCHIDAI 200g snack"
+      ],
+      "verdict": "pass",
+      "reason": "Returned products are Chinese snack and drink brands (BESTORE, WANGZAI) appropriate for visitors from China.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "il fait tres chaud dans ma chambre et je cherche une ventilateur colonne pu une clim sans sortue dair chaude",
+      "products": [
+        "TP07 ventilator"
+      ],
+      "verdict": "pass",
+      "reason": "TP07 is a column/tower fan, matching the requested ventilateur colonne option.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "j'ai besoin de recommandation pour ma collègue, elle a 30 ans, marié il y a un an. il me faut un parfum de marque et sortie assez récemment",
+      "products": [
+        "parfum CHANEL N°5 EDP 100ml",
+        "parfum DIOR Sauvage 100ml",
+        "parfum JOMALONE 100ml",
+        "parfum LANCOME EDP 50ml",
+        "parfum VERSACE EDT 50ml",
+        "parfum ARMANI EDT 100ml"
+      ],
+      "verdict": "warn",
+      "reason": "All are brand perfumes, but the 'sortie assez récemment' (fairly recent release) constraint cannot be verified from product names, and some like Chanel N°5 are classic fragrances.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "i need a very cheap tv that supports 120fps on ps5 and it needs to be a decent size atleast",
+      "products": [
+        "Xiaomi EA65 65 inch 4K television",
+        "Hisense U7H ULED 65 inch 4K television",
+        "TCL C735 55 inch Mini LED television",
+        "Sony XR-55X90L 55 inch 4K television",
+        "Xiaomi TV MAX86 86 inch 4K television"
+      ],
+      "verdict": "warn",
+      "reason": "All are large 4K TVs meeting the size requirement, but 'very cheap' price and '120fps on PS5' support cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "my house tent said you can't drill the wall so but I need a  wall slef without using drill stuff anh other options",
+      "products": [
+        "no-drill 3 shelving unit"
+      ],
+      "verdict": "pass",
+      "reason": "Product explicitly states 'no-drill' and is a shelving unit, matching the request for a wall shelf without drilling.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "推荐速冻早餐",
+      "products": [
+        "SYNEAR 1.2kg frozen breakfast buns frozen food",
+        "SANQUAN 1kg frozen breakfast dumplings frozen food"
+      ],
+      "verdict": "pass",
+      "reason": "Both products are frozen breakfast items from well-known Chinese frozen food brands, matching the query.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "low noise air conditioner unit",
+      "products": [
+        "Gree KFR-35GW/NhWb3 1.5 HP air conditioner",
+        "Midea KFR-35GW/BVDN8 1.5 HP air conditioner",
+        "AUX KFR-35GW/BPC1 1.5 HP air conditioner",
+        "Haier KFR-35GW/08ECA82 1.5 HP air conditioner",
+        "Daikin FTXS335NC 1.5 HP air conditioner",
+        "Midea KFR-35GW 1.5 HP air conditioner"
+      ],
+      "verdict": "warn",
+      "reason": "All products are air conditioners, but the 'low noise' attribute cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "je cherche une tv de minum 55 pouces avec smart tv Android ou Google tv, écran 120hz QLED ou miniled",
+      "products": [
+        "téléviseur TCL C735 55 pouces Mini LED"
+      ],
+      "verdict": "warn",
+      "reason": "Product matches 55 inches and Mini LED, but 120Hz refresh rate and Android/Google TV smart platform cannot be verified from product name alone.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "barley",
+      "products": [
+        "Bio Organic Pearl Barley Grundnahrungsmittel"
+      ],
+      "verdict": "pass",
+      "reason": "Product is barley, directly matching the query.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Welcher Trockenfisch ist aktuell reduziert?",
+      "products": [
+        "Sea Best Dried Cod 200g Fischprodukt"
+      ],
+      "verdict": "warn",
+      "reason": "Product is dried fish (dried cod), matching the product type, but the 'aktuell reduziert' (currently discounted) status is a dynamic/freshness attribute that cannot be verified from the product name.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "AC Koeling Fan",
+      "products": [
+        "TP07 ventilator",
+        "Airmate ventilator",
+        "Xiaomi DC 1X ventilator"
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are ventilators (fans), matching the query for an AC cooling fan.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "wij zijn gezin van 7 en hebben al een koelkast met diepvriesvak en diepvries. ik wil nog een koelkast bij want deze is te klein die we hebben",
+      "products": [
+        "Samsung RB38C776CS9 390L koelkast",
+        "Midea BCD-536WSPZM 536L koelkast",
+        "Haier BCD-470WBHSS6WY 470L koelkast",
+        "SIEMENS KA92NV02TI 610L koelkast",
+        "Midea BCD-215WTPZM 215L koelkast",
+        "Haier BCD-252WDVLU1 252L koelkast",
+        "PANASONIC NR-D560 560L koelkast"
+      ],
+      "verdict": "warn",
+      "reason": "All products are refrigerators matching the requested product type. However, suitability of capacity for a family of 7 is subjective and no explicit numeric minimum was stated; some smaller units (215L, 252L) may not meet the implied need.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "给我推荐中国彩妆产品",
+      "products": [
+        "HUAXIZI HIGHLIGHT make-up product",
+        "PERFECT 12 make-up product"
+      ],
+      "verdict": "warn",
+      "reason": "HUAXIZI is clearly a Chinese makeup brand. PERFECT 12's Chinese origin cannot be verified from the product name alone.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "volvic water 0,5",
+      "products": [
+        "Volvic 500ml×24 Getränk"
+      ],
+      "verdict": "pass",
+      "reason": "Product is Volvic water in 500ml size, matching the requested brand and 0.5L volume.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "salut je cherche une voiture rc Tu es un expert mondial en voitures RC de drift.    \n\nJe veux les meilleures voitures RC disponibles actuellement selon ces trois catégories.\n\nRecherche 1 – Drift intérieur (budget < 50 €)\n\nTrouve la meilleure voiture RC de drift possible pour rouler en intérieur.\n\nCritères :\n\n- Prix inférieur à 50 €.\n- Gyro intégré (obligatoire si possible).\n- Direction très précise.\n- Faible latence de la radiocommande.\n- Bonne qualité de fabrication.\n- Pièces de rechange disponibles.\n- Pneus adaptés au drift intérieur.\n- Bonne autonomie.\n- Transmission fiable.\n- Possibilité d'amélioration si disponible.\n\nRecherche 2 – Drift intérieur haut de gamme (budget 100 €, négociable de quelques euros si le rapport qualité/prix est exceptionnel)\n\nJe recherche une voiture RC de drift principalement pour l'intérieur.\n\nCritères prioritaires :\n\n- Moteur brushless.\n- Gyro intégré performant.\n- Direction ultra précise.\n- Très faible latence.\n- Suspensions hydrauliques (ou amortisseurs à huile).\n- Pièces facilement remplaçables.\n- Nombreuses pièces aluminium disponibles.\n- Châssis solide.\n- Excellente stabilité.\n- Bon rayon de braquage.\n- Compatible avec de futures améliorations.\n-",
+      "products": [
+        "jouet pour enfant WLtoys K969 1:28 RC",
+        "jouet pour enfant MST RMX 2.5 RC"
+      ],
+      "verdict": "warn",
+      "reason": "Both products are known RC drift cars matching the product type. However, budget constraints (<50€, ~100€) and technical specs (brushless motor, gyro, hydraulic suspensions, etc.) cannot be verified from product names.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "chaise de camping",
+      "products": [
+        "chaise pliante Helinox Chair One",
+        "chaise pliante Coleman COLEMAN CHAIR",
+        "chaise pliante NatureHike",
+        "chaise pliante DECATHLON MH500 4K",
+        "chaise pliante DIRECTOR CHAIR PRO",
+        "chaise pliante Coleman BEACH CHAIR",
+        "chaise pliante NATUREHIKE RECLINER"
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are folding/pliable chairs from outdoor/camping brands, matching the camping chair request.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "冰箱选购容量和功能建议",
+      "products": [
+        "Samsung RB38C776CS9 390L refrigerator",
+        "Midea BCD-536WSPZM 536L refrigerator",
+        "Haier BCD-470WBHSS6WY 470L refrigerator",
+        "SIEMENS KA92NV02TI 610L refrigerator",
+        "Midea BCD-215WTPZM 215L refrigerator",
+        "Haier BCD-252WDVLU1 252L refrigerator",
+        "PANASONIC NR-D560 560L refrigerator"
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are refrigerators, matching the query requesting refrigerator purchase suggestions.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "Tv voor ps5 snel geen latency en onder de 500 euro",
+      "products": [
+        "Xiaomi EA65 65 inch 4K televisie",
+        "Hisense U7H ULED 65 inch 4K televisie",
+        "TCL C735 55 inch Mini LED televisie"
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are TVs, matching the requested product type. However, the hard price constraint (onder de 500 euro) and the low-latency/gaming attribute cannot be verified from the product names alone, as no prices or latency specs are visible.",
+      "offending_products": []
+    }
+  ]
+}

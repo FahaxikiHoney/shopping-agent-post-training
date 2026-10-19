@@ -1,0 +1,189 @@
+{
+  "model": "GLM-5.2",
+  "input": "sft_data/mock_scene_queries2_live_20260818.jsonl",
+  "complete": true,
+  "summary": {
+    "pass": 0,
+    "warn": 1,
+    "fail": 1
+  },
+  "results": [
+    {
+      "sample_id": "manual-scene-office-001",
+      "site_code": "UK-Site",
+      "query": "I need a compact black desk for a small home office",
+      "scenario_type": "search_recommend",
+      "tool_calls": [
+        {
+          "name": "sku_recall",
+          "arguments": {
+            "query": "I need a compact black desk for a small home office"
+          },
+          "result": {
+            "success": true,
+            "count": 6,
+            "products": [
+              {
+                "sku_id": "58125609",
+                "sku_name": "YIMUHE 1.8m desk",
+                "brand_name": "",
+                "final_price": "175.99",
+                "price": "219.99",
+                "sales": "8,800+ sold",
+                "keyword": "I need a compact black desk for a small home office"
+              },
+              {
+                "sku_id": "92597527",
+                "sku_name": "IKEA MICKE 105×50cm desk",
+                "brand_name": "IKEA",
+                "final_price": "43.99",
+                "price": "54.99",
+                "sales": "12,000+ sold",
+                "keyword": "I need a compact black desk for a small home office"
+              },
+              {
+                "sku_id": "37663360",
+                "sku_name": "SONGBAO L 140+100cm desk",
+                "brand_name": "",
+                "final_price": "87.99",
+                "price": "109.99",
+                "sales": "9,600+ sold",
+                "keyword": "I need a compact black desk for a small home office"
+              },
+              {
+                "sku_id": "23973480",
+                "sku_name": "FLEXISPOT E7 Pro 160×80cm desk",
+                "brand_name": "",
+                "final_price": "274.99",
+                "price": "329.99",
+                "sales": "5,600+ sold",
+                "keyword": "I need a compact black desk for a small home office"
+              },
+              {
+                "sku_id": "76635317",
+                "sku_name": "STUDENT 120cm desk",
+                "brand_name": "",
+                "final_price": "98.99",
+                "price": "131.99",
+                "sales": "11,000+ sold",
+                "keyword": "I need a compact black desk for a small home office"
+              },
+              {
+                "sku_id": "24955380",
+                "sku_name": "TANGMU 140×60cm desk",
+                "brand_name": "",
+                "final_price": "142.99",
+                "price": "186.99",
+                "sales": "4,500+ sold",
+                "keyword": "I need a compact black desk for a small home office"
+              }
+            ]
+          }
+        },
+        {
+          "name": "scenario_related_recall",
+          "arguments": {
+            "main_item": "I need a compact black desk for a small home office",
+            "need_items": [
+              "I need a compact black desk for a small home office"
+            ],
+            "style": "office"
+          },
+          "result": {
+            "status": "SUCCESS",
+            "count": 2,
+            "products": [
+              {
+                "sku_id": "58125609",
+                "sku_name": "YIMUHE 1.8m desk",
+                "brand_name": "",
+                "final_price": "175.99",
+                "price": "219.99",
+                "sales": "8,800+ sold",
+                "keyword": "I need a compact black desk for a small home office"
+              },
+              {
+                "sku_id": "92597527",
+                "sku_name": "IKEA MICKE 105×50cm desk",
+                "brand_name": "IKEA",
+                "final_price": "43.99",
+                "price": "54.99",
+                "sales": "12,000+ sold",
+                "keyword": "I need a compact black desk for a small home office"
+              }
+            ]
+          }
+        }
+      ],
+      "final_response": "Based on the retrieved product data, here are the recommended options:\n\n**IKEA MICKE 105×50cm desk**: current price £43.99, original price £54.99, sales 12,000+ sold.[product:2]\n\n**SONGBAO L 140+100cm desk**: current price £87.99, original price £109.99, sales 9,600+ sold.[product:3]\n\n**TANGMU 140×60cm desk**: current price £142.99, original price £186.99, sales 4,500+ sold.[product:6]\n\nHow would you like to narrow the options? <ClickText>Budget</ClickText> <ClickText>Brand</ClickText> <ClickText>Sales</ClickText>",
+      "verdict": "fail",
+      "reason": "The response recommends the SONGBAO L 140+100cm desk, which is an L-shaped desk with large dimensions that is clearly not compact and not suitable for a small home office, directly violating the user's hard constraints. The TANGMU 140×60cm desk is also borderline for a 'compact' requirement. The agent should have filtered out products whose dimensions contradict the 'compact' and 'small home office' constraints rather than presenting them as suitable recommendations.",
+      "issue_tags": [
+        "irrelevant_product_recommended",
+        "hard_constraint_violated",
+        "insufficient_filtering"
+      ]
+    },
+    {
+      "sample_id": "manual-scene-outdoor-002",
+      "site_code": "NL-Site",
+      "query": "Ik zoek een lichtgewicht tweepersoonstent voor weekendkamperen",
+      "scenario_type": "search_recommend",
+      "tool_calls": [
+        {
+          "name": "sku_recall",
+          "arguments": {
+            "query": "lichtgewicht tweepersoonstent weekendkamperen outdoor"
+          },
+          "result": {
+            "success": true,
+            "count": 0
+          }
+        },
+        {
+          "name": "scenario_related_recall",
+          "arguments": {
+            "main_item": "tweepersoonstent",
+            "need_items": [
+              "tent"
+            ],
+            "style": "outdoor"
+          },
+          "result": {
+            "status": "SUCCESS",
+            "count": 1,
+            "products": [
+              {
+                "sku_id": "78006290",
+                "sku_name": "1V2 tent",
+                "brand_name": "",
+                "final_price": "51.99",
+                "price": "51.99",
+                "sales": "8.900+ verkocht",
+                "keyword": "tent"
+              }
+            ]
+          }
+        },
+        {
+          "name": "sku_recall",
+          "arguments": {
+            "query": "tweepersoonstent lichtgewicht kamperen outdoor"
+          },
+          "result": {
+            "success": true,
+            "count": 0
+          }
+        }
+      ],
+      "final_response": "Op basis van de opgehaalde productgegevens zijn dit de aanbevolen opties:\n\n**1V2 tent**: huidige prijs €51.99, oorspronkelijke prijs €51.99, verkoop 8.900+ verkocht.[product:1]\n\nVoor sommige zoekopdrachten zijn geen passende producten gevonden; deze aanbeveling is daarom mogelijk onvolledig.\n\nHoe wilt u de keuze verder verfijnen? <ClickText>Budget</ClickText> <ClickText>Merk</ClickText> <ClickText>Verkoop</ClickText>",
+      "verdict": "warn",
+      "reason": "The sku_recall returned zero results twice; only one product ('1V2 tent') was found via scenario_related_recall. The product name ambiguously suggests a 1-2 person tent but does not confirm 'lightweight' or explicitly 'two-person' suitability. The response is in Dutch matching the query language, and includes a clear disclaimer acknowledging that no suitable products were found for some searches and that the recommendation may be incomplete. Usefulness is limited by sparse inventory and uncertain product match, but the disclaimer prevents a fail.",
+      "issue_tags": [
+        "limited_inventory",
+        "ambiguous_product_match",
+        "disclaimer_present"
+      ]
+    }
+  ]
+}

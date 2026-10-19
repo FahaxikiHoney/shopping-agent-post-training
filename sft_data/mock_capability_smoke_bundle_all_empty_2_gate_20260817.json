@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_04a747ac",
+      "query": "I need a hamster cage and marble eggs with a total budget of £300",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 2,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_bundle_all_empty_2_20260817.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_c81ec2f5",
+      "query": "Je cherche une cage pour hamster et des œufs en marbre avec un budget total de 300€",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 2,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_bundle_all_empty_2_20260817.jsonl",
+      "line": 2
+    }
+  ]
+}

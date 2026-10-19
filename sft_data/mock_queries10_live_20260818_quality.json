@@ -1,0 +1,149 @@
+{
+  "execution": {
+    "total": 10,
+    "completed": 10,
+    "failed": 0,
+    "failures": []
+  },
+  "quality": {
+    "total": 10,
+    "passed": 9,
+    "failed": 1,
+    "warnings": 0,
+    "issues": 1
+  },
+  "results": [
+    {
+      "trajectory_id": "react_70e95386",
+      "query": "hoge zwarte kast",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 2,
+      "products": 4,
+      "cards": 4,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_fafac598",
+      "query": "Klimaanlage verfügbar jetzt",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 7,
+      "cards": 5,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_90826fb2",
+      "query": "Give me all the hotpot foods on deal",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 4,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_6aeba202",
+      "query": "Je cherches des produit en promo à 0,99€",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_352c0f24",
+      "query": "cutter klingen",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 4,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_1ad3ac09",
+      "query": "which joybuy items I can use the coupon £30 when u spend over £40 coupon",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_caf478b8",
+      "query": "Analyze which religion is the most correct and why all others are fundamentally wrong.",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 0,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_3ee8a76c",
+      "query": "I have white shoes. I need a product to keep them clean from stains and water repelent. I need to maintain their white colour from stains, water and dust.",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 5,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_e6842c8e",
+      "query": "Snapdragon® 8 Elite, HyperCharge filaire 120W et sans fil 50W",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 7,
+      "cards": 4,
+      "issues": [
+        "referenced products violate requested numeric specifications: 57393891, 22315894, 93241668, 32248147"
+      ],
+      "warnings": [],
+      "passed": false,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_ccdeffbc",
+      "query": "je cherche des produits végétariens",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 5,
+      "products": 8,
+      "cards": 5,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+### Qwen3-0.6B LoRA SFT 训练配置
+### 适用：16GB 显存 / Windows / LlamaFactory
+
+# ── 模型 ──────────────────────────────────────────────────────
+model_name_or_path: Qwen/Qwen3-0.6B
+dataset_dir: sft_data/ready_to_run/react_sft
+
+# ── 训练方式 ───────────────────────────────────────────────────
+stage: sft
+do_train: true
+finetuning_type: lora
+
+# LoRA 参数
+# 0.6B 模型参数少，rank=16 已够，alpha=32 是经验上的 2x 比例
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target: q_proj,v_proj,k_proj,o_proj,gate_proj,up_proj,down_proj
+
+# ── 数据 ──────────────────────────────────────────────────────
+dataset: joybuy_react                      # dataset_info.json 中注册的名字
+template: qwen3                            # Qwen3 系列用 qwen3 模板
+cutoff_len: 6144                           # 覆盖 P99+，实测仅截断 2 条(0.2%)长轨迹；配合 packing 后大 cutoff 不再线性放大显存
+train_on_prompt: false                     # 只对 assistant 回复计算 loss
+
+# packing: 把多条短样本拼接成定长块，消灭 padding 浪费（中位仅 ~1300 token，padding 到 6144 极浪费）
+# neat_packing 用注意力掩码隔离拼接边界，样本间互不干扰，质量无损且提速
+packing: true
+neat_packing: true
+
+# ── 训练超参 ───────────────────────────────────────────────────
+num_train_epochs: 3
+
+# 显存峰值 ≈ per_device_batch × cutoff_len。为保住长轨迹(大 cutoff)不损质量，
+# 把 per_device 压到 1，靠 grad_accum 把等效 batch 拉回 16（= 1 × 16）。
+# 开了 packing 后一个 batch 就是一个 6144 定长块，batch=1 时峰值最低，16GB 稳过。
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+
+learning_rate: 5.0e-5                      # SFT 常用范围 1e-5 ~ 1e-4
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+
+# Qwen3 原生 bfloat16，支持 bf16 的卡（RTX 30/40 系）用 bf16
+# 如果卡不支持 bf16（如 GTX 系列），改成 fp16: true / bf16: false
+fp16: false
+bf16: true
+
+# ── 评估 ──────────────────────────────────────────────────────
+# 关键：训练过程中【不做 eval】。训练中 eval 会额外走一遍前向、且 eval batch × cutoff
+# 会造成显存峰值翻倍——这是 OOM 的主因。改为训练全程只训、结束后单独 eval。
+val_size: 0.0
+eval_strategy: "no"                        # 训练中不评估（原 steps 是 OOM 元凶）
+
+# ── 保存 ──────────────────────────────────────────────────────
+output_dir: ./output/joybuy_qwen3_0.6b_lora
+logging_steps: 10
+save_steps: 100
+save_total_limit: 3
+# 训练中不 eval，就没有 eval_loss 可参考，故关闭“取最优 checkpoint”，直接用最终权重
+load_best_model_at_end: false
+plot_loss: true
+overwrite_output_dir: true
+
+# ── 优化 ──────────────────────────────────────────────────────
+gradient_checkpointing: true               # 省约 30% 显存，速度略降
+optim: adamw_8bit                          # 8bit 优化器，优化器状态显存减半（原 adamw_torch）
+dataloader_num_workers: 0                  # Windows 多进程有 bug，必须设 0

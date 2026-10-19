@@ -1,0 +1,123 @@
+{
+  "summary": {
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_21404209",
+      "query": "Looking for a 75-inch 4K smart TV under £700",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_8_20260817.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_acd1b567",
+      "query": "I need an ergonomic chair + desk lamp, total budget £300",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 16,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_8_20260817.jsonl",
+      "line": 2
+    },
+    {
+      "trajectory_id": "react_7ac8be19",
+      "query": "Ich suche ein Multifunktionswerkzeug unter 150€",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_8_20260817.jsonl",
+      "line": 3
+    },
+    {
+      "trajectory_id": "react_aabec0f6",
+      "query": "Ich suche Lebensmittel, die lange haltbar sind und die man auf Vorrat kaufen kann. Haltbarkeit ungefähr drei bis fünf Jahre.",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_8_20260817.jsonl",
+      "line": 4
+    },
+    {
+      "trajectory_id": "react_1282f55c",
+      "query": "J'ai un canapé nordique et je cherche une table basse et un lampadaire assortis",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 2,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_8_20260817.jsonl",
+      "line": 5
+    },
+    {
+      "trajectory_id": "react_2d027b4a",
+      "query": "Je cherche un climatiseur silencieux à moins de 300€ pour une chambre",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_8_20260817.jsonl",
+      "line": 6
+    },
+    {
+      "trajectory_id": "react_e59dea07",
+      "query": "Wat is het prijsverschil van Red Bull tussen Joybuy en Lidl?",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_8_20260817.jsonl",
+      "line": 7
+    },
+    {
+      "trajectory_id": "react_e82940a6",
+      "query": "Ik zoek nagellak onder €15",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_8_20260817.jsonl",
+      "line": 8
+    }
+  ]
+}

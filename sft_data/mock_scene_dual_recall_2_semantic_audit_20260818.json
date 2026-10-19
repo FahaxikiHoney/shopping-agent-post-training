@@ -1,0 +1,148 @@
+{
+  "model": "GLM-5.2",
+  "input": "sft_data/mock_scene_dual_recall_2_live_20260818.jsonl",
+  "complete": true,
+  "summary": {
+    "pass": 1,
+    "warn": 1,
+    "fail": 0
+  },
+  "results": [
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "hoge zwarte kast",
+      "scenario_type": "search_recommend",
+      "tool_calls": [
+        {
+          "name": "sku_recall",
+          "arguments": {
+            "query": "hoge zwarte kast"
+          },
+          "result": {
+            "success": true,
+            "count": 3,
+            "products": [
+              {
+                "sku_id": "44199562",
+                "sku_name": "HOMCOM 180cm hoge zwarte opbergkast",
+                "brand_name": "HOMCOM",
+                "final_price": "116.99",
+                "price": "142.99",
+                "sales": "4.200+ verkocht",
+                "keyword": "hoge zwarte kast"
+              },
+              {
+                "sku_id": "37805212",
+                "sku_name": "IKEA BRIMNES 190cm zwarte kledingkast",
+                "brand_name": "IKEA",
+                "final_price": "168.99",
+                "price": "194.99",
+                "sales": "3.600+ verkocht",
+                "keyword": "hoge zwarte kast"
+              },
+              {
+                "sku_id": "92174401",
+                "sku_name": "vidaXL 180cm hoge zwarte opbergkast",
+                "brand_name": "vidaXL",
+                "final_price": "103.99",
+                "price": "129.99",
+                "sales": "2.800+ verkocht",
+                "keyword": "hoge zwarte kast"
+              }
+            ]
+          }
+        },
+        {
+          "name": "scenario_related_recall",
+          "arguments": {
+            "main_item": "hoge zwarte kast",
+            "need_items": [
+              "hoge zwarte kast"
+            ],
+            "style": "modern"
+          },
+          "result": {
+            "status": "SUCCESS",
+            "count": 1,
+            "products": [
+              {
+                "sku_id": "11291761",
+                "sku_name": "VASAGLE 165cm hoge zwarte opbergkast",
+                "brand_name": "VASAGLE",
+                "final_price": "129.99",
+                "price": "155.99",
+                "sales": "3.100+ verkocht",
+                "keyword": "hoge zwarte kast"
+              }
+            ]
+          }
+        }
+      ],
+      "final_response": "Op basis van de opgehaalde productgegevens zijn dit de aanbevolen opties:\n\n**HOMCOM 180cm hoge zwarte opbergkast**: huidige prijs €116.99, oorspronkelijke prijs €142.99, verkoop 4.200+ verkocht.[product:1]\n\n**IKEA BRIMNES 190cm zwarte kledingkast**: huidige prijs €168.99, oorspronkelijke prijs €194.99, verkoop 3.600+ verkocht.[product:2]\n\n**vidaXL 180cm hoge zwarte opbergkast**: huidige prijs €103.99, oorspronkelijke prijs €129.99, verkoop 2.800+ verkocht.[product:3]\n\n**VASAGLE 165cm hoge zwarte opbergkast**: huidige prijs €129.99, oorspronkelijke prijs €155.99, verkoop 3.100+ verkocht.[product:4]\n\nHoe wilt u de keuze verder verfijnen? <ClickText>Budget</ClickText> <ClickText>Merk</ClickText> <ClickText>Verkoop</ClickText>",
+      "verdict": "pass",
+      "reason": "All four recommended products are tall black cabinets/wardrobes directly relevant to the Dutch query 'hoge zwarte kast'. Product names, prices, original prices, and sales figures are faithfully grounded in the tool results. The response is in Dutch, matching the query language. A helpful refinement prompt is included.",
+      "issue_tags": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace",
+      "scenario_type": "search_recommend",
+      "tool_calls": [
+        {
+          "name": "sku_recall",
+          "arguments": {
+            "query": "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace"
+          },
+          "result": {
+            "success": true,
+            "count": 1,
+            "products": [
+              {
+                "sku_id": "63612278",
+                "sku_name": "chaise gaming GTPLAYER LOCK CHAIR",
+                "brand_name": "GTPLAYER",
+                "final_price": "90.99",
+                "price": "116.99",
+                "sales": "5 200+ vendus",
+                "keyword": "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace"
+              }
+            ]
+          }
+        },
+        {
+          "name": "scenario_related_recall",
+          "arguments": {
+            "main_item": "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace",
+            "need_items": [
+              "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace"
+            ],
+            "style": "office"
+          },
+          "result": {
+            "status": "SUCCESS",
+            "count": 1,
+            "products": [
+              {
+                "sku_id": "23031018",
+                "sku_name": "produit M57",
+                "brand_name": "",
+                "final_price": "103.99",
+                "price": "103.99",
+                "sales": "21 000+ vendus",
+                "keyword": "je veux une chaise gaming qui prend pas de place et qui soit bien optimisé sans les petit espace"
+              }
+            ]
+          }
+        }
+      ],
+      "final_response": "D'après les données produits récupérées, voici les options recommandées :\n\n**chaise gaming GTPLAYER LOCK CHAIR**: prix actuel €90.99, prix d'origine €116.99, ventes 5 200+ vendus.[product:1]\n\n**produit M57**: prix actuel €103.99, prix d'origine €103.99, ventes 21 000+ vendus.[product:2]\n\nComment souhaitez-vous affiner la sélection ? <ClickText>Budget</ClickText> <ClickText>Marque</ClickText> <ClickText>Ventes</ClickText>",
+      "verdict": "warn",
+      "reason": "The first product (GTPLAYER gaming chair) is clearly relevant. The second product 'produit M57' has a generic name with no indication it is a gaming chair or space-optimized, yet it is presented as a recommended option alongside the gaming chair without any qualification or disclaimer about its unclear relevance. No facts are invented and prices/sales are grounded, but the response would benefit from acknowledging the ambiguity of the second product.",
+      "issue_tags": [
+        "ambiguous_product_relevance"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "execution": {
+    "total": 2,
+    "completed": 2,
+    "failed": 0,
+    "failures": []
+  },
+  "quality": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "warnings": 1,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_c3e45d24",
+      "query": "I need a compact black desk for a small home office",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 2,
+      "products": 6,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "manual-scene-office-001"
+    },
+    {
+      "trajectory_id": "react_90f24222",
+      "query": "Ik zoek een lichtgewicht tweepersoonstent voor weekendkamperen",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [
+        "sku_recall executed after a successful scenario recall"
+      ],
+      "passed": true,
+      "sample_id": "manual-scene-outdoor-002"
+    }
+  ]
+}

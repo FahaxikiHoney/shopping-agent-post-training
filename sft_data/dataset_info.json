@@ -1,0 +1,16 @@
+{
+  "shopping_train": {
+    "file_name": "train_chatml_v3.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    }
+  },
+  "shopping_validation": {
+    "file_name": "val_chatml_v3.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    }
+  }
+}

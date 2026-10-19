@@ -1,0 +1,2735 @@
+{
+  "model": "GLM-5.2",
+  "input": "sft_data/mock_queries600_direct_replay_v9_20260817.json",
+  "complete": true,
+  "summary": {
+    "pass": 40,
+    "warn": 20,
+    "fail": 0
+  },
+  "results": [
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "70mai 4K Dash Cam Front and Rear",
+      "products": [
+        {
+          "sku_id": "81333937",
+          "sku_name": "70mai A800S 4K front-and-rear dash cam",
+          "brand_name": "70mai",
+          "final_price": "54.99",
+          "price": "65.99",
+          "img_url": "mock/products/81333937.jpg",
+          "good": null,
+          "sales": "28,000+ sold",
+          "keyword": "70mai 4K Dash Cam Front and Rear"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Product is a 70mai 4K front-and-rear dash cam, matching the brand, resolution, product type, and front-and-rear requirement exactly.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "去污效果好的白醋有哪些推荐",
+      "products": [
+        {
+          "sku_id": "42632717",
+          "sku_name": "Heinz 1L weißer Essig Würzmittel",
+          "brand_name": "Heinz",
+          "final_price": "3.99",
+          "price": "4.99",
+          "img_url": "mock/products/42632717.jpg",
+          "good": null,
+          "sales": "12.000+ verkauft",
+          "keyword": "去污效果好的白醋有哪些推荐"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "The returned product is white vinegar, matching the product type. However, the query's requirement for good stain-removal effectiveness (去污效果好) is a subjective quality attribute that cannot be verified from the returned product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "Welke laptop past bij mijn budget?",
+      "products": [
+        {
+          "sku_id": "13188165",
+          "sku_name": "Lenovo Pro16 2024 16 inch laptop",
+          "brand_name": "Lenovo",
+          "final_price": "714.99",
+          "price": "818.99",
+          "img_url": "mock/products/13188165.jpg",
+          "good": null,
+          "sales": "12.000+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "39479637",
+          "sku_name": "Huawei MateBook X Pro 14.2 inch OLED laptop",
+          "brand_name": "Huawei",
+          "final_price": "1169.99",
+          "price": "1364.99",
+          "img_url": "mock/products/39479637.jpg",
+          "good": null,
+          "sales": "5.600+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "12116870",
+          "sku_name": "Apple MacBook Air M3 13.6 inch 4K laptop",
+          "brand_name": "Apple",
+          "final_price": "1234.99",
+          "price": "1364.99",
+          "img_url": "mock/products/12116870.jpg",
+          "good": null,
+          "sales": "8.800+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "84449325",
+          "sku_name": "Xiaomi Book Pro 2024 16 inch 4K OLED laptop",
+          "brand_name": "Xiaomi",
+          "final_price": "909.99",
+          "price": "1039.99",
+          "img_url": "mock/products/84449325.jpg",
+          "good": null,
+          "sales": "4.200+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "77410968",
+          "sku_name": "Lenovo ThinkPad X1 Carbon 14 inch OLED laptop",
+          "brand_name": "Lenovo",
+          "final_price": "1429.99",
+          "price": "1689.99",
+          "img_url": "mock/products/77410968.jpg",
+          "good": null,
+          "sales": "2.800+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "91468370",
+          "sku_name": "Apple MacBook Pro M3 14.2 inch laptop",
+          "brand_name": "Apple",
+          "final_price": "1949.99",
+          "price": "2209.99",
+          "img_url": "mock/products/91468370.jpg",
+          "good": null,
+          "sales": "3.600+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "55402397",
+          "sku_name": "ASUS ROG 2024 14 inch laptop",
+          "brand_name": "ASUS",
+          "final_price": "1299.99",
+          "price": "1559.99",
+          "img_url": "mock/products/55402397.jpg",
+          "good": null,
+          "sales": "3.200+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are laptops, matching the requested product type. The query does not specify a concrete budget amount, so no hard numeric constraint can be violated.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "Best snacks",
+      "products": [
+        {
+          "sku_id": "23657762",
+          "sku_name": "peu calorique en-cas THREEPOINTS 8",
+          "brand_name": "",
+          "final_price": "9.99",
+          "price": "12.99",
+          "img_url": "mock/products/23657762.jpg",
+          "good": null,
+          "sales": "86 000+ vendus",
+          "keyword": "Best snacks"
+        },
+        {
+          "sku_id": "68813801",
+          "sku_name": "bœuf séché en-cas BESTORE 500g",
+          "brand_name": "",
+          "final_price": "8.99",
+          "price": "11.99",
+          "img_url": "mock/products/68813801.jpg",
+          "good": null,
+          "sales": "42 000+ vendus",
+          "keyword": "Best snacks"
+        },
+        {
+          "sku_id": "55184277",
+          "sku_name": "en-cas OREO 558g",
+          "brand_name": "",
+          "final_price": "3.99",
+          "price": "5.99",
+          "img_url": "mock/products/55184277.jpg",
+          "good": null,
+          "sales": "150 000+ vendus",
+          "keyword": "Best snacks"
+        },
+        {
+          "sku_id": "42104690",
+          "sku_name": "en-cas LAYS 154g",
+          "brand_name": "",
+          "final_price": "1.99",
+          "price": "2.99",
+          "img_url": "mock/products/42104690.jpg",
+          "good": null,
+          "sales": "180 000+ vendus",
+          "keyword": "Best snacks"
+        },
+        {
+          "sku_id": "43144395",
+          "sku_name": "en-cas WANGZAI 250ml×24",
+          "brand_name": "",
+          "final_price": "8.99",
+          "price": "11.99",
+          "img_url": "mock/products/43144395.jpg",
+          "good": null,
+          "sales": "62 000+ vendus",
+          "keyword": "Best snacks"
+        },
+        {
+          "sku_id": "51054403",
+          "sku_name": "en-cas HAOCHIDAI 200g",
+          "brand_name": "",
+          "final_price": "3.99",
+          "price": "5.99",
+          "img_url": "mock/products/51054403.jpg",
+          "good": null,
+          "sales": "52 000+ vendus",
+          "keyword": "Best snacks"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are snacks (en-cas), matching the broad product type requested.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "适合机洗的洗衣液推荐？",
+      "products": [
+        {
+          "sku_id": "22625506",
+          "sku_name": "BLUEMOON 3kg machine-wash laundry detergent",
+          "brand_name": "",
+          "final_price": "5.99",
+          "price": "7.99",
+          "img_url": "mock/products/22625506.jpg",
+          "good": null,
+          "sales": "150,000+ sold",
+          "keyword": "适合机洗的洗衣液推荐？"
+        },
+        {
+          "sku_id": "69699657",
+          "sku_name": "LIBY 2kg machine-wash laundry detergent",
+          "brand_name": "",
+          "final_price": "3.99",
+          "price": "4.99",
+          "img_url": "mock/products/69699657.jpg",
+          "good": null,
+          "sales": "120,000+ sold",
+          "keyword": "适合机洗的洗衣液推荐？"
+        },
+        {
+          "sku_id": "90036525",
+          "sku_name": "DETTOL 2kg machine-wash laundry detergent",
+          "brand_name": "",
+          "final_price": "6.99",
+          "price": "8.99",
+          "img_url": "mock/products/90036525.jpg",
+          "good": null,
+          "sales": "41,000+ sold",
+          "keyword": "适合机洗的洗衣液推荐？"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are machine-wash laundry detergents, matching both the product type (洗衣液) and the machine-wash suitability (机洗) constraint stated in the query.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "fan cooling rotating",
+      "products": [
+        {
+          "sku_id": "20399344",
+          "sku_name": "TP07 fan",
+          "brand_name": "",
+          "final_price": "318.99",
+          "price": "318.99",
+          "img_url": "mock/products/20399344.jpg",
+          "good": null,
+          "sales": "3,500+ sold",
+          "keyword": "fan cooling rotating"
+        },
+        {
+          "sku_id": "18769271",
+          "sku_name": "Airmate pedestal fan",
+          "brand_name": "Airmate",
+          "final_price": "43.99",
+          "price": "43.99",
+          "img_url": "mock/products/18769271.jpg",
+          "good": null,
+          "sales": "12,000+ sold",
+          "keyword": "fan cooling rotating"
+        },
+        {
+          "sku_id": "72039104",
+          "sku_name": "Xiaomi DC 1X pedestal fan",
+          "brand_name": "Xiaomi",
+          "final_price": "32.99",
+          "price": "32.99",
+          "img_url": "mock/products/72039104.jpg",
+          "good": null,
+          "sales": "28,000+ sold",
+          "keyword": "fan cooling rotating"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are fans, matching the requested product type. Cooling and rotating are inherent fan functions.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "有什么推荐零食",
+      "products": [
+        {
+          "sku_id": "23657762",
+          "sku_name": "THREEPOINTS 8 caloriearm snack",
+          "brand_name": "",
+          "final_price": "9.99",
+          "price": "12.99",
+          "img_url": "mock/products/23657762.jpg",
+          "good": null,
+          "sales": "86.000+ verkocht",
+          "keyword": "有什么推荐零食"
+        },
+        {
+          "sku_id": "68813801",
+          "sku_name": "BESTORE 500g gedroogd rundvlees snack",
+          "brand_name": "",
+          "final_price": "8.99",
+          "price": "11.99",
+          "img_url": "mock/products/68813801.jpg",
+          "good": null,
+          "sales": "42.000+ verkocht",
+          "keyword": "有什么推荐零食"
+        },
+        {
+          "sku_id": "55184277",
+          "sku_name": "OREO 558g snack",
+          "brand_name": "",
+          "final_price": "3.99",
+          "price": "5.99",
+          "img_url": "mock/products/55184277.jpg",
+          "good": null,
+          "sales": "150.000+ verkocht",
+          "keyword": "有什么推荐零食"
+        },
+        {
+          "sku_id": "42104690",
+          "sku_name": "LAYS 154g snack",
+          "brand_name": "",
+          "final_price": "1.99",
+          "price": "2.99",
+          "img_url": "mock/products/42104690.jpg",
+          "good": null,
+          "sales": "180.000+ verkocht",
+          "keyword": "有什么推荐零食"
+        },
+        {
+          "sku_id": "43144395",
+          "sku_name": "WANGZAI 250ml×24 snack",
+          "brand_name": "",
+          "final_price": "8.99",
+          "price": "11.99",
+          "img_url": "mock/products/43144395.jpg",
+          "good": null,
+          "sales": "62.000+ verkocht",
+          "keyword": "有什么推荐零食"
+        },
+        {
+          "sku_id": "51054403",
+          "sku_name": "HAOCHIDAI 200g snack",
+          "brand_name": "",
+          "final_price": "3.99",
+          "price": "5.99",
+          "img_url": "mock/products/51054403.jpg",
+          "good": null,
+          "sales": "52.000+ verkocht",
+          "keyword": "有什么推荐零食"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are snacks, matching the requested product type.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Ich suche eine Power Bank mit mindestens 20.000 mA Stunden und mindestens 65 W Power Output",
+      "products": [
+        {
+          "sku_id": "94016716",
+          "sku_name": "BASEUS Star-Lord 20000mAh 65W Powerbank",
+          "brand_name": "",
+          "final_price": "25.99",
+          "price": "33.99",
+          "img_url": "mock/products/94016716.jpg",
+          "good": null,
+          "sales": "18.000+ verkauft",
+          "keyword": "Ich suche eine Power Bank mit mindestens 20.000 mA Stunden und mindestens 65 W Power Output"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned power bank has 20000mAh capacity (≥20,000 mAh) and 65W power output (≥65W), satisfying both hard numeric constraints in the query.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "推荐几款低卡零食",
+      "products": [
+        {
+          "sku_id": "23657762",
+          "sku_name": "THREEPOINTS 8 kalorienarm Snack",
+          "brand_name": "",
+          "final_price": "9.99",
+          "price": "12.99",
+          "img_url": "mock/products/23657762.jpg",
+          "good": null,
+          "sales": "86.000+ verkauft",
+          "keyword": "推荐几款低卡零食"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product is a snack explicitly labeled as low-calorie (kalorienarm), matching both the product type and the low-calorie attribute requested.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "zwart sojasaus",
+      "products": [
+        {
+          "sku_id": "11173398",
+          "sku_name": "Kikkoman 500ml donkere sojasaus smaakmaker",
+          "brand_name": "Kikkoman",
+          "final_price": "4.99",
+          "price": "5.99",
+          "img_url": "mock/products/11173398.jpg",
+          "good": null,
+          "sales": "18.000+ verkocht",
+          "keyword": "zwart sojasaus"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product is dark soy sauce (donkere sojasaus), which corresponds to the requested black soy sauce (zwart sojasaus). Product type and attribute match.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "给我推荐个洗衣机",
+      "products": [
+        {
+          "sku_id": "40555714",
+          "sku_name": "Haier EG100MATE89S 10kg Waschmaschine",
+          "brand_name": "Haier",
+          "final_price": "389.99",
+          "price": "467.99",
+          "img_url": "mock/products/40555714.jpg",
+          "good": null,
+          "sales": "16.000+ verkauft",
+          "keyword": "给我推荐个洗衣机"
+        },
+        {
+          "sku_id": "66429458",
+          "sku_name": "LITTLESWAN TG100VT096WDG 10kg Waschmaschine",
+          "brand_name": "",
+          "final_price": "337.99",
+          "price": "415.99",
+          "img_url": "mock/products/66429458.jpg",
+          "good": null,
+          "sales": "21.000+ verkauft",
+          "keyword": "给我推荐个洗衣机"
+        },
+        {
+          "sku_id": "32727620",
+          "sku_name": "SIEMENS WG54A2X00W 10kg Waschmaschine",
+          "brand_name": "",
+          "final_price": "519.99",
+          "price": "649.99",
+          "img_url": "mock/products/32727620.jpg",
+          "good": null,
+          "sales": "8.900+ verkauft",
+          "keyword": "给我推荐个洗衣机"
+        },
+        {
+          "sku_id": "68871171",
+          "sku_name": "Haier EGW100HBDC189U1 10kg Waschmaschine",
+          "brand_name": "Haier",
+          "final_price": "597.99",
+          "price": "714.99",
+          "img_url": "mock/products/68871171.jpg",
+          "good": null,
+          "sales": "6.200+ verkauft",
+          "keyword": "给我推荐个洗衣机"
+        },
+        {
+          "sku_id": "39717869",
+          "sku_name": "Midea MB100V11DY 10kg Waschmaschine",
+          "brand_name": "Midea",
+          "final_price": "220.99",
+          "price": "259.99",
+          "img_url": "mock/products/39717869.jpg",
+          "good": null,
+          "sales": "35.000+ verkauft",
+          "keyword": "给我推荐个洗衣机"
+        },
+        {
+          "sku_id": "64890656",
+          "sku_name": "LITTLESWAN TB80V20 8kg Waschmaschine",
+          "brand_name": "",
+          "final_price": "129.99",
+          "price": "168.99",
+          "img_url": "mock/products/64890656.jpg",
+          "good": null,
+          "sales": "58.000+ verkauft",
+          "keyword": "给我推荐个洗衣机"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are washing machines (Waschmaschine), matching the requested product type with no additional hard constraints.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "I want one cool mug for a man so maybe dsrk or beeige color but big and strong one and good quality",
+      "products": [
+        {
+          "sku_id": "38072138",
+          "sku_name": "Le Creuset 400ml mok",
+          "brand_name": "Le Creuset",
+          "final_price": "21.99",
+          "price": "25.99",
+          "img_url": "mock/products/38072138.jpg",
+          "good": null,
+          "sales": "6.200+ verkocht",
+          "keyword": "I want one cool mug for a man so maybe dsrk or beeige color but big and strong one and good quality"
+        },
+        {
+          "sku_id": "51342803",
+          "sku_name": "Denby 350ml mok",
+          "brand_name": "Denby",
+          "final_price": "18.99",
+          "price": "21.99",
+          "img_url": "mock/products/51342803.jpg",
+          "good": null,
+          "sales": "4.100+ verkocht",
+          "keyword": "I want one cool mug for a man so maybe dsrk or beeige color but big and strong one and good quality"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "Both products are mugs, matching the product type. However, the requested color (dark/beige), size (big), strength, and quality attributes cannot be verified from the returned product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "tell me about lego and recommend some",
+      "products": [
+        {
+          "sku_id": "72123954",
+          "sku_name": "LEGO City 60371 766 children's toy",
+          "brand_name": "LEGO",
+          "final_price": "54.99",
+          "price": "65.99",
+          "img_url": "mock/products/72123954.jpg",
+          "good": null,
+          "sales": "8,800+ sold",
+          "keyword": "tell me about lego and recommend some"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product is a LEGO children's toy, matching the requested product type with no additional hard constraints.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "推荐一款笔记本电脑",
+      "products": [
+        {
+          "sku_id": "13188165",
+          "sku_name": "Lenovo Pro16 2024 16 inch laptop",
+          "brand_name": "Lenovo",
+          "final_price": "604.99",
+          "price": "692.99",
+          "img_url": "mock/products/13188165.jpg",
+          "good": null,
+          "sales": "12,000+ sold",
+          "keyword": "推荐一款笔记本电脑"
+        },
+        {
+          "sku_id": "39479637",
+          "sku_name": "Huawei MateBook X Pro 14.2 inch OLED laptop",
+          "brand_name": "Huawei",
+          "final_price": "989.99",
+          "price": "1154.99",
+          "img_url": "mock/products/39479637.jpg",
+          "good": null,
+          "sales": "5,600+ sold",
+          "keyword": "推荐一款笔记本电脑"
+        },
+        {
+          "sku_id": "12116870",
+          "sku_name": "Apple MacBook Air M3 13.6 inch 4K laptop",
+          "brand_name": "Apple",
+          "final_price": "1044.99",
+          "price": "1154.99",
+          "img_url": "mock/products/12116870.jpg",
+          "good": null,
+          "sales": "8,800+ sold",
+          "keyword": "推荐一款笔记本电脑"
+        },
+        {
+          "sku_id": "84449325",
+          "sku_name": "Xiaomi Book Pro 2024 16 inch 4K OLED laptop",
+          "brand_name": "Xiaomi",
+          "final_price": "769.99",
+          "price": "879.99",
+          "img_url": "mock/products/84449325.jpg",
+          "good": null,
+          "sales": "4,200+ sold",
+          "keyword": "推荐一款笔记本电脑"
+        },
+        {
+          "sku_id": "77410968",
+          "sku_name": "Lenovo ThinkPad X1 Carbon 14 inch OLED laptop",
+          "brand_name": "Lenovo",
+          "final_price": "1209.99",
+          "price": "1429.99",
+          "img_url": "mock/products/77410968.jpg",
+          "good": null,
+          "sales": "2,800+ sold",
+          "keyword": "推荐一款笔记本电脑"
+        },
+        {
+          "sku_id": "91468370",
+          "sku_name": "Apple MacBook Pro M3 14.2 inch laptop",
+          "brand_name": "Apple",
+          "final_price": "1649.99",
+          "price": "1869.99",
+          "img_url": "mock/products/91468370.jpg",
+          "good": null,
+          "sales": "3,600+ sold",
+          "keyword": "推荐一款笔记本电脑"
+        },
+        {
+          "sku_id": "55402397",
+          "sku_name": "ASUS ROG 2024 14 inch laptop",
+          "brand_name": "ASUS",
+          "final_price": "1099.99",
+          "price": "1319.99",
+          "img_url": "mock/products/55402397.jpg",
+          "good": null,
+          "sales": "3,200+ sold",
+          "keyword": "推荐一款笔记本电脑"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are laptops, matching the requested product type with no additional hard constraints.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Gib mir den Best möglichen größten Fernseher bis 330€",
+      "products": [
+        {
+          "sku_id": "66643411",
+          "sku_name": "Xiaomi EA65 65 Zoll 4K Fernseher",
+          "brand_name": "Xiaomi",
+          "final_price": "298.99",
+          "price": "363.99",
+          "img_url": "mock/products/66643411.jpg",
+          "good": null,
+          "sales": "18.000+ verkauft",
+          "keyword": "Gib mir den Best möglichen größten Fernseher bis 330€"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product is a 65-inch 4K TV priced at 298.99€, which satisfies all hard constraints: product type (Fernseher/TV), largest possible size, and price limit of 330€.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "推荐适合小女孩的益智玩具套装",
+      "products": [
+        {
+          "sku_id": "91505550",
+          "sku_name": "Xiaomi ROBOT CODING STEM coding toy",
+          "brand_name": "Xiaomi",
+          "final_price": "32.99",
+          "price": "43.99",
+          "img_url": "mock/products/91505550.jpg",
+          "good": null,
+          "sales": "9,200+ sold",
+          "keyword": "推荐适合小女孩的益智玩具套装"
+        },
+        {
+          "sku_id": "19375789",
+          "sku_name": "DISNEY 100 educational puzzle",
+          "brand_name": "",
+          "final_price": "4.99",
+          "price": "6.99",
+          "img_url": "mock/products/19375789.jpg",
+          "good": null,
+          "sales": "34,000+ sold",
+          "keyword": "推荐适合小女孩的益智玩具套装"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "Both products are educational toys, matching the core product type. However, suitability for little girls and whether they are toy sets (套装) cannot be verified from the returned product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "adaptateur jack usb-c",
+      "products": [
+        {
+          "sku_id": "16029204",
+          "sku_name": "adaptateur audio USB-C UGREEN USB-C 3.5mm",
+          "brand_name": "UGREEN",
+          "final_price": "8.99",
+          "price": "11.99",
+          "img_url": "mock/products/16029204.jpg",
+          "good": null,
+          "sales": "26 000+ vendus",
+          "keyword": "adaptateur jack usb-c"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product is a USB-C to 3.5mm jack audio adapter, exactly matching the requested product type.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "nagellak",
+      "products": [
+        {
+          "sku_id": "26510001",
+          "sku_name": "OPI Infinite Shine 15ml nagellak",
+          "brand_name": "OPI",
+          "final_price": "10.99",
+          "price": "12.99",
+          "img_url": "mock/products/26510001.jpg",
+          "good": null,
+          "sales": "7.600+ verkocht",
+          "keyword": "nagellak"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product is nail polish (nagellak), exactly matching the requested product type.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "2026年新款电动剃须刀推荐？",
+      "products": [
+        {
+          "sku_id": "21935650",
+          "sku_name": "Philips 9000 Prestige S9986 electric shaver",
+          "brand_name": "Philips",
+          "final_price": "142.99",
+          "price": "175.99",
+          "img_url": "mock/products/21935650.jpg",
+          "good": null,
+          "sales": "6,800+ sold",
+          "keyword": "2026年新款电动剃须刀推荐？"
+        },
+        {
+          "sku_id": "37087926",
+          "sku_name": "BRAUN Series 9 Pro+ electric shaver",
+          "brand_name": "",
+          "final_price": "241.99",
+          "price": "296.99",
+          "img_url": "mock/products/37087926.jpg",
+          "good": null,
+          "sales": "4,200+ sold",
+          "keyword": "2026年新款电动剃须刀推荐？"
+        },
+        {
+          "sku_id": "13896165",
+          "sku_name": "PANASONIC ES-LV67 electric shaver",
+          "brand_name": "",
+          "final_price": "87.99",
+          "price": "109.99",
+          "img_url": "mock/products/13896165.jpg",
+          "good": null,
+          "sales": "9,800+ sold",
+          "keyword": "2026年新款电动剃须刀推荐？"
+        },
+        {
+          "sku_id": "79979329",
+          "sku_name": "Xiaomi S801 electric shaver",
+          "brand_name": "Xiaomi",
+          "final_price": "21.99",
+          "price": "27.99",
+          "img_url": "mock/products/79979329.jpg",
+          "good": null,
+          "sales": "28,000+ sold",
+          "keyword": "2026年新款电动剃须刀推荐？"
+        },
+        {
+          "sku_id": "56233256",
+          "sku_name": "FLYCO FS986 electric shaver",
+          "brand_name": "",
+          "final_price": "14.99",
+          "price": "18.99",
+          "img_url": "mock/products/56233256.jpg",
+          "good": null,
+          "sales": "56,000+ sold",
+          "keyword": "2026年新款电动剃须刀推荐？"
+        },
+        {
+          "sku_id": "42042688",
+          "sku_name": "ROAMER S5 Pro electric shaver",
+          "brand_name": "",
+          "final_price": "38.99",
+          "price": "49.99",
+          "img_url": "mock/products/42042688.jpg",
+          "good": null,
+          "sales": "16,000+ sold",
+          "keyword": "2026年新款电动剃须刀推荐？"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are electric shavers, matching the product type. However, the requested 2026 new model year (2026年新款) is a freshness constraint that cannot be verified from any of the returned product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "推荐肉干零食",
+      "products": [
+        {
+          "sku_id": "68813801",
+          "sku_name": "BESTORE 500g Trockenfleisch Snack",
+          "brand_name": "",
+          "final_price": "8.99",
+          "price": "11.99",
+          "img_url": "mock/products/68813801.jpg",
+          "good": null,
+          "sales": "42.000+ verkauft",
+          "keyword": "推荐肉干零食"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product is a dried meat snack (Trockenfleisch Snack), matching the requested jerky snack product type.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "乐高是什么品牌？给我介绍一下",
+      "products": [
+        {
+          "sku_id": "72123954",
+          "sku_name": "LEGO City 60371 766 children's toy",
+          "brand_name": "LEGO",
+          "final_price": "54.99",
+          "price": "65.99",
+          "img_url": "mock/products/72123954.jpg",
+          "good": null,
+          "sales": "8,800+ sold",
+          "keyword": "乐高是什么品牌？给我介绍一下"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query is an informational question about the LEGO brand. The returned product is a genuine LEGO toy, which is relevant to the brand mentioned. No hard product constraints to violate.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Kannst du mir Fernseher raus suchen 65-75zoll ab 300€ bis 600€ danke",
+      "products": [
+        {
+          "sku_id": "34452157",
+          "sku_name": "Hisense U7H ULED 65 Zoll 4K Fernseher",
+          "brand_name": "Hisense",
+          "final_price": "428.99",
+          "price": "519.99",
+          "img_url": "mock/products/34452157.jpg",
+          "good": null,
+          "sales": "9.500+ verkauft",
+          "keyword": "Kannst du mir Fernseher raus suchen 65-75zoll ab 300€ bis 600€ danke"
+        },
+        {
+          "sku_id": "78628553",
+          "sku_name": "TCL P745 75 Zoll 4K Fernseher",
+          "brand_name": "TCL",
+          "final_price": "519.99",
+          "price": "610.99",
+          "img_url": "mock/products/78628553.jpg",
+          "good": null,
+          "sales": "5.600+ verkauft",
+          "keyword": "Kannst du mir Fernseher raus suchen 65-75zoll ab 300€ bis 600€ danke"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Both returned TVs are within the requested 65-75 inch range (65 Zoll and 75 Zoll) and within the €300-€600 price range (€428.99 and €519.99). All hard constraints satisfied.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "推荐几款高性价比的平板电脑",
+      "products": [
+        {
+          "sku_id": "49035457",
+          "sku_name": "Apple iPad Pro M4 13 Zoll OLED Tablet",
+          "brand_name": "Apple",
+          "final_price": "1169.99",
+          "price": "1299.99",
+          "img_url": "mock/products/49035457.jpg",
+          "good": null,
+          "sales": "6.800+ verkauft",
+          "keyword": "推荐几款高性价比的平板电脑"
+        },
+        {
+          "sku_id": "46864439",
+          "sku_name": "Apple iPad Air M2 11 Zoll Tablet",
+          "brand_name": "Apple",
+          "final_price": "623.99",
+          "price": "688.99",
+          "img_url": "mock/products/46864439.jpg",
+          "good": null,
+          "sales": "15.000+ verkauft",
+          "keyword": "推荐几款高性价比的平板电脑"
+        },
+        {
+          "sku_id": "54752912",
+          "sku_name": "Huawei MatePad Pro 256GB 13.2 Zoll OLED Tablet",
+          "brand_name": "Huawei",
+          "final_price": "649.99",
+          "price": "714.99",
+          "img_url": "mock/products/54752912.jpg",
+          "good": null,
+          "sales": "9.200+ verkauft",
+          "keyword": "推荐几款高性价比的平板电脑"
+        },
+        {
+          "sku_id": "29490902",
+          "sku_name": "Xiaomi Pad 7 Pro 11.2 Zoll Tablet",
+          "brand_name": "Xiaomi",
+          "final_price": "363.99",
+          "price": "415.99",
+          "img_url": "mock/products/29490902.jpg",
+          "good": null,
+          "sales": "21.000+ verkauft",
+          "keyword": "推荐几款高性价比的平板电脑"
+        },
+        {
+          "sku_id": "89764857",
+          "sku_name": "Samsung Galaxy Tab S10+ 12.4 Zoll OLED Tablet",
+          "brand_name": "Samsung",
+          "final_price": "779.99",
+          "price": "844.99",
+          "img_url": "mock/products/89764857.jpg",
+          "good": null,
+          "sales": "5.600+ verkauft",
+          "keyword": "推荐几款高性价比的平板电脑"
+        },
+        {
+          "sku_id": "71820126",
+          "sku_name": "OPPO Pad 3 Pro 12.1 Zoll OLED Tablet",
+          "brand_name": "OPPO",
+          "final_price": "428.99",
+          "price": "493.99",
+          "img_url": "mock/products/71820126.jpg",
+          "good": null,
+          "sales": "8.800+ verkauft",
+          "keyword": "推荐几款高性价比的平板电脑"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are tablets, matching the requested product type. However, the subjective attribute '高性价比' (high cost-performance) cannot be verified from the returned product fields, and some products like the iPad Pro M4 at €1169.99 may not align with that expectation.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Parfum Angebot",
+      "products": [
+        {
+          "sku_id": "60006368",
+          "sku_name": "CHANEL N°5 EDP 100ml Parfüm",
+          "brand_name": "",
+          "final_price": "140.99",
+          "price": "166.99",
+          "img_url": "mock/products/60006368.jpg",
+          "good": null,
+          "sales": "3.800+ verkauft",
+          "keyword": "Parfum Angebot"
+        },
+        {
+          "sku_id": "14650306",
+          "sku_name": "DIOR Sauvage 100ml Parfüm",
+          "brand_name": "",
+          "final_price": "114.99",
+          "price": "140.99",
+          "img_url": "mock/products/14650306.jpg",
+          "good": null,
+          "sales": "5.600+ verkauft",
+          "keyword": "Parfum Angebot"
+        },
+        {
+          "sku_id": "62057775",
+          "sku_name": "JOMALONE 100ml Parfüm",
+          "brand_name": "",
+          "final_price": "136.99",
+          "price": "156.99",
+          "img_url": "mock/products/62057775.jpg",
+          "good": null,
+          "sales": "2.800+ verkauft",
+          "keyword": "Parfum Angebot"
+        },
+        {
+          "sku_id": "18716104",
+          "sku_name": "LANCOME EDP 50ml Parfüm",
+          "brand_name": "",
+          "final_price": "77.99",
+          "price": "97.99",
+          "img_url": "mock/products/18716104.jpg",
+          "good": null,
+          "sales": "4.200+ verkauft",
+          "keyword": "Parfum Angebot"
+        },
+        {
+          "sku_id": "24453622",
+          "sku_name": "VERSACE EDT 50ml Parfüm",
+          "brand_name": "",
+          "final_price": "51.99",
+          "price": "64.99",
+          "img_url": "mock/products/24453622.jpg",
+          "good": null,
+          "sales": "6.800+ verkauft",
+          "keyword": "Parfum Angebot"
+        },
+        {
+          "sku_id": "63994701",
+          "sku_name": "ARMANI EDT 100ml Parfüm",
+          "brand_name": "",
+          "final_price": "90.99",
+          "price": "116.99",
+          "img_url": "mock/products/63994701.jpg",
+          "good": null,
+          "sales": "3.200+ verkauft",
+          "keyword": "Parfum Angebot"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query asks for perfume offers. All returned products are perfumes and all show discounted prices (final_price below original price), confirming they are on offer.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "Ik wil een slimme watch die met mijn iPhone kan werken maar echt niet zooooo duur",
+      "products": [
+        {
+          "sku_id": "34502995",
+          "sku_name": "Apple Apple Watch Series OLED smartwatch",
+          "brand_name": "Apple",
+          "final_price": "389.99",
+          "price": "415.99",
+          "img_url": "mock/products/34502995.jpg",
+          "good": null,
+          "sales": "18.000+ verkocht",
+          "keyword": "Ik wil een slimme watch die met mijn iPhone kan werken maar echt niet zooooo duur"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "The returned Apple Watch is compatible with iPhone, satisfying the compatibility requirement. However, the user's price expectation 'echt niet zooooo duur' (really not sooo expensive) is subjective, and at €389.99 it is uncertain whether this meets the user's affordability expectation.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "brosse a dents électrique",
+      "products": [
+        {
+          "sku_id": "69124849",
+          "sku_name": "brosse à dents électrique ORALB iO9",
+          "brand_name": "",
+          "final_price": "103.99",
+          "price": "129.99",
+          "img_url": "mock/products/69124849.jpg",
+          "good": null,
+          "sales": "12 000+ vendus",
+          "keyword": "brosse a dents électrique"
+        },
+        {
+          "sku_id": "66079148",
+          "sku_name": "brosse à dents électrique Philips Sonicare 9900",
+          "brand_name": "Philips",
+          "final_price": "155.99",
+          "price": "194.99",
+          "img_url": "mock/products/66079148.jpg",
+          "good": null,
+          "sales": "8 800+ vendus",
+          "keyword": "brosse a dents électrique"
+        },
+        {
+          "sku_id": "84121009",
+          "sku_name": "brosse à dents électrique Xiaomi T501",
+          "brand_name": "Xiaomi",
+          "final_price": "19.99",
+          "price": "25.99",
+          "img_url": "mock/products/84121009.jpg",
+          "good": null,
+          "sales": "45 000+ vendus",
+          "keyword": "brosse a dents électrique"
+        },
+        {
+          "sku_id": "26207936",
+          "sku_name": "brosse à dents électrique usmile P10 Pro",
+          "brand_name": "usmile",
+          "final_price": "51.99",
+          "price": "64.99",
+          "img_url": "mock/products/26207936.jpg",
+          "good": null,
+          "sales": "21 000+ vendus",
+          "keyword": "brosse a dents électrique"
+        },
+        {
+          "sku_id": "94671412",
+          "sku_name": "brosse à dents électrique ORALB Pro 2",
+          "brand_name": "",
+          "final_price": "25.99",
+          "price": "34.99",
+          "img_url": "mock/products/94671412.jpg",
+          "good": null,
+          "sales": "38 000+ vendus",
+          "keyword": "brosse a dents électrique"
+        },
+        {
+          "sku_id": "74142932",
+          "sku_name": "brosse à dents électrique Philips Sonicare ProtectClean 4300",
+          "brand_name": "Philips",
+          "final_price": "38.99",
+          "price": "51.99",
+          "img_url": "mock/products/74142932.jpg",
+          "good": null,
+          "sales": "29 000+ vendus",
+          "keyword": "brosse a dents électrique"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query requests electric toothbrushes. All six returned products are explicitly electric toothbrushes from recognized brands. No hard constraints violated.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "je cherche un aspirateur très puissant qui ne laisse pas de trace sur un carrelage brillant j'ai 3 enfants je passe très souvent l'aspirateur j'en cherche un laveur et aspirateur robot",
+      "products": [
+        {
+          "sku_id": "54840147",
+          "sku_name": "aspirateur-laveur aspirateur robot ECOVACS X2 Omni",
+          "brand_name": "",
+          "final_price": "467.99",
+          "price": "519.99",
+          "img_url": "mock/products/54840147.jpg",
+          "good": null,
+          "sales": "6 200+ vendus",
+          "keyword": "je cherche un aspirateur très puissant qui ne laisse pas de trace sur un carrelage brillant j'ai 3 enfants je passe très souvent l'aspirateur j'en cherche un laveur et aspirateur robot"
+        },
+        {
+          "sku_id": "64090372",
+          "sku_name": "aspirateur-laveur aspirateur robot DREAME L20 Ultra",
+          "brand_name": "",
+          "final_price": "649.99",
+          "price": "779.99",
+          "img_url": "mock/products/64090372.jpg",
+          "good": null,
+          "sales": "4 100+ vendus",
+          "keyword": "je cherche un aspirateur très puissant qui ne laisse pas de trace sur un carrelage brillant j'ai 3 enfants je passe très souvent l'aspirateur j'en cherche un laveur et aspirateur robot"
+        },
+        {
+          "sku_id": "77427297",
+          "sku_name": "aspirateur-laveur aspirateur robot Xiaomi S10+",
+          "brand_name": "Xiaomi",
+          "final_price": "259.99",
+          "price": "324.99",
+          "img_url": "mock/products/77427297.jpg",
+          "good": null,
+          "sales": "13 000+ vendus",
+          "keyword": "je cherche un aspirateur très puissant qui ne laisse pas de trace sur un carrelage brillant j'ai 3 enfants je passe très souvent l'aspirateur j'en cherche un laveur et aspirateur robot"
+        },
+        {
+          "sku_id": "71448545",
+          "sku_name": "aspirateur-laveur aspirateur robot ROBOROCK Q7 Max+",
+          "brand_name": "",
+          "final_price": "324.99",
+          "price": "389.99",
+          "img_url": "mock/products/71448545.jpg",
+          "good": null,
+          "sales": "9 200+ vendus",
+          "keyword": "je cherche un aspirateur très puissant qui ne laisse pas de trace sur un carrelage brillant j'ai 3 enfants je passe très souvent l'aspirateur j'en cherche un laveur et aspirateur robot"
+        },
+        {
+          "sku_id": "62495043",
+          "sku_name": "aspirateur-laveur aspirateur robot DREAME D10 Plus 5000Pa",
+          "brand_name": "",
+          "final_price": "259.99",
+          "price": "324.99",
+          "img_url": "mock/products/62495043.jpg",
+          "good": null,
+          "sales": "11 000+ vendus",
+          "keyword": "je cherche un aspirateur très puissant qui ne laisse pas de trace sur un carrelage brillant j'ai 3 enfants je passe très souvent l'aspirateur j'en cherche un laveur et aspirateur robot"
+        },
+        {
+          "sku_id": "71631565",
+          "sku_name": "aspirateur-laveur aspirateur robot ROBOROCK S8 6000Pa",
+          "brand_name": "",
+          "final_price": "363.99",
+          "price": "428.99",
+          "img_url": "mock/products/71631565.jpg",
+          "good": null,
+          "sales": "7 500+ vendus",
+          "keyword": "je cherche un aspirateur très puissant qui ne laisse pas de trace sur un carrelage brillant j'ai 3 enfants je passe très souvent l'aspirateur j'en cherche un laveur et aspirateur robot"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are robot vacuum washers (aspirateur-laveur aspirateur robot), matching the requested product type. However, the subjective performance attributes 'très puissant' (very powerful) and 'ne laisse pas de trace sur un carrelage brillant' (doesn't leave marks on shiny tiles) cannot be verified from the returned product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "Quel sont les boisson en promotion",
+      "products": [
+        {
+          "sku_id": "57253911",
+          "sku_name": "boisson Volvic 500ml×24",
+          "brand_name": "Volvic",
+          "final_price": "11.99",
+          "price": "14.99",
+          "img_url": "mock/products/57253911.jpg",
+          "good": null,
+          "sales": "24 000+ vendus",
+          "keyword": "Quel sont les boisson en promotion"
+        },
+        {
+          "sku_id": "11998993",
+          "sku_name": "boisson Red Bull 250ml×24",
+          "brand_name": "Red Bull",
+          "final_price": "18.99",
+          "price": "20.99",
+          "img_url": "mock/products/11998993.jpg",
+          "good": null,
+          "sales": "31 000+ vendus",
+          "keyword": "Quel sont les boisson en promotion"
+        },
+        {
+          "sku_id": "28856608",
+          "sku_name": "boisson XIANGPIAOPIAO 20",
+          "brand_name": "",
+          "final_price": "7.99",
+          "price": "10.99",
+          "img_url": "mock/products/28856608.jpg",
+          "good": null,
+          "sales": "45 000+ vendus",
+          "keyword": "Quel sont les boisson en promotion"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query asks for drinks on promotion. All returned products are drinks (boisson) and all show discounted prices (final_price below original price), confirming they are on promotion.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "television smart tv 75",
+      "products": [
+        {
+          "sku_id": "78628553",
+          "sku_name": "téléviseur TCL P745 75 pouces 4K",
+          "brand_name": "TCL",
+          "final_price": "519.99",
+          "price": "610.99",
+          "img_url": "mock/products/78628553.jpg",
+          "good": null,
+          "sales": "5 600+ vendus",
+          "keyword": "television smart tv 75"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "The returned product is a 75-inch TV matching the size requirement. However, the 'smart TV' attribute cannot be verified from the returned product fields, as the product name only states 'téléviseur TCL P745 75 pouces 4K' without explicitly mentioning smart functionality.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "old  parfum",
+      "products": [
+        {
+          "sku_id": "60006368",
+          "sku_name": "parfum CHANEL N°5 EDP 100ml",
+          "brand_name": "",
+          "final_price": "140.99",
+          "price": "166.99",
+          "img_url": "mock/products/60006368.jpg",
+          "good": null,
+          "sales": "3 800+ vendus",
+          "keyword": "old  parfum"
+        },
+        {
+          "sku_id": "14650306",
+          "sku_name": "parfum DIOR Sauvage 100ml",
+          "brand_name": "",
+          "final_price": "114.99",
+          "price": "140.99",
+          "img_url": "mock/products/14650306.jpg",
+          "good": null,
+          "sales": "5 600+ vendus",
+          "keyword": "old  parfum"
+        },
+        {
+          "sku_id": "62057775",
+          "sku_name": "parfum JOMALONE 100ml",
+          "brand_name": "",
+          "final_price": "136.99",
+          "price": "156.99",
+          "img_url": "mock/products/62057775.jpg",
+          "good": null,
+          "sales": "2 800+ vendus",
+          "keyword": "old  parfum"
+        },
+        {
+          "sku_id": "18716104",
+          "sku_name": "parfum LANCOME EDP 50ml",
+          "brand_name": "",
+          "final_price": "77.99",
+          "price": "97.99",
+          "img_url": "mock/products/18716104.jpg",
+          "good": null,
+          "sales": "4 200+ vendus",
+          "keyword": "old  parfum"
+        },
+        {
+          "sku_id": "24453622",
+          "sku_name": "parfum VERSACE EDT 50ml",
+          "brand_name": "",
+          "final_price": "51.99",
+          "price": "64.99",
+          "img_url": "mock/products/24453622.jpg",
+          "good": null,
+          "sales": "6 800+ vendus",
+          "keyword": "old  parfum"
+        },
+        {
+          "sku_id": "63994701",
+          "sku_name": "parfum ARMANI EDT 100ml",
+          "brand_name": "",
+          "final_price": "90.99",
+          "price": "116.99",
+          "img_url": "mock/products/63994701.jpg",
+          "good": null,
+          "sales": "3 200+ vendus",
+          "keyword": "old  parfum"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query is 'old parfum' which is ambiguous. All returned products are perfumes, matching the core product type. The term 'old' is too ambiguous to constitute a verifiable hard constraint.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "ventilateur électrique sur pied",
+      "products": [
+        {
+          "sku_id": "18769271",
+          "sku_name": "ventilateur sur pied Airmate",
+          "brand_name": "Airmate",
+          "final_price": "51.99",
+          "price": "51.99",
+          "img_url": "mock/products/18769271.jpg",
+          "good": null,
+          "sales": "12 000+ vendus",
+          "keyword": "ventilateur électrique sur pied"
+        },
+        {
+          "sku_id": "72039104",
+          "sku_name": "ventilateur sur pied Xiaomi DC 1X",
+          "brand_name": "Xiaomi",
+          "final_price": "38.99",
+          "price": "38.99",
+          "img_url": "mock/products/72039104.jpg",
+          "good": null,
+          "sales": "28 000+ vendus",
+          "keyword": "ventilateur électrique sur pied"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Both returned products are explicitly named 'ventilateur sur pied' (pedestal fan), matching the requested product type. No additional hard constraints are present in the query.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "ich suche Lebensmittel die lange haltbar sind und die man sich auf Vorrat kaufen kann. Haltbarkeit ca drei bis fünf Jahre.",
+      "products": [
+        {
+          "sku_id": "39004835",
+          "sku_name": "Barilla 5kg lange haltbar Grundnahrungsmittel",
+          "brand_name": "Barilla",
+          "final_price": "11.99",
+          "price": "14.99",
+          "img_url": "mock/products/39004835.jpg",
+          "good": null,
+          "sales": "7.600+ verkauft",
+          "keyword": "ich suche Lebensmittel die lange haltbar sind und die man sich auf Vorrat kaufen kann. Haltbarkeit ca drei bis fünf Jahre."
+        }
+      ],
+      "verdict": "warn",
+      "reason": "The returned product is a long-lasting staple food, which is a relevant candidate. However, the specific shelf-life constraint of 3–5 years cannot be verified from the returned product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "what is the best laptop for engineering, 3d rendering and heavy tasks?",
+      "products": [
+        {
+          "sku_id": "13188165",
+          "sku_name": "Lenovo Pro16 2024 16 Zoll Laptop",
+          "brand_name": "Lenovo",
+          "final_price": "714.99",
+          "price": "818.99",
+          "img_url": "mock/products/13188165.jpg",
+          "good": null,
+          "sales": "12.000+ verkauft",
+          "keyword": "what is the best laptop for engineering, 3d rendering and heavy tasks?"
+        },
+        {
+          "sku_id": "39479637",
+          "sku_name": "Huawei MateBook X Pro 14.2 Zoll OLED Laptop",
+          "brand_name": "Huawei",
+          "final_price": "1169.99",
+          "price": "1364.99",
+          "img_url": "mock/products/39479637.jpg",
+          "good": null,
+          "sales": "5.600+ verkauft",
+          "keyword": "what is the best laptop for engineering, 3d rendering and heavy tasks?"
+        },
+        {
+          "sku_id": "12116870",
+          "sku_name": "Apple MacBook Air M3 13.6 Zoll 4K Laptop",
+          "brand_name": "Apple",
+          "final_price": "1234.99",
+          "price": "1364.99",
+          "img_url": "mock/products/12116870.jpg",
+          "good": null,
+          "sales": "8.800+ verkauft",
+          "keyword": "what is the best laptop for engineering, 3d rendering and heavy tasks?"
+        },
+        {
+          "sku_id": "84449325",
+          "sku_name": "Xiaomi Book Pro 2024 16 Zoll 4K OLED Laptop",
+          "brand_name": "Xiaomi",
+          "final_price": "909.99",
+          "price": "1039.99",
+          "img_url": "mock/products/84449325.jpg",
+          "good": null,
+          "sales": "4.200+ verkauft",
+          "keyword": "what is the best laptop for engineering, 3d rendering and heavy tasks?"
+        },
+        {
+          "sku_id": "77410968",
+          "sku_name": "Lenovo ThinkPad X1 Carbon 14 Zoll OLED Laptop",
+          "brand_name": "Lenovo",
+          "final_price": "1429.99",
+          "price": "1689.99",
+          "img_url": "mock/products/77410968.jpg",
+          "good": null,
+          "sales": "2.800+ verkauft",
+          "keyword": "what is the best laptop for engineering, 3d rendering and heavy tasks?"
+        },
+        {
+          "sku_id": "91468370",
+          "sku_name": "Apple MacBook Pro M3 14.2 Zoll Laptop",
+          "brand_name": "Apple",
+          "final_price": "1949.99",
+          "price": "2209.99",
+          "img_url": "mock/products/91468370.jpg",
+          "good": null,
+          "sales": "3.600+ verkauft",
+          "keyword": "what is the best laptop for engineering, 3d rendering and heavy tasks?"
+        },
+        {
+          "sku_id": "55402397",
+          "sku_name": "ASUS ROG 2024 14 Zoll Laptop",
+          "brand_name": "ASUS",
+          "final_price": "1299.99",
+          "price": "1559.99",
+          "img_url": "mock/products/55402397.jpg",
+          "good": null,
+          "sales": "3.200+ verkauft",
+          "keyword": "what is the best laptop for engineering, 3d rendering and heavy tasks?"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are laptops, matching the requested product type. However, suitability for engineering, 3D rendering, and heavy tasks depends on specs (GPU, RAM, CPU) not visible in the returned fields, so the performance requirement cannot be verified.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Klimaanlage verfügbar jetzt",
+      "products": [
+        {
+          "sku_id": "96344576",
+          "sku_name": "Gree KFR-35GW/NhWb3 1,5 PS leise Klimaanlage",
+          "brand_name": "Gree",
+          "final_price": "324.99",
+          "price": "389.99",
+          "img_url": "mock/products/96344576.jpg",
+          "good": null,
+          "sales": "28.000+ verkauft",
+          "keyword": "Klimaanlage verfügbar jetzt"
+        },
+        {
+          "sku_id": "55209560",
+          "sku_name": "Midea KFR-35GW/BVDN8 1,5 PS leise Klimaanlage",
+          "brand_name": "Midea",
+          "final_price": "285.99",
+          "price": "350.99",
+          "img_url": "mock/products/55209560.jpg",
+          "good": null,
+          "sales": "32.000+ verkauft",
+          "keyword": "Klimaanlage verfügbar jetzt"
+        },
+        {
+          "sku_id": "57193011",
+          "sku_name": "AUX KFR-35GW/BPC1 1,5 PS leise Klimaanlage",
+          "brand_name": "",
+          "final_price": "207.99",
+          "price": "259.99",
+          "img_url": "mock/products/57193011.jpg",
+          "good": null,
+          "sales": "41.000+ verkauft",
+          "keyword": "Klimaanlage verfügbar jetzt"
+        },
+        {
+          "sku_id": "63594652",
+          "sku_name": "Haier KFR-35GW/08ECA82 1,5 PS leise Klimaanlage",
+          "brand_name": "Haier",
+          "final_price": "298.99",
+          "price": "350.99",
+          "img_url": "mock/products/63594652.jpg",
+          "good": null,
+          "sales": "18.000+ verkauft",
+          "keyword": "Klimaanlage verfügbar jetzt"
+        },
+        {
+          "sku_id": "36197710",
+          "sku_name": "Daikin FTXS335NC 1,5 PS leise Klimaanlage",
+          "brand_name": "Daikin",
+          "final_price": "597.99",
+          "price": "675.99",
+          "img_url": "mock/products/36197710.jpg",
+          "good": null,
+          "sales": "6.800+ verkauft",
+          "keyword": "Klimaanlage verfügbar jetzt"
+        },
+        {
+          "sku_id": "49891503",
+          "sku_name": "Midea KFR-35GW 1,5 PS leise Klimaanlage",
+          "brand_name": "Midea",
+          "final_price": "337.99",
+          "price": "402.99",
+          "img_url": "mock/products/49891503.jpg",
+          "good": null,
+          "sales": "21.000+ verkauft",
+          "keyword": "Klimaanlage verfügbar jetzt"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are air conditioners, matching the requested product type. The 'verfügbar jetzt' (available now) constraint is a dynamic availability attribute that cannot be verified from the returned product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "welche sind die neusten getränke in dosen oder pet flaschen",
+      "products": [
+        {
+          "sku_id": "57253911",
+          "sku_name": "Volvic 500ml×24 Getränk",
+          "brand_name": "Volvic",
+          "final_price": "11.99",
+          "price": "14.99",
+          "img_url": "mock/products/57253911.jpg",
+          "good": null,
+          "sales": "24.000+ verkauft",
+          "keyword": "welche sind die neusten getränke in dosen oder pet flaschen"
+        },
+        {
+          "sku_id": "11998993",
+          "sku_name": "Red Bull 250ml×24 Getränk",
+          "brand_name": "Red Bull",
+          "final_price": "18.99",
+          "price": "20.99",
+          "img_url": "mock/products/11998993.jpg",
+          "good": null,
+          "sales": "31.000+ verkauft",
+          "keyword": "welche sind die neusten getränke in dosen oder pet flaschen"
+        },
+        {
+          "sku_id": "28856608",
+          "sku_name": "XIANGPIAOPIAO 20 Getränk",
+          "brand_name": "",
+          "final_price": "7.99",
+          "price": "10.99",
+          "img_url": "mock/products/28856608.jpg",
+          "good": null,
+          "sales": "45.000+ verkauft",
+          "keyword": "welche sind die neusten getränke in dosen oder pet flaschen"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "Returned products are beverages, which match the product type. However, the 'neusten' (newest) recency constraint and the specific packaging requirement (cans or PET bottles) cannot be verified from the returned product name fields for all items.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team",
+      "products": [
+        {
+          "sku_id": "66643411",
+          "sku_name": "Xiaomi EA65 65 inch 4K television",
+          "brand_name": "Xiaomi",
+          "final_price": "252.99",
+          "price": "307.99",
+          "img_url": "mock/products/66643411.jpg",
+          "good": null,
+          "sales": "18,000+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "34452157",
+          "sku_name": "Hisense U7H ULED 65 inch 4K television",
+          "brand_name": "Hisense",
+          "final_price": "362.99",
+          "price": "439.99",
+          "img_url": "mock/products/34452157.jpg",
+          "good": null,
+          "sales": "9,500+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "56972323",
+          "sku_name": "TCL C735 55 inch Mini LED television",
+          "brand_name": "TCL",
+          "final_price": "329.99",
+          "price": "395.99",
+          "img_url": "mock/products/56972323.jpg",
+          "good": null,
+          "sales": "7,200+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "79995075",
+          "sku_name": "Sony XR-55X90L 55 inch 4K television",
+          "brand_name": "Sony",
+          "final_price": "549.99",
+          "price": "659.99",
+          "img_url": "mock/products/79995075.jpg",
+          "good": null,
+          "sales": "3,800+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "78767804",
+          "sku_name": "Xiaomi TV MAX86 86 inch 4K television",
+          "brand_name": "Xiaomi",
+          "final_price": "659.99",
+          "price": "802.99",
+          "img_url": "mock/products/78767804.jpg",
+          "good": null,
+          "sales": "2,100+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "78467296",
+          "sku_name": "Hisense 80L5 80 inch 4K television",
+          "brand_name": "Hisense",
+          "final_price": "879.99",
+          "price": "1099.99",
+          "img_url": "mock/products/78467296.jpg",
+          "good": null,
+          "sales": "1,500+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "78628553",
+          "sku_name": "TCL P745 75 inch 4K television",
+          "brand_name": "TCL",
+          "final_price": "439.99",
+          "price": "516.99",
+          "img_url": "mock/products/78628553.jpg",
+          "good": null,
+          "sales": "5,600+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "The query requests three distinct items: a TV screen, a presenting stand, and casting bits. All returned products are only televisions, which match the TV screen portion. The stand and casting device components are not returned, and the screen-casting capability cannot be verified from the TV product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "multi tools",
+      "products": [
+        {
+          "sku_id": "85262075",
+          "sku_name": "Leatherman Wave+ 18-in-1 Multifunktionswerkzeug",
+          "brand_name": "Leatherman",
+          "final_price": "116.99",
+          "price": "129.99",
+          "img_url": "mock/products/85262075.jpg",
+          "good": null,
+          "sales": "3.600+ verkauft",
+          "keyword": "multi tools"
+        },
+        {
+          "sku_id": "49778034",
+          "sku_name": "Victorinox SwissTool Spirit X Multifunktionswerkzeug",
+          "brand_name": "Victorinox",
+          "final_price": "142.99",
+          "price": "168.99",
+          "img_url": "mock/products/49778034.jpg",
+          "good": null,
+          "sales": "2.200+ verkauft",
+          "keyword": "multi tools"
+        },
+        {
+          "sku_id": "56869817",
+          "sku_name": "Gerber Suspension NXT 15-in-1 Multifunktionswerkzeug",
+          "brand_name": "Gerber",
+          "final_price": "42.99",
+          "price": "51.99",
+          "img_url": "mock/products/56869817.jpg",
+          "good": null,
+          "sales": "5.100+ verkauft",
+          "keyword": "multi tools"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are explicitly named 'Multifunktionswerkzeug' (multi-tool) from well-known multi-tool brands (Leatherman, Victorinox, Gerber), clearly matching the requested product type with no additional hard constraints.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "10 kg basmoti",
+      "products": [
+        {
+          "sku_id": "28162806",
+          "sku_name": "Tilda Basmati 10kg pantry staple",
+          "brand_name": "Tilda",
+          "final_price": "32.99",
+          "price": "38.99",
+          "img_url": "mock/products/28162806.jpg",
+          "good": null,
+          "sales": "6,800+ sold",
+          "keyword": "10 kg basmoti"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product is 'Tilda Basmati 10kg', which matches the requested product type (basmati rice) and the numeric weight constraint (10 kg) exactly.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "Réfrigérateur congélateur en bas Samsung RB38C776CS9",
+      "products": [
+        {
+          "sku_id": "10066733",
+          "sku_name": "réfrigérateur Samsung RB38C776CS9 390L",
+          "brand_name": "Samsung",
+          "final_price": "779.99",
+          "price": "909.99",
+          "img_url": "mock/products/10066733.jpg",
+          "good": null,
+          "sales": "3 200+ vendus",
+          "keyword": "Réfrigérateur congélateur en bas Samsung RB38C776CS9"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product matches the requested brand (Samsung) and exact model number (RB38C776CS9). The product is a refrigerator as requested. The model number match is sufficient to confirm the product identity.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Also. Der Monitor soll haben 27zoll gsync, mehr als Full hd und mehr als 144hz",
+      "products": [
+        {
+          "sku_id": "40206990",
+          "sku_name": "LG 27GP850 2K 165Hz 27 Zoll Monitor",
+          "brand_name": "LG",
+          "final_price": "246.99",
+          "price": "298.99",
+          "img_url": "mock/products/40206990.jpg",
+          "good": null,
+          "sales": "7.200+ verkauft",
+          "keyword": "Also. Der Monitor soll haben 27zoll gsync, mehr als Full hd und mehr als 144hz"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "The returned monitor matches 27 inch (27 Zoll), more than Full HD (2K), and more than 144Hz (165Hz). However, the G-Sync compatibility requirement cannot be verified from the returned product fields, as it is not mentioned in the product name.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "速溶奶茶囤货哪款活动大？",
+      "products": [
+        {
+          "sku_id": "28856608",
+          "sku_name": "XIANGPIAOPIAO 20 drink",
+          "brand_name": "",
+          "final_price": "6.99",
+          "price": "8.99",
+          "img_url": "mock/products/28856608.jpg",
+          "good": null,
+          "sales": "45,000+ sold",
+          "keyword": "速溶奶茶囤货哪款活动大？"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "XIANGPIAOPIAO is a well-known instant milk tea brand, and the product is on promotion (£6.99 from £8.99), matching the query for instant milk tea stocking up with big discounts.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "甜酱油",
+      "products": [
+        {
+          "sku_id": "86620026",
+          "sku_name": "sauce soja sucrée condiment ABC Kecap Manis 600ml",
+          "brand_name": "ABC",
+          "final_price": "3.99",
+          "price": "4.99",
+          "img_url": "mock/products/86620026.jpg",
+          "good": null,
+          "sales": "9 200+ vendus",
+          "keyword": "甜酱油"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "ABC Kecap Manis is sweet soy sauce, directly matching the query '甜酱油'.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "My partners cousins are visiting from China. I want to buy them a selection of foods and snacks that they are familiar with that they can eat while they are staying. Select the products for me.",
+      "products": [
+        {
+          "sku_id": "23657762",
+          "sku_name": "THREEPOINTS 8 caloriearm snack",
+          "brand_name": "",
+          "final_price": "9.99",
+          "price": "12.99",
+          "img_url": "mock/products/23657762.jpg",
+          "good": null,
+          "sales": "86.000+ verkocht",
+          "keyword": "My partners cousins are visiting from China. I want to buy them a selection of foods and snacks that they are familiar with that they can eat while they are staying. Select the products for me."
+        },
+        {
+          "sku_id": "68813801",
+          "sku_name": "BESTORE 500g gedroogd rundvlees snack",
+          "brand_name": "",
+          "final_price": "8.99",
+          "price": "11.99",
+          "img_url": "mock/products/68813801.jpg",
+          "good": null,
+          "sales": "42.000+ verkocht",
+          "keyword": "My partners cousins are visiting from China. I want to buy them a selection of foods and snacks that they are familiar with that they can eat while they are staying. Select the products for me."
+        },
+        {
+          "sku_id": "43144395",
+          "sku_name": "WANGZAI 250ml×24 snack",
+          "brand_name": "",
+          "final_price": "8.99",
+          "price": "11.99",
+          "img_url": "mock/products/43144395.jpg",
+          "good": null,
+          "sales": "62.000+ verkocht",
+          "keyword": "My partners cousins are visiting from China. I want to buy them a selection of foods and snacks that they are familiar with that they can eat while they are staying. Select the products for me."
+        },
+        {
+          "sku_id": "51054403",
+          "sku_name": "HAOCHIDAI 200g snack",
+          "brand_name": "",
+          "final_price": "3.99",
+          "price": "5.99",
+          "img_url": "mock/products/51054403.jpg",
+          "good": null,
+          "sales": "52.000+ verkocht",
+          "keyword": "My partners cousins are visiting from China. I want to buy them a selection of foods and snacks that they are familiar with that they can eat while they are staying. Select the products for me."
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Returned products are Chinese snack brands (BESTORE dried beef, WANGZAI drinks, HAOCHIDAI snacks) that would be familiar to visitors from China, matching the query intent.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "il fait tres chaud dans ma chambre et je cherche une ventilateur colonne pu une clim sans sortue dair chaude",
+      "products": [
+        {
+          "sku_id": "20399344",
+          "sku_name": "TP07 ventilator",
+          "brand_name": "",
+          "final_price": "376.99",
+          "price": "376.99",
+          "img_url": "mock/products/20399344.jpg",
+          "good": null,
+          "sales": "3.500+ verkocht",
+          "keyword": "il fait tres chaud dans ma chambre et je cherche une ventilateur colonne pu une clim sans sortue dair chaude"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "TP07 is a Dyson tower/column fan (ventilateur colonne), which matches one of the two product types requested in the query.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "j'ai besoin de recommandation pour ma collègue, elle a 30 ans, marié il y a un an. il me faut un parfum de marque et sortie assez récemment",
+      "products": [
+        {
+          "sku_id": "60006368",
+          "sku_name": "parfum CHANEL N°5 EDP 100ml",
+          "brand_name": "",
+          "final_price": "140.99",
+          "price": "166.99",
+          "img_url": "mock/products/60006368.jpg",
+          "good": null,
+          "sales": "3 800+ vendus",
+          "keyword": "j'ai besoin de recommandation pour ma collègue, elle a 30 ans, marié il y a un an. il me faut un parfum de marque et sortie assez récemment"
+        },
+        {
+          "sku_id": "14650306",
+          "sku_name": "parfum DIOR Sauvage 100ml",
+          "brand_name": "",
+          "final_price": "114.99",
+          "price": "140.99",
+          "img_url": "mock/products/14650306.jpg",
+          "good": null,
+          "sales": "5 600+ vendus",
+          "keyword": "j'ai besoin de recommandation pour ma collègue, elle a 30 ans, marié il y a un an. il me faut un parfum de marque et sortie assez récemment"
+        },
+        {
+          "sku_id": "62057775",
+          "sku_name": "parfum JOMALONE 100ml",
+          "brand_name": "",
+          "final_price": "136.99",
+          "price": "156.99",
+          "img_url": "mock/products/62057775.jpg",
+          "good": null,
+          "sales": "2 800+ vendus",
+          "keyword": "j'ai besoin de recommandation pour ma collègue, elle a 30 ans, marié il y a un an. il me faut un parfum de marque et sortie assez récemment"
+        },
+        {
+          "sku_id": "18716104",
+          "sku_name": "parfum LANCOME EDP 50ml",
+          "brand_name": "",
+          "final_price": "77.99",
+          "price": "97.99",
+          "img_url": "mock/products/18716104.jpg",
+          "good": null,
+          "sales": "4 200+ vendus",
+          "keyword": "j'ai besoin de recommandation pour ma collègue, elle a 30 ans, marié il y a un an. il me faut un parfum de marque et sortie assez récemment"
+        },
+        {
+          "sku_id": "24453622",
+          "sku_name": "parfum VERSACE EDT 50ml",
+          "brand_name": "",
+          "final_price": "51.99",
+          "price": "64.99",
+          "img_url": "mock/products/24453622.jpg",
+          "good": null,
+          "sales": "6 800+ vendus",
+          "keyword": "j'ai besoin de recommandation pour ma collègue, elle a 30 ans, marié il y a un an. il me faut un parfum de marque et sortie assez récemment"
+        },
+        {
+          "sku_id": "63994701",
+          "sku_name": "parfum ARMANI EDT 100ml",
+          "brand_name": "",
+          "final_price": "90.99",
+          "price": "116.99",
+          "img_url": "mock/products/63994701.jpg",
+          "good": null,
+          "sales": "3 200+ vendus",
+          "keyword": "j'ai besoin de recommandation pour ma collègue, elle a 30 ans, marié il y a un an. il me faut un parfum de marque et sortie assez récemment"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "All products are branded perfumes matching 'parfum de marque', but the constraint 'sortie assez récemment' (released fairly recently) cannot be verified from the returned product fields, as no release date information is provided.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "i need a very cheap tv that supports 120fps on ps5 and it needs to be a decent size atleast",
+      "products": [
+        {
+          "sku_id": "66643411",
+          "sku_name": "Xiaomi EA65 65 inch 4K television",
+          "brand_name": "Xiaomi",
+          "final_price": "252.99",
+          "price": "307.99",
+          "img_url": "mock/products/66643411.jpg",
+          "good": null,
+          "sales": "18,000+ sold",
+          "keyword": "i need a very cheap tv that supports 120fps on ps5 and it needs to be a decent size atleast"
+        },
+        {
+          "sku_id": "34452157",
+          "sku_name": "Hisense U7H ULED 65 inch 4K television",
+          "brand_name": "Hisense",
+          "final_price": "362.99",
+          "price": "439.99",
+          "img_url": "mock/products/34452157.jpg",
+          "good": null,
+          "sales": "9,500+ sold",
+          "keyword": "i need a very cheap tv that supports 120fps on ps5 and it needs to be a decent size atleast"
+        },
+        {
+          "sku_id": "56972323",
+          "sku_name": "TCL C735 55 inch Mini LED television",
+          "brand_name": "TCL",
+          "final_price": "329.99",
+          "price": "395.99",
+          "img_url": "mock/products/56972323.jpg",
+          "good": null,
+          "sales": "7,200+ sold",
+          "keyword": "i need a very cheap tv that supports 120fps on ps5 and it needs to be a decent size atleast"
+        },
+        {
+          "sku_id": "79995075",
+          "sku_name": "Sony XR-55X90L 55 inch 4K television",
+          "brand_name": "Sony",
+          "final_price": "549.99",
+          "price": "659.99",
+          "img_url": "mock/products/79995075.jpg",
+          "good": null,
+          "sales": "3,800+ sold",
+          "keyword": "i need a very cheap tv that supports 120fps on ps5 and it needs to be a decent size atleast"
+        },
+        {
+          "sku_id": "78767804",
+          "sku_name": "Xiaomi TV MAX86 86 inch 4K television",
+          "brand_name": "Xiaomi",
+          "final_price": "659.99",
+          "price": "802.99",
+          "img_url": "mock/products/78767804.jpg",
+          "good": null,
+          "sales": "2,100+ sold",
+          "keyword": "i need a very cheap tv that supports 120fps on ps5 and it needs to be a decent size atleast"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "All returned products are TVs of decent size (55-86 inches). However, the hard constraint 'supports 120fps on PS5' cannot be verified from the returned product fields, as no refresh rate or HDMI 2.1 specification is included.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "my house tent said you can't drill the wall so but I need a  wall slef without using drill stuff anh other options",
+      "products": [
+        {
+          "sku_id": "68164638",
+          "sku_name": "no-drill 3 shelving unit",
+          "brand_name": "",
+          "final_price": "21.99",
+          "price": "21.99",
+          "img_url": "mock/products/68164638.jpg",
+          "good": null,
+          "sales": "6,400+ sold",
+          "keyword": "my house tent said you can't drill the wall so but I need a  wall slef without using drill stuff anh other options"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The product is explicitly labeled 'no-drill 3 shelving unit', matching the query for a wall shelf that doesn't require drilling.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "推荐速冻早餐",
+      "products": [
+        {
+          "sku_id": "34032392",
+          "sku_name": "SYNEAR 1.2kg frozen breakfast buns frozen food",
+          "brand_name": "",
+          "final_price": "4.99",
+          "price": "5.99",
+          "img_url": "mock/products/34032392.jpg",
+          "good": null,
+          "sales": "29,000+ sold",
+          "keyword": "推荐速冻早餐"
+        },
+        {
+          "sku_id": "63690295",
+          "sku_name": "SANQUAN 1kg frozen breakfast dumplings frozen food",
+          "brand_name": "",
+          "final_price": "3.99",
+          "price": "4.99",
+          "img_url": "mock/products/63690295.jpg",
+          "good": null,
+          "sales": "36,000+ sold",
+          "keyword": "推荐速冻早餐"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Both products are frozen breakfast items (SYNEAR frozen breakfast buns, SANQUAN frozen breakfast dumplings), directly matching '速冻早餐' (frozen breakfast).",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "low noise air conditioner unit",
+      "products": [
+        {
+          "sku_id": "96344576",
+          "sku_name": "Gree KFR-35GW/NhWb3 1.5 HP low-noise air conditioner",
+          "brand_name": "Gree",
+          "final_price": "274.99",
+          "price": "329.99",
+          "img_url": "mock/products/96344576.jpg",
+          "good": null,
+          "sales": "28,000+ sold",
+          "keyword": "low noise air conditioner unit"
+        },
+        {
+          "sku_id": "55209560",
+          "sku_name": "Midea KFR-35GW/BVDN8 1.5 HP low-noise air conditioner",
+          "brand_name": "Midea",
+          "final_price": "241.99",
+          "price": "296.99",
+          "img_url": "mock/products/55209560.jpg",
+          "good": null,
+          "sales": "32,000+ sold",
+          "keyword": "low noise air conditioner unit"
+        },
+        {
+          "sku_id": "57193011",
+          "sku_name": "AUX KFR-35GW/BPC1 1.5 HP low-noise air conditioner",
+          "brand_name": "",
+          "final_price": "175.99",
+          "price": "219.99",
+          "img_url": "mock/products/57193011.jpg",
+          "good": null,
+          "sales": "41,000+ sold",
+          "keyword": "low noise air conditioner unit"
+        },
+        {
+          "sku_id": "63594652",
+          "sku_name": "Haier KFR-35GW/08ECA82 1.5 HP low-noise air conditioner",
+          "brand_name": "Haier",
+          "final_price": "252.99",
+          "price": "296.99",
+          "img_url": "mock/products/63594652.jpg",
+          "good": null,
+          "sales": "18,000+ sold",
+          "keyword": "low noise air conditioner unit"
+        },
+        {
+          "sku_id": "36197710",
+          "sku_name": "Daikin FTXS335NC 1.5 HP low-noise air conditioner",
+          "brand_name": "Daikin",
+          "final_price": "505.99",
+          "price": "571.99",
+          "img_url": "mock/products/36197710.jpg",
+          "good": null,
+          "sales": "6,800+ sold",
+          "keyword": "low noise air conditioner unit"
+        },
+        {
+          "sku_id": "49891503",
+          "sku_name": "Midea KFR-35GW 1.5 HP low-noise air conditioner",
+          "brand_name": "Midea",
+          "final_price": "285.99",
+          "price": "340.99",
+          "img_url": "mock/products/49891503.jpg",
+          "good": null,
+          "sales": "21,000+ sold",
+          "keyword": "low noise air conditioner unit"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are explicitly labeled 'low-noise air conditioner' from reputable brands, matching the query for a low noise air conditioner unit.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "je cherche une tv de minum 55 pouces avec smart tv Android ou Google tv, écran 120hz QLED ou miniled",
+      "products": [
+        {
+          "sku_id": "56972323",
+          "sku_name": "téléviseur TCL C735 55 pouces Mini LED",
+          "brand_name": "TCL",
+          "final_price": "389.99",
+          "price": "467.99",
+          "img_url": "mock/products/56972323.jpg",
+          "good": null,
+          "sales": "7 200+ vendus",
+          "keyword": "je cherche une tv de minum 55 pouces avec smart tv Android ou Google tv, écran 120hz QLED ou miniled"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "The TCL C735 55-inch Mini LED TV matches the minimum size and Mini LED display requirement. However, the '120Hz' refresh rate and 'Android ou Google TV' smart platform constraints cannot be verified from the returned product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "barley",
+      "products": [
+        {
+          "sku_id": "42645427",
+          "sku_name": "Bio Organic Pearl Barley Grundnahrungsmittel",
+          "brand_name": "Bio",
+          "final_price": "5.99",
+          "price": "6.99",
+          "img_url": "mock/products/42645427.jpg",
+          "good": null,
+          "sales": "5.200+ verkauft",
+          "keyword": "barley"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Product is pearl barley, directly matching the query 'barley'. No hard constraints to violate.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Welcher Trockenfisch ist aktuell reduziert?",
+      "products": [
+        {
+          "sku_id": "47833501",
+          "sku_name": "Sea Best Dried Cod 200g Fischprodukt",
+          "brand_name": "Sea Best",
+          "final_price": "6.99",
+          "price": "7.99",
+          "img_url": "mock/products/47833501.jpg",
+          "good": null,
+          "sales": "11.000+ verkauft",
+          "keyword": "Welcher Trockenfisch ist aktuell reduziert?"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Product is dried cod (Trockenfisch) and shows a price reduction (final_price 6.99 vs original 7.99), matching the query asking which dried fish is currently discounted.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "AC Koeling Fan",
+      "products": [
+        {
+          "sku_id": "20399344",
+          "sku_name": "TP07 ventilator",
+          "brand_name": "",
+          "final_price": "376.99",
+          "price": "376.99",
+          "img_url": "mock/products/20399344.jpg",
+          "good": null,
+          "sales": "3.500+ verkocht",
+          "keyword": "AC Koeling Fan"
+        },
+        {
+          "sku_id": "18769271",
+          "sku_name": "Airmate staande ventilator",
+          "brand_name": "Airmate",
+          "final_price": "51.99",
+          "price": "51.99",
+          "img_url": "mock/products/18769271.jpg",
+          "good": null,
+          "sales": "12.000+ verkocht",
+          "keyword": "AC Koeling Fan"
+        },
+        {
+          "sku_id": "72039104",
+          "sku_name": "Xiaomi DC 1X staande ventilator",
+          "brand_name": "Xiaomi",
+          "final_price": "38.99",
+          "price": "38.99",
+          "img_url": "mock/products/72039104.jpg",
+          "good": null,
+          "sales": "28.000+ verkocht",
+          "keyword": "AC Koeling Fan"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are ventilators/fans, matching the product type 'AC Koeling Fan'. No hard constraints are violated.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "wij zijn gezin van 7 en hebben al een koelkast met diepvriesvak en diepvries. ik wil nog een koelkast bij want deze is te klein die we hebben",
+      "products": [
+        {
+          "sku_id": "10066733",
+          "sku_name": "Samsung RB38C776CS9 390L koelkast",
+          "brand_name": "Samsung",
+          "final_price": "779.99",
+          "price": "909.99",
+          "img_url": "mock/products/10066733.jpg",
+          "good": null,
+          "sales": "3.200+ verkocht",
+          "keyword": "wij zijn gezin van 7 en hebben al een koelkast met diepvriesvak en diepvries. ik wil nog een koelkast bij want deze is te klein die we hebben"
+        },
+        {
+          "sku_id": "37862908",
+          "sku_name": "Midea BCD-536WSPZM 536L koelkast",
+          "brand_name": "Midea",
+          "final_price": "519.99",
+          "price": "649.99",
+          "img_url": "mock/products/37862908.jpg",
+          "good": null,
+          "sales": "23.000+ verkocht",
+          "keyword": "wij zijn gezin van 7 en hebben al een koelkast met diepvriesvak en diepvries. ik wil nog een koelkast bij want deze is te klein die we hebben"
+        },
+        {
+          "sku_id": "42530973",
+          "sku_name": "Haier BCD-470WBHSS6WY 470L koelkast",
+          "brand_name": "Haier",
+          "final_price": "597.99",
+          "price": "714.99",
+          "img_url": "mock/products/42530973.jpg",
+          "good": null,
+          "sales": "15.000+ verkocht",
+          "keyword": "wij zijn gezin van 7 en hebben al een koelkast met diepvriesvak en diepvries. ik wil nog een koelkast bij want deze is te klein die we hebben"
+        },
+        {
+          "sku_id": "85948876",
+          "sku_name": "SIEMENS KA92NV02TI 610L koelkast",
+          "brand_name": "",
+          "final_price": "909.99",
+          "price": "1104.99",
+          "img_url": "mock/products/85948876.jpg",
+          "good": null,
+          "sales": "6.800+ verkocht",
+          "keyword": "wij zijn gezin van 7 en hebben al een koelkast met diepvriesvak en diepvries. ik wil nog een koelkast bij want deze is te klein die we hebben"
+        },
+        {
+          "sku_id": "43578948",
+          "sku_name": "Midea BCD-215WTPZM 215L koelkast",
+          "brand_name": "Midea",
+          "final_price": "207.99",
+          "price": "259.99",
+          "img_url": "mock/products/43578948.jpg",
+          "good": null,
+          "sales": "38.000+ verkocht",
+          "keyword": "wij zijn gezin van 7 en hebben al een koelkast met diepvriesvak en diepvries. ik wil nog een koelkast bij want deze is te klein die we hebben"
+        },
+        {
+          "sku_id": "47992726",
+          "sku_name": "Haier BCD-252WDVLU1 252L koelkast",
+          "brand_name": "Haier",
+          "final_price": "389.99",
+          "price": "467.99",
+          "img_url": "mock/products/47992726.jpg",
+          "good": null,
+          "sales": "9.200+ verkocht",
+          "keyword": "wij zijn gezin van 7 en hebben al een koelkast met diepvriesvak en diepvries. ik wil nog een koelkast bij want deze is te klein die we hebben"
+        },
+        {
+          "sku_id": "51131160",
+          "sku_name": "PANASONIC NR-D560 560L koelkast",
+          "brand_name": "",
+          "final_price": "714.99",
+          "price": "844.99",
+          "img_url": "mock/products/51131160.jpg",
+          "good": null,
+          "sales": "4.200+ verkocht",
+          "keyword": "wij zijn gezin van 7 en hebben al een koelkast met diepvriesvak en diepvries. ik wil nog een koelkast bij want deze is te klein die we hebben"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are refrigerators (koelkast), matching the user's request for an additional refrigerator. The query contains no explicit hard numeric capacity constraint; family size is contextual.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "给我推荐中国彩妆产品",
+      "products": [
+        {
+          "sku_id": "66074357",
+          "sku_name": "HUAXIZI HIGHLIGHT make-up product",
+          "brand_name": "",
+          "final_price": "43.99",
+          "price": "54.99",
+          "img_url": "mock/products/66074357.jpg",
+          "good": null,
+          "sales": "23,000+ sold",
+          "keyword": "给我推荐中国彩妆产品"
+        },
+        {
+          "sku_id": "88467668",
+          "sku_name": "PERFECT 12 make-up product",
+          "brand_name": "",
+          "final_price": "6.99",
+          "price": "9.99",
+          "img_url": "mock/products/88467668.jpg",
+          "good": null,
+          "sales": "56,000+ sold",
+          "keyword": "给我推荐中国彩妆产品"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "HUAXIZI is recognizably a Chinese makeup brand, but PERFECT 12's Chinese origin cannot be verified from the returned product fields. The query explicitly requests Chinese makeup products.",
+      "offending_products": [
+        {
+          "sku_id": "88467668",
+          "sku_name": "PERFECT 12 make-up product",
+          "reason": "Cannot verify from returned fields whether PERFECT 12 is a Chinese brand as required by the query."
+        }
+      ]
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "volvic water 0,5",
+      "products": [
+        {
+          "sku_id": "57253911",
+          "sku_name": "Volvic 500ml×24 Getränk",
+          "brand_name": "Volvic",
+          "final_price": "11.99",
+          "price": "14.99",
+          "img_url": "mock/products/57253911.jpg",
+          "good": null,
+          "sales": "24.000+ verkauft",
+          "keyword": "volvic water 0,5"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Product is Volvic brand water in 500ml bottles, matching the query 'volvic water 0,5' exactly.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "salut je cherche une voiture rc Tu es un expert mondial en voitures RC de drift.    \n\nJe veux les meilleures voitures RC disponibles actuellement selon ces trois catégories.\n\nRecherche 1 – Drift intérieur (budget < 50 €)\n\nTrouve la meilleure voiture RC de drift possible pour rouler en intérieur.\n\nCritères :\n\n- Prix inférieur à 50 €.\n- Gyro intégré (obligatoire si possible).\n- Direction très précise.\n- Faible latence de la radiocommande.\n- Bonne qualité de fabrication.\n- Pièces de rechange disponibles.\n- Pneus adaptés au drift intérieur.\n- Bonne autonomie.\n- Transmission fiable.\n- Possibilité d'amélioration si disponible.\n\nRecherche 2 – Drift intérieur haut de gamme (budget 100 €, négociable de quelques euros si le rapport qualité/prix est exceptionnel)\n\nJe recherche une voiture RC de drift principalement pour l'intérieur.\n\nCritères prioritaires :\n\n- Moteur brushless.\n- Gyro intégré performant.\n- Direction ultra précise.\n- Très faible latence.\n- Suspensions hydrauliques (ou amortisseurs à huile).\n- Pièces facilement remplaçables.\n- Nombreuses pièces aluminium disponibles.\n- Châssis solide.\n- Excellente stabilité.\n- Bon rayon de braquage.\n- Compatible avec de futures améliorations.\n-",
+      "products": [
+        {
+          "sku_id": "93228031",
+          "sku_name": "jouet pour enfant WLtoys K969 1:28 RC",
+          "brand_name": "WLtoys",
+          "final_price": "38.99",
+          "price": "47.99",
+          "img_url": "mock/products/93228031.jpg",
+          "good": null,
+          "sales": "4 600+ vendus",
+          "keyword": "salut je cherche une voiture rc Tu es un expert mondial en voitures RC de drift.    \n\nJe veux les meilleures voitures RC disponibles actuellement selon ces trois catégories.\n\nRecherche 1 – Drift intérieur (budget < 50 €)\n\nTrouve la meilleure voiture RC de drift possible pour rouler en intérieur.\n\nCritères :\n\n- Prix inférieur à 50 €.\n- Gyro intégré (obligatoire si possible).\n- Direction très précise.\n- Faible latence de la radiocommande.\n- Bonne qualité de fabrication.\n- Pièces de rechange disponibles.\n- Pneus adaptés au drift intérieur.\n- Bonne autonomie.\n- Transmission fiable.\n- Possibilité d'amélioration si disponible.\n\nRecherche 2 – Drift intérieur haut de gamme (budget 100 €, négociable de quelques euros si le rapport qualité/prix est exceptionnel)\n\nJe recherche une voiture RC de drift principalement pour l'intérieur.\n\nCritères prioritaires :\n\n- Moteur brushless.\n- Gyro intégré performant.\n- Direction ultra précise.\n- Très faible latence.\n- Suspensions hydrauliques (ou amortisseurs à huile).\n- Pièces facilement remplaçables.\n- Nombreuses pièces aluminium disponibles.\n- Châssis solide.\n- Excellente stabilité.\n- Bon rayon de braquage.\n- Compatible avec de futures améliorations.\n-"
+        },
+        {
+          "sku_id": "22838473",
+          "sku_name": "jouet pour enfant MST RMX 2.5 RC",
+          "brand_name": "MST",
+          "final_price": "90.99",
+          "price": "103.99",
+          "img_url": "mock/products/22838473.jpg",
+          "good": null,
+          "sales": "1 800+ vendus",
+          "keyword": "salut je cherche une voiture rc Tu es un expert mondial en voitures RC de drift.    \n\nJe veux les meilleures voitures RC disponibles actuellement selon ces trois catégories.\n\nRecherche 1 – Drift intérieur (budget < 50 €)\n\nTrouve la meilleure voiture RC de drift possible pour rouler en intérieur.\n\nCritères :\n\n- Prix inférieur à 50 €.\n- Gyro intégré (obligatoire si possible).\n- Direction très précise.\n- Faible latence de la radiocommande.\n- Bonne qualité de fabrication.\n- Pièces de rechange disponibles.\n- Pneus adaptés au drift intérieur.\n- Bonne autonomie.\n- Transmission fiable.\n- Possibilité d'amélioration si disponible.\n\nRecherche 2 – Drift intérieur haut de gamme (budget 100 €, négociable de quelques euros si le rapport qualité/prix est exceptionnel)\n\nJe recherche une voiture RC de drift principalement pour l'intérieur.\n\nCritères prioritaires :\n\n- Moteur brushless.\n- Gyro intégré performant.\n- Direction ultra précise.\n- Très faible latence.\n- Suspensions hydrauliques (ou amortisseurs à huile).\n- Pièces facilement remplaçables.\n- Nombreuses pièces aluminium disponibles.\n- Châssis solide.\n- Excellente stabilité.\n- Bon rayon de braquage.\n- Compatible avec de futures améliorations.\n-"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "Both products are RC cars within the requested price ranges (WLtoys at 38.99€ under 50€, MST at 90.99€ near 100€). However, many specific technical criteria such as integrated gyro, brushless motor, hydraulic suspensions, low latency, and drift-specific tires cannot be verified from the returned fields.",
+      "offending_products": [
+        {
+          "sku_id": "93228031",
+          "sku_name": "jouet pour enfant WLtoys K969 1:28 RC",
+          "reason": "Cannot verify gyro, drift tires, latency, or other technical specifications from returned fields."
+        },
+        {
+          "sku_id": "22838473",
+          "sku_name": "jouet pour enfant MST RMX 2.5 RC",
+          "reason": "Cannot verify brushless motor, gyro, hydraulic suspensions, or other technical specifications from returned fields."
+        }
+      ]
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "chaise de camping",
+      "products": [
+        {
+          "sku_id": "46109313",
+          "sku_name": "chaise pliante Helinox Chair One",
+          "brand_name": "Helinox",
+          "final_price": "103.99",
+          "price": "129.99",
+          "img_url": "mock/products/46109313.jpg",
+          "good": null,
+          "sales": "3 200+ vendus",
+          "keyword": "chaise de camping"
+        },
+        {
+          "sku_id": "74882331",
+          "sku_name": "chaise pliante Coleman COLEMAN CHAIR",
+          "brand_name": "Coleman",
+          "final_price": "25.99",
+          "price": "33.99",
+          "img_url": "mock/products/74882331.jpg",
+          "good": null,
+          "sales": "15 000+ vendus",
+          "keyword": "chaise de camping"
+        },
+        {
+          "sku_id": "42761461",
+          "sku_name": "chaise pliante NatureHike",
+          "brand_name": "",
+          "final_price": "37.99",
+          "price": "46.99",
+          "img_url": "mock/products/42761461.jpg",
+          "good": null,
+          "sales": "8 600+ vendus",
+          "keyword": "chaise de camping"
+        },
+        {
+          "sku_id": "72757716",
+          "sku_name": "chaise pliante DECATHLON MH500 4K",
+          "brand_name": "",
+          "final_price": "19.99",
+          "price": "25.99",
+          "img_url": "mock/products/72757716.jpg",
+          "good": null,
+          "sales": "21 000+ vendus",
+          "keyword": "chaise de camping"
+        },
+        {
+          "sku_id": "64909562",
+          "sku_name": "chaise pliante DIRECTOR CHAIR PRO",
+          "brand_name": "",
+          "final_price": "51.99",
+          "price": "64.99",
+          "img_url": "mock/products/64909562.jpg",
+          "good": null,
+          "sales": "5 600+ vendus",
+          "keyword": "chaise de camping"
+        },
+        {
+          "sku_id": "87805144",
+          "sku_name": "chaise pliante Coleman BEACH CHAIR",
+          "brand_name": "Coleman",
+          "final_price": "32.99",
+          "price": "38.99",
+          "img_url": "mock/products/87805144.jpg",
+          "good": null,
+          "sales": "8 900+ vendus",
+          "keyword": "chaise de camping"
+        },
+        {
+          "sku_id": "47623403",
+          "sku_name": "chaise pliante NATUREHIKE RECLINER",
+          "brand_name": "",
+          "final_price": "64.99",
+          "price": "84.99",
+          "img_url": "mock/products/47623403.jpg",
+          "good": null,
+          "sales": "3 800+ vendus",
+          "keyword": "chaise de camping"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are folding/camping chairs from outdoor brands (Helinox, Coleman, NatureHike, Decathlon), directly matching the query 'chaise de camping'.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "冰箱选购容量和功能建议",
+      "products": [
+        {
+          "sku_id": "10066733",
+          "sku_name": "Samsung RB38C776CS9 390L refrigerator",
+          "brand_name": "Samsung",
+          "final_price": "659.99",
+          "price": "769.99",
+          "img_url": "mock/products/10066733.jpg",
+          "good": null,
+          "sales": "3,200+ sold",
+          "keyword": "冰箱选购容量和功能建议"
+        },
+        {
+          "sku_id": "37862908",
+          "sku_name": "Midea BCD-536WSPZM 536L refrigerator",
+          "brand_name": "Midea",
+          "final_price": "439.99",
+          "price": "549.99",
+          "img_url": "mock/products/37862908.jpg",
+          "good": null,
+          "sales": "23,000+ sold",
+          "keyword": "冰箱选购容量和功能建议"
+        },
+        {
+          "sku_id": "42530973",
+          "sku_name": "Haier BCD-470WBHSS6WY 470L refrigerator",
+          "brand_name": "Haier",
+          "final_price": "505.99",
+          "price": "604.99",
+          "img_url": "mock/products/42530973.jpg",
+          "good": null,
+          "sales": "15,000+ sold",
+          "keyword": "冰箱选购容量和功能建议"
+        },
+        {
+          "sku_id": "85948876",
+          "sku_name": "SIEMENS KA92NV02TI 610L refrigerator",
+          "brand_name": "",
+          "final_price": "769.99",
+          "price": "934.99",
+          "img_url": "mock/products/85948876.jpg",
+          "good": null,
+          "sales": "6,800+ sold",
+          "keyword": "冰箱选购容量和功能建议"
+        },
+        {
+          "sku_id": "43578948",
+          "sku_name": "Midea BCD-215WTPZM 215L refrigerator",
+          "brand_name": "Midea",
+          "final_price": "175.99",
+          "price": "219.99",
+          "img_url": "mock/products/43578948.jpg",
+          "good": null,
+          "sales": "38,000+ sold",
+          "keyword": "冰箱选购容量和功能建议"
+        },
+        {
+          "sku_id": "47992726",
+          "sku_name": "Haier BCD-252WDVLU1 252L refrigerator",
+          "brand_name": "Haier",
+          "final_price": "329.99",
+          "price": "395.99",
+          "img_url": "mock/products/47992726.jpg",
+          "good": null,
+          "sales": "9,200+ sold",
+          "keyword": "冰箱选购容量和功能建议"
+        },
+        {
+          "sku_id": "51131160",
+          "sku_name": "PANASONIC NR-D560 560L refrigerator",
+          "brand_name": "",
+          "final_price": "604.99",
+          "price": "714.99",
+          "img_url": "mock/products/51131160.jpg",
+          "good": null,
+          "sales": "4,200+ sold",
+          "keyword": "冰箱选购容量和功能建议"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are refrigerators of various capacities, matching the query about refrigerator selection with capacity and function advice. No hard constraints to violate.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "Tv voor ps5 snel geen latency en onder de 500 euro",
+      "products": [
+        {
+          "sku_id": "66643411",
+          "sku_name": "Xiaomi EA65 65 inch 4K televisie",
+          "brand_name": "Xiaomi",
+          "final_price": "298.99",
+          "price": "363.99",
+          "img_url": "mock/products/66643411.jpg",
+          "good": null,
+          "sales": "18.000+ verkocht",
+          "keyword": "Tv voor ps5 snel geen latency en onder de 500 euro"
+        },
+        {
+          "sku_id": "34452157",
+          "sku_name": "Hisense U7H ULED 65 inch 4K televisie",
+          "brand_name": "Hisense",
+          "final_price": "428.99",
+          "price": "519.99",
+          "img_url": "mock/products/34452157.jpg",
+          "good": null,
+          "sales": "9.500+ verkocht",
+          "keyword": "Tv voor ps5 snel geen latency en onder de 500 euro"
+        },
+        {
+          "sku_id": "56972323",
+          "sku_name": "TCL C735 55 inch Mini LED televisie",
+          "brand_name": "TCL",
+          "final_price": "389.99",
+          "price": "467.99",
+          "img_url": "mock/products/56972323.jpg",
+          "good": null,
+          "sales": "7.200+ verkocht",
+          "keyword": "Tv voor ps5 snel geen latency en onder de 500 euro"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "All three products are TVs priced under 500€, satisfying the hard price constraint. However, the query's requirements for low latency and fast response for PS5 gaming cannot be verified from the returned product fields.",
+      "offending_products": [
+        {
+          "sku_id": "66643411",
+          "sku_name": "Xiaomi EA65 65 inch 4K televisie",
+          "reason": "Cannot verify latency or gaming performance attributes from returned fields."
+        },
+        {
+          "sku_id": "34452157",
+          "sku_name": "Hisense U7H ULED 65 inch 4K televisie",
+          "reason": "Cannot verify latency or gaming performance attributes from returned fields."
+        },
+        {
+          "sku_id": "56972323",
+          "sku_name": "TCL C735 55 inch Mini LED televisie",
+          "reason": "Cannot verify latency or gaming performance attributes from returned fields."
+        }
+      ]
+    }
+  ]
+}

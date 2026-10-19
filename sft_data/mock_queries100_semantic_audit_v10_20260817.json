@@ -1,0 +1,706 @@
+{
+  "model": "GLM-5.2",
+  "input": "sft_data/mock_queries100_direct_replay_v10_20260817.json",
+  "complete": true,
+  "summary": {
+    "pass": 15,
+    "warn": 6,
+    "fail": 0
+  },
+  "results": [
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "速溶奶茶囤货哪款活动大？",
+      "products": [
+        {
+          "sku_id": "28856608",
+          "sku_name": "XIANGPIAOPIAO 20 drink",
+          "brand_name": "",
+          "final_price": "6.99",
+          "price": "8.99",
+          "img_url": "mock/products/28856608.jpg",
+          "good": null,
+          "sales": "45,000+ sold",
+          "keyword": "速溶奶茶囤货哪款活动大？"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "XIANGPIAOPIAO is a well-known instant milk tea brand; the product is a 20-drink pack at a reduced price, matching the query for stocking up on instant milk tea with a promotion.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "去污效果好的白醋有哪些推荐",
+      "products": [
+        {
+          "sku_id": "42632717",
+          "sku_name": "Heinz 1L weißer Essig Würzmittel",
+          "brand_name": "Heinz",
+          "final_price": "3.99",
+          "price": "4.99",
+          "img_url": "mock/products/42632717.jpg",
+          "good": null,
+          "sales": "12.000+ verkauft",
+          "keyword": "去污效果好的白醋有哪些推荐"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "The product is white vinegar (Heinz 1L weißer Essig), which matches the requested product type. However, the '去污效果好' (good stain removal effect) is a subjective quality attribute that cannot be verified from the returned product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "Réfrigérateur congélateur en bas Samsung RB38C776CS9",
+      "products": [
+        {
+          "sku_id": "10066733",
+          "sku_name": "réfrigérateur Samsung RB38C776CS9 390L",
+          "brand_name": "Samsung",
+          "final_price": "779.99",
+          "price": "909.99",
+          "img_url": "mock/products/10066733.jpg",
+          "good": null,
+          "sales": "3 200+ vendus",
+          "keyword": "Réfrigérateur congélateur en bas Samsung RB38C776CS9"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product is a Samsung RB38C776CS9 bottom-freezer refrigerator with 390L capacity, exactly matching the brand, model, and product type requested.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "Welcher Trockenfisch ist aktuell reduziert?",
+      "products": [
+        {
+          "sku_id": "47833501",
+          "sku_name": "Sea Best Dried Cod 200g Fischprodukt",
+          "brand_name": "Sea Best",
+          "final_price": "6.99",
+          "price": "7.99",
+          "img_url": "mock/products/47833501.jpg",
+          "good": null,
+          "sales": "11.000+ verkauft",
+          "keyword": "Welcher Trockenfisch ist aktuell reduziert?"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The product is dried cod fish (Sea Best Dried Cod 200g) and is currently reduced in price, matching the query for dried fish that is on promotion.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "Welke laptop past bij mijn budget?",
+      "products": [
+        {
+          "sku_id": "13188165",
+          "sku_name": "Lenovo Pro16 2024 16 inch laptop",
+          "brand_name": "Lenovo",
+          "final_price": "714.99",
+          "price": "818.99",
+          "img_url": "mock/products/13188165.jpg",
+          "good": null,
+          "sales": "12.000+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "39479637",
+          "sku_name": "Huawei MateBook X Pro 14.2 inch OLED laptop",
+          "brand_name": "Huawei",
+          "final_price": "1169.99",
+          "price": "1364.99",
+          "img_url": "mock/products/39479637.jpg",
+          "good": null,
+          "sales": "5.600+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "12116870",
+          "sku_name": "Apple MacBook Air M3 13.6 inch 4K laptop",
+          "brand_name": "Apple",
+          "final_price": "1234.99",
+          "price": "1364.99",
+          "img_url": "mock/products/12116870.jpg",
+          "good": null,
+          "sales": "8.800+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "84449325",
+          "sku_name": "Xiaomi Book Pro 2024 16 inch 4K OLED laptop",
+          "brand_name": "Xiaomi",
+          "final_price": "909.99",
+          "price": "1039.99",
+          "img_url": "mock/products/84449325.jpg",
+          "good": null,
+          "sales": "4.200+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "77410968",
+          "sku_name": "Lenovo ThinkPad X1 Carbon 14 inch OLED laptop",
+          "brand_name": "Lenovo",
+          "final_price": "1429.99",
+          "price": "1689.99",
+          "img_url": "mock/products/77410968.jpg",
+          "good": null,
+          "sales": "2.800+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "91468370",
+          "sku_name": "Apple MacBook Pro M3 14.2 inch laptop",
+          "brand_name": "Apple",
+          "final_price": "1949.99",
+          "price": "2209.99",
+          "img_url": "mock/products/91468370.jpg",
+          "good": null,
+          "sales": "3.600+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        },
+        {
+          "sku_id": "55402397",
+          "sku_name": "ASUS ROG 2024 14 inch laptop",
+          "brand_name": "ASUS",
+          "final_price": "1299.99",
+          "price": "1559.99",
+          "img_url": "mock/products/55402397.jpg",
+          "good": null,
+          "sales": "3.200+ verkocht",
+          "keyword": "Welke laptop past bij mijn budget?"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All returned products are laptops, matching the requested product type. The query does not specify a concrete budget amount, so there are no hard numeric constraints to violate.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "I want one cool mug for a man so maybe dsrk or beeige color but big and strong one and good quality",
+      "products": [
+        {
+          "sku_id": "38072138",
+          "sku_name": "Le Creuset 400ml mok",
+          "brand_name": "Le Creuset",
+          "final_price": "21.99",
+          "price": "25.99",
+          "img_url": "mock/products/38072138.jpg",
+          "good": null,
+          "sales": "6.200+ verkocht",
+          "keyword": "I want one cool mug for a man so maybe dsrk or beeige color but big and strong one and good quality"
+        },
+        {
+          "sku_id": "51342803",
+          "sku_name": "Denby 350ml mok",
+          "brand_name": "Denby",
+          "final_price": "18.99",
+          "price": "21.99",
+          "img_url": "mock/products/51342803.jpg",
+          "good": null,
+          "sales": "4.100+ verkocht",
+          "keyword": "I want one cool mug for a man so maybe dsrk or beeige color but big and strong one and good quality"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "Both returned products are mugs, matching the requested product type. However, the user's requirements for color (dark or beige), size ('big'), durability ('strong'), and 'good quality' are subjective or unverifiable from the returned fields — no color or material information is provided, and 350–400ml capacities may not satisfy the 'big' requirement.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "nagellak",
+      "products": [
+        {
+          "sku_id": "26510001",
+          "sku_name": "OPI Infinite Shine 15ml nagellak",
+          "brand_name": "OPI",
+          "final_price": "10.99",
+          "price": "12.99",
+          "img_url": "mock/products/26510001.jpg",
+          "good": null,
+          "sales": "7.600+ verkocht",
+          "keyword": "nagellak"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "The returned product is OPI Infinite Shine 15ml nagellak (nail polish), directly matching the query for nail polish.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "old  parfum",
+      "products": [
+        {
+          "sku_id": "60006368",
+          "sku_name": "parfum CHANEL N°5 EDP 100ml",
+          "brand_name": "",
+          "final_price": "140.99",
+          "price": "166.99",
+          "img_url": "mock/products/60006368.jpg",
+          "good": null,
+          "sales": "3 800+ vendus",
+          "keyword": "old  parfum"
+        },
+        {
+          "sku_id": "14650306",
+          "sku_name": "parfum DIOR Sauvage 100ml",
+          "brand_name": "",
+          "final_price": "114.99",
+          "price": "140.99",
+          "img_url": "mock/products/14650306.jpg",
+          "good": null,
+          "sales": "5 600+ vendus",
+          "keyword": "old  parfum"
+        },
+        {
+          "sku_id": "62057775",
+          "sku_name": "parfum JOMALONE 100ml",
+          "brand_name": "",
+          "final_price": "136.99",
+          "price": "156.99",
+          "img_url": "mock/products/62057775.jpg",
+          "good": null,
+          "sales": "2 800+ vendus",
+          "keyword": "old  parfum"
+        },
+        {
+          "sku_id": "18716104",
+          "sku_name": "parfum LANCOME EDP 50ml",
+          "brand_name": "",
+          "final_price": "77.99",
+          "price": "97.99",
+          "img_url": "mock/products/18716104.jpg",
+          "good": null,
+          "sales": "4 200+ vendus",
+          "keyword": "old  parfum"
+        },
+        {
+          "sku_id": "24453622",
+          "sku_name": "parfum VERSACE EDT 50ml",
+          "brand_name": "",
+          "final_price": "51.99",
+          "price": "64.99",
+          "img_url": "mock/products/24453622.jpg",
+          "good": null,
+          "sales": "6 800+ vendus",
+          "keyword": "old  parfum"
+        },
+        {
+          "sku_id": "63994701",
+          "sku_name": "parfum ARMANI EDT 100ml",
+          "brand_name": "",
+          "final_price": "90.99",
+          "price": "116.99",
+          "img_url": "mock/products/63994701.jpg",
+          "good": null,
+          "sales": "3 200+ vendus",
+          "keyword": "old  parfum"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query is 'old parfum' with no hard constraints beyond product type. All returned products are perfumes/parfums, matching the requested product type.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "推荐肉干零食",
+      "products": [
+        {
+          "sku_id": "68813801",
+          "sku_name": "BESTORE 500g Trockenfleisch Snack",
+          "brand_name": "",
+          "final_price": "8.99",
+          "price": "11.99",
+          "img_url": "mock/products/68813801.jpg",
+          "good": null,
+          "sales": "42.000+ verkauft",
+          "keyword": "推荐肉干零食"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query requests dried meat snacks (肉干零食). The returned product is a Trockenfleisch Snack (dried meat snack), matching the requested product type.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "ich suche Lebensmittel die lange haltbar sind und die man sich auf Vorrat kaufen kann. Haltbarkeit ca drei bis fünf Jahre.",
+      "products": [
+        {
+          "sku_id": "39004835",
+          "sku_name": "Barilla 5kg lange haltbar Grundnahrungsmittel",
+          "brand_name": "Barilla",
+          "final_price": "11.99",
+          "price": "14.99",
+          "img_url": "mock/products/39004835.jpg",
+          "good": null,
+          "sales": "7.600+ verkauft",
+          "keyword": "ich suche Lebensmittel die lange haltbar sind und die man sich auf Vorrat kaufen kann. Haltbarkeit ca drei bis fünf Jahre."
+        }
+      ],
+      "verdict": "warn",
+      "reason": "Query requests long-shelf-life food with a specific shelf life of approximately 3–5 years. The returned Barilla product is described as 'lange haltbar' (long-lasting), which is a relevant candidate, but the exact shelf life of 3–5 years cannot be verified from the returned fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "welche sind die neusten getränke in dosen oder pet flaschen",
+      "products": [
+        {
+          "sku_id": "57253911",
+          "sku_name": "Volvic 500ml×24 Getränk",
+          "brand_name": "Volvic",
+          "final_price": "11.99",
+          "price": "14.99",
+          "img_url": "mock/products/57253911.jpg",
+          "good": null,
+          "sales": "24.000+ verkauft",
+          "keyword": "welche sind die neusten getränke in dosen oder pet flaschen"
+        },
+        {
+          "sku_id": "11998993",
+          "sku_name": "Red Bull 250ml×24 Getränk",
+          "brand_name": "Red Bull",
+          "final_price": "18.99",
+          "price": "20.99",
+          "img_url": "mock/products/11998993.jpg",
+          "good": null,
+          "sales": "31.000+ verkauft",
+          "keyword": "welche sind die neusten getränke in dosen oder pet flaschen"
+        },
+        {
+          "sku_id": "28856608",
+          "sku_name": "XIANGPIAOPIAO 20 Getränk",
+          "brand_name": "",
+          "final_price": "7.99",
+          "price": "10.99",
+          "img_url": "mock/products/28856608.jpg",
+          "good": null,
+          "sales": "45.000+ verkauft",
+          "keyword": "welche sind die neusten getränke in dosen oder pet flaschen"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "Query asks for the 'newest' drinks in cans or PET bottles. The returned products are drinks and are relevant candidates, but the 'newest' (recency) attribute and the specific packaging type (cans or PET bottles) cannot be verified from the returned product fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "甜酱油",
+      "products": [
+        {
+          "sku_id": "86620026",
+          "sku_name": "sauce soja sucrée condiment ABC Kecap Manis 600ml",
+          "brand_name": "ABC",
+          "final_price": "3.99",
+          "price": "4.99",
+          "img_url": "mock/products/86620026.jpg",
+          "good": null,
+          "sales": "9 200+ vendus",
+          "keyword": "甜酱油"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query requests sweet soy sauce (甜酱油). The returned product is 'sauce soja sucrée condiment ABC Kecap Manis 600ml', which is sweet soy sauce, matching the requested product type.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team",
+      "products": [
+        {
+          "sku_id": "66643411",
+          "sku_name": "Xiaomi EA65 65 inch 4K 120Hz Smart TV television",
+          "brand_name": "Xiaomi",
+          "final_price": "252.99",
+          "price": "307.99",
+          "img_url": "mock/products/66643411.jpg",
+          "good": null,
+          "sales": "18,000+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "34452157",
+          "sku_name": "Hisense U7H ULED 65 inch 4K 144Hz television",
+          "brand_name": "Hisense",
+          "final_price": "362.99",
+          "price": "439.99",
+          "img_url": "mock/products/34452157.jpg",
+          "good": null,
+          "sales": "9,500+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "56972323",
+          "sku_name": "TCL C735 55 inch Mini LED Google TV 144Hz television",
+          "brand_name": "TCL",
+          "final_price": "329.99",
+          "price": "395.99",
+          "img_url": "mock/products/56972323.jpg",
+          "good": null,
+          "sales": "7,200+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "79995075",
+          "sku_name": "Sony XR-55X90L 55 inch 4K Google TV 120Hz television",
+          "brand_name": "Sony",
+          "final_price": "549.99",
+          "price": "659.99",
+          "img_url": "mock/products/79995075.jpg",
+          "good": null,
+          "sales": "3,800+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "78767804",
+          "sku_name": "Xiaomi TV MAX86 86 inch 4K 120Hz television",
+          "brand_name": "Xiaomi",
+          "final_price": "659.99",
+          "price": "802.99",
+          "img_url": "mock/products/78767804.jpg",
+          "good": null,
+          "sales": "2,100+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "78467296",
+          "sku_name": "Hisense 80L5 80 inch 4K television",
+          "brand_name": "Hisense",
+          "final_price": "879.99",
+          "price": "1099.99",
+          "img_url": "mock/products/78467296.jpg",
+          "good": null,
+          "sales": "1,500+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        },
+        {
+          "sku_id": "78628553",
+          "sku_name": "TCL P745 75 inch 4K Google TV television",
+          "brand_name": "TCL",
+          "final_price": "439.99",
+          "price": "516.99",
+          "img_url": "mock/products/78628553.jpg",
+          "good": null,
+          "sales": "5,600+ sold",
+          "keyword": "I am looking for a tv screen, presenting stand for the tv and casting bits so that I can show my laptop screen to my team"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "Query requests three distinct items: a TV screen, a presenting stand, and casting bits. All returned products are TVs, which match the TV screen portion. However, no stand or casting device is returned, and the laptop screen casting capability cannot be verified from the TV product fields alone.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "salut je cherche une voiture rc Tu es un expert mondial en voitures RC de drift.    \n\nJe veux les meilleures voitures RC disponibles actuellement selon ces trois catégories.\n\nRecherche 1 – Drift intérieur (budget < 50 €)\n\nTrouve la meilleure voiture RC de drift possible pour rouler en intérieur.\n\nCritères :\n\n- Prix inférieur à 50 €.\n- Gyro intégré (obligatoire si possible).\n- Direction très précise.\n- Faible latence de la radiocommande.\n- Bonne qualité de fabrication.\n- Pièces de rechange disponibles.\n- Pneus adaptés au drift intérieur.\n- Bonne autonomie.\n- Transmission fiable.\n- Possibilité d'amélioration si disponible.\n\nRecherche 2 – Drift intérieur haut de gamme (budget 100 €, négociable de quelques euros si le rapport qualité/prix est exceptionnel)\n\nJe recherche une voiture RC de drift principalement pour l'intérieur.\n\nCritères prioritaires :\n\n- Moteur brushless.\n- Gyro intégré performant.\n- Direction ultra précise.\n- Très faible latence.\n- Suspensions hydrauliques (ou amortisseurs à huile).\n- Pièces facilement remplaçables.\n- Nombreuses pièces aluminium disponibles.\n- Châssis solide.\n- Excellente stabilité.\n- Bon rayon de braquage.\n- Compatible avec de futures améliorations.\n-",
+      "products": [
+        {
+          "sku_id": "93228031",
+          "sku_name": "voiture RC de drift WLtoys K969 1:28 RC gyroscope",
+          "brand_name": "WLtoys",
+          "final_price": "38.99",
+          "price": "47.99",
+          "img_url": "mock/products/93228031.jpg",
+          "good": null,
+          "sales": "4 600+ vendus",
+          "keyword": "salut je cherche une voiture rc Tu es un expert mondial en voitures RC de drift.    \n\nJe veux les meilleures voitures RC disponibles actuellement selon ces trois catégories.\n\nRecherche 1 – Drift intérieur (budget < 50 €)\n\nTrouve la meilleure voiture RC de drift possible pour rouler en intérieur.\n\nCritères :\n\n- Prix inférieur à 50 €.\n- Gyro intégré (obligatoire si possible).\n- Direction très précise.\n- Faible latence de la radiocommande.\n- Bonne qualité de fabrication.\n- Pièces de rechange disponibles.\n- Pneus adaptés au drift intérieur.\n- Bonne autonomie.\n- Transmission fiable.\n- Possibilité d'amélioration si disponible.\n\nRecherche 2 – Drift intérieur haut de gamme (budget 100 €, négociable de quelques euros si le rapport qualité/prix est exceptionnel)\n\nJe recherche une voiture RC de drift principalement pour l'intérieur.\n\nCritères prioritaires :\n\n- Moteur brushless.\n- Gyro intégré performant.\n- Direction ultra précise.\n- Très faible latence.\n- Suspensions hydrauliques (ou amortisseurs à huile).\n- Pièces facilement remplaçables.\n- Nombreuses pièces aluminium disponibles.\n- Châssis solide.\n- Excellente stabilité.\n- Bon rayon de braquage.\n- Compatible avec de futures améliorations.\n-"
+        },
+        {
+          "sku_id": "22838473",
+          "sku_name": "voiture RC de drift MST RMX 2.5 RC châssis évolutif",
+          "brand_name": "MST",
+          "final_price": "90.99",
+          "price": "103.99",
+          "img_url": "mock/products/22838473.jpg",
+          "good": null,
+          "sales": "1 800+ vendus",
+          "keyword": "salut je cherche une voiture rc Tu es un expert mondial en voitures RC de drift.    \n\nJe veux les meilleures voitures RC disponibles actuellement selon ces trois catégories.\n\nRecherche 1 – Drift intérieur (budget < 50 €)\n\nTrouve la meilleure voiture RC de drift possible pour rouler en intérieur.\n\nCritères :\n\n- Prix inférieur à 50 €.\n- Gyro intégré (obligatoire si possible).\n- Direction très précise.\n- Faible latence de la radiocommande.\n- Bonne qualité de fabrication.\n- Pièces de rechange disponibles.\n- Pneus adaptés au drift intérieur.\n- Bonne autonomie.\n- Transmission fiable.\n- Possibilité d'amélioration si disponible.\n\nRecherche 2 – Drift intérieur haut de gamme (budget 100 €, négociable de quelques euros si le rapport qualité/prix est exceptionnel)\n\nJe recherche une voiture RC de drift principalement pour l'intérieur.\n\nCritères prioritaires :\n\n- Moteur brushless.\n- Gyro intégré performant.\n- Direction ultra précise.\n- Très faible latence.\n- Suspensions hydrauliques (ou amortisseurs à huile).\n- Pièces facilement remplaçables.\n- Nombreuses pièces aluminium disponibles.\n- Châssis solide.\n- Excellente stabilité.\n- Bon rayon de braquage.\n- Compatible avec de futures améliorations.\n-"
+        }
+      ],
+      "verdict": "warn",
+      "reason": "Query requests RC drift cars with specific feature requirements (brushless motor, hydraulic/oil shocks, integrated gyro, low latency, etc.) across two budget categories. Both returned products are RC drift cars at appropriate price points (38.99€ under 50€, 90.99€ near 100€), but many requested technical features such as brushless motor, hydraulic suspensions, and low latency cannot be verified from the returned product name fields.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "multi tools",
+      "products": [
+        {
+          "sku_id": "85262075",
+          "sku_name": "Leatherman Wave+ 18-in-1 Multifunktionswerkzeug",
+          "brand_name": "Leatherman",
+          "final_price": "116.99",
+          "price": "129.99",
+          "img_url": "mock/products/85262075.jpg",
+          "good": null,
+          "sales": "3.600+ verkauft",
+          "keyword": "multi tools"
+        },
+        {
+          "sku_id": "49778034",
+          "sku_name": "Victorinox SwissTool Spirit X Multifunktionswerkzeug",
+          "brand_name": "Victorinox",
+          "final_price": "142.99",
+          "price": "168.99",
+          "img_url": "mock/products/49778034.jpg",
+          "good": null,
+          "sales": "2.200+ verkauft",
+          "keyword": "multi tools"
+        },
+        {
+          "sku_id": "56869817",
+          "sku_name": "Gerber Suspension NXT 15-in-1 Multifunktionswerkzeug",
+          "brand_name": "Gerber",
+          "final_price": "42.99",
+          "price": "51.99",
+          "img_url": "mock/products/56869817.jpg",
+          "good": null,
+          "sales": "5.100+ verkauft",
+          "keyword": "multi tools"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "All three returned products are multi-tools (Multifunktionswerkzeug) from well-known brands (Leatherman, Victorinox, Gerber), directly matching the query 'multi tools'. No hard constraints violated.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "10 kg basmoti",
+      "products": [
+        {
+          "sku_id": "28162806",
+          "sku_name": "Tilda Basmati 10kg pantry staple",
+          "brand_name": "Tilda",
+          "final_price": "32.99",
+          "price": "38.99",
+          "img_url": "mock/products/28162806.jpg",
+          "good": null,
+          "sales": "6,800+ sold",
+          "keyword": "10 kg basmoti"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query asks for 10kg basmati rice; returned product is Tilda Basmati 10kg, matching brand category, product type, and the 10kg size constraint.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "UK-Site",
+      "query": "70mai 4K Dash Cam Front and Rear",
+      "products": [
+        {
+          "sku_id": "81333937",
+          "sku_name": "70mai A800S 4K front-and-rear dash cam",
+          "brand_name": "70mai",
+          "final_price": "54.99",
+          "price": "65.99",
+          "img_url": "mock/products/81333937.jpg",
+          "good": null,
+          "sales": "28,000+ sold",
+          "keyword": "70mai 4K Dash Cam Front and Rear"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Returned product is 70mai A800S 4K front-and-rear dash cam, matching brand (70mai), resolution (4K), product type (dash cam), and front-and-rear configuration exactly.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "volvic water 0,5",
+      "products": [
+        {
+          "sku_id": "57253911",
+          "sku_name": "Volvic 500ml×24 Getränk",
+          "brand_name": "Volvic",
+          "final_price": "11.99",
+          "price": "14.99",
+          "img_url": "mock/products/57253911.jpg",
+          "good": null,
+          "sales": "24.000+ verkauft",
+          "keyword": "volvic water 0,5"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query asks for Volvic water in 0.5L size; returned product is Volvic 500ml (equivalent to 0.5L), matching brand, product type, and size constraint.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "NL-Site",
+      "query": "zwart sojasaus",
+      "products": [
+        {
+          "sku_id": "11173398",
+          "sku_name": "Kikkoman 500ml donkere sojasaus smaakmaker",
+          "brand_name": "Kikkoman",
+          "final_price": "4.99",
+          "price": "5.99",
+          "img_url": "mock/products/11173398.jpg",
+          "good": null,
+          "sales": "18.000+ verkocht",
+          "keyword": "zwart sojasaus"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query asks for black soy sauce (zwart sojasaus); returned product is Kikkoman donkere (dark) sojasaus, which is the standard Dutch term for dark/black soy sauce. Product type and attribute match.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "FR-Site",
+      "query": "adaptateur jack usb-c",
+      "products": [
+        {
+          "sku_id": "16029204",
+          "sku_name": "adaptateur audio USB-C UGREEN USB-C 3.5mm",
+          "brand_name": "UGREEN",
+          "final_price": "8.99",
+          "price": "11.99",
+          "img_url": "mock/products/16029204.jpg",
+          "good": null,
+          "sales": "26 000+ vendus",
+          "keyword": "adaptateur jack usb-c"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query asks for a USB-C to jack adapter; returned product is a UGREEN USB-C to 3.5mm audio adapter, matching the product type and connectivity requirements exactly.",
+      "offending_products": []
+    },
+    {
+      "sample_id": "anonymous-session",
+      "site_code": "DE-Site",
+      "query": "barley",
+      "products": [
+        {
+          "sku_id": "42645427",
+          "sku_name": "Bio Organic Pearl Barley Grundnahrungsmittel",
+          "brand_name": "Bio",
+          "final_price": "5.99",
+          "price": "6.99",
+          "img_url": "mock/products/42645427.jpg",
+          "good": null,
+          "sales": "5.200+ verkauft",
+          "keyword": "barley"
+        }
+      ],
+      "verdict": "pass",
+      "reason": "Query asks for barley; returned product is Bio Organic Pearl Barley, which is a type of barley. Product type matches with no hard constraints violated.",
+      "offending_products": []
+    }
+  ]
+}

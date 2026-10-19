@@ -1,0 +1,109 @@
+{
+  "summary": {
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_e8d18571",
+      "query": "Football hobby box",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_repair_smoke7_v15_20260818_raw.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_3c82af79",
+      "query": "tsujisi matcha powder",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_repair_smoke7_v15_20260818_raw.jsonl",
+      "line": 2
+    },
+    {
+      "trajectory_id": "react_90752d64",
+      "query": "wagyo",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_repair_smoke7_v15_20260818_raw.jsonl",
+      "line": 3
+    },
+    {
+      "trajectory_id": "react_6f06dd74",
+      "query": "ash tray",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_repair_smoke7_v15_20260818_raw.jsonl",
+      "line": 4
+    },
+    {
+      "trajectory_id": "react_9b50234f",
+      "query": "led verlichting outdoor party tent",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 2,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_repair_smoke7_v15_20260818_raw.jsonl",
+      "line": 5
+    },
+    {
+      "trajectory_id": "react_f1aeebdc",
+      "query": "Salut quels sont les meilleurs composant pc au meilleur prix, j'ai fais de super affaires sur aliexpress 5500 x3d carte mère am4 et ram",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_repair_smoke7_v15_20260818_raw.jsonl",
+      "line": 6
+    },
+    {
+      "trajectory_id": "react_5f42e96b",
+      "query": "阴茎环",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_repair_smoke7_v15_20260818_raw.jsonl",
+      "line": 7
+    }
+  ]
+}

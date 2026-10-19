@@ -1,0 +1,147 @@
+### ============================================================
+### Joybuy Agent Qwen3-0.6B LoRA SFT
+### Windows + Git Bash + 16GB GPU
+### ============================================================
+
+# ============================================================
+# 1. 模型
+# ============================================================
+
+model_name_or_path: Qwen/Qwen3-0.6B
+
+
+# ============================================================
+# 2. 训练阶段
+# ============================================================
+
+stage: sft
+do_train: true
+finetuning_type: lora
+
+
+# ============================================================
+# 3. LoRA
+# ============================================================
+
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+
+lora_target: q_proj,v_proj,k_proj,o_proj,gate_proj,up_proj,down_proj
+
+
+# ============================================================
+# 4. 数据
+# ============================================================
+
+# The ready-to-run release data bundle is kept at the repository root.
+dataset_dir: sft_data/ready_to_run/react_sft
+
+# 对应 dataset_info.json 中注册的数据集名称
+dataset: joybuy_react
+eval_dataset: joybuy_react_eval
+
+# Qwen3 模板
+template: qwen3
+
+# 最大 token 长度
+# 先用 4096 跑通
+cutoff_len: 4096
+
+# 不对 prompt 部分计算 loss
+train_on_prompt: false
+
+# 已经有独立 eval 集，不从 train 再切
+val_size: 0.0
+
+
+# ============================================================
+# 5. 训练 Epoch / Batch
+# ============================================================
+
+num_train_epochs: 3
+
+# 16GB 显存先尝试 4
+per_device_train_batch_size: 1
+
+# effective batch = 4 × 4 = 16
+gradient_accumulation_steps: 16
+
+
+# ============================================================
+# 6. Optimizer
+# ============================================================
+
+learning_rate: 5.0e-5
+
+lr_scheduler_type: cosine
+
+warmup_ratio: 0.1
+
+optim: adamw_torch
+
+
+# ============================================================
+# 7. Precision
+# ============================================================
+
+fp16: true
+bf16: false
+
+
+# ============================================================
+# 8. 显存优化
+# ============================================================
+
+gradient_checkpointing: true
+
+# Windows 下推荐 0
+dataloader_num_workers: 0
+
+
+# ============================================================
+# 9. Evaluation
+# ============================================================
+
+per_device_eval_batch_size: 1
+
+eval_strategy: steps
+
+# 875 条数据，effective batch 16，
+# 每个 epoch 大约 55 optimizer step
+# 3 epoch 大约 165 step
+eval_steps: 20
+
+
+# ============================================================
+# 10. Logging
+# ============================================================
+
+logging_steps: 1
+
+disable_tqdm: false
+
+plot_loss: true
+
+report_to: none
+
+
+# ============================================================
+# 11. 保存
+# ============================================================
+
+output_dir: ./output/joybuy_qwen3_0.6b_lora
+
+save_strategy: steps
+
+save_steps: 20
+
+save_total_limit: 3
+
+load_best_model_at_end: true
+
+metric_for_best_model: eval_loss
+
+greater_is_better: false
+
+overwrite_output_dir: true

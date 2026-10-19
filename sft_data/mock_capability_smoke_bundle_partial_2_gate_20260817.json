@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_9763b273",
+      "query": "I need an ergonomic chair and a hamster cage with a total budget of £300",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 8,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_bundle_partial_2_20260817.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_edcff3e4",
+      "query": "Je cherche une chaise ergonomique et une cage pour hamster avec un budget total de 300€",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 8,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_capability_smoke_bundle_partial_2_20260817.jsonl",
+      "line": 2
+    }
+  ]
+}

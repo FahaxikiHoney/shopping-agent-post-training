@@ -1,0 +1,97 @@
+{
+  "summary": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "warnings": 1,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_a9501a87",
+      "query": "nagellak",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_quality_round6_3_20260817.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_9168c1cc",
+      "query": "I bought a Nordic sofa and need a matching coffee table and floor lamp",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 2,
+      "products": 10,
+      "cards": 4,
+      "issues": [],
+      "warnings": [
+        "sku_recall executed after a successful scenario recall"
+      ],
+      "passed": true,
+      "source": "sft_data/mock_live_quality_round6_3_20260817.jsonl",
+      "line": 2
+    },
+    {
+      "trajectory_id": "react_e44d4f7d",
+      "query": "ich suche Lebensmittel die lange haltbar sind und die man sich auf Vorrat kaufen kann. Haltbarkeit ca drei bis fünf Jahre.",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_quality_round6_3_20260817.jsonl",
+      "line": 3
+    },
+    {
+      "trajectory_id": "react_60c63438",
+      "query": "I bought a Nordic sofa and need a matching coffee table and floor lamp",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 4,
+      "cards": 4,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_matching_deduped_20260817.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_8713978f",
+      "query": "I need an ergonomic chair + desk lamp, total budget £300",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 16,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_aux_tools_round7_fixed_2_20260817.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_482a98e4",
+      "query": "J'ai un canapé nordique et je cherche une table basse et un lampadaire assortis",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 2,
+      "cards": 2,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_live_aux_tools_round7_fixed_2_20260817.jsonl",
+      "line": 2
+    }
+  ]
+}

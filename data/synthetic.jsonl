@@ -1,0 +1,12 @@
+{"id": "synthetic-0001", "scenario": "travel_mug", "query": "找一个适合带去办公室的保温杯，容量约 500 毫升。", "rationale": "优先满足容量和便携，再比较杯盖密封与清洗便利性。", "response": "我会按你的核心条件筛选travel_mug类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0002", "scenario": "desk_lamp", "query": "请推荐适合小书桌的护眼台灯，最好能调亮度。", "rationale": "先确认桌面空间和亮度调节，再比较尺寸与供电方式。", "response": "我会按你的核心条件筛选desk_lamp类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0003", "scenario": "keyboard", "query": "需要一把安静的无线键盘，能连接两台设备。", "rationale": "关键条件是低噪、无线和多设备切换，应逐项核对。", "response": "我会按你的核心条件筛选keyboard类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0004", "scenario": "headphones", "query": "通勤时想要一副轻便的无线耳机，预算 500 元。", "rationale": "先比较佩戴、续航和降噪需求，再按预算筛选。", "response": "我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0005", "scenario": "headphones", "query": "通勤时想要一副轻便的无线耳机，预算 500 元。", "rationale": "先比较佩戴、续航和降噪需求，再按预算筛选。", "response": "我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0006", "scenario": "headphones", "query": "通勤时想要一副轻便的无线耳机，预算 500 元。", "rationale": "先比较佩戴、续航和降噪需求，再按预算筛选。", "response": "我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0007", "scenario": "travel_mug", "query": "找一个适合带去办公室的保温杯，容量约 500 毫升。", "rationale": "优先满足容量和便携，再比较杯盖密封与清洗便利性。", "response": "我会按你的核心条件筛选travel_mug类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0008", "scenario": "headphones", "query": "通勤时想要一副轻便的无线耳机，预算 500 元。", "rationale": "先比较佩戴、续航和降噪需求，再按预算筛选。", "response": "我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0009", "scenario": "desk_lamp", "query": "请推荐适合小书桌的护眼台灯，最好能调亮度。", "rationale": "先确认桌面空间和亮度调节，再比较尺寸与供电方式。", "response": "我会按你的核心条件筛选desk_lamp类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0010", "scenario": "headphones", "query": "通勤时想要一副轻便的无线耳机，预算 500 元。", "rationale": "先比较佩戴、续航和降噪需求，再按预算筛选。", "response": "我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0011", "scenario": "headphones", "query": "通勤时想要一副轻便的无线耳机，预算 500 元。", "rationale": "先比较佩戴、续航和降噪需求，再按预算筛选。", "response": "我会按你的核心条件筛选headphones类商品，并优先比较规格、价格和售后信息。"}
+{"id": "synthetic-0012", "scenario": "keyboard", "query": "需要一把安静的无线键盘，能连接两台设备。", "rationale": "关键条件是低噪、无线和多设备切换，应逐项核对。", "response": "我会按你的核心条件筛选keyboard类商品，并优先比较规格、价格和售后信息。"}

@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "total": 4,
+    "passed": 3,
+    "failed": 1,
+    "warnings": 0,
+    "issues": 2
+  },
+  "results": [
+    {
+      "trajectory_id": "react_1f233153",
+      "query": "Loreal elive  hair mask",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 2,
+      "products": 6,
+      "cards": 2,
+      "issues": [
+        "specialized query returned subtype-mismatched products: 90883659, 76513535, 95921847, 74104590, 94302971, 66521357",
+        "specialized query returned subtype-mismatched products: 90883659, 76513535, 95921847, 74104590, 94302971, 66521357"
+      ],
+      "warnings": [],
+      "passed": false,
+      "source": "sft_data/mock_batch_runner_live4_20260817.jsonl",
+      "line": 1
+    },
+    {
+      "trajectory_id": "react_329ac871",
+      "query": "帮我找一下买2送一 或者买3送一的产品",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_batch_runner_live4_20260817.jsonl",
+      "line": 2
+    },
+    {
+      "trajectory_id": "react_a22cb65c",
+      "query": "Giotto Haselnuss 4 Stangen 4 x 38.5 g",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_batch_runner_live4_20260817.jsonl",
+      "line": 3
+    },
+    {
+      "trajectory_id": "react_dcb53cba",
+      "query": "gedemaliseerd water",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 3,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "source": "sft_data/mock_batch_runner_live4_20260817.jsonl",
+      "line": 4
+    }
+  ]
+}

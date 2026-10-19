@@ -1,0 +1,30 @@
+{
+  "execution": {
+    "total": 1,
+    "completed": 1,
+    "failed": 0,
+    "failures": []
+  },
+  "quality": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_7113e893",
+      "query": "Rijsttaartje",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    }
+  ]
+}

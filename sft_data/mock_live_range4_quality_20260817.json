@@ -1,0 +1,69 @@
+{
+  "execution": {
+    "total": 4,
+    "completed": 4,
+    "failed": 0,
+    "failures": []
+  },
+  "quality": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_1085693e",
+      "query": "Kannst du mir Fernseher raus suchen 65-75zoll ab 300€ bis 600€ danke",
+      "site_code": "DE-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 2,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_ebf3ee5d",
+      "query": "je cherche une tv de minum 55 pouces avec smart tv Android ou Google tv, écran 120hz QLED ou miniled",
+      "site_code": "FR-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_ed6c8a5f",
+      "query": "Tv voor ps5 snel geen latency en onder de 500 euro",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 3,
+      "cards": 3,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    },
+    {
+      "trajectory_id": "react_653b6765",
+      "query": "my house tent said you can't drill the wall so but I need a  wall slef without using drill stuff anh other options",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 1,
+      "cards": 1,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "trajectory_id": "traj_bad_gate2_003",
+  "user_query": "帮我查一下小米14 Ultra这款手机值不值得买，对比一下竞品",
+  "session_context": {"platform": "jd_ai_purchase"},
+  "steps": [
+    {
+      "step_id": 1,
+      "step_type": "tool_call",
+      "tool_name": "product_search",
+      "tool_input": {"query": "小米14 Ultra"},
+      "tool_output": {
+        "status": "SUCCESS",
+        "products": [
+          {"product_id": "jd_xiaomi14u", "title": "小米14 Ultra 徕卡四摄 骁龙8Gen3", "price": 5999.0, "is_jd_self": true, "rating": 4.9}
+        ]
+      },
+      "error_type": null
+    },
+    {
+      "step_id": 2,
+      "step_type": "final_response",
+      "content": "小米14 Ultra拍照非常不错，搭载徕卡四摄系统。",
+      "product_cards": [
+        {"card_id": "jd_xiaomi14u", "display_price": 5999.0, "reason": "拍照强"}
+      ]
+    }
+  ],
+  "final_response": "小米14 Ultra拍照非常不错，搭载徕卡四摄系统。"
+}

@@ -1,0 +1,30 @@
+{
+  "execution": {
+    "total": 1,
+    "completed": 1,
+    "failed": 0,
+    "failures": []
+  },
+  "quality": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_45352f1e",
+      "query": "hoge zwarte kast",
+      "site_code": "NL-Site",
+      "status": "done",
+      "tool_calls": 2,
+      "products": 4,
+      "cards": 4,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    }
+  ]
+}

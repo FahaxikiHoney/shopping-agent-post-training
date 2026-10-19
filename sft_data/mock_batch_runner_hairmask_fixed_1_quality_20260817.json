@@ -1,0 +1,30 @@
+{
+  "execution": {
+    "total": 1,
+    "completed": 1,
+    "failed": 0,
+    "failures": []
+  },
+  "quality": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "warnings": 0,
+    "issues": 0
+  },
+  "results": [
+    {
+      "trajectory_id": "react_0cfba21a",
+      "query": "Loreal elive  hair mask",
+      "site_code": "UK-Site",
+      "status": "done",
+      "tool_calls": 1,
+      "products": 0,
+      "cards": 0,
+      "issues": [],
+      "warnings": [],
+      "passed": true,
+      "sample_id": "anonymous-session"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "total": 600,
+  "nonempty": 207,
+  "empty": 393,
+  "nondeterministic": 0,
+  "contract_errors": 0,
+  "elapsed_seconds": 3.506,
+  "qps_single_process_double_run": 342.24,
+  "error_examples": []
+}
