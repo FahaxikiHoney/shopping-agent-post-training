@@ -19,7 +19,7 @@ python scripts/convert_to_chatml.py --input data/synthetic.jsonl --output data/s
 
 ## 2. Mock Agent 批量 rollout
 
-完整 ReAct mock 环境位于 `joybuy_agent/react/`，包含工具解析、商品检索、环境状态与轨迹质量 Gate。批量运行器 `scripts/run_mock_query_batch.py` 可调用配置好的 LLM 生成多步轨迹，并支持抽样、续跑和质量报告。其历史默认输入 `sft_data/training-data/data/trajectory_inputs/queries_600.jsonl` 是未随发布版提供的原始集合；仓库另带经过抽样整理的 `sft_data/queries_600_sample100_seed20260817.jsonl`，可以直接作为演示输入，也可显式指定你有权使用的自有 query JSONL：
+完整 ReAct mock 环境位于 `shopping_agent/react/`，包含工具解析、商品检索、环境状态与轨迹质量 Gate。批量运行器 `scripts/run_mock_query_batch.py` 可调用配置好的 LLM 生成多步轨迹，并支持抽样、续跑和质量报告。其历史默认输入 `sft_data/training-data/data/trajectory_inputs/queries_600.jsonl` 是未随发布版提供的原始集合；仓库另带经过抽样整理的 `sft_data/queries_600_sample100_seed20260817.jsonl`，可以直接作为演示输入，也可显式指定你有权使用的自有 query JSONL：
 
 ```bash
 python scripts/run_mock_query_batch.py `

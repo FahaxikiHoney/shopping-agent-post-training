@@ -18,7 +18,7 @@ def make_traj(tid, sc, cat, focus, query, tool_input, products, final_content, c
             "product_id": p["product_id"],
             "title": p["title"],
             "price": p["price"],
-            "is_jd_self": p.get("is_jd_self", True),
+            "is_platform_self": p.get("is_platform_self", True),
             "rating": p.get("rating", 4.8),
             "key_specs": p.get("key_specs", ""),
             "sales": p.get("sales", ""),
@@ -86,28 +86,28 @@ t045 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_shower_old_001",
+            "product_id": "mock_shower_old_001",
             "title": "多芬深层滋养沐浴露 樱花香 500ml（上次购买）",
             "price": 39.9,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "2个月前购买/含1/4保湿精华/樱花香",
             "sales": "月销6.8万",
         },
         {
-            "product_id": "jd_shower_new_002",
+            "product_id": "mock_shower_new_002",
             "title": "多芬沐浴露 焦糖奶香限定版 500ml",
             "price": 42.9,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "新香型/含燕麦蛋白/限时上市",
             "sales": "月销1.2万",
         },
         {
-            "product_id": "jd_shower_new_003",
+            "product_id": "mock_shower_new_003",
             "title": "力士沐浴露 白茶清香版 550ml",
             "price": 29.9,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": "白茶香/持香8小时/氨基酸洗净",
             "sales": "月销3.4万",
@@ -147,28 +147,28 @@ t046 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_calcium_old",
+            "product_id": "mock_calcium_old",
             "title": "汤臣倍健液体钙软胶囊 90粒（上次购买）",
             "price": 89.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "3个月前购买/碳酸钙+维生素D3/每粒600mg钙",
             "sales": "月销4.2万",
         },
         {
-            "product_id": "jd_calcium_new",
+            "product_id": "mock_calcium_new",
             "title": "汤臣倍健液体钙软胶囊 180粒大瓶装",
             "price": 159.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "180粒/比90粒装节省11%/同配方",
             "sales": "月销1.8万",
         },
         {
-            "product_id": "jd_vitd_001",
+            "product_id": "mock_vitd_001",
             "title": "星鲨维生素D滴剂 400IU 36粒 儿童成人通用",
             "price": 29.9,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "400IU/粒/促进钙吸收/滴剂好吸收",
             "sales": "月销9.6万",
@@ -214,28 +214,28 @@ t047 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_baby_rice_old",
+            "product_id": "mock_baby_rice_old",
             "title": "嘉宝有机大米米粉 1段 6个月+ 250g（上次购买）",
             "price": 45.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "2个月前购买/宝宝当时6月龄/有机认证",
             "sales": "月销3.1万",
         },
         {
-            "product_id": "jd_baby_rice_stage2",
+            "product_id": "mock_baby_rice_stage2",
             "title": "嘉宝有机混合蔬菜米粉 2段 8个月+ 250g",
             "price": 52.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "8个月+/加入胡萝卜菠菜/颗粒感稍粗/锻炼咀嚼",
             "sales": "月销2.4万",
         },
         {
-            "product_id": "jd_baby_puree_001",
+            "product_id": "mock_baby_puree_001",
             "title": "亨氏果泥 苹果草莓 8个月+ 113g*8袋",
             "price": 69.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "8个月+/苹果草莓双口味/无添加糖盐/方便携带",
             "sales": "月销1.5万",
@@ -289,28 +289,28 @@ t048 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_plant_fert_old",
+            "product_id": "mock_plant_fert_old",
             "title": "花多多通用型水溶肥 1kg（上次购买）",
             "price": 35.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "3个月前购买/氮磷钾均衡/适合观叶观花植物",
             "sales": "月销2.3万",
         },
         {
-            "product_id": "jd_plant_fert_new",
+            "product_id": "mock_plant_fert_new",
             "title": "花多多通用型水溶肥 2kg大包装",
             "price": 62.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "2kg/比1kg装节省11%/同配方",
             "sales": "月销1.1万",
         },
         {
-            "product_id": "jd_pest_spray_001",
+            "product_id": "mock_pest_spray_001",
             "title": "阿克泰植物防虫喷雾 500ml 家用绿植专用",
             "price": 28.9,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": "500ml/吡虫啉低毒配方/适蚜虫介壳虫红蜘蛛/即喷即用",
             "sales": "月销8800",
@@ -360,28 +360,28 @@ t049 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_ink_old",
+            "product_id": "mock_ink_old",
             "title": "百利金4001瓶装墨水 皇家蓝 62.5ml（上次购买）",
             "price": 55.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "4个月前购买/皇家蓝经典色/速干/防水",
             "sales": "月销2.1万",
         },
         {
-            "product_id": "jd_ink_new_green",
+            "product_id": "mock_ink_new_green",
             "title": "百利金4001墨水 橄榄绿 62.5ml",
             "price": 58.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "橄榄绿/低调文艺/日常笔记手账均适合",
             "sales": "月销6800",
         },
         {
-            "product_id": "jd_ink_new_red",
+            "product_id": "mock_ink_new_red",
             "title": "百利金4001墨水 石榴红 62.5ml",
             "price": 58.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "石榴红/明亮显眼/批注标记首选/速干",
             "sales": "月销5200",
@@ -433,12 +433,12 @@ t042 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_price_protect_earphone",
+            "product_id": "mock_price_protect_earphone",
             "title": "价格保护查询 — 订单 [TRACKING_ID]-EARPHONE-8841",
             "price": 0.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 5.0,
-            "key_specs": "昨日购买/购买价¥699/当前价¥599/差价¥100/京东自营在保护期内",
+            "key_specs": "昨日购买/购买价¥699/当前价¥599/差价¥100/平台自营在保护期内",
             "sales": "—",
         }
     ],
@@ -446,21 +446,21 @@ t042 = make_traj(
         "好消息！查到你昨天的订单符合价格保护条件，**可以申请退差价 ¥100**。\n\n"
         "## 操作路径\n\n"
         "**App 路径：**\n"
-        "京东 App → 底部「我的」→「我的订单」→ 找到该耳机订单 → 点「查看详情」"
+        "购物 App → 底部「我的」→「我的订单」→ 找到该耳机订单 → 点「查看详情」"
         "→ 滚动到底部 → 点「**申请价格保护**」→ 系统自动核对差价 → 确认提交。\n\n"
-        "退款路径：原支付方式退回（银行卡约1-3工作日，京东白条即时冲减）。\n\n"
+        "退款路径：原支付方式退回（银行卡约1-3工作日，分期服务即时冲减）。\n\n"
         "## 注意事项\n\n"
-        "1. **时效**：京东自营商品价格保护窗口为购买后 **48 小时内**，你现在申请刚好来得及\n"
-        "2. **条件**：商品须为京东自营、未申请退货退款、未超过保护期\n"
+        "1. **时效**：平台自营商品价格保护窗口为购买后 **48 小时内**，你现在申请刚好来得及\n"
+        "2. **条件**：商品须为平台自营、未申请退货退款、未超过保护期\n"
         "3. **价格认定**：以申请时刻的页面价格为准，不含秒杀/专属优惠券价\n"
         "4. **每订单限申请一次**：申请后不能再次申请，确认差价正确再提交\n\n"
         "## 常见问题 FAQ\n\n"
         "**Q：第三方卖家能申请价保吗？**\n"
-        "A：第三方卖家不在京东价保政策内，需联系商家客服协商。\n\n"
+        "A：第三方卖家不在购物平台价保政策内，需联系商家客服协商。\n\n"
         "**Q：使用优惠券后如何计算差价？**\n"
         "A：以实付金额和当前到手价之差为准，系统自动计算，无需手动核算。\n\n"
         "**Q：申请后多久到账？**\n"
-        "A：银行卡/微信/支付宝 1-3 工作日；京东白条当日冲减账单；京东钱包即时到账。\n\n"
+        "A：银行卡/微信/支付宝 1-3 工作日；分期服务当日冲减账单；购物平台钱包即时到账。\n\n"
         "**Q：提交后可以取消申请吗？**\n"
         "A：审核通过前可撤销，审核通过后不可撤销，差价已退出。"
     ),
@@ -484,10 +484,10 @@ t043 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_addr_change_shoes",
+            "product_id": "mock_addr_change_shoes",
             "title": "收货地址修改 — 订单 [TRACKING_ID]-SHOES-4492",
             "price": 0.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 5.0,
             "key_specs": "刚下单/待发货状态/可修改地址/操作窗口约2小时",
             "sales": "—",
@@ -497,10 +497,10 @@ t043 = make_traj(
         "好的，你的订单还在**待发货状态**，现在修改地址来得及。请立刻操作，发货后就锁定了。\n\n"
         "## 操作路径\n\n"
         "**App 路径：**\n"
-        "京东 App → 底部「我的」→「我的订单」→ 找到该运动鞋订单 → 点「查看详情」"
+        "购物 App → 底部「我的」→「我的订单」→ 找到该运动鞋订单 → 点「查看详情」"
         "→ 顶部收货地址区域 → 点「**修改**」→ 选择已保存地址或手动输入新地址 → 确认保存。\n\n"
         "**PC 路径：**\n"
-        "登录京东官网 → 顶部「我的订单」→ 找到订单 → 点「修改收货信息」。\n\n"
+        "登录购物平台官网 → 顶部「我的订单」→ 找到订单 → 点「修改收货信息」。\n\n"
         "## 注意事项\n\n"
         "1. **时效**：待发货阶段可修改，商家开始打单打包后系统会锁定，最好**10分钟内完成**\n"
         "2. **跨省限制**：极少数情况下（如偏远地区、大件商品），跨省修改可能被拒，"
@@ -509,7 +509,7 @@ t043 = make_traj(
         "4. 修改完后截图保存，确认新地址准确无误\n\n"
         "## 如果页面上「修改」按钮是灰色的\n\n"
         "说明订单已进入备货流程，在线修改通道关闭。此时：\n"
-        "- 拨打京东客服 **950618**，说明订单号和正确地址\n"
+        "- 拨打购物平台客服 **950618**，说明订单号和正确地址\n"
         "- 或在 App 内联系在线客服（我的 → 客服中心），工作时间响应更快\n\n"
         "## 常见问题 FAQ\n\n"
         "**Q：修改地址会延误发货时间吗？**\n"
@@ -540,10 +540,10 @@ t044 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_receipt_tv",
+            "product_id": "mock_receipt_tv",
             "title": "确认收货提醒 — 订单 [TRACKING_ID]-TV-7703",
             "price": 0.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 5.0,
             "key_specs": "电视已签收/确认收货前需检验外观和开机/售后期从确认收货日起算",
             "sales": "—",
@@ -563,7 +563,7 @@ t044 = make_traj(
         "**第三步：确认一切正常后再点收货**\n\n"
         "## 确认收货操作路径\n\n"
         "**App 路径：**\n"
-        "京东 App → 底部「我的」→「我的订单」→ 找到该电视订单 → 点「**确认收货**」"
+        "购物 App → 底部「我的」→「我的订单」→ 找到该电视订单 → 点「**确认收货**」"
         "→ 弹窗再次确认 → 完成。\n\n"
         "**系统会在签收后 15 天自动确认收货**（大件家电延长至 30 天），"
         "但建议验货无误后手动确认，方便售后维权时间节点更清晰。\n\n"
@@ -574,12 +574,12 @@ t044 = make_traj(
         "3. 发现问题应**先申请售后，再等售后结束后收货**，不能先收货再申请\n\n"
         "## 常见问题 FAQ\n\n"
         "**Q：快递员催着签收，我还没开箱检查怎么办？**\n"
-        "A：可以签收快递（表示包裹已送到），但「京东App的确认收货」独立于快递签收，"
+        "A：可以签收快递（表示包裹已送到），但「购物平台App的确认收货」独立于快递签收，"
         "可以等检查完再在App上点确认。\n\n"
         "**Q：确认收货后发现商品有问题，还能退换吗？**\n"
         "A：可以。确认收货后在保修期内均可申请售后，点确认不等于放弃售后权利。\n\n"
         "**Q：自动确认收货后，货款何时打给商家？**\n"
-        "A：手动或自动确认后，资金通常1-2工作日打给商家，此前一直由京东担保托管。"
+        "A：手动或自动确认后，资金通常1-2工作日打给商家，此前一直由购物平台担保托管。"
     ),
     card_reasons=[
         "电视大件到货，确认收货前需检验外观+开机，确认无误再操作",
@@ -603,28 +603,28 @@ t045_order = make_traj(
     },
     products=[
         {
-            "product_id": "jd_fill_001",
+            "product_id": "mock_fill_001",
             "title": "得力中性笔芯 0.5mm 黑色 10支装",
             "price": 4.9,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": "日用消耗品/10支装/随时用得上",
             "sales": "月销9.8万",
         },
         {
-            "product_id": "jd_fill_002",
+            "product_id": "mock_fill_002",
             "title": "袋装薄荷糖 清凉口味 50g",
             "price": 3.9,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.6,
             "key_specs": "50g/清凉薄荷/随身携带",
             "sales": "月销3.2万",
         },
         {
-            "product_id": "jd_fill_003",
+            "product_id": "mock_fill_003",
             "title": "透明胶带 18mm*50m 2卷装",
             "price": 5.9,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "2卷装/家用必备/强黏性",
             "sales": "月销4.5万",
@@ -641,7 +641,7 @@ t045_order = make_traj(
         "**最优解：薄荷糖¥3.9**，加完超出门槛最少，省得最多。\n\n"
         "## 操作路径\n\n"
         "**App 路径：**\n"
-        "1. 京东 App 搜索「薄荷糖」→ 选¥3.9这款加入购物车\n"
+        "1. 购物 App 搜索「薄荷糖」→ 选¥3.9这款加入购物车\n"
         "2. 购物车页面会实时显示满减进度条「已满¥302.9，可用满300减30券」\n"
         "3. 确认勾选满减优惠券（系统通常自动应用，注意查看结算页）\n"
         "4. 点「去结算」→ 确认优惠已扣减 → 提交订单\n\n"
@@ -652,7 +652,7 @@ t045_order = make_traj(
         "4. 凑单商品建议选**日常消耗品**，不浪费，薄荷糖/笔芯/胶带都是家常必备\n\n"
         "## 常见问题 FAQ\n\n"
         "**Q：购物车里的商品来自不同商家，能凑在一起享受满减吗？**\n"
-        "A：平台级活动（如京东秒杀满减）可以跨店；店铺自设的满减只算该店商品总价。\n\n"
+        "A：平台级活动（如购物平台秒杀满减）可以跨店；店铺自设的满减只算该店商品总价。\n\n"
         "**Q：加入购物车后发现超额很多，怎么撤回？**\n"
         "A：直接在购物车删掉凑单商品即可，不影响主商品。\n\n"
         "**Q：优惠券没有自动应用怎么办？**\n"
@@ -680,28 +680,28 @@ t046_order = make_traj(
     },
     products=[
         {
-            "product_id": "jd_jingdou_exchange_001",
+            "product_id": "mock_jingdou_exchange_001",
             "title": "京豆兑换 — 星巴克美式饮品券100ml（85元/8500京豆）",
             "price": 0.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "8500京豆/价值85元/热门兑换/有效期90天",
             "sales": "热门兑换",
         },
         {
-            "product_id": "jd_jingdou_exchange_002",
+            "product_id": "mock_jingdou_exchange_002",
             "title": "京豆兑换 — 视频会员周卡（1500京豆）",
             "price": 0.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "1500京豆/爱奇艺7天周卡/立即到账",
             "sales": "热门兑换",
         },
         {
-            "product_id": "jd_jingdou_exchange_003",
+            "product_id": "mock_jingdou_exchange_003",
             "title": "京豆兑换 — 商品折扣券5元（500京豆）",
             "price": 0.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": "500京豆/5元无门槛优惠券/全场可用/7天有效",
             "sales": "最常兑换",
@@ -714,8 +714,8 @@ t046_order = make_traj(
         "| 方式 | 适合场景 | 使用路径 |\n"
         "|---|---|---|\n"
         "| 结算时抵扣 | 日常购物直接抵 | 购物车→结算→京豆抵扣 |\n"
-        "| 兑换商品权益 | 换实物/会员/券 | 京东App→我的→京豆 |\n"
-        "| 参与秒杀活动 | 节日高倍折扣 | 京东App→会员中心→京豆活动 |\n\n"
+        "| 兑换商品权益 | 换实物/会员/券 | 购物平台App→我的→京豆 |\n"
+        "| 参与秒杀活动 | 节日高倍折扣 | 购物平台App→会员中心→京豆活动 |\n\n"
         "## 推荐兑换方案（按你的8500京豆）\n\n"
         "**方案 A：全部兑换商品折扣券（最灵活）**\n"
         "500京豆 = 5元无门槛券，8500京豆可换 17 张 = **¥85** 购物直减，"
@@ -727,7 +727,7 @@ t046_order = make_traj(
         "8500京豆集中兑换高价值实物（如星巴克券），面值 ¥85，实际兑换价值更接近市价。\n\n"
         "## 操作路径\n\n"
         "**兑换权益/商品：**\n"
-        "京东 App → 底部「我的」→ 找到「京豆」（或搜索「京豆兑换」）→ 进入「京豆兑换中心」"
+        "购物 App → 底部「我的」→ 找到「京豆」（或搜索「京豆兑换」）→ 进入「京豆兑换中心」"
         "→ 选择想要的商品/权益 → 点「立即兑换」→ 确认消耗京豆数量 → 完成。\n\n"
         "**结算时直接抵扣：**\n"
         "购物车 → 去结算 → 「优惠/红包/白条」→ 开启「京豆抵扣」→ 选择抵扣数量 → 提交订单。\n\n"
@@ -739,9 +739,9 @@ t046_order = make_traj(
         "4. 兑换的商品券/会员一般**即时到账**，在「我的优惠券」或对应App查收\n\n"
         "## 常见问题 FAQ\n\n"
         "**Q：京豆可以提现或转账吗？**\n"
-        "A：不可以。京豆只能在京东平台内消费使用，不支持提现或转让。\n\n"
+        "A：不可以。京豆只能在购物平台平台内消费使用，不支持提现或转让。\n\n"
         "**Q：怎么查哪批京豆快过期了？**\n"
-        "A：京东App → 我的 → 京豆 → 「明细」→ 按到期时间筛选，最近要过期的排在最前。\n\n"
+        "A：购物平台App → 我的 → 京豆 → 「明细」→ 按到期时间筛选，最近要过期的排在最前。\n\n"
         "**Q：用京豆抵扣后退款，京豆会退回吗？**\n"
         "A：会。退款时已用京豆原数退回账户，现金部分退回原支付方式。"
     ),

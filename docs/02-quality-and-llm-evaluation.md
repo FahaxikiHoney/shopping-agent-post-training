@@ -4,7 +4,7 @@
 
 ## 1. 质量门禁
 
-`joybuy_agent/react/quality_gate.py` 在轨迹执行时检查工具调用与回复约束；`scripts/check_mock_trajectory_quality.py`、`scripts/audit_mock_trajectory_semantics.py` 和 `scripts/audit_mock_recall_semantics.py` 面向离线 JSONL 做质量或语义审计。先查看参数：
+`shopping_agent/react/quality_gate.py` 在轨迹执行时检查工具调用与回复约束；`scripts/check_mock_trajectory_quality.py`、`scripts/audit_mock_trajectory_semantics.py` 和 `scripts/audit_mock_recall_semantics.py` 面向离线 JSONL 做质量或语义审计。先查看参数：
 
 ```bash
 python scripts/check_mock_trajectory_quality.py --help

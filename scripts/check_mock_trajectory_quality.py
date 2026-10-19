@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run deterministic quality gates over Joybuy ReAct JSONL trajectories."""
+"""Run deterministic quality gates over Shopping ReAct JSONL trajectories."""
 
 import argparse
 import glob
@@ -9,7 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from joybuy_agent.react.quality_gate import evaluate_trajectory, load_jsonl, summarize
+from shopping_agent.react.quality_gate import evaluate_trajectory, load_jsonl, summarize
 
 
 def main() -> int:

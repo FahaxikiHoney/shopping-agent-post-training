@@ -3,7 +3,7 @@
 Agent SFT 训练脚本（教学版）
 模型：Qwen3.5-0.8B（或任何 Qwen 系列）
 框架：trl + transformers + peft
-数据：joybuy 购物 Agent 轨迹（含 <think> 思维链）
+数据：shopping 购物 Agent 轨迹（含 <think> 思维链）
 
 核心设计决策说明见各注释块。
 """
@@ -54,7 +54,7 @@ class TrainConfig:
     warmup_ratio: float = 0.1
 
     # 输出
-    output_dir: str = "./output/qwen3.5-0.8b-joybuy"
+    output_dir: str = "./output/qwen3.5-0.8b-shopping"
 
 
 cfg = TrainConfig()

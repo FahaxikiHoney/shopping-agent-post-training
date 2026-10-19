@@ -10,12 +10,12 @@
 |---|---:|---|---|
 | `sft_data/train_chatml_v3.json` | 1297 | ShareGPT `messages`，主 LoRA SFT 训练集 | `training/lora_sft.yaml` |
 | `sft_data/val_chatml_v3.json` | 142 | 对应验证集 | `training/lora_sft.yaml` |
-| `LLaMA-Factory/llamafactory/train_joybuy_react.json` | 875 | ShareGPT `conversations`，含工具回合 | fork 项目配置 `lora_qwen3_0.6b.yaml` |
-| `LLaMA-Factory/llamafactory/eval_joybuy_react.json` | 100 | eval split | 同上 |
-| `LLaMA-Factory/llamafactory/test_joybuy_react.json` | 100 | 独立 test split | 用于训练后评估 |
-| `slime_joybuy_rl/data/joybuy_slime_tasks.jsonl` | 875 | 已由上面 875 条训练数据转换的 Slime `prompt/label/metadata` JSONL | `run_slime_4090_venv.sh` 默认输入 |
-| `slime_joybuy_rl/data/seed_tasks.jsonl` | 3 | 小型环境 smoke task | Mock 环境/adapter 联调 |
-| `slime_joybuy_rl/data/joybuy_slime_tasks.sample.jsonl` | 5 | Slime task 格式示例 | 学习字段结构 |
+| `LLaMA-Factory/llamafactory/train_shopping_react.json` | 875 | ShareGPT `conversations`，含工具回合 | fork 项目配置 `lora_qwen3_0.6b.yaml` |
+| `LLaMA-Factory/llamafactory/eval_shopping_react.json` | 100 | eval split | 同上 |
+| `LLaMA-Factory/llamafactory/test_shopping_react.json` | 100 | 独立 test split | 用于训练后评估 |
+| `slime_shopping_rl/data/shopping_slime_tasks.jsonl` | 875 | 已由上面 875 条训练数据转换的 Slime `prompt/label/metadata` JSONL | `run_slime_4090_venv.sh` 默认输入 |
+| `slime_shopping_rl/data/seed_tasks.jsonl` | 3 | 小型环境 smoke task | Mock 环境/adapter 联调 |
+| `slime_shopping_rl/data/shopping_slime_tasks.sample.jsonl` | 5 | Slime task 格式示例 | 学习字段结构 |
 | `sft_data/购物助手_思考链_清洗后.jsonl` | 58 | 已整理的多轮轨迹评估样例 | `llm_evaluation/evaluate.py` |
 | `sft_data/购物助手_思考链_带评分_97条.jsonl` | 97 | 含已有评估字段的轨迹样例 | 评估分析/参考 |
 | `sft_data/queries_600_sample100_seed20260817.jsonl` | 100 | 批量轨迹 runner 的现成 query 输入 | `scripts/run_mock_query_batch.py` |
@@ -65,7 +65,7 @@ llamafactory-cli train training/lora_sft.yaml
 ```bash
 MODEL_PATH=/models/Qwen3-0.6B \
 RUN_TRAIN=1 \
-bash slime_joybuy_rl/scripts/gpu/run_sft_4090_venv.sh
+bash slime_shopping_rl/scripts/gpu/run_sft_4090_venv.sh
 ```
 
 PowerShell/Git Bash 的路径写法按当前 shell 改。脚本会创建/复用 venv、安装 fork、生成临时 YAML 并启动训练；第一次运行会下载依赖和 PyTorch wheel。也可手动从 `LLaMA-Factory/llamafactory/` 使用 `lora_qwen3_0.6b.yaml`。原有 `train.sh`/`train.bat` 已改成调用统一启动入口。
@@ -178,9 +178,9 @@ python llm_evaluation/evaluate.py \
 | Judge 五维回复质量 | `llm_evaluation/evaluate.py` | 扁平 SFT trajectory JSONL | JSONL Gate + D1–D5 |
 | 导出合格 rollout | `scripts/export_mock_sft.py` | batch JSONL + quality JSON | 扁平 SFT schema JSONL |
 | 单条人工审阅 | `streamlit run trajectory_grader/app.py` | 手动加载样例 | 浏览器 UI |
-| 转 Slime task | `slime_joybuy_rl/joybuy_slime/task_data.py` | fork ShareGPT JSON | `prompt/label/metadata` JSONL |
-| 本地 RL reward API | `python -m slime_joybuy_rl.joybuy_slime.rollout_service` | task + completion | rule reward response |
-| GRPO 训练启动 | `slime_joybuy_rl/scripts/gpu/run_slime_4090_venv.sh` | 现成 875 tasks + 外部 checkpoint | 先 setup/smoke；`RUN_TRAIN=1` 才训练 |
-| RL 指标面板 | `slime_joybuy_rl/scripts/gpu/run_metrics_dashboard_venv.sh` | metrics JSONL | 本地 dashboard |
+| 转 Slime task | `slime_shopping_rl/shopping_slime/task_data.py` | fork ShareGPT JSON | `prompt/label/metadata` JSONL |
+| 本地 RL reward API | `python -m slime_shopping_rl.shopping_slime.rollout_service` | task + completion | rule reward response |
+| GRPO 训练启动 | `slime_shopping_rl/scripts/gpu/run_slime_4090_venv.sh` | 现成 875 tasks + 外部 checkpoint | 先 setup/smoke；`RUN_TRAIN=1` 才训练 |
+| RL 指标面板 | `slime_shopping_rl/scripts/gpu/run_metrics_dashboard_venv.sh` | metrics JSONL | 本地 dashboard |
 
 各 CLI 参数随 `--help` 检查；新运行输出建议放到 `sft_data/generated/`，该目录已被 `.gitignore` 排除。

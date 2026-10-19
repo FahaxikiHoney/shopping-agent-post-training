@@ -94,7 +94,7 @@ class ShareGPTDataset(Dataset):
 
     每条数据格式：
         {"conversations": [
-            {"from": "system",  "value": "你是京东购物助手..."},
+            {"from": "system",  "value": "你是购物助手..."},
             {"from": "human",   "value": "用户问题"},
             {"from": "gpt",     "value": "<think>...</think>\n\n最终回复"},
             {"from": "human",   "value": "<tool_response>...</tool_response>"},

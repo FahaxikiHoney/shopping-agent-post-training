@@ -668,7 +668,7 @@
     },
     {
       "sample_id": "anonymous-session",
-      "query": "I found this on Joybuy, with delivery as soon as same day: Nespresso Original, De'Longhi EN167.W Citiz, Single Serve Espresso Maker, Coffee Pod Machine, 1.0 Liters - White | €139.99 https://m.joybuy.nl/landingPage/dp/101236551?siteCode=NL-Site , in this one i use milk instead of water",
+      "query": "I found this on Shopping, with delivery as soon as same day: Nespresso Original, De'Longhi EN167.W Citiz, Single Serve Espresso Maker, Coffee Pod Machine, 1.0 Liters - White | €139.99 https://m.shopping.nl/landingPage/dp/101236551?siteCode=NL-Site , in this one i use milk instead of water",
       "site_code": "NL-Site",
       "reward": 0.85,
       "reward_type": "valid_direct_response",
@@ -708,7 +708,7 @@
     },
     {
       "sample_id": "anonymous-session",
-      "query": "I found this on Joybuy, with delivery as soon as same day: SNSP 2 Pieces Of Woven Packing Bags - Luggage Express Bag - 150L - Grey | €5.98 https://m.joybuy.de/landingPage/dp/10145015?siteCode=DE-Site",
+      "query": "I found this on Shopping, with delivery as soon as same day: SNSP 2 Pieces Of Woven Packing Bags - Luggage Express Bag - 150L - Grey | €5.98 https://m.shopping.de/landingPage/dp/10145015?siteCode=DE-Site",
       "site_code": "DE-Site",
       "reward": 0.99,
       "reward_type": "successful_recommendation",

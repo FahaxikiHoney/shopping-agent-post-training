@@ -86,7 +86,7 @@ T.append(make_traj(
             "product_id": "P20240731001",
             "title": "华为 Pura 70 Pro 12GB+256GB 雅丹黑 全网通5G",
             "price": 5988,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": {"主摄": "50MP 可变光圈 f/1.4-4.0", "夜景": "超级夜景2.0", "防抖": "XMAGE影像"},
             "sales": 32000
@@ -95,7 +95,7 @@ T.append(make_traj(
             "product_id": "P20240731002",
             "title": "小米 14 Ultra 16GB+512GB 白色 徕卡光学四摄",
             "price": 6499,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": {"主摄": "50MP 1英寸传感器", "光圈": "f/1.63可变", "视频": "4K 120fps"},
             "sales": 28500
@@ -104,7 +104,7 @@ T.append(make_traj(
             "product_id": "P20240731003",
             "title": "vivo X100 Pro 16GB+512GB 钛色 蔡司APO镜头",
             "price": 5999,
-            "is_jd_self": False,
+            "is_platform_self": False,
             "rating": 4.8,
             "key_specs": {"主摄": "50MP 蔡司T*镀膜", "潜望长焦": "200MP", "防抖": "蔡司光学防抖"},
             "sales": 19000
@@ -123,12 +123,12 @@ T.append(make_traj(
 **重点推荐：华为 Pura 70 Pro**
 - 可变光圈 f/1.4～f/4.0，暗光进光量是普通手机的 **2.5倍**
 - 超级夜景2.0 算法配合 OIS 光学防抖，手持夜拍清晰锐利
-- 京东自营，支持7天无理由退换
+- 平台自营，支持7天无理由退换
 
 如您追求极限底大光强，可选 **小米 14 Ultra**（1英寸传感器，适合风光摄影）；
 喜欢徕卡色彩风格可考虑 **vivo X100 Pro**（蔡司镀膜，色准出色）。""",
     card_reasons=[
-        {"card_id": "P20240731001", "reason": "可变光圈 f/1.4 进光量大，超级夜景2.0 直接解决夜拍模糊痛点，京东自营品质有保障"},
+        {"card_id": "P20240731001", "reason": "可变光圈 f/1.4 进光量大，超级夜景2.0 直接解决夜拍模糊痛点，平台自营品质有保障"},
         {"card_id": "P20240731002", "reason": "1英寸大底传感器，徕卡认证光学，暗光对焦速度行业领先"},
         {"card_id": "P20240731003", "reason": "蔡司T*镀膜抑制鬼影，蔡司光学防抖对焦稳准，长焦夜拍细节丰富"}
     ]
@@ -152,7 +152,7 @@ T.append(make_traj(
             "product_id": "P20240732001",
             "title": "慕思 3D硬感独立弹簧床垫 1.8m 硬感护脊款",
             "price": 3999,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": {"弹簧": "2000个独立桶装弹簧", "硬度": "偏硬7分", "分区": "7分区腰椎加强"},
             "sales": 15600
@@ -161,7 +161,7 @@ T.append(make_traj(
             "product_id": "P20240732002",
             "title": "金可儿 弹簧床垫 1.8x2.0m 护脊硬床 偏硬款",
             "price": 2899,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": {"弹簧": "1800个线性弹簧", "硬度": "偏硬6.5分", "面料": "天丝抗菌面料"},
             "sales": 9800
@@ -170,7 +170,7 @@ T.append(make_traj(
             "product_id": "P20240732003",
             "title": "喜临门 椰棕硬床垫 1.8m 棕垫天然护腰",
             "price": 1299,
-            "is_jd_self": False,
+            "is_platform_self": False,
             "rating": 4.6,
             "key_specs": {"材质": "天然椰棕+乳胶", "硬度": "硬感8分", "厚度": "22cm"},
             "sales": 22000
@@ -217,7 +217,7 @@ T.append(make_traj(
             "product_id": "P20240733001",
             "title": "素士 飞利浦兼容电动牙刷替换头 4支装 细软毛",
             "price": 39,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": {"兼容型号": "飞利浦 HX系列全系", "刷毛": "0.01mm超细软毛", "数量": "4支"},
             "sales": 68000
@@ -226,7 +226,7 @@ T.append(make_traj(
             "product_id": "P20240733002",
             "title": "Oclean 飞利浦通用兼容刷头 敏感型 8支装",
             "price": 59,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": {"兼容型号": "飞利浦 HX6/HX9全系", "刷毛": "杜邦软毛", "数量": "8支"},
             "sales": 41000
@@ -235,7 +235,7 @@ T.append(make_traj(
             "product_id": "P20240733003",
             "title": "拜尔 飞利浦电动牙刷替换刷头 美白型 4支装",
             "price": 29,
-            "is_jd_self": False,
+            "is_platform_self": False,
             "rating": 4.6,
             "key_specs": {"兼容型号": "飞利浦 HX3/HX6/HX9", "刷毛": "含美白微粒细毛", "数量": "4支"},
             "sales": 35000
@@ -283,7 +283,7 @@ T.append(make_traj(
             "product_id": "P20240734001",
             "title": "小米 空气净化器 4 Pro 白色 适用35m2",
             "price": 1199,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": {"睡眠档噪音": "32dB", "CADR": "500m3/h", "滤网": "三合一复合HEPA", "控制": "米家APP"},
             "sales": 54000
@@ -292,7 +292,7 @@ T.append(make_traj(
             "product_id": "P20240734002",
             "title": "戴森 Purifier Cool TP07 空气净化风扇 白银",
             "price": 2999,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": {"睡眠档噪音": "25dB", "CADR": "290m3/h", "功能": "净化+制冷二合一", "滤网": "H13 HEPA+活性炭"},
             "sales": 18000
@@ -301,7 +301,7 @@ T.append(make_traj(
             "product_id": "P20240734003",
             "title": "352 X50C 空气净化器 白色 适用40m2 卧室静音",
             "price": 1599,
-            "is_jd_self": False,
+            "is_platform_self": False,
             "rating": 4.8,
             "key_specs": {"睡眠档噪音": "22dB", "CADR": "460m3/h", "滤网": "高效H13 HEPA", "夜间": "零光污染设计"},
             "sales": 26000
@@ -352,7 +352,7 @@ T.append(make_traj(
             "product_id": "P20240735001",
             "title": "亚瑟士 GT-2000 12 男款 稳定跑鞋 蓝色 42码",
             "price": 899,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": {"缓震": "GEL硅胶减震", "支撑": "Duomax双密度中底", "适合": "轻度过度内翻人群", "重量": "285g"},
             "sales": 22000
@@ -361,7 +361,7 @@ T.append(make_traj(
             "product_id": "P20240735002",
             "title": "New Balance 880v13 男款 缓冲跑鞋 黑灰 42码",
             "price": 799,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": {"缓震": "Fresh Foam X泡棉", "支撑": "中性缓冲型", "适合": "日常训练长距离", "重量": "298g"},
             "sales": 18500
@@ -370,7 +370,7 @@ T.append(make_traj(
             "product_id": "P20240735003",
             "title": "Hoka Clifton 9 男款 厚底缓震跑鞋 白色 42码",
             "price": 1099,
-            "is_jd_self": False,
+            "is_platform_self": False,
             "rating": 4.9,
             "key_specs": {"缓震": "EVA厚底超缓震", "鞋底厚度": "前掌29mm/后掌33mm", "适合": "膝盖不好/长距离慢跑", "重量": "252g"},
             "sales": 31000
@@ -421,7 +421,7 @@ T.append(make_traj(
             "product_id": "P20240736001",
             "title": "西门子 SJ636X03JC 嵌入式洗碗机 13套 全内嵌",
             "price": 4599,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": {"洗涤温度": "75°C高温强化洗", "喷臂": "三层喷臂360°全覆盖", "容量": "13套", "程序": "含锅具强力洗"},
             "sales": 16000
@@ -430,7 +430,7 @@ T.append(make_traj(
             "product_id": "P20240736002",
             "title": "方太 X7 Pro 台嵌两用洗碗机 16套 锅具款",
             "price": 3999,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": {"洗涤温度": "75°C烘干消毒", "喷臂": "五层立体喷淋", "特点": "独立锅具层", "容量": "16套"},
             "sales": 24000
@@ -439,7 +439,7 @@ T.append(make_traj(
             "product_id": "P20240736003",
             "title": "美的 RX600 台式洗碗机 8套 独立式 高温除菌",
             "price": 1499,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": {"洗涤温度": "70°C", "喷臂": "双层旋转喷臂", "特点": "台式免安装", "容量": "8套"},
             "sales": 38000
@@ -490,7 +490,7 @@ T.append(make_traj(
             "product_id": "P20240737001",
             "title": "RoC Retinol Correxion 视黄醇眼霜 15ml 美国版",
             "price": 299,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": {"核心成分": "0.1% 视黄醇(A醇)", "功效": "淡化细纹 提拉紧致", "适用": "25岁+ 初老细纹"},
             "sales": 19000
@@ -499,7 +499,7 @@ T.append(make_traj(
             "product_id": "P20240737002",
             "title": "修丽可 AGE Eye Complex 眼部精华霜 15ml",
             "price": 680,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": {"核心成分": "视黄醇+咖啡因+黄酮", "功效": "抗皱 去眼袋 淡黑眼圈", "适用": "多重眼部问题"},
             "sales": 12000
@@ -508,7 +508,7 @@ T.append(make_traj(
             "product_id": "P20240737003",
             "title": "OLAY 新生塑颜金纯眼霜 15ml 六胜肽抗皱",
             "price": 199,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": {"核心成分": "六胜肽+烟酰胺", "功效": "抗皱 紧致 提亮眼周", "适用": "眼周细纹+暗沉"},
             "sales": 45000
@@ -558,7 +558,7 @@ T.append(make_traj(
             "product_id": "P20240738001",
             "title": "罗马仕 PD20W 超薄充电宝 10000mAh 奶白色",
             "price": 99,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": {"容量": "10000mAh", "重量": "175g", "厚度": "13.6mm", "快充": "PD20W双向快充"},
             "sales": 85000
@@ -567,7 +567,7 @@ T.append(make_traj(
             "product_id": "P20240738002",
             "title": "安克 Anker 622 MagGo 磁吸充电宝 5000mAh",
             "price": 199,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": {"容量": "5000mAh", "重量": "141g", "厚度": "14.5mm", "特点": "MagSafe磁吸 iPhone专属"},
             "sales": 62000
@@ -576,7 +576,7 @@ T.append(make_traj(
             "product_id": "P20240738003",
             "title": "小米 33W 超薄充电宝 10000mAh 深空灰",
             "price": 129,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": {"容量": "10000mAh", "重量": "188g", "厚度": "14.2mm", "快充": "33W快充"},
             "sales": 71000
@@ -627,7 +627,7 @@ T.append(make_traj(
             "product_id": "P20240739001",
             "title": "九阳 DJ13E-Q5 破壁豆浆机 1.3L 全自动免滤",
             "price": 299,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": {"特点": "超细研磨免过滤", "清洗": "自动清洗程序", "容量": "1.3L", "噪音": "75dB"},
             "sales": 92000
@@ -636,7 +636,7 @@ T.append(make_traj(
             "product_id": "P20240739002",
             "title": "美的 MJ-PB10C5 小型豆浆机 1L 免洗快速版",
             "price": 199,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": {"特点": "免滤直饮 内胆光滑不粘", "清洗": "一键漂洗 20秒完成", "容量": "1L", "时间": "12分钟出浆"},
             "sales": 68000
@@ -645,7 +645,7 @@ T.append(make_traj(
             "product_id": "P20240739003",
             "title": "小熊 DSJ-E06K1 迷你豆浆机 0.6L 个人款免滤",
             "price": 129,
-            "is_jd_self": False,
+            "is_platform_self": False,
             "rating": 4.6,
             "key_specs": {"特点": "单人份0.6L 免滤一体", "清洗": "杯体可直接冲洗", "容量": "0.6L", "适用": "一人食"},
             "sales": 41000
@@ -696,7 +696,7 @@ T.append(make_traj(
             "product_id": "P20240740001",
             "title": "Beats Fit Pro 主动降噪运动耳机 耳翼固定 黑色",
             "price": 749,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": {"固定": "柔性耳翼 360°贴合", "防水": "IPX4", "降噪": "主动降噪+通透模式", "续航": "27小时(含充电盒)"},
             "sales": 38000
@@ -705,7 +705,7 @@ T.append(make_traj(
             "product_id": "P20240740002",
             "title": "JBL Endurance Peak 3 耳挂式运动耳机 橙色",
             "price": 399,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": {"固定": "TWISTLOCK机械耳挂", "防水": "IPX7", "续航": "50小时(含充电盒)", "特点": "防水泳镜级别"},
             "sales": 27000
@@ -714,7 +714,7 @@ T.append(make_traj(
             "product_id": "P20240740003",
             "title": "韶音 OpenRun Pro 骨传导运动耳机 黑色",
             "price": 699,
-            "is_jd_self": False,
+            "is_platform_self": False,
             "rating": 4.8,
             "key_specs": {"固定": "绕耳钛合金骨架", "防水": "IP55", "特点": "不入耳 感知环境声 跑步安全", "续航": "10小时"},
             "sales": 45000

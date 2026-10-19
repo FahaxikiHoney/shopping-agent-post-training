@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export mock runs in the cleaned Joybuy trajectory SFT schema."""
+"""Export mock runs in the cleaned Shopping trajectory SFT schema."""
 
 import argparse
 import copy

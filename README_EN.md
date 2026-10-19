@@ -36,12 +36,12 @@ SFT requires a compatible model checkpoint and CUDA/PyTorch environment. RL addi
 
 ## Repository map
 
-- `joybuy_agent/`: ReAct agents, tools, local mock catalog, and quality gate.
+- `shopping_agent/`: ReAct agents, tools, local mock catalog, and quality gate.
 - `sft_data/`: prepared datasets, trajectory utilities, and local evaluation examples.
 - `scripts/`: trajectory generation, quality checks, audits, exports, and unified module launcher.
 - `llm_evaluation/`: rule gates and five-dimension LLM judge.
 - `LLaMA-Factory/`: included fork and project fine-tuning configuration.
-- `slime_joybuy_rl/`: Slime adapter, reward logic, task conversion, and GPU launch examples.
+- `slime_shopping_rl/`: Slime adapter, reward logic, task conversion, and GPU launch examples.
 - `docs/`: workflow, data schemas, evaluation, SFT, RL, and release instructions.
 
 ## License and data

@@ -16,7 +16,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from joybuy_agent.llm.client import LLMClient
+from shopping_agent.llm.client import LLMClient
 
 INPUT_FILE  = Path(__file__).parent / "trajectories_r1.jsonl"
 OUTPUT_FILE = Path(__file__).parent / "trajectories_r1_compressed.jsonl"

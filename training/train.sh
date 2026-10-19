@@ -44,9 +44,9 @@ llamafactory-cli train \
 
 echo ""
 echo "[DONE] 训练完成！"
-echo "模型保存在：$TRAIN_DIR/output/qwen3.5-0.8b-joybuy"
+echo "模型保存在：$TRAIN_DIR/output/qwen3.5-0.8b-shopping"
 echo ""
 echo "推理测试："
 echo "  llamafactory-cli chat --model_name_or_path Qwen/Qwen3.5-0.8B \\"
-echo "    --adapter_name_or_path $TRAIN_DIR/output/qwen3.5-0.8b-joybuy \\"
+echo "    --adapter_name_or_path $TRAIN_DIR/output/qwen3.5-0.8b-shopping \\"
 echo "    --template qwen --finetuning_type lora"

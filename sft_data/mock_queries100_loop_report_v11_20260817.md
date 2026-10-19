@@ -1,4 +1,4 @@
-# Joybuy Mock 固定 100 条真实 Query 闭环报告
+# Shopping Mock 固定 100 条真实 Query 闭环报告
 
 ## 样本与产物
 

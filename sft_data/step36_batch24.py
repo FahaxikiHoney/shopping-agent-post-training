@@ -29,9 +29,9 @@ T.append(make_traj(
     "之前买的充电宝鼓包了，要质量可靠不鼓包的同价位款",
     {"query": "充电宝 安全可靠 不鼓包 大品牌", "min_price": 100, "max_price": 300, "filters": {"brand_tier": "tier_1", "safety_cert": "certified"}},
     [
-        {"product_id": "jd_pb_safe_1", "title": "Anker 安克 20000mAh PD22.5W 安全版", "price": 199, "is_jd_self": True, "rating": 4.9, "key_specs": "Anker安全芯片/20000mAh/18个月质保/月销2.5万", "sales": "月销2.5万"},
-        {"product_id": "jd_pb_safe_2", "title": "小米 22.5W 快充 20000mAh 原装正品", "price": 149, "is_jd_self": True, "rating": 4.9, "key_specs": "小米自研芯片/20000mAh/22.5W/月销5万", "sales": "月销5万"},
-        {"product_id": "jd_pb_safe_3", "title": "罗马仕 30000mAh 大容量 安全认证", "price": 169, "is_jd_self": True, "rating": 4.8, "key_specs": "30000mAh/三重保护/CB/CE/PSE认证", "sales": "月销5.5万"}
+        {"product_id": "mock_pb_safe_1", "title": "Anker 安克 20000mAh PD22.5W 安全版", "price": 199, "is_platform_self": True, "rating": 4.9, "key_specs": "Anker安全芯片/20000mAh/18个月质保/月销2.5万", "sales": "月销2.5万"},
+        {"product_id": "mock_pb_safe_2", "title": "小米 22.5W 快充 20000mAh 原装正品", "price": 149, "is_platform_self": True, "rating": 4.9, "key_specs": "小米自研芯片/20000mAh/22.5W/月销5万", "sales": "月销5万"},
+        {"product_id": "mock_pb_safe_3", "title": "罗马仕 30000mAh 大容量 安全认证", "price": 169, "is_platform_self": True, "rating": 4.8, "key_specs": "30000mAh/三重保护/CB/CE/PSE认证", "sales": "月销5.5万"}
     ],
     "充电宝鼓包是锂电池劣化的标志，**根本原因是廉价电芯+安全芯片缺失**。3 款大品牌安全款：\n\n**1. 小米 22.5W（¥149）** ⭐ 性价比首选\n小米自研芯片+过充/过放/过热三重保护，月销 5 万件。**¥149 是大品牌里最便宜**。\n\n**2. 罗马仕 30000mAh（¥169）**\nCB/CE/PSE 三国认证，**容量最大+认证最全**，长途出行安心。月销 5.5 万件。\n\n**3. Anker 安全版（¥199）**\n美国安克品牌，**18 个月质保**，安全芯片是行业标准。适合出差党。\n\n## ⚠️ 充电宝安全选购原则\n\n- ❌ 避免杂牌（30 元的充电宝往往没有安全保护芯片）\n- ✅ 选有**3C/PSE/CE 认证**的产品\n- ✅ 大品牌（小米/Anker/罗马仕）\n- ✅ 质保 ≥12 个月",
     ["小米22.5W 20000mAh+自研芯片+月销5万，大品牌最便宜安全首选", "罗马仕30000mAh+三国安全认证+月销5.5万，容量最大认证最全", "Anker安克20000mAh+18个月质保+月销2.5万，出差党安全信赖品牌"]
@@ -44,9 +44,9 @@ T.append(make_traj(
     "之前那款粉底液夏天用太闷了出油，要轻薄控油的同价位款",
     {"query": "粉底液 轻薄控油 夏季 持妆", "max_price": 300, "filters": {"texture": "light_oil_control", "season": "summer"}},
     [
-        {"product_id": "jd_foundation_1", "title": "兰芝 气垫粉底 轻薄控油 30g", "price": 259, "is_jd_self": True, "rating": 4.9, "key_specs": "气垫/轻薄控油/持妆12h/夏季版/月销2.2万", "sales": "月销2.2万"},
-        {"product_id": "jd_foundation_2", "title": "花西子 空气感粉底液 控油版 30ml", "price": 199, "is_jd_self": True, "rating": 4.8, "key_specs": "空气感/控油不卡粉/国货替代大牌/月销1.5万", "sales": "月销1.5万"},
-        {"product_id": "jd_foundation_3", "title": "珂拉琪 零粉感粉底液 哑光版 30ml", "price": 99, "is_jd_self": True, "rating": 4.8, "key_specs": "零粉感哑光/控油/平价好用/月销3.5万", "sales": "月销3.5万"}
+        {"product_id": "mock_foundation_1", "title": "兰芝 气垫粉底 轻薄控油 30g", "price": 259, "is_platform_self": True, "rating": 4.9, "key_specs": "气垫/轻薄控油/持妆12h/夏季版/月销2.2万", "sales": "月销2.2万"},
+        {"product_id": "mock_foundation_2", "title": "花西子 空气感粉底液 控油版 30ml", "price": 199, "is_platform_self": True, "rating": 4.8, "key_specs": "空气感/控油不卡粉/国货替代大牌/月销1.5万", "sales": "月销1.5万"},
+        {"product_id": "mock_foundation_3", "title": "珂拉琪 零粉感粉底液 哑光版 30ml", "price": 99, "is_platform_self": True, "rating": 4.8, "key_specs": "零粉感哑光/控油/平价好用/月销3.5万", "sales": "月销3.5万"}
     ],
     "夏天闷热出油说明粉底太厚或不控油，3 款轻薄控油款：\n\n**1. 珂拉琪零粉感哑光（¥99）** ⭐ 性价比冠军\n**哑光控油**是控油粉底液最佳技术，**¥99 月销 3.5 万**。零粉感=不假白不卡粉，夏天直接用无压力。\n\n**2. 花西子空气感控油（¥199）**\n国货大牌，空气感配方轻薄，**12h 持妆**实测较稳定。\n\n**3. 兰芝气垫控油（¥259）**\n气垫形式**涂抹均匀**，夏季版专门降低油脂分泌，月销 2.2 万。\n\n## 💡 夏天粉底额外建议\n\n粉底再好**不用控油妆前乳**也白搭：\n- 妆前乳先控油→粉底更服帖\n- 定妆散粉最后固定→持妆翻倍\n- T 区经常出油→局部补定妆粉",
     ["珂拉琪零粉感哑光粉底液+控油+月销3.5万，夏天控油最便宜", "花西子空气感粉底液控油版+12h持妆+月销1.5万，国货替代大牌", "兰芝气垫粉底控油夏季版+涂抹均匀+月销2.2万，气垫形式贴合皮肤"]
@@ -59,10 +59,10 @@ T.append(make_traj(
     "手机壳材质那么多，硅胶/皮质/透明/MagSafe 各有什么优缺点",
     {"skus": ["硅胶手机壳", "皮质手机壳", "透明手机壳", "MagSafe磁吸手机壳"], "mode": "material_comparison"},
     [
-        {"product_id": "jd_case_silicone", "title": "Apple 官方硅胶壳 iPhone 15 Pro", "price": 449, "is_jd_self": True, "rating": 4.9, "key_specs": "硅胶/防滑握持感好/但易发黄/官方款", "sales": "月销1.2万"},
-        {"product_id": "jd_case_leather", "title": "苹果同款 FineWoven 精织斜纹壳", "price": 399, "is_jd_self": True, "rating": 4.7, "key_specs": "精织斜纹/轻薄高级/容易刮花/手感独特", "sales": "月销3500"},
-        {"product_id": "jd_case_clear", "title": "倍思 透明壳 MagSafe 防黄 2年", "price": 49, "is_jd_self": True, "rating": 4.9, "key_specs": "透明/MagSafe/2年不发黄/月销4.5万", "sales": "月销4.5万"},
-        {"product_id": "jd_case_magsafe", "title": "PITAKA 凯夫拉纤维 MagSafe 超薄", "price": 599, "is_jd_self": True, "rating": 4.9, "key_specs": "凯夫拉纤维/0.85mm超薄/MagSafe/裸机手感", "sales": "月销3500"}
+        {"product_id": "mock_case_silicone", "title": "Apple 官方硅胶壳 iPhone 15 Pro", "price": 449, "is_platform_self": True, "rating": 4.9, "key_specs": "硅胶/防滑握持感好/但易发黄/官方款", "sales": "月销1.2万"},
+        {"product_id": "mock_case_leather", "title": "苹果同款 FineWoven 精织斜纹壳", "price": 399, "is_platform_self": True, "rating": 4.7, "key_specs": "精织斜纹/轻薄高级/容易刮花/手感独特", "sales": "月销3500"},
+        {"product_id": "mock_case_clear", "title": "倍思 透明壳 MagSafe 防黄 2年", "price": 49, "is_platform_self": True, "rating": 4.9, "key_specs": "透明/MagSafe/2年不发黄/月销4.5万", "sales": "月销4.5万"},
+        {"product_id": "mock_case_magsafe", "title": "PITAKA 凯夫拉纤维 MagSafe 超薄", "price": 599, "is_platform_self": True, "rating": 4.9, "key_specs": "凯夫拉纤维/0.85mm超薄/MagSafe/裸机手感", "sales": "月销3500"}
     ],
     "4 种材质各有各的受众，**没有绝对最好只有最适合**：\n\n## 📊 四材质对比\n\n| 材质 | 代表 | 价格 | 优点 | 缺点 |\n|---|---|---|---|---|\n| 硅胶 | Apple 官方 | ¥449 | 防滑/质感好/颜色多 | **会发黄**（6-12 个月）|\n| 皮质/精织 | FineWoven | ¥399 | 轻薄/高级手感 | **容易刮花**，贵 |\n| 透明 | 倍思 MagSafe | ¥49 | 露出原色/便宜 | 普通透明会发黄 |\n| 凯夫拉 | PITAKA | ¥599 | **超薄裸机感**/耐用 | 贵/无颜色选择 |\n\n## 🎯 按人群选\n\n### 颜值党/换壳频繁 → 透明壳 ¥49\n**倍思透明壳 2 年防黄**，露出手机原色，换颜色的成本只有 ¥49。月销 4.5 万件是销冠。\n\n### 追求质感/品牌 → 苹果官方硅胶 ¥449\n有质感+颜色统一，但**1 年后发黄换新一次**正好配套更换习惯。\n\n### 裸机党/手感控 → PITAKA 凯夫拉 ¥599\n0.85mm 超薄几乎感觉不到有壳，**凯夫拉纤维耐用且轻**，贵但真的好。\n\n### 平衡派 → 透明 MagSafe 倍思 ¥49\n最多人选择：不贵+不发黄+支持 MagSafe 充电，**¥49 试错成本最低**。\n\n## 💡 MagSafe 是否值得\n\n如果你用 MagSafe 充电器/MagSafe 钱包，**壳必须支持 MagSafe**，否则吸力减弱/配件不稳定。",
     ["Apple官方硅胶壳+防滑质感好+月销1.2万，品牌党颜色统一但会发黄", "FineWoven精织斜纹壳+轻薄高级+月销3500，质感控但容易刮花", "倍思透明MagSafe壳+2年不发黄+月销4.5万，露出原色性价比销冠", "PITAKA凯夫拉0.85mm超薄+MagSafe+月销3500，裸机手感控贵但真好"]
@@ -75,9 +75,9 @@ T.append(make_traj(
     "给5岁孩子买出行工具，平衡车/自行车/滑板车选哪个",
     {"skus": ["儿童平衡车", "儿童自行车16寸", "儿童滑板车折叠"], "mode": "activity_comparison"},
     [
-        {"product_id": "jd_kid_ride_1", "title": "昆塔 儿童平衡车 14寸 4-8岁", "price": 599, "is_jd_self": True, "rating": 4.9, "key_specs": "14寸/铝合金/无踏板学平衡/4-8岁", "sales": "月销2500"},
-        {"product_id": "jd_kid_ride_2", "title": "优贝 儿童自行车 16寸 辅助轮可拆", "price": 499, "is_jd_self": True, "rating": 4.9, "key_specs": "16寸/辅助轮可拆/铝合金轮/5-8岁", "sales": "月销4500"},
-        {"product_id": "jd_kid_ride_3", "title": "米高 儿童滑板车 折叠 闪光轮", "price": 399, "is_jd_self": True, "rating": 4.8, "key_specs": "折叠/闪光轮/4-10岁可用/上下学神器", "sales": "月销6500"}
+        {"product_id": "mock_kid_ride_1", "title": "昆塔 儿童平衡车 14寸 4-8岁", "price": 599, "is_platform_self": True, "rating": 4.9, "key_specs": "14寸/铝合金/无踏板学平衡/4-8岁", "sales": "月销2500"},
+        {"product_id": "mock_kid_ride_2", "title": "优贝 儿童自行车 16寸 辅助轮可拆", "price": 499, "is_platform_self": True, "rating": 4.9, "key_specs": "16寸/辅助轮可拆/铝合金轮/5-8岁", "sales": "月销4500"},
+        {"product_id": "mock_kid_ride_3", "title": "米高 儿童滑板车 折叠 闪光轮", "price": 399, "is_platform_self": True, "rating": 4.8, "key_specs": "折叠/闪光轮/4-10岁可用/上下学神器", "sales": "月销6500"}
     ],
     "三种各有最适合的场景，**5 岁孩子综合推荐自行车**：\n\n## 📊 三种对比\n\n| 维度 | 平衡车 ¥599 | 自行车 ¥499 | 滑板车 ¥399 |\n|---|---|---|---|\n| 学习难度 | 最简单 | 中等 | 中等 |\n| 运动量 | **最大**（全身）| 大 | 中等 |\n| 上学便携 | 差 | 差 | **最好（可折叠）**|\n| 使用年限 | 2-3 年 | **5-6 年** | 3-4 年 |\n| 5 岁适合度 | ⭐⭐⭐ | **⭐⭐⭐⭐⭐** | ⭐⭐⭐⭐ |\n\n## 🎯 怎么选\n\n### 5 岁推荐自行车 ¥499\n- **5 岁肌肉协调能力**已经适合学骑车\n- 先装辅助轮学，2-4 周拆掉\n- 使用年限最长（5-6 年到初中都能骑）\n- 月销 4500 件，优贝是童车品牌口碑第一\n\n### 平衡车适合 2-4 岁\n- 5 岁学平衡车**偏晚了**，直接学自行车更好\n- 如果孩子胆子小/协调差，平衡车可以过渡 3-6 个月\n\n### 滑板车适合上下学\n- 孩子已经会骑车后，**滑板车是通勤神器**\n- 可折叠放书包外带进教室\n- **不是运动工具，是交通工具**\n\n## 💡 购买时机\n\n5 岁**正是学自行车最好的时机**，学一次终身受益。先买自行车，等会了再考虑滑板车当交通补充。",
     ["昆塔儿童平衡车14寸+月销2500，2-4岁或协调差的孩子过渡学习", "优贝儿童自行车16寸辅助轮可拆+月销4500，5岁综合最推荐使用年限最长", "米高儿童滑板车折叠闪光轮+月销6500，会骑车后上下学便携神器"]
@@ -90,10 +90,10 @@ T.append(make_traj(
     "结婚想送伴手礼，配喜糖+喜茶+小礼盒+封口贴",
     {"query": "结婚伴手礼套装 喜糖+喜茶+礼盒", "filters": {"category": "wedding_gift_favor"}},
     [
-        {"product_id": "jd_wedding_1", "title": "德芙/费列罗 婚礼喜糖礼包 100颗装", "price": 199, "is_jd_self": True, "rating": 4.9, "key_specs": "费列罗+德芙混合/100颗/婚礼标配/月销3500", "sales": "月销3500"},
-        {"product_id": "jd_wedding_2", "title": "结婚喜茶包 小罐茶 10g×20包", "price": 129, "is_jd_self": True, "rating": 4.9, "key_specs": "20包小罐/红茶绿茶混合/喜糖配茶高档", "sales": "月销2200"},
-        {"product_id": "jd_wedding_3", "title": "结婚礼盒 双层抽屉 100个装 粉色", "price": 199, "is_jd_self": True, "rating": 4.9, "key_specs": "双层抽屉/粉色/100个/装糖装茶两用", "sales": "月销1800"},
-        {"product_id": "jd_wedding_4", "title": "婚礼封口贴 喜字 500张 金色", "price": 29, "is_jd_self": True, "rating": 4.9, "key_specs": "金色喜字/500张/礼盒封口用/月销8万", "sales": "月销8万"}
+        {"product_id": "mock_wedding_1", "title": "德芙/费列罗 婚礼喜糖礼包 100颗装", "price": 199, "is_platform_self": True, "rating": 4.9, "key_specs": "费列罗+德芙混合/100颗/婚礼标配/月销3500", "sales": "月销3500"},
+        {"product_id": "mock_wedding_2", "title": "结婚喜茶包 小罐茶 10g×20包", "price": 129, "is_platform_self": True, "rating": 4.9, "key_specs": "20包小罐/红茶绿茶混合/喜糖配茶高档", "sales": "月销2200"},
+        {"product_id": "mock_wedding_3", "title": "结婚礼盒 双层抽屉 100个装 粉色", "price": 199, "is_platform_self": True, "rating": 4.9, "key_specs": "双层抽屉/粉色/100个/装糖装茶两用", "sales": "月销1800"},
+        {"product_id": "mock_wedding_4", "title": "婚礼封口贴 喜字 500张 金色", "price": 29, "is_platform_self": True, "rating": 4.9, "key_specs": "金色喜字/500张/礼盒封口用/月销8万", "sales": "月销8万"}
     ],
     "婚礼伴手礼 4 件套，**按 100 份计算总预算 ¥556**：\n\n## 🎊 完整方案（100 份）\n\n| 物品 | 商品 | 价格 | 单份成本 |\n|---|---|---|---|\n| 喜糖 | 费列罗+德芙 100 颗 | ¥199 | ¥2.0/颗 |\n| 喜茶 | 小罐茶 20 包 | ¥129 | ¥6.5/包 |\n| 礼盒 | 双层抽屉 100 个 | ¥199 | ¥2.0/个 |\n| 封口贴 | 金色喜字 500 张 | ¥29 | ¥0.06/张 |\n| **合计** | | **¥556** | **¥5.56/份** |\n\n## 💡 伴手礼搭配公式\n\n**礼盒 = 底层放喜茶（1 包）+ 上层放喜糖（5-8 颗）+ 封口贴封口**\n\n这个组合每份 ¥8.5-10，**比同价位饼干/香皂更有格调**。\n\n## 💰 不同档次方案\n\n| 档次 | 内容 | 单份成本 |\n|---|---|---|\n| 基础版 | 礼盒+喜糖 | **¥4** |\n| **标准版** | 礼盒+喜糖+喜茶 | **¥9** ⭐ |\n| 升级版 | 定制礼盒+比利时巧克力+茶 | **¥25+** |\n\n大多数 200-500 人婚礼选**标准版**，格调够、不超支。\n\n## ⚠️ 婚礼伴手礼注意\n\n- 食品保质期一定够（提前 1 个月买好的，保质期要剩 3 个月以上）\n- 喜糖口味选**大众**（不要太猎奇，巧克力/奶糖最稳）\n- 礼盒数量比邀请人数**多 20%**（临时增加的宾客）",
     ["费列罗德芙混合喜糖100颗+月销3500，婚礼标配大众口味稳", "小罐茶20包喜茶+月销2200，喜糖配茶档次提升关键", "双层抽屉礼盒100个粉色+月销1800，装糖装茶两用100份够用", "金色喜字封口贴500张+月销8万，封口仪式感最便宜"]
@@ -106,10 +106,10 @@ T.append(make_traj(
     "出差经常用，配齐旅行洗漱包+洗漱用品",
     {"query": "男士旅行洗漱包套装 洗漱包+用品", "filters": {"gender": "male", "category": "travel_toiletry"}},
     [
-        {"product_id": "jd_wash_kit_1", "title": "MUJI 旅行洗漱包 男款 大容量防水", "price": 199, "is_jd_self": True, "rating": 4.9, "key_specs": "防水/男款大容量/硬底/月销3500", "sales": "月销3500"},
-        {"product_id": "jd_wash_kit_2", "title": "旅行装分装瓶套装 5件 TSA规格 100ml", "price": 59, "is_jd_self": True, "rating": 4.9, "key_specs": "100ml×5/硅胶按压/登机TSA规格/月销6万", "sales": "月销6万"},
-        {"product_id": "jd_wash_kit_3", "title": "联合利华 旅行套装 洗发+沐浴+护肤 15件", "price": 99, "is_jd_self": True, "rating": 4.8, "key_specs": "15件旅行装/大牌正品/出差必备/月销2.5万", "sales": "月销2.5万"},
-        {"product_id": "jd_wash_kit_4", "title": "牙刷旅行套装 含牙膏 折叠款", "price": 39, "is_jd_self": True, "rating": 4.9, "key_specs": "折叠牙刷+牙膏/TSA随身/月销4.5万", "sales": "月销4.5万"}
+        {"product_id": "mock_wash_kit_1", "title": "MUJI 旅行洗漱包 男款 大容量防水", "price": 199, "is_platform_self": True, "rating": 4.9, "key_specs": "防水/男款大容量/硬底/月销3500", "sales": "月销3500"},
+        {"product_id": "mock_wash_kit_2", "title": "旅行装分装瓶套装 5件 TSA规格 100ml", "price": 59, "is_platform_self": True, "rating": 4.9, "key_specs": "100ml×5/硅胶按压/登机TSA规格/月销6万", "sales": "月销6万"},
+        {"product_id": "mock_wash_kit_3", "title": "联合利华 旅行套装 洗发+沐浴+护肤 15件", "price": 99, "is_platform_self": True, "rating": 4.8, "key_specs": "15件旅行装/大牌正品/出差必备/月销2.5万", "sales": "月销2.5万"},
+        {"product_id": "mock_wash_kit_4", "title": "牙刷旅行套装 含牙膏 折叠款", "price": 39, "is_platform_self": True, "rating": 4.9, "key_specs": "折叠牙刷+牙膏/TSA随身/月销4.5万", "sales": "月销4.5万"}
     ],
     "男士旅行洗漱 4 件套 ¥396，**出差 3-5 天完全够用**：\n\n## 🧳 完整方案\n\n| 物品 | 商品 | 价格 |\n|---|---|---|\n| 洗漱包 | MUJI 防水大容量 男款 | ¥199 |\n| 分装瓶 | 100ml×5 硅胶 TSA 规格 | ¥59 |\n| 洗漱套装 | 联合利华 15 件旅行装 | ¥99 |\n| 牙刷牙膏 | 折叠旅行套装 | ¥39 |\n\n## 💡 两种流派选哪个\n\n### 流派 A：自己分装（分装瓶 ¥59）\n- 带自己平时用的洗发水/沐浴露分装\n- **更省钱**（长期出差必备）\n- 硅胶按压瓶，不会漏\n\n### 流派 B：买现成旅行装（联合利华套装 ¥99）\n- 15 件大牌小瓶装，**一次拆箱即用**\n- 不需要提前准备\n- 适合偶尔出差（不麻烦）\n\n### 推荐：两种都备着\n**分装瓶**当固定出差包，**旅行装套装**备几盒应急（来不及分装时救命）。\n\n## 💡 TSA 规格为什么重要\n\n**飞机随身携带液体限制 100ml/件**，分装瓶必须 ≤100ml 才能过安检。买前确认容量标注。\n\n## ⚠️ 出差洗漱包整理 Tips\n\n- 每次出差后**原包放回包里**，不要每次重新整理\n- 备一套**专用旅行牙刷+剃须刀**，不用从家里带\n- 洗漱包放行李箱外侧仓（方便取用）",
     ["MUJI男款旅行洗漱包+防水大容量+月销3500，出差3-5天硬底稳固", "硅胶分装瓶100ml×5 TSA规格+月销6万，飞机随身携带合规长期出差必备", "联合利华15件旅行套装+月销2.5万，偶尔出差即拆即用省分装时间", "折叠旅行牙刷+牙膏+月销4.5万，TSA规格随身带出差不再借"]
@@ -122,11 +122,11 @@ T.append(make_traj(
     "给孩子办 6 岁生日派对，3500 配齐气球+蛋糕+装饰+拍照区",
     {"query": "生日派对布置 气球+蛋糕+装饰+拍照", "max_price": 3800},
     [
-        {"product_id": "jd_party_1", "title": "生日气球套装 100个+气泵+立柱支架", "price": 199, "is_jd_self": True, "rating": 4.9, "key_specs": "100个气球+电动气泵+立柱/一次配齐/月销1.5万", "sales": "月销1.5万"},
-        {"product_id": "jd_party_2", "title": "生日背景布 粉色城堡 2×1.5m 主题款", "price": 89, "is_jd_self": True, "rating": 4.9, "key_specs": "粉色城堡/2×1.5m/背景布/拍照用", "sales": "月销2.5万"},
-        {"product_id": "jd_party_3", "title": "生日蜡烛数字 + 皇冠帽套装 20件", "price": 49, "is_jd_self": True, "rating": 4.9, "key_specs": "数字蜡烛+皇冠帽+彩带/派对必备", "sales": "月销4.5万"},
-        {"product_id": "jd_party_4", "title": "一次性餐具套装 儿童派对 50人份", "price": 99, "is_jd_self": True, "rating": 4.9, "key_specs": "50人份/杯+盘+叉勺/派对主题印刷", "sales": "月销3万"},
-        {"product_id": "jd_party_5", "title": "生日蛋糕定制 6寸 双层奶油 当日送达", "price": 299, "is_jd_self": True, "rating": 4.9, "key_specs": "6寸双层/当日定制/主题蛋糕/本地配送", "sales": "月销3500"}
+        {"product_id": "mock_party_1", "title": "生日气球套装 100个+气泵+立柱支架", "price": 199, "is_platform_self": True, "rating": 4.9, "key_specs": "100个气球+电动气泵+立柱/一次配齐/月销1.5万", "sales": "月销1.5万"},
+        {"product_id": "mock_party_2", "title": "生日背景布 粉色城堡 2×1.5m 主题款", "price": 89, "is_platform_self": True, "rating": 4.9, "key_specs": "粉色城堡/2×1.5m/背景布/拍照用", "sales": "月销2.5万"},
+        {"product_id": "mock_party_3", "title": "生日蜡烛数字 + 皇冠帽套装 20件", "price": 49, "is_platform_self": True, "rating": 4.9, "key_specs": "数字蜡烛+皇冠帽+彩带/派对必备", "sales": "月销4.5万"},
+        {"product_id": "mock_party_4", "title": "一次性餐具套装 儿童派对 50人份", "price": 99, "is_platform_self": True, "rating": 4.9, "key_specs": "50人份/杯+盘+叉勺/派对主题印刷", "sales": "月销3万"},
+        {"product_id": "mock_party_5", "title": "生日蛋糕定制 6寸 双层奶油 当日送达", "price": 299, "is_platform_self": True, "rating": 4.9, "key_specs": "6寸双层/当日定制/主题蛋糕/本地配送", "sales": "月销3500"}
     ],
     "6 岁生日派对 5 件套 ¥735，余 ¥2765 留请小朋友+购买礼物：\n\n## 🎂 完整方案\n\n| 物品 | 商品 | 价格 |\n|---|---|---|\n| 气球 | 100 个+气泵+立柱 | ¥199 |\n| 拍照背景 | 粉色城堡 2×1.5m | ¥89 |\n| 蜡烛+皇冠帽 | 20 件套 | ¥49 |\n| 一次性餐具 | 50 人份 | ¥99 |\n| 定制蛋糕 | 6 寸双层当日配送 | ¥299 |\n| **合计** | | **¥735** |\n\n## 💡 生日派对成本大头在哪\n\n**装饰只占 21%**，大头是：\n- **邀请小朋友数量** × 礼物/人均到场费\n- **活动策划**（玩什么游戏）\n- **场地**（家里还是餐厅）\n\n¥735 的装饰可以让 50 人的派对**看起来花了 ¥3000**。\n\n## 💡 拍照区布置 SOP\n\n```\n1. 墙上挂 2×1.5m 城堡背景布\n2. 背景布前立气球立柱（左右各一根）\n3. 在立柱间挂彩带/气球\n4. 主角站中间，超好拍\n```\n\n## 💡 余 ¥2765 分配\n\n- **蛋糕或甜品桌** ¥500-1000\n- **礼物回赠小朋友**（每人 ¥20-50 小礼品）¥500-1000\n- **活动道具**（玩游戏的奖品）¥200\n- **餐饮**（生日面/小吃）¥500\n- **预备金** ¥300\n\n## ⚠️ 6 岁生日派对注意\n\n- **蛋糕提前 1-2 天预订**（当日送达款要提早）\n- **气球当天打**（提前一天可能瘪）\n- 派对结束后统计孩子**别落单**",
     ["生日气球100个+电动气泵+立柱+月销1.5万，派对布置一次配齐", "粉色城堡拍照背景布2×1.5m+月销2.5万，主角拍照区灵魂单品", "生日蜡烛数字+皇冠帽彩带20件+月销4.5万，切蛋糕戴冠仪式感必备", "一次性派对餐具50人份+月销3万，省洗碗直接扔环保主题印刷", "6寸定制蛋糕当日送达+月销3500，主角专属当天鲜做"]
@@ -139,12 +139,12 @@ T.append(make_traj(
     "计划去敦煌戈壁徒步 3 天，8000 两人装备全部配齐",
     {"query": "沙漠戈壁徒步装备 2人 防晒+防风+水袋+帐篷", "max_price": 8500},
     [
-        {"product_id": "jd_desert_1", "title": "Salewa 轻量徒步帐篷 2人 双层 1.8kg", "price": 1999, "is_jd_self": True, "rating": 4.9, "key_specs": "2人双层/1.8kg轻量/防风8级/沙漠帐篷", "sales": "月销680"},
-        {"product_id": "jd_desert_2", "title": "UTO 户外水袋 2L 可折叠 登山徒步", "price": 99, "is_jd_self": True, "rating": 4.9, "key_specs": "2L/可折叠/食品级/沙漠长途必备×2个", "sales": "月销2.5万"},
-        {"product_id": "jd_desert_3", "title": "沙漠防风面罩 沙尘暴全脸防护", "price": 89, "is_jd_self": True, "rating": 4.8, "key_specs": "全脸防沙/透气/沙漠专用×2个", "sales": "月销1500"},
-        {"product_id": "jd_desert_4", "title": "哥伦比亚 防晒冲锋衣 UPF50+ 沙漠色", "price": 1299, "is_jd_self": True, "rating": 4.9, "key_specs": "UPF50+/抗风/沙漠色/防沙×2件", "sales": "月销1500"},
-        {"product_id": "jd_desert_5", "title": "MSR 净水器 Trailshot 户外过滤", "price": 699, "is_jd_self": True, "rating": 4.9, "key_specs": "户外净水/戈壁找水点使用/小巧便携", "sales": "月销680"},
-        {"product_id": "jd_desert_6", "title": "高热量能量棒 登山远足 30条装", "price": 199, "is_jd_self": True, "rating": 4.8, "key_specs": "高热量/30条/沙漠补充热量", "sales": "月销4500"}
+        {"product_id": "mock_desert_1", "title": "Salewa 轻量徒步帐篷 2人 双层 1.8kg", "price": 1999, "is_platform_self": True, "rating": 4.9, "key_specs": "2人双层/1.8kg轻量/防风8级/沙漠帐篷", "sales": "月销680"},
+        {"product_id": "mock_desert_2", "title": "UTO 户外水袋 2L 可折叠 登山徒步", "price": 99, "is_platform_self": True, "rating": 4.9, "key_specs": "2L/可折叠/食品级/沙漠长途必备×2个", "sales": "月销2.5万"},
+        {"product_id": "mock_desert_3", "title": "沙漠防风面罩 沙尘暴全脸防护", "price": 89, "is_platform_self": True, "rating": 4.8, "key_specs": "全脸防沙/透气/沙漠专用×2个", "sales": "月销1500"},
+        {"product_id": "mock_desert_4", "title": "哥伦比亚 防晒冲锋衣 UPF50+ 沙漠色", "price": 1299, "is_platform_self": True, "rating": 4.9, "key_specs": "UPF50+/抗风/沙漠色/防沙×2件", "sales": "月销1500"},
+        {"product_id": "mock_desert_5", "title": "MSR 净水器 Trailshot 户外过滤", "price": 699, "is_platform_self": True, "rating": 4.9, "key_specs": "户外净水/戈壁找水点使用/小巧便携", "sales": "月销680"},
+        {"product_id": "mock_desert_6", "title": "高热量能量棒 登山远足 30条装", "price": 199, "is_platform_self": True, "rating": 4.8, "key_specs": "高热量/30条/沙漠补充热量", "sales": "月销4500"}
     ],
     "戈壁徒步双人 6 件套 ¥6682，余 ¥1318 用于食物和应急：\n\n## 🏜️ 完整方案（2 人份）\n\n| 装备 | 商品 | 数量 | 价格 |\n|---|---|---|---|\n| 🥇 帐篷 | Salewa 轻量 2 人双层 | ×1 | ¥1999 |\n| 防晒冲锋衣 | 哥伦比亚 UPF50+ | ×2 | ¥2598 |\n| 净水器 | MSR Trailshot | ×1 | ¥699 |\n| 水袋 | 2L 可折叠 | ×2 | ¥198 |\n| 防风面罩 | 沙尘暴全脸防护 | ×2 | ¥178 |\n| 能量棒 | 高热量 30 条 | ×1 | ¥199 |\n| **合计** | | | **¥5871** |\n\n## 💡 戈壁三天最重要的 3 件装备\n\n### 1. 防晒冲锋衣（命）\n戈壁无遮挡，**紫外线是平原 3-4 倍**。UPF50+ 防晒冲锋衣比防晒霜更实际（不会出汗掉）。哥伦比亚是户外大牌，做工稳定。\n\n### 2. 净水器（救命）\n戈壁可能遇到水源（泉水/溪水），**MSR Trailshot 直接插入吸水**，过滤后可饮用。携带方便，关键时候救命。\n\n### 3. 帐篷（安全）\n沙漠夜晚气温骤降至 10℃ 以下，**双层帐篷防风+保温**是基本。Salewa 1.8kg 轻便适合背着走。\n\n## 💰 余 ¥1318 用于\n\n- **行动粮食**（压缩饼干+肉干+坚果）¥400\n- **急救药包**（防中暑+外伤）¥200\n- **头灯×2**（夜间行进）¥200\n- **卫星通讯（紧急联系）** ¥300\n- **预备金** ¥200\n\n## ⚠️ 戈壁徒步安全\n\n1. **不要单人出发**（最少 2 人，推荐 4 人以上）\n2. **告知家人行程+联系方式**\n3. **卫星电话/定位器**（戈壁没有手机信号）\n4. **日出前出发，正午避晒**（11-15 点高温期躲避）\n5. **水带够**（每人每天 4-6L 饮水量）",
     ["Salewa轻量2人帐篷双层1.8kg+月销680，戈壁夜晚防风保温基础安全", "哥伦比亚防晒冲锋衣UPF50+月销1500，戈壁紫外线3倍物理防晒", "MSR Trailshot净水器+月销680，戈壁水源过滤直接饮用救命装备", "2L可折叠水袋×2+月销2.5万，每人2L日用量4L以上徒步必备", "沙漠全脸防风面罩×2+月销1500，沙尘暴面部保护专用", "高热量能量棒30条+月销4500，长时间徒步持续补充热量"]
@@ -157,9 +157,9 @@ T.append(make_traj(
     "下单 7 天了东西还没到，快递一直说在途中，怎么处理",
     {"order_id": "[ORDER_ID]", "issue_type": "not_delivered", "days_overdue": 7},
     [
-        {"product_id": "jd_complaint_001", "title": "未到货投诉申请 — 订单 [ORDER_ID]", "price": 0, "is_jd_self": True, "rating": 5.0, "key_specs": "已提交投诉/客服介入/申请赔付中/1-3工作日处理", "sales": "—"}
+        {"product_id": "mock_complaint_001", "title": "未到货投诉申请 — 订单 [ORDER_ID]", "price": 0, "is_platform_self": True, "rating": 5.0, "key_specs": "已提交投诉/客服介入/申请赔付中/1-3工作日处理", "sales": "—"}
     ],
-    "已帮你提交投诉，下面是完整处理方案：\n\n## 📋 当前情况判断\n\n订单 [ORDER_ID] 下单 7 天未到，属于**严重超时**（京东自营承诺 24-48h 到货）。\n\n## ✅ 已操作步骤\n\n1. **投诉已提交**，客服将在 **1-3 个工作日内介入**\n2. 系统已标记该订单为「催收状态」\n\n## 🛡️ 你的权益\n\n根据京东配送协议，超时未到可以申请：\n\n| 赔付项目 | 标准 |\n|---|---|\n| **延迟配送赔付** | 超时部分，¥30-200 赔付（根据订单金额）|\n| **退款** | 原路退款，无需等到货 |\n| **换新发货** | 重新发一单（原单不再追踪）|\n\n## 💡 建议操作路径\n\n### 路径 A：申请退款（推荐）\n1. 京东 APP → 我的订单 → 该订单 → **「申请退款」**\n2. 选「**未收到货**」\n3. 系统自动退款（1-3 工作日）\n4. 退款到账后**重新下单**（大概率现在可以正常送达）\n\n### 路径 B：等待 + 申请赔付\n1. 继续等 2-3 天\n2. 如果仍未到，申请「**京东超时赔付**」（¥30-200）\n3. 适合：不急用 + 想要赔偿的情况\n\n### 路径 C：联系客服催单\n- 电话 950618（7×24 小时）\n- 告知订单号，要求联系配送站\n\n## ⚠️ 注意\n\n如果物流显示「**已签收**」但你没有收到，属于**疑似丢件**：\n- 立刻拨打 950618 申请「**丢件赔付**」\n- 京东自营丢件全额赔付+50% 补偿\n\n你现在选择退款还是等待+赔付？",
+    "已帮你提交投诉，下面是完整处理方案：\n\n## 📋 当前情况判断\n\n订单 [ORDER_ID] 下单 7 天未到，属于**严重超时**（平台自营承诺 24-48h 到货）。\n\n## ✅ 已操作步骤\n\n1. **投诉已提交**，客服将在 **1-3 个工作日内介入**\n2. 系统已标记该订单为「催收状态」\n\n## 🛡️ 你的权益\n\n根据购物平台配送协议，超时未到可以申请：\n\n| 赔付项目 | 标准 |\n|---|---|\n| **延迟配送赔付** | 超时部分，¥30-200 赔付（根据订单金额）|\n| **退款** | 原路退款，无需等到货 |\n| **换新发货** | 重新发一单（原单不再追踪）|\n\n## 💡 建议操作路径\n\n### 路径 A：申请退款（推荐）\n1. 购物平台 APP → 我的订单 → 该订单 → **「申请退款」**\n2. 选「**未收到货**」\n3. 系统自动退款（1-3 工作日）\n4. 退款到账后**重新下单**（大概率现在可以正常送达）\n\n### 路径 B：等待 + 申请赔付\n1. 继续等 2-3 天\n2. 如果仍未到，申请「**购物平台超时赔付**」（¥30-200）\n3. 适合：不急用 + 想要赔偿的情况\n\n### 路径 C：联系客服催单\n- 电话 950618（7×24 小时）\n- 告知订单号，要求联系配送站\n\n## ⚠️ 注意\n\n如果物流显示「**已签收**」但你没有收到，属于**疑似丢件**：\n- 立刻拨打 950618 申请「**丢件赔付**」\n- 平台自营丢件全额赔付+50% 补偿\n\n你现在选择退款还是等待+赔付？",
     ["超时未到货投诉已提交+客服1-3工作日介入+可申请退款或延迟赔付"],
     tool_name="OrderQuerySkill"
 ))
@@ -171,9 +171,9 @@ T.append(make_traj(
     "再买之前那个护发素，最近头发开叉了想改善",
     {"category_keyword": "护发素", "time_range": "last_5_months", "include_haircare_advice": True},
     [
-        {"product_id": "jd_cond_old", "title": "潘婷水养护发素 400ml (你4月前购买)", "price": 39, "is_jd_self": True, "rating": 4.9, "key_specs": "你4月前购买/普通护发/400ml", "sales": "月销5万"},
-        {"product_id": "jd_cond_new", "title": "卡诗 发膜 200ml 深层修护开叉专用", "price": 389, "is_jd_self": True, "rating": 4.9, "key_specs": "深层修护/专治开叉/每周1次/月销3500", "sales": "月销3500"},
-        {"product_id": "jd_cond_mid", "title": "OLAPLEX No.3 发质重建护发 100ml", "price": 219, "is_jd_self": True, "rating": 4.9, "key_specs": "OLAPLEX/重建发质/开叉断裂修复/月销2200", "sales": "月销2200"}
+        {"product_id": "mock_cond_old", "title": "潘婷水养护发素 400ml (你4月前购买)", "price": 39, "is_platform_self": True, "rating": 4.9, "key_specs": "你4月前购买/普通护发/400ml", "sales": "月销5万"},
+        {"product_id": "mock_cond_new", "title": "卡诗 发膜 200ml 深层修护开叉专用", "price": 389, "is_platform_self": True, "rating": 4.9, "key_specs": "深层修护/专治开叉/每周1次/月销3500", "sales": "月销3500"},
+        {"product_id": "mock_cond_mid", "title": "OLAPLEX No.3 发质重建护发 100ml", "price": 219, "is_platform_self": True, "rating": 4.9, "key_specs": "OLAPLEX/重建发质/开叉断裂修复/月销2200", "sales": "月销2200"}
     ],
     "你 4 个月前买的是**潘婷水养护发素 ¥39**。头发开叉说明**普通护发素不够**，需要升级到修护型。\n\n## 💡 开叉的根本原因\n\n普通护发素只是**「涂一层膜」**——暂时顺滑，但不修复发丝。\n\n**真正修复开叉需要**：\n- **发膜**（每周 1-2 次深层渗透）或\n- **发质重建产品**（如 OLAPLEX，从内部修复二硫键）\n\n## 🛒 3 种方案对比\n\n### 选项 A：继续买潘婷 ¥39（最省钱）\n- 日常护发无问题\n- **但无法修复已有开叉**，开叉只会越来越多\n- 适合：发质健康，只要基础滋润\n\n### 选项 B：OLAPLEX No.3 ¥219 ⭐ 开叉修复\n- 专门修复发丝内部二硫键（染烫/开叉的根本原因）\n- 使用：敷 10 分钟+再洗发，**每周 1 次**\n- 可以和你原来的护发素一起用（不冲突）\n\n### 选项 C：卡诗发膜 ¥389 高端修护\n- 深层渗透修护\n- 美发院专业级\n- **价格最贵，效果也最显著**\n\n## 🎯 我的建议\n\n**OLAPLEX + 潘婷护发素双管齐下**：\n- 每周 1 次 OLAPLEX 修复（¥219 用 3-4 个月）\n- 平时每次洗头用潘婷护发素 ¥39\n- 总成本 ¥258，比单买发膜 ¥389 便宜且效果持久\n\n## ⚠️ 开叉护理额外建议\n\n- 少用吹风机（热风加剧开叉）\n- **发梢要定期修剪**（每 2 个月剪 1cm）\n- 睡觉前用丝绸枕巾（减少枕头摩擦）\n\n要帮你下单 OLAPLEX ¥219 吗？还是先继续买潘婷护发素 ¥39？",
     ["潘婷水养护发素你4月前购买+月销5万，只做基础滋润不修复开叉", "OLAPLEX No.3发质重建+修复二硫键+月销2200，每周1次真正修复开叉", "卡诗发膜深层修护+月销3500，美发院级别效果最显著"],

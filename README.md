@@ -47,14 +47,14 @@
 
 | 路径 | 用途 |
 |---|---|
-| `joybuy_agent/` | Agent、工具注册、ReAct 执行和确定性 Mock 商品环境 |
+| `shopping_agent/` | Agent、工具注册、ReAct 执行和确定性 Mock 商品环境 |
 | `sft_data/` | 轨迹/SFT 样例、数据生成与格式转换、回归和评估结果 |
 | `scripts/` | Mock rollout、语义审计、质量检查、SFT 导出和发布前扫描 |
 | `llm_evaluation/` | 批量 LLM Judge 与规则 Gate |
 | `trajectory_grader/` | 可视化的单条轨迹审阅和评分工具 |
 | `training/` | LoRA 配置、数据集注册和训练说明 |
 | `LLaMA-Factory/` | 项目使用的 LLaMA-Factory fork（保留其 Apache-2.0 LICENSE） |
-| `slime_joybuy_rl/` | Slime rollout adapter、奖励服务、任务转换、GRPO 启动示例与指标面板 |
+| `slime_shopping_rl/` | Slime rollout adapter、奖励服务、任务转换、GRPO 启动示例与指标面板 |
 | `docs/` | 按阶段编排的完整指南、数据协议、评估方法和复现实验说明 |
 
 ## 建议阅读顺序
@@ -79,7 +79,7 @@ python scripts/scan_sensitive.py
 
 - `sft_data/train_chatml_v3.json` / `val_chatml_v3.json`：发布清理后 1297 条训练、142 条验证，供 `training/lora_sft.yaml` 直接使用。
 - `LLaMA-Factory/llamafactory/` 下的 train/eval/test JSON：875/100/100 条，配套 fork 内的 ReAct LoRA 配置。
-- `slime_joybuy_rl/data/joybuy_slime_tasks.jsonl`：从 875 条训练数据预转换好的 RL task JSONL。
+- `slime_shopping_rl/data/shopping_slime_tasks.jsonl`：从 875 条训练数据预转换好的 RL task JSONL。
 
 数据清单、其他轨迹和评估样例见 [代码与数据地图](docs/06-code-and-data-map.md)。
 
@@ -115,7 +115,7 @@ llamafactory-cli train training/lora_sft.yaml
 
 ## RL 数据与训练
 
-875 条 RL task 已在 `slime_joybuy_rl/data/joybuy_slime_tasks.jsonl`，不需要先手动转换。训练还需要 SFT checkpoint、Megatron reference checkpoint 和 Slime/Megatron/SGLang/CUDA 环境；准备好这些外部资源后设置 `HF_CHECKPOINT`、`MEGATRON_REF`、`MEGATRON_SAVE` 并用 `RUN_TRAIN=1` 启动 `slime_joybuy_rl/scripts/gpu/run_slime_4090_venv.sh`。完整命令见 [GRPO 指南](docs/04-rl-grpo.md)。
+875 条 RL task 已在 `slime_shopping_rl/data/shopping_slime_tasks.jsonl`，不需要先手动转换。训练还需要 SFT checkpoint、Megatron reference checkpoint 和 Slime/Megatron/SGLang/CUDA 环境；准备好这些外部资源后设置 `HF_CHECKPOINT`、`MEGATRON_REF`、`MEGATRON_SAVE` 并用 `RUN_TRAIN=1` 启动 `slime_shopping_rl/scripts/gpu/run_slime_4090_venv.sh`。完整命令见 [GRPO 指南](docs/04-rl-grpo.md)。
 
 ## 环境变量
 

@@ -74,7 +74,7 @@
 - 新增多功能工具标准品类与 Leatherman、Victorinox、Gerber 三款商品。
 - 增加德语词干级识别，覆盖 `Multifunktionstool`、`multifunktionale Werkzeugsets` 等模型改写。
 - 杯具支持深色、米色和深色/米色组合属性过滤。
-- 外部比价 Query 只展示 Joybuy 工具价格，并明确无法确认 Lidl 等站外实时价差。
+- 外部比价 Query 只展示 Shopping 工具价格，并明确无法确认 Lidl 等站外实时价差。
 - 100 条工具重放达到 41 条有召回、59 条空召回。
 - 自动化测试增加到 35 项，全部通过。
 - 真实模型验证：Red Bull 比价回复未编造 Lidl 价格；`multi tools` 最终返回 3 款德语本地化商卡。
@@ -116,7 +116,7 @@
 
 ## 第八轮确定性轨迹质量门禁
 
-- 新增 ReAct Mock 专用质量检查模块 `joybuy_agent/react/quality_gate.py`，不再复用依赖真实项目 shopping/response 阶段结构的旧检查器。
+- 新增 ReAct Mock 专用质量检查模块 `shopping_agent/react/quality_gate.py`，不再复用依赖真实项目 shopping/response 阶段结构的旧检查器。
 - 门禁同时兼容原始轨迹 JSONL 和 `{sample, trajectory}` 包装格式。
 - 硬性检查包括：轨迹状态、工具调用与结果配对、工具错误、`sku_recall` 单参数契约、`scenario_related_recall.need_items` 类型、商品字段契约、站点标题中文泄漏、商卡重复/越界、ClickText 闭合与数量、回复语言中文泄漏、站点币种、预算总价与商卡商品一致性、站外比价免责声明、保质期事实免责声明、内部工具规划泄漏。
 - 软性检查包括：场景工具成功后仍追加普通搜索等冗余轨迹行为。

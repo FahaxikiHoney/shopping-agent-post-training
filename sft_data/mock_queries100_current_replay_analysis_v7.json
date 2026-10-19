@@ -664,7 +664,7 @@
   {
     "sample_id": "anonymous-session",
     "site_code": "UK-Site",
-    "query": "which joybuy items I can use the coupon £30 when u spend over £40 coupon",
+    "query": "which shopping items I can use the coupon £30 when u spend over £40 coupon",
     "difficulty": "hard",
     "real_outcome": "empty_response",
     "real_has_cards": false,
@@ -1329,12 +1329,12 @@
   {
     "sample_id": "anonymous-session",
     "site_code": "NL-Site",
-    "query": "wat is het prijs verschil van redbull tussen joybuy en lidl",
+    "query": "wat is het prijs verschil van redbull tussen shopping en lidl",
     "difficulty": "medium",
     "real_outcome": "direct_cards",
     "real_has_cards": true,
     "tool_queries": [
-      "Red Bull energy drink on Joybuy",
+      "Red Bull energy drink on Shopping",
       "Red Bull energy drink on Lidl"
     ],
     "current_count": 1,

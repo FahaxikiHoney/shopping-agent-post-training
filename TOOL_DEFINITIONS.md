@@ -2,9 +2,9 @@
 
 ## 概述
 
-本文档是 JoySage（京东对话式购物 Agent）后训练项目的工具定义参考标准，所有工具名称、参数字段和 Mock 数据均来自真实 joybuy-chatbot 项目（`core/multi_agent/shopping/tool_list.py`）。
+本文档是 JoySage（购物平台对话式购物 Agent）后训练项目的工具定义参考标准，所有工具名称、参数字段和 Mock 数据均来自真实 shopping-chatbot 项目（`core/multi_agent/shopping/tool_list.py`）。
 
-**工具来源**：基于真实 joybuy-chatbot 项目，工具名与 `core/multi_agent/shopping/tool_list.py` 完全对齐。
+**工具来源**：基于真实 shopping-chatbot 项目，工具名与 `core/multi_agent/shopping/tool_list.py` 完全对齐。
 
 ---
 
@@ -80,10 +80,10 @@
   "status": "SUCCESS | NO_RESULT | CALLER_ERROR",
   "products": [
     {
-      "product_id": "string — 格式 jd_XXXXXXXX，如 jd_simrec_001a",
+      "product_id": "string — 格式 mock_XXXXXXXX，如 mock_simrec_001a",
       "title": "string — 商品完整标题",
       "price": "number — 当前售价（元）",
-      "is_jd_self": "boolean — 是否京东自营",
+      "is_platform_self": "boolean — 是否平台自营",
       "rating": "number — 评分（4.5-4.9）",
       "key_specs": "string — 核心规格，如'7种配色/徕卡光学/骁龙8 Gen3'",
       "sales": "string — 月销量，如'月销1.8万'"
@@ -131,19 +131,19 @@
     "status": "SUCCESS",
     "products": [
       {
-        "product_id": "jd_simrec_001a",
+        "product_id": "mock_simrec_001a",
         "title": "小米 14 Pro 12+256G 7配色（白银紫绿黑橙青）",
         "price": 5499.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.8,
         "key_specs": "7种配色/徕卡光学/骁龙8 Gen3",
         "sales": "月销1.8万"
       },
       {
-        "product_id": "jd_simrec_001b",
+        "product_id": "mock_simrec_001b",
         "title": "vivo X100 Pro 12+256G 5配色（星迹蓝/落日橙/辰夜黑/白月光/翡翠绿）",
         "price": 5799.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.7,
         "key_specs": "5种配色/蔡司光学/天玑9300",
         "sales": "月销1.2万"
@@ -213,28 +213,28 @@
     "status": "SUCCESS",
     "products": [
       {
-        "product_id": "jd_skucmp_001a",
+        "product_id": "mock_skucmp_001a",
         "title": "小米14 Ultra 16+512G 钛金属",
         "price": 5999.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.9,
         "key_specs": "徕卡四摄/1英寸主摄/骁龙8 Gen3/IP68/5300mAh",
         "sales": "月销8500"
       },
       {
-        "product_id": "jd_skucmp_001b",
+        "product_id": "mock_skucmp_001b",
         "title": "华为Mate60 Pro 12+512G",
         "price": 5999.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.9,
         "key_specs": "XMAGE四摄/卫星通话/麒麟9000S/玄武架构/5000mAh",
         "sales": "月销1.2万"
       },
       {
-        "product_id": "jd_skucmp_001c",
+        "product_id": "mock_skucmp_001c",
         "title": "vivo X100 Pro 16+512G 蔡司版",
         "price": 5499.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.8,
         "key_specs": "蔡司APO超级长焦/天玑9300/2K屏/5400mAh",
         "sales": "月销7800"
@@ -276,7 +276,7 @@
   "query": "string — 完整搜索关键词，含品类+场景+人群，如'颈部按摩仪 老人 一键操作 简单'",
   "min_price": "number — 价格下限（可选）",
   "max_price": "number — 价格上限，用户明确提及时必填",
-  "is_jd_self": "boolean — 是否限定京东自营，默认true",
+  "is_platform_self": "boolean — 是否限定平台自营，默认true",
   "filters": {
     "brand": "string — 品牌名（用户指定时传入）",
     "is_new": "boolean — 是否新品",
@@ -287,7 +287,7 @@
 }
 ```
 
-**输出 Schema**：标准 `products[]` 数组，每个商品含 product_id, title, price, is_jd_self, rating, key_specs, sales。
+**输出 Schema**：标准 `products[]` 数组，每个商品含 product_id, title, price, is_platform_self, rating, key_specs, sales。
 
 #### 3.4 Mock 数据示例（搜索推荐）
 
@@ -299,34 +299,34 @@
   "tool_input": {
     "query": "颈部按摩仪 老人 一键操作 简单",
     "max_price": 500,
-    "is_jd_self": true
+    "is_platform_self": true
   },
   "tool_output": {
     "status": "SUCCESS",
     "products": [
       {
-        "product_id": "jd_11223344",
+        "product_id": "mock_11223344",
         "title": "小米米家颈椎按摩仪 3档强度 一键启动 热敷功能",
         "price": 349.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.8,
         "key_specs": "3档力度/15分钟自动断电/热敷功能",
         "sales": "月销3.2万件"
       },
       {
-        "product_id": "jd_55667788",
+        "product_id": "mock_55667788",
         "title": "飞利浦肩颈按摩仪 PR3092 老人款 双键操作",
         "price": 469.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.7,
         "key_specs": "5档强度/40-50℃热敷/锂电池4小时续航",
         "sales": "月销1.8万件"
       },
       {
-        "product_id": "jd_99001122",
+        "product_id": "mock_99001122",
         "title": "倍轻松颈椎按摩器 智能感应 老年人专用款",
         "price": 299.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.6,
         "key_specs": "贴合人体颈部/12分钟定时/极简一键设计",
         "sales": "月销1.5万件"
@@ -401,19 +401,19 @@
     "status": "SUCCESS",
     "products": [
       {
-        "product_id": "jd_match_001a",
+        "product_id": "mock_match_001a",
         "title": "Calvin Klein 真丝领带 经典酒红色 商务款",
         "price": 459.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.8,
         "key_specs": "100%桑蚕丝/7cm经典宽度/酒红配深蓝(色彩学经典配色)",
         "sales": "月销1800"
       },
       {
-        "product_id": "jd_match_001b",
+        "product_id": "mock_match_001b",
         "title": "海澜之家 商务领带 银灰提花 真丝混纺",
         "price": 199.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.7,
         "key_specs": "银灰色/低调商务/适合正式会议",
         "sales": "月销4500"
@@ -454,7 +454,7 @@
   "query": "string — 单品类搜索词，如'炒锅 不粘锅 麦饭石/钛合金'",
   "max_price": "number — 该品类的预算上限（按比例拆分），如900",
   "min_price": "number — 该品类的预算下限（可选）",
-  "is_jd_self": "boolean — 是否限定京东自营"
+  "is_platform_self": "boolean — 是否限定平台自营"
 }
 ```
 
@@ -489,7 +489,7 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
       "product_id": "calc_b2",
       "title": "预算分配",
       "price": 0.0,
-      "is_jd_self": false,
+      "is_platform_self": false,
       "rating": 5.0,
       "key_specs": "A升级派1796(余204)/B实用派1556(余444)/C性价比1296(余704)",
       "sales": "—"
@@ -506,11 +506,11 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
     "step_id": 1,
     "step_type": "tool_call",
     "tool_name": "SkuRecallShopping",
-    "tool_input": {"query": "客厅书架音箱 hifi", "min_price": 2500, "max_price": 4000, "is_jd_self": true},
+    "tool_input": {"query": "客厅书架音箱 hifi", "min_price": 2500, "max_price": 4000, "is_platform_self": true},
     "tool_output": {
       "status": "SUCCESS",
       "products": [
-        {"product_id": "jd_bundle_001a", "title": "JBL Stage A170 落地式音箱 一对", "price": 3499.0, "is_jd_self": true, "rating": 4.8, "key_specs": "落地式/双6.5寸低音/适合15-25㎡客厅", "sales": "月销680"}
+        {"product_id": "mock_bundle_001a", "title": "JBL Stage A170 落地式音箱 一对", "price": 3499.0, "is_platform_self": true, "rating": 4.8, "key_specs": "落地式/双6.5寸低音/适合15-25㎡客厅", "sales": "月销680"}
       ]
     }
   },
@@ -522,7 +522,7 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
     "tool_output": {
       "status": "SUCCESS",
       "products": [
-        {"product_id": "jd_bundle_001c", "title": "天逸 AD-86D 高保真合并功放", "price": 1180.0, "is_jd_self": true, "rating": 4.8, "key_specs": "2×120W/蓝牙5.0/4-8Ω通用", "sales": "月销380"}
+        {"product_id": "mock_bundle_001c", "title": "天逸 AD-86D 高保真合并功放", "price": 1180.0, "is_platform_self": true, "rating": 4.8, "key_specs": "2×120W/蓝牙5.0/4-8Ω通用", "sales": "月销380"}
       ]
     }
   },
@@ -535,7 +535,7 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
     },
     "tool_output": {
       "status": "SUCCESS",
-      "products": [{"product_id": "calc_b1", "title": "预算分配", "price": 0.0, "is_jd_self": false, "rating": 5.0, "key_specs": "方案A:4879元(余121)/方案B:4999元(余1)/差120", "sales": "—"}]
+      "products": [{"product_id": "calc_b1", "title": "预算分配", "price": 0.0, "is_platform_self": false, "rating": 5.0, "key_specs": "方案A:4879元(余121)/方案B:4999元(余1)/差120", "sales": "—"}]
     }
   }
 ]
@@ -585,7 +585,7 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
 
 ```json
 {
-  "product_id": "string — 必填，商品ID，如'jd_11223344'",
+  "product_id": "string — 必填，商品ID，如'mock_11223344'",
   "quantity": "integer — 数量，默认1",
   "address": "string — 收货地址，'DEFAULT'表示默认地址，或具体地址字符串",
   "payment_method": "string — 支付方式，'default'表示默认支付",
@@ -628,10 +628,10 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
       "product_id": "string — 下单的商品ID",
       "title": "string — 商品标题",
       "price": "number — 实付价格",
-      "is_jd_self": true,
+      "is_platform_self": true,
       "rating": 4.8,
       "key_specs": "string — 含订单号+预计送达时间，如'订单号 ORDER-EXAMPLE-001/预计明天 18:00 前送达'",
-      "sales": "string — '京东自营'"
+      "sales": "string — '平台自营'"
     }
   ]
 }
@@ -671,7 +671,7 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
       "product_id": "string — 历史订单商品ID",
       "title": "string — 商品标题",
       "price": "number — 购买价格",
-      "is_jd_self": true,
+      "is_platform_self": true,
       "rating": 4.8,
       "key_specs": "string — 购买时间/订单号/当前状态，如'购买于2025-09-12/订单ORDER-EXAMPLE-002'",
       "sales": "string — 原装型号或兼容型号"
@@ -688,7 +688,7 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
   "step_type": "tool_call",
   "tool_name": "ShoppingPlaceOrderTool",
   "tool_input": {
-    "product_id": "jd_11223344",
+    "product_id": "mock_11223344",
     "quantity": 1,
     "address": "DEFAULT",
     "payment_method": "default"
@@ -697,13 +697,13 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
     "status": "SUCCESS",
     "products": [
       {
-        "product_id": "jd_11223344",
+        "product_id": "mock_11223344",
         "title": "小米米家颈椎按摩仪 3档强度 一键启动 热敷功能",
         "price": 349.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.8,
         "key_specs": "订单号 ORDER-EXAMPLE-001/预计明天 18:00 前送达",
-        "sales": "京东自营"
+        "sales": "平台自营"
       }
     ]
   },
@@ -765,7 +765,7 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
       "product_id": "string — 历史购买或推荐商品的ID",
       "title": "string — 商品标题（历史品加'你X个月前购买过'标注）",
       "price": "number — 当前售价",
-      "is_jd_self": true,
+      "is_platform_self": true,
       "rating": 4.9,
       "key_specs": "string — 含购买时间/订单号/耗材型号等关键信息",
       "sales": "string — 月销量"
@@ -789,10 +789,10 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
     "status": "SUCCESS",
     "products": [
       {
-        "product_id": "jd_rep_001",
+        "product_id": "mock_rep_001",
         "title": "蓝月亮亮白洗衣液 3kg×2瓶 深层洁净",
         "price": 89.0,
-        "is_jd_self": true,
+        "is_platform_self": true,
         "rating": 4.9,
         "key_specs": "你2个月前购买1组(订单[ORDER_ID])/3kg×2瓶/月销5万",
         "sales": "月销5万"
@@ -820,10 +820,10 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
       "status": "SUCCESS",
       "products": [
         {
-          "product_id": "jd_42118801",
+          "product_id": "mock_42118801",
           "title": "小米米家空气净化器4 Pro 除甲醛CADR 500m³/h",
           "price": 1599.0,
-          "is_jd_self": true,
+          "is_platform_self": true,
           "rating": 4.8,
           "key_specs": "购买于2025-09-12/订单ORDER-EXAMPLE-002/已使用约9个月",
           "sales": "原装滤芯型号 M16-FLP-T"
@@ -837,16 +837,16 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
     "tool_name": "SkuRecallShopping",
     "tool_input": {
       "query": "米家空气净化器4 Pro 滤芯 M16-FLP-T 原装",
-      "is_jd_self": true
+      "is_platform_self": true
     },
     "tool_output": {
       "status": "SUCCESS",
       "products": [
         {
-          "product_id": "jd_42118899",
+          "product_id": "mock_42118899",
           "title": "小米米家空气净化器4 Pro 原装滤芯 除甲醛增强版 M16-FLP-T",
           "price": 249.0,
-          "is_jd_self": true,
+          "is_platform_self": true,
           "rating": 4.9,
           "key_specs": "原装H13级HEPA+椰壳活性炭/适配4 Pro/CCM甲醛F4级",
           "sales": "月销1.8万件"
@@ -927,15 +927,15 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
 **正确示例**：
 
 ```json
-// tool_output 中有：{"product_id": "jd_11223344", "price": 349.0}
-// product_cards 中必须是：{"card_id": "jd_11223344", "display_price": 349.0}
+// tool_output 中有：{"product_id": "mock_11223344", "price": 349.0}
+// product_cards 中必须是：{"card_id": "mock_11223344", "display_price": 349.0}
 ```
 
 **错误示例（负样本）**：
 
 ```json
 // tool_output 中没有此 product_id，但 product_cards 里凭空出现
-// {"card_id": "jd_99999999", "display_price": 299.0} ← card_id_hallucination
+// {"card_id": "mock_99999999", "display_price": 299.0} ← card_id_hallucination
 ```
 
 ### 各场景 final_response 质量标准
@@ -957,19 +957,19 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
 ### product_id 格式
 
 ```
-格式：jd_{XXXXXXXX}
+格式：mock_{XXXXXXXX}
 ```
 
 | 类型 | 格式 | 示例 |
 |---|---|---|
-| 普通搜索结果商品 | `jd_` + 8位数字 | jd_11223344, jd_55667788 |
-| similar_rec 场景商品 | `jd_simrec_` + 3位序号 + 字母 | jd_simrec_001a, jd_simrec_002b |
-| sku_comp 场景商品 | `jd_skucmp_` + 3位序号 + 字母 | jd_skucmp_001a, jd_skucmp_003c |
-| matching_purchase 场景 | `jd_match_` + 3位序号 + 字母 | jd_match_001a, jd_match_003b |
-| bundle_purchase 场景 | `jd_bundle_` + 3位序号 + 字母 | jd_bundle_001a, jd_bundle_002c |
-| repurchase 场景 | `jd_rep_` + 3位序号 | jd_rep_001, jd_rep_002 |
+| 普通搜索结果商品 | `mock_` + 8位数字 | mock_11223344, mock_55667788 |
+| similar_rec 场景商品 | `mock_simrec_` + 3位序号 + 字母 | mock_simrec_001a, mock_simrec_002b |
+| sku_comp 场景商品 | `mock_skucmp_` + 3位序号 + 字母 | mock_skucmp_001a, mock_skucmp_003c |
+| matching_purchase 场景 | `mock_match_` + 3位序号 + 字母 | mock_match_001a, mock_match_003b |
+| bundle_purchase 场景 | `mock_bundle_` + 3位序号 + 字母 | mock_bundle_001a, mock_bundle_002c |
+| repurchase 场景 | `mock_rep_` + 3位序号 | mock_rep_001, mock_rep_002 |
 | PythonCalculator 结果 | `calc_` + `b` + 数字 | calc_b1, calc_b2 |
-| 历史购买商品 | `jd_` + 8位数字（复购时同原始商品ID） | jd_42118801 |
+| 历史购买商品 | `mock_` + 8位数字（复购时同原始商品ID） | mock_42118801 |
 
 ### 价格范围参考
 
@@ -1021,16 +1021,16 @@ print(f'方案C 性价比派: {c}, 余{2000-c}')
 ### 订单号格式
 
 ```
-格式：JD{YYYYMMDD}-{7位数字}
+格式：[ORDER_ID]
 示例：ORDER-EXAMPLE-001, ORDER-EXAMPLE-002
 ```
 
-### is_jd_self 字段规范
+### is_platform_self 字段规范
 
-- 绝大多数推荐商品 `is_jd_self: true`（京东自营）
+- 绝大多数推荐商品 `is_platform_self: true`（平台自营）
 - 部分高端/进口/小众商品可以 `false`（第三方旗舰店）
-- PythonCalculator 结果的 `is_jd_self: false`
+- PythonCalculator 结果的 `is_platform_self: false`
 
 ---
 
-*本文档对应数据集：`sft_data/trajectories_final.jsonl`，共 74 条 trajectory，7 个核心场景。所有工具名来自 joybuy-chatbot 项目 `core/multi_agent/shopping/tool_list.py`，所有商品信息均为模拟生成。*
+*本文档对应数据集：`sft_data/trajectories_final.jsonl`，共 74 条 trajectory，7 个核心场景。所有工具名来自 shopping-chatbot 项目 `core/multi_agent/shopping/tool_list.py`，所有商品信息均为模拟生成。*

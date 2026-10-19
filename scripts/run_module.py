@@ -72,7 +72,7 @@ def main() -> int:
     rl = sub.add_parser("rl", help="Set up Slime dependencies and launch GRPO with ready RL data")
     rl.add_argument("--hf-checkpoint", default=os.environ.get("HF_CHECKPOINT"))
     rl.add_argument("--megatron-ref", default=os.environ.get("MEGATRON_REF"))
-    rl.add_argument("--megatron-save", default=os.environ.get("MEGATRON_SAVE", str(ROOT / "checkpoints" / "megatron" / "joybuy_grpo")))
+    rl.add_argument("--megatron-save", default=os.environ.get("MEGATRON_SAVE", str(ROOT / "checkpoints" / "megatron" / "shopping_grpo")))
 
     args = parser.parse_args()
     OUTPUT.mkdir(parents=True, exist_ok=True)
@@ -103,13 +103,13 @@ def main() -> int:
     if args.module == "sft":
         env = os.environ.copy()
         env.update({"MODEL_PATH": args.model_path, "RUN_TRAIN": "1"})
-        return run([require_bash(), str(ROOT / "slime_joybuy_rl" / "scripts" / "gpu" / "run_sft_4090_venv.sh")], env=env)
+        return run([require_bash(), str(ROOT / "slime_shopping_rl" / "scripts" / "gpu" / "run_sft_4090_venv.sh")], env=env)
     if args.module == "rl":
         if not args.hf_checkpoint or not args.megatron_ref:
             raise SystemExit("RL requires --hf-checkpoint and --megatron-ref (SFT HF checkpoint and converted Megatron reference checkpoint).")
         env = os.environ.copy()
-        env.update({"HF_CHECKPOINT": args.hf_checkpoint, "MEGATRON_REF": args.megatron_ref, "MEGATRON_SAVE": args.megatron_save, "TRAIN_DATA": str(READY / "rl" / "joybuy_slime_tasks.jsonl"), "RUN_TRAIN": "1"})
-        return run([require_bash(), str(ROOT / "slime_joybuy_rl" / "scripts" / "gpu" / "run_slime_4090_venv.sh")], env=env)
+        env.update({"HF_CHECKPOINT": args.hf_checkpoint, "MEGATRON_REF": args.megatron_ref, "MEGATRON_SAVE": args.megatron_save, "TRAIN_DATA": str(READY / "rl" / "shopping_slime_tasks.jsonl"), "RUN_TRAIN": "1"})
+        return run([require_bash(), str(ROOT / "slime_shopping_rl" / "scripts" / "gpu" / "run_slime_4090_venv.sh")], env=env)
     return 2
 
 

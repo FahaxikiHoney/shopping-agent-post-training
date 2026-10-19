@@ -7,7 +7,7 @@ class Product(BaseModel):
     product_id: str
     title: str
     price: float
-    is_jd_self: bool = False
+    is_platform_self: bool = False
     rating: float = 0.0
     attributes: dict = {}
 

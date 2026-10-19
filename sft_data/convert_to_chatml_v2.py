@@ -16,7 +16,7 @@ trajectories_r1_compressed.jsonl → ChatML with tool_call
 {"name": "SkuRecallShopping", "arguments": {"query": "保温杯 24h", "max_price": 250}}
 </tool_call>
 <tool_response>
-{"products": [{"product_id": "jd_xxx", "title": "膳魔师", "price": 199, ...}]}
+{"products": [{"product_id": "mock_xxx", "title": "膳魔师", "price": 199, ...}]}
 </tool_response>
 
 膳魔师经典系列保温杯推荐给您...<|im_end|>

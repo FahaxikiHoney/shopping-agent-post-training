@@ -93,7 +93,7 @@
     },
     {
       "trajectory_id": "react_e59dea07",
-      "query": "Wat is het prijsverschil van Red Bull tussen Joybuy en Lidl?",
+      "query": "Wat is het prijsverschil van Red Bull tussen Shopping en Lidl?",
       "site_code": "NL-Site",
       "status": "done",
       "tool_calls": 1,

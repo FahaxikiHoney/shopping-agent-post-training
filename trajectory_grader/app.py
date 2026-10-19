@@ -55,7 +55,7 @@ if "current_grade_result" not in st.session_state:
 
 # ── 主标题 ─────────────────────────────────────────────────────────
 st.title("🛒 trajectory_response_quality_grader")
-st.caption("京东 oxygen-jingyan-1.0 评估体系复现 · 5维度打分 + Gate机制 · 侦探查案式轨迹审查")
+st.caption("购物平台 oxygen-jingyan-1.0 评估体系复现 · 5维度打分 + Gate机制 · 侦探查案式轨迹审查")
 
 st.divider()
 

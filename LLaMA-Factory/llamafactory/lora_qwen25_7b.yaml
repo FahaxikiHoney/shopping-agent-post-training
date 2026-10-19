@@ -11,7 +11,7 @@ lora_dropout: 0.05
 lora_target: q_proj,v_proj,k_proj,o_proj,gate_proj,up_proj,down_proj
 
 ### 数据
-dataset: joybuy_react
+dataset: shopping_react
 template: qwen
 cutoff_len: 4096
 
@@ -31,7 +31,7 @@ eval_strategy: steps
 eval_steps: 200
 
 ### 保存
-output_dir: ./output/joybuy_lora_v1
+output_dir: ./output/shopping_lora_v1
 logging_steps: 20
 save_steps: 200
 save_total_limit: 3

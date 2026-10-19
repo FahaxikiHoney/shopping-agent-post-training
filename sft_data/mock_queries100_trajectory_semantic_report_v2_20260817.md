@@ -1,4 +1,4 @@
-# Joybuy Mock 100 条完整轨迹独立语义审计
+# Shopping Mock 100 条完整轨迹独立语义审计
 
 ## 产物
 

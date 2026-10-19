@@ -26,7 +26,7 @@ OUTPUT = Path(__file__).parent / "train_chatml_v3.json"
 OUTPUT_VAL = Path(__file__).parent / "val_chatml_v3.json"
 
 # ── 系统提示 ──────────────────────────────────────────────────────────────
-SYSTEM_PROMPT = """你是京东购物助手，负责帮用户找到最合适的商品。
+SYSTEM_PROMPT = """你是购物助手，负责帮用户找到最合适的商品。
 
 工作流程：
 1. 理解用户需求，思考搜索策略（在<think>标签内）
@@ -44,7 +44,7 @@ TOOLS_SCHEMA = [
         "type": "function",
         "function": {
             "name": "SkuRecallShopping",
-            "description": "【搜索推荐/相似品/组合购物场景】根据关键词搜索京东商品，返回匹配的商品列表。",
+            "description": "【搜索推荐/相似品/组合购物场景】根据关键词搜索购物平台商品，返回匹配的商品列表。",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -52,7 +52,7 @@ TOOLS_SCHEMA = [
                     "max_price": {"type": "number",  "description": "价格上限（元），不传则不限价格"},
                     "min_price": {"type": "number",  "description": "价格下限（元）"},
                     "page_size": {"type": "integer", "description": "返回商品数量，默认3，bundle场景每品类传2"},
-                    "is_jd_self":{"type": "boolean", "description": "是否只搜京东自营，默认true"},
+                    "is_platform_self":{"type": "boolean", "description": "是否只搜平台自营，默认true"},
                 },
                 "required": ["query"],
             },

@@ -9,7 +9,7 @@
 - `ready_to_run/chatml/dataset_info.json`：当前主 ChatML SFT 配置从 `dataset_dir` 读取的注册文件；根目录 `dataset_info.json` 为兼容副本。
 - `train_llamafactory.json`：另一个转换版本；使用前检查对应 registry 与列格式。
 
-另一套 875/100/100 ReAct 数据在 `../LLaMA-Factory/llamafactory/`，配套项目配置和注册。875 条训练 split 也转换成 `../slime_joybuy_rl/data/joybuy_slime_tasks.jsonl`。
+另一套 875/100/100 ReAct 数据在 `../LLaMA-Factory/llamafactory/`，配套项目配置和注册。875 条训练 split 也转换成 `../slime_shopping_rl/data/shopping_slime_tasks.jsonl`。
 
 ## 常用脚本
 

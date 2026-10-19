@@ -2,7 +2,7 @@
 
 ## 目标
 
-保留 Mock 商品库和单 Agent ReAct 执行方式，但让训练轨迹中可见的 `sku_recall` 调用参数、返回字段、空召回行为和商品字段与真实 Joybuy 项目一致。
+保留 Mock 商品库和单 Agent ReAct 执行方式，但让训练轨迹中可见的 `sku_recall` 调用参数、返回字段、空召回行为和商品字段与真实 Shopping 项目一致。
 
 ## 契约
 

@@ -24,7 +24,7 @@ from pathlib import Path
 from datetime import datetime
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from joybuy_agent.llm.client import LLMClient
+from shopping_agent.llm.client import LLMClient
 
 # 直接复用 evaluate.py 的 judge prompt（中文，MiniMax 能正确遵循）
 from sft_data.evaluate import JUDGE_SYSTEM, JUDGE_PROMPT_TEMPLATE, format_trajectory as _fmt_react
@@ -53,7 +53,7 @@ def format_react_trajectory(traj: dict) -> str:
 
 
 def build_messages_from_real(traj: dict) -> list[dict]:
-    """把真实轨迹（joybuy_trajectory_v1）转成 messages 列表，供 format_trajectory 使用"""
+    """把真实轨迹（shopping_trajectory_v1）转成 messages 列表，供 format_trajectory 使用"""
     msgs = []
     query = traj.get("request", {}).get("query", "")
     if query:

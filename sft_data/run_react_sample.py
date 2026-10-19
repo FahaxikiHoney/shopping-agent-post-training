@@ -5,8 +5,8 @@ from pathlib import Path
 from datetime import datetime
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from joybuy_agent.llm.client import LLMClient
-from joybuy_agent.react.agent import ReActJoybuyAgent
+from shopping_agent.llm.client import LLMClient
+from shopping_agent.react.agent import ReActShoppingAgent
 
 OUTPUT = Path(__file__).parent / "trajectories_react_sample.jsonl"
 
@@ -27,7 +27,7 @@ for sc, query in SAMPLES:
     print(f"Query: {query}")
     print('='*60)
 
-    agent = ReActJoybuyAgent(llm=llm, max_steps=5, scenario_type=sc)
+    agent = ReActShoppingAgent(llm=llm, max_steps=5, scenario_type=sc)
     t0 = time.time()
     traj = agent.run(query)
     elapsed = time.time() - t0

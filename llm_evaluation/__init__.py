@@ -1,1 +1,1 @@
-"""Joybuy trajectory LLM evaluation tools."""
+"""Shopping trajectory LLM evaluation tools."""

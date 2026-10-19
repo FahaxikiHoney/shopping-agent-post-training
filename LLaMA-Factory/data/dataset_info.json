@@ -746,8 +746,8 @@
     },
     "folder": "python"
   },
-  "joybuy_react": {
-    "file_name": "train_joybuy_react.json",
+  "shopping_react": {
+    "file_name": "train_shopping_react.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations"
@@ -761,8 +761,8 @@
       "observation_tag": "human"
     }
   },
-  "joybuy_react_eval": {
-    "file_name": "eval_joybuy_react.json",
+  "shopping_react_eval": {
+    "file_name": "eval_shopping_react.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations"
@@ -776,8 +776,8 @@
       "observation_tag": "human"
     }
   },
-  "joybuy_react_test": {
-    "file_name": "test_joybuy_react.json",
+  "shopping_react_test": {
+    "file_name": "test_shopping_react.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations"

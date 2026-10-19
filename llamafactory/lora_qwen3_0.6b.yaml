@@ -18,7 +18,7 @@ lora_dropout: 0.05
 lora_target: q_proj,v_proj,k_proj,o_proj,gate_proj,up_proj,down_proj
 
 # ── 数据 ──────────────────────────────────────────────────────
-dataset: joybuy_react                      # dataset_info.json 中注册的名字
+dataset: shopping_react                      # dataset_info.json 中注册的名字
 template: qwen3                            # Qwen3 系列用 qwen3 模板
 cutoff_len: 6144                           # 覆盖 P99+，实测仅截断 2 条(0.2%)长轨迹；配合 packing 后大 cutoff 不再线性放大显存
 train_on_prompt: false                     # 只对 assistant 回复计算 loss
@@ -53,7 +53,7 @@ val_size: 0.0
 eval_strategy: "no"                        # 训练中不评估（原 steps 是 OOM 元凶）
 
 # ── 保存 ──────────────────────────────────────────────────────
-output_dir: ./output/joybuy_qwen3_0.6b_lora
+output_dir: ./output/shopping_qwen3_0.6b_lora
 logging_steps: 10
 save_steps: 100
 save_total_limit: 3

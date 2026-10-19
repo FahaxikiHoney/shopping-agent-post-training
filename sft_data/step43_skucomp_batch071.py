@@ -14,7 +14,7 @@ def make_traj(tid, sc, cat, focus, query, tool_input, products, final_content, c
     """
     构建一条标准 sku_comp SFT 轨迹。
     card_reasons: list of (product_id, display_price, reason)
-    products: list of dicts with product_id, title, price, is_jd_self, rating, key_specs, sales
+    products: list of dicts with product_id, title, price, is_platform_self, rating, key_specs, sales
     """
     product_ids = {p["product_id"] for p in products}
     for pid, _, _ in card_reasons:
@@ -76,28 +76,28 @@ T071 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_anc_sony_xm5",
+            "product_id": "mock_anc_sony_xm5",
             "title": "索尼 WH-1000XM5 头戴式降噪耳机 黑色",
             "price": 2499.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "8 麦克风降噪/30H 续航/多点连接/折叠收纳/快充 3 分钟听 3 小时",
             "sales": "月销 2.8 万"
         },
         {
-            "product_id": "jd_anc_bose_qc45",
+            "product_id": "mock_anc_bose_qc45",
             "title": "Bose QuietComfort 45 头戴式降噪耳机 白色",
             "price": 2199.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "Bose TriPort 声学/24H 续航/轻量化设计 240g/柔和降噪模式",
             "sales": "月销 1.2 万"
         },
         {
-            "product_id": "jd_anc_airpods_max",
+            "product_id": "mock_anc_airpods_max",
             "title": "Apple AirPods Max 头戴式降噪耳机 午夜色",
             "price": 4299.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "H1 芯片/空间音频/20H 续航/铝合金网状顶梁/仅限 Apple 生态",
             "sales": "月销 6800"
@@ -133,9 +133,9 @@ T071 = make_traj(
         "Bose QC45 适合对降噪要求没那么极端、更在意轻便的用户。"
     ),
     card_reasons=[
-        ("jd_anc_sony_xm5", 2499.0, "8 麦克风降噪行业第一+30H 续航最长+多点连接，通勤降噪天花板"),
-        ("jd_anc_bose_qc45", 2199.0, "最轻 240g+降噪柔和均匀+价格最低，轻便舒适通勤备选"),
-        ("jd_anc_airpods_max", 4299.0, "空间音频+Apple 生态无缝切换，重度 iPhone+Mac 用户专属体验")
+        ("mock_anc_sony_xm5", 2499.0, "8 麦克风降噪行业第一+30H 续航最长+多点连接，通勤降噪天花板"),
+        ("mock_anc_bose_qc45", 2199.0, "最轻 240g+降噪柔和均匀+价格最低，轻便舒适通勤备选"),
+        ("mock_anc_airpods_max", 4299.0, "空间音频+Apple 生态无缝切换，重度 iPhone+Mac 用户专属体验")
     ]
 )
 
@@ -155,19 +155,19 @@ T072 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_kb_razer_green",
+            "product_id": "mock_kb_razer_green",
             "title": "雷蛇黑寡妇蜘蛛 V3 机械键盘 绿轴（国内对应青轴手感）",
             "price": 699.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": "45g 触发力/明显段落感/咔哒声响/打字反馈清晰/开放式轴体",
             "sales": "月销 3200"
         },
         {
-            "product_id": "jd_kb_logitech_red",
+            "product_id": "mock_kb_logitech_red",
             "title": "罗技 G Pro X 机械键盘 红轴版",
             "price": 799.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "45g 线性触发/无段落感/静音顺滑/快速连按/游戏电竞首选",
             "sales": "月销 5600"
@@ -201,8 +201,8 @@ T072 = make_traj(
         "选青轴（雷蛇 ¥699 还更便宜 ¥100）。"
     ),
     card_reasons=[
-        ("jd_kb_logitech_red", 799.0, "线性红轴静音顺滑+游戏连按速度快+月销 5600，办公游戏两用首选"),
-        ("jd_kb_razer_green", 699.0, "青轴段落感强打字反馈清晰+价格更低，居家独立空间打字党备选")
+        ("mock_kb_logitech_red", 799.0, "线性红轴静音顺滑+游戏连按速度快+月销 5600，办公游戏两用首选"),
+        ("mock_kb_razer_green", 699.0, "青轴段落感强打字反馈清晰+价格更低，居家独立空间打字党备选")
     ]
 )
 
@@ -222,28 +222,28 @@ T073 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_tb_oralb_io3",
+            "product_id": "mock_tb_oralb_io3",
             "title": "欧乐B iO3 声波旋转电动牙刷 黑色",
             "price": 299.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "声波旋转/3 档模式/2 分钟计时/无压力传感/续航 2 周",
             "sales": "月销 1.5 万"
         },
         {
-            "product_id": "jd_tb_philips_hx9352",
+            "product_id": "mock_tb_philips_hx9352",
             "title": "飞利浦 Sonicare HX9352 钻石亮白系列",
             "price": 699.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "声波震动 62000 次/分/压力传感警示/4 档模式/续航 3 周/旅行盒",
             "sales": "月销 8900"
         },
         {
-            "product_id": "jd_tb_oralb_io9",
+            "product_id": "mock_tb_oralb_io9",
             "title": "欧乐B iO9 旗舰 AI 智能电动牙刷",
             "price": 1299.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "AI 刷牙追踪/彩屏+蓝牙 APP/7 档模式/磁悬浮马达/压力反馈震动/续航 2 周",
             "sales": "月销 3200"
@@ -277,9 +277,9 @@ T073 = make_traj(
         "但建议主动控制刷牙力度。旗舰款 iO9 留给有明确需求的用户。"
     ),
     card_reasons=[
-        ("jd_tb_philips_hx9352", 699.0, "声波 62000 次/分+压力传感护龈+3 周续航最长，性价比拐点首选"),
-        ("jd_tb_oralb_io3", 299.0, "基础声波旋转+2 周续航+月销 1.5 万，入门够用预算有限可选"),
-        ("jd_tb_oralb_io9", 1299.0, "AI 刷牙追踪+7 档磁悬浮+彩屏 APP，正畸/牙龈疾病专业级需求")
+        ("mock_tb_philips_hx9352", 699.0, "声波 62000 次/分+压力传感护龈+3 周续航最长，性价比拐点首选"),
+        ("mock_tb_oralb_io3", 299.0, "基础声波旋转+2 周续航+月销 1.5 万，入门够用预算有限可选"),
+        ("mock_tb_oralb_io9", 1299.0, "AI 刷牙追踪+7 档磁悬浮+彩屏 APP，正畸/牙龈疾病专业级需求")
     ]
 )
 
@@ -299,19 +299,19 @@ T074 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_robot_roborock_g20",
+            "product_id": "mock_robot_roborock_g20",
             "title": "石头扫地机器人 G20 激光导航全能版",
             "price": 2999.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "LDS 激光导航/7000Pa 吸力/AI 精准识别障碍物/暗光不影响/自动集尘+洗拖布",
             "sales": "月销 1.1 万"
         },
         {
-            "product_id": "jd_robot_ecovacs_x1",
+            "product_id": "mock_robot_ecovacs_x1",
             "title": "科沃斯 DEEBOT X1 OMNI 视觉导航旗舰",
             "price": 3299.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "AIVI 3D 视觉识别/6000Pa 吸力/OZMO TURBO 震动拖地/自动集尘+热水洗拖/暗光盲区",
             "sales": "月销 7800"
@@ -347,8 +347,8 @@ T074 = make_traj(
         "3D 避障细腻+热水洗拖卫生度高值得多花 ¥300。"
     ),
     card_reasons=[
-        ("jd_robot_roborock_g20", 2999.0, "激光导航暗光不影响+7000Pa 吸力最强+价格低 300，宠物家庭/夜间清扫首选"),
-        ("jd_robot_ecovacs_x1", 3299.0, "3D 视觉细腻避障+热水洗拖卫生度高，有小孩/白天清扫/地面杂物多的场景")
+        ("mock_robot_roborock_g20", 2999.0, "激光导航暗光不影响+7000Pa 吸力最强+价格低 300，宠物家庭/夜间清扫首选"),
+        ("mock_robot_ecovacs_x1", 3299.0, "3D 视觉细腻避障+热水洗拖卫生度高，有小孩/白天清扫/地面杂物多的场景")
     ]
 )
 
@@ -368,28 +368,28 @@ T075 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_protein_on_whey",
+            "product_id": "mock_protein_on_whey",
             "title": "Optimum Nutrition 金标乳清蛋白 2.27kg 双巧克力",
             "price": 498.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "每份蛋白质 24g/BCAA 5.5g/30 分钟快速吸收/含乳糖/73 份",
             "sales": "月销 3.5 万"
         },
         {
-            "product_id": "jd_protein_now_pea",
+            "product_id": "mock_protein_now_pea",
             "title": "Now Sports 豌豆分离蛋白粉 907g 原味",
             "price": 218.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": "每份蛋白质 24g/无乳糖无麸质/植物来源/氨基酸谱略低于乳清/不含 BCAA 添加",
             "sales": "月销 8200"
         },
         {
-            "product_id": "jd_protein_by_health_collagen",
+            "product_id": "mock_protein_by_health_collagen",
             "title": "汤臣倍健胶原蛋白粉 300g 原味",
             "price": 168.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.6,
             "key_specs": "每份胶原蛋白 5g/缺乏色氨酸（非完全蛋白）/皮肤关节保养/不适合增肌",
             "sales": "月销 2.1 万"
@@ -423,9 +423,9 @@ T075 = make_traj(
         "胶原蛋白粉用于增肌是对自己钱包和训练时间的浪费。"
     ),
     card_reasons=[
-        ("jd_protein_on_whey", 498.0, "完全蛋白+BCAA 5.5g+30 分钟快速吸收，增肌金标准月销 3.5 万首选"),
-        ("jd_protein_now_pea", 218.0, "无乳糖植物蛋白+接近完全氨基酸谱+价格一半，乳糖不耐受/素食备选"),
-        ("jd_protein_by_health_collagen", 168.0, "非完全蛋白缺色氨酸无增肌效果，适合皮肤关节保养非增肌用途")
+        ("mock_protein_on_whey", 498.0, "完全蛋白+BCAA 5.5g+30 分钟快速吸收，增肌金标准月销 3.5 万首选"),
+        ("mock_protein_now_pea", 218.0, "无乳糖植物蛋白+接近完全氨基酸谱+价格一半，乳糖不耐受/素食备选"),
+        ("mock_protein_by_health_collagen", 168.0, "非完全蛋白缺色氨酸无增肌效果，适合皮肤关节保养非增肌用途")
     ]
 )
 
@@ -445,28 +445,28 @@ T076 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_mixer_haishu_hm740",
+            "product_id": "mock_mixer_haishu_hm740",
             "title": "海氏 HM740 家用厨师机 5L 白色",
             "price": 699.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": "1000W/行星搅拌/5L 容量/6 档调速/配打蛋+揉面+搅拌三种头",
             "sales": "月销 8500"
         },
         {
-            "product_id": "jd_mixer_kenwood_kmx750",
+            "product_id": "mock_mixer_kenwood_kmx750",
             "title": "凯伍德 KMX750 厨师机 5L 银色",
             "price": 1599.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "800W 直流电机/行星搅拌/铸铁机身/低速扭矩强/10 档调速/更低噪音",
             "sales": "月销 3200"
         },
         {
-            "product_id": "jd_mixer_kitchenaid_5qt",
+            "product_id": "mock_mixer_kitchenaid_5qt",
             "title": "KitchenAid Artisan 5QT 升降式厨师机 帝国红",
             "price": 3299.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "325W（但扭矩设计更优）/行星搅拌/4.7L 钢碗/10 档/全金属铸铁/附件扩展接口",
             "sales": "月销 1800"
@@ -501,9 +501,9 @@ T076 = make_traj(
         "**偶尔做面包 → 海氏 HM740（¥699）**，功率够用，价格门槛低。"
     ),
     card_reasons=[
-        ("jd_mixer_kenwood_kmx750", 1599.0, "直流电机低速大扭矩+铸铁机身稳定+低噪音，每周做面包性价比最优"),
-        ("jd_mixer_kitchenaid_5qt", 3299.0, "全金属铸铁 15 年耐用+15 种附件扩展接口，厨房重度用户一站式解决"),
-        ("jd_mixer_haishu_hm740", 699.0, "1000W+行星搅拌+月销 8500，偶尔做面包入门门槛低")
+        ("mock_mixer_kenwood_kmx750", 1599.0, "直流电机低速大扭矩+铸铁机身稳定+低噪音，每周做面包性价比最优"),
+        ("mock_mixer_kitchenaid_5qt", 3299.0, "全金属铸铁 15 年耐用+15 种附件扩展接口，厨房重度用户一站式解决"),
+        ("mock_mixer_haishu_hm740", 699.0, "1000W+行星搅拌+月销 8500，偶尔做面包入门门槛低")
     ]
 )
 
@@ -523,19 +523,19 @@ T077 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_watch_apple_s9",
+            "product_id": "mock_watch_apple_s9",
             "title": "Apple Watch Series 9 GPS 铝金属 45mm 午夜色",
             "price": 2999.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "需 iPhone 配对/ECG 心电图/血氧/跌倒检测/18H 续航/S9 芯片",
             "sales": "月销 1.8 万"
         },
         {
-            "product_id": "jd_watch_huawei_gt4",
+            "product_id": "mock_watch_huawei_gt4",
             "title": "华为 Watch GT 4 46mm 耀金黑",
             "price": 1488.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "安卓/鸿蒙均可配/心率+血氧+体温+压力/14 天续航/蓝牙通话/100+ 运动模式",
             "sales": "月销 2.3 万"
@@ -567,8 +567,8 @@ T077 = make_traj(
         "如果将来换成 iPhone 生态，再考虑 Apple Watch 不迟。"
     ),
     card_reasons=[
-        ("jd_watch_huawei_gt4", 1488.0, "与华为手机完整兼容+14 天续航+蓝牙通话+体温监测，华为用户唯一合理选择"),
-        ("jd_watch_apple_s9", 2999.0, "ECG 心电图+S9 芯片+月销 1.8 万，仅限 iPhone 用户，华为手机无法配对")
+        ("mock_watch_huawei_gt4", 1488.0, "与华为手机完整兼容+14 天续航+蓝牙通话+体温监测，华为用户唯一合理选择"),
+        ("mock_watch_apple_s9", 2999.0, "ECG 心电图+S9 芯片+月销 1.8 万，仅限 iPhone 用户，华为手机无法配对")
     ]
 )
 
@@ -588,28 +588,28 @@ T078 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_shaver_philips_s5000",
+            "product_id": "mock_shaver_philips_s5000",
             "title": "飞利浦 S5000 旋转式电动剃须刀 黑色",
             "price": 599.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "三刀头旋转/8 方向自适应/干湿两用/皮肤刺激最小/60 分钟续航",
             "sales": "月销 1.6 万"
         },
         {
-            "product_id": "jd_shaver_braun_s7",
+            "product_id": "mock_shaver_braun_s7",
             "title": "博朗 Series 7 往复式剃须刀 银色",
             "price": 1299.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "5+1 剃须元件/往复运动/清洁站/密胡须也能剃净/皮肤刺激中等",
             "sales": "月销 8900"
         },
         {
-            "product_id": "jd_shaver_gillette_fusion5",
+            "product_id": "mock_shaver_gillette_fusion5",
             "title": "吉列 Fusion5 手动剃须刀 8 刀片装",
             "price": 129.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "5 刀片+润滑条/最接近肌肤剃净/无电池/刀片每月需换/适合精细修整",
             "sales": "月销 4.2 万"
@@ -642,9 +642,9 @@ T078 = make_traj(
         "如果你同时胡须很密、要求剃净度，可以升级博朗 Series 7（¥1299）。"
     ),
     card_reasons=[
-        ("jd_shaver_philips_s5000", 599.0, "旋转式 8 方向自适应皮肤刺激最小+干湿两用，敏感肌首选方案"),
-        ("jd_shaver_braun_s7", 1299.0, "往复 5+1 元件剃净度高+清洁站自动维护，密胡须敏感肌升级选项"),
-        ("jd_shaver_gillette_fusion5", 129.0, "5 刀片剃净度最高但皮肤刺激最大，敏感肌不推荐/旅行精细修整备用")
+        ("mock_shaver_philips_s5000", 599.0, "旋转式 8 方向自适应皮肤刺激最小+干湿两用，敏感肌首选方案"),
+        ("mock_shaver_braun_s7", 1299.0, "往复 5+1 元件剃净度高+清洁站自动维护，密胡须敏感肌升级选项"),
+        ("mock_shaver_gillette_fusion5", 129.0, "5 刀片剃净度最高但皮肤刺激最大，敏感肌不推荐/旅行精细修整备用")
     ]
 )
 
@@ -664,19 +664,19 @@ T079 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_humi_philips_hu4803",
+            "product_id": "mock_humi_philips_hu4803",
             "title": "飞利浦 HU4803 超声波加湿器 白色",
             "price": 499.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.7,
             "key_specs": "超声波雾化/300ml/h/20-40dB 极静/矿物质雾（白粉）/需纯净水或蒸馏水",
             "sales": "月销 1.2 万"
         },
         {
-            "product_id": "jd_humi_midea_sc3h30b",
+            "product_id": "mock_humi_midea_sc3h30b",
             "title": "美的 SC-3H30B 蒸发式加湿器 白色",
             "price": 359.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "蒸发湿化/无白粉/自净蒸发/自来水可用/加湿量随湿度自调/30-45dB 略有风扇声",
             "sales": "月销 8700"
@@ -711,8 +711,8 @@ T079 = make_traj(
         "如果坚持用超声波，**必须**换用纯净水或加装净水滤芯，否则白粉风险不可忽视。"
     ),
     card_reasons=[
-        ("jd_humi_midea_sc3h30b", 359.0, "蒸发式无白粉+自来水直用+宝宝呼吸道安全+价格更低，有宝宝家庭唯一推荐"),
-        ("jd_humi_philips_hu4803", 499.0, "超声波极静 20dB+出雾快，但自来水会产生白粉，有宝宝须改用纯净水")
+        ("mock_humi_midea_sc3h30b", 359.0, "蒸发式无白粉+自来水直用+宝宝呼吸道安全+价格更低，有宝宝家庭唯一推荐"),
+        ("mock_humi_philips_hu4803", 499.0, "超声波极静 20dB+出雾快，但自来水会产生白粉，有宝宝须改用纯净水")
     ]
 )
 
@@ -732,28 +732,28 @@ T080 = make_traj(
     },
     products=[
         {
-            "product_id": "jd_pen_pilot_mr3",
+            "product_id": "mock_pen_pilot_mr3",
             "title": "百乐 MR3 都市系列钢笔 F 尖 黑色",
             "price": 168.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "不锈钢笔尖/卡式墨水/F/M/B 三种笔尖选择/书写流畅/金属笔身",
             "sales": "月销 2.1 万"
         },
         {
-            "product_id": "jd_pen_twsbi_eco",
+            "product_id": "mock_pen_twsbi_eco",
             "title": "TWSBI ECO 活塞式钢笔 F 尖 透明",
             "price": 398.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "不锈钢笔尖/活塞吸墨/大容量墨水/透明可视墨量/EF/F/M/B/1.1 五种笔尖",
             "sales": "月销 1.3 万"
         },
         {
-            "product_id": "jd_pen_pilot_c74",
+            "product_id": "mock_pen_pilot_c74",
             "title": "百乐 Custom 74 钢笔 F 尖 黑色",
             "price": 980.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "14K 金笔尖/活塞吸墨/书写弹性极佳/柔和弹性书写/稳定性高/EF/F/M/B 四种",
             "sales": "月销 4800"
@@ -789,9 +789,9 @@ T080 = make_traj(
         "笔尖选择最多，书写流畅度充分。千元金尖留到你真正被钢笔迷住之后再升级。"
     ),
     card_reasons=[
-        ("jd_pen_twsbi_eco", 398.0, "活塞大容量 2-3 周不换墨+五种笔尖最全+透明可视墨量，每天写字性价比最优"),
-        ("jd_pen_pilot_c74", 980.0, "14K 金尖弹性书写仪式感+活塞大容量，钢笔爱好者进阶必选"),
-        ("jd_pen_pilot_mr3", 168.0, "不锈钢尖流畅+金属笔身+月销 2.1 万，初次体验钢笔低风险入门")
+        ("mock_pen_twsbi_eco", 398.0, "活塞大容量 2-3 周不换墨+五种笔尖最全+透明可视墨量，每天写字性价比最优"),
+        ("mock_pen_pilot_c74", 980.0, "14K 金尖弹性书写仪式感+活塞大容量，钢笔爱好者进阶必选"),
+        ("mock_pen_pilot_mr3", 168.0, "不锈钢尖流畅+金属笔身+月销 2.1 万，初次体验钢笔低风险入门")
     ]
 )
 

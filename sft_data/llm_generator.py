@@ -138,10 +138,10 @@ PROMPT_TEMPLATE = """你是购物 Agent 训练数据生成专家。请为下面�
         "status": "SUCCESS",
         "products": [
           {{
-            "product_id": "jd_xxxxxxxx",
+            "product_id": "mock_xxxxxxxx",
             "title": "完整商品标题（品牌+型号+规格）",
             "price": 数字,
-            "is_jd_self": true,
+            "is_platform_self": true,
             "rating": 4.7-4.9,
             "key_specs": "2-3 个关键参数",
             "sales": "月销Xxx件"

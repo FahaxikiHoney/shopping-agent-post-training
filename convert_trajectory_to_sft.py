@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-将 joybuy 原始轨迹 JSONL 转为标准 OpenAI Function Calling SFT 格式。
+将 shopping 原始轨迹 JSONL 转为标准 OpenAI Function Calling SFT 格式。
 
 输出:
   messages: [system, user, assistant(tool_calls), tool*, assistant(final)]
@@ -12,7 +12,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 # ─── 训练用系统提示词(精简版) ───
 SYSTEM_PROMPT_TRAIN = """\
-You are a Joybuy shopping assistant. Analyze the user's shopping need, call tools to retrieve products, then compose a recommendation reply.
+You are a shopping assistant. Analyze the user's shopping need, call tools to retrieve products, then compose a recommendation reply.
 
 ## Available Tools
 

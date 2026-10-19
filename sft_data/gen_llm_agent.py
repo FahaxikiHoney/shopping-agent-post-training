@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-用 joybuy_agent 框架 + JoyAI-LLM-Flash 生成 100 条 SFT 数据
+用 shopping_agent 框架 + JoyAI-LLM-Flash 生成 100 条 SFT 数据
 并发 4 个线程，约 5-15 分钟完成
 """
 import sys, json, time, random, threading, traceback
@@ -10,11 +10,11 @@ from datetime import datetime
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from joybuy_agent.llm import LLM_FAST, LLM_THINKING, make_agent_with_thinking
-from joybuy_agent.llm.client import LLMClient
-from joybuy_agent.tools import create_registry
-from joybuy_agent.core.context import AgentContext
-from joybuy_agent.agents import (
+from shopping_agent.llm import LLM_FAST, LLM_THINKING, make_agent_with_thinking
+from shopping_agent.llm.client import LLMClient
+from shopping_agent.tools import create_registry
+from shopping_agent.core.context import AgentContext
+from shopping_agent.agents import (
     SimilarRecAgent, SkuCompAgent, SearchRecommendAgent,
     RepurchaseAgent, MatchingAgent, BundleAgent, OrderAgent,
 )

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run reproducible Joybuy Mock regressions from real-query JSONL inputs."""
+"""Run reproducible Shopping Mock regressions from real-query JSONL inputs."""
 
 import argparse
 import json
@@ -13,9 +13,9 @@ from typing import Any, Dict, Iterable, List, Optional, Sequence, Set
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from joybuy_agent.llm.client import LLMClient
-from joybuy_agent.react.agent import ReActJoybuyAgent
-from joybuy_agent.react.quality_gate import evaluate_trajectory, summarize
+from shopping_agent.llm.client import LLMClient
+from shopping_agent.react.agent import ReActShoppingAgent
+from shopping_agent.react.quality_gate import evaluate_trajectory, summarize
 
 
 RETRYABLE_HTTP_CODES = {429, 502, 503, 504}
@@ -207,7 +207,7 @@ def run_sample(
         attempts = attempt
         try:
             started = time.time()
-            trajectory = ReActJoybuyAgent(
+            trajectory = ReActShoppingAgent(
                 llm=client,
                 max_steps=max_steps,
                 scenario_type=effective_scenario,
@@ -252,7 +252,7 @@ def derived_quality_path(output: Path) -> Path:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Run a reproducible, resumable Joybuy Mock query regression.",
+        description="Run a reproducible, resumable Shopping Mock query regression.",
     )
     parser.add_argument(
         "--input",

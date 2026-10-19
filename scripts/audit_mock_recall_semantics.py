@@ -12,8 +12,8 @@ import urllib.error
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence
 
-from joybuy_agent.llm.client import LLMClient
-from joybuy_agent.react.tools import execute_tool
+from shopping_agent.llm.client import LLMClient
+from shopping_agent.react.tools import execute_tool
 
 
 SYSTEM_PROMPT = """You are a strict shopping-retrieval auditor.
@@ -92,7 +92,7 @@ def write_report(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Audit non-empty Joybuy mock recall results with an independent LLM judge.",
+        description="Audit non-empty Shopping mock recall results with an independent LLM judge.",
     )
     parser.add_argument("--input", required=True)
     parser.add_argument("--output", required=True)

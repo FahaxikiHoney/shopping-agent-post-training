@@ -1,6 +1,6 @@
 # JoySage Agent Framework 说明
 
-> 轻量级购物 Agent 框架，基于真实 joybuy-chatbot 项目架构复现，用于 SFT 训练数据生成。
+> 轻量级购物 Agent 框架，基于真实 shopping-chatbot 项目架构复现，用于 SFT 训练数据生成。
 
 ---
 
@@ -9,13 +9,13 @@
 ### 设计目标
 
 - 无需依赖 oxygent 内部框架（不 import oxygent-src），使用标准 Python
-- 工具名、字段名、返回格式与真实 joybuy 项目对齐
+- 工具名、字段名、返回格式与真实 shopping 项目对齐
 - 每个工具内置完整 Mock 数据，可在无内网时独立运行
 - 可驱动 SFT 数据生成（有内网用 LLM，无内网用 Mock）
 
 ### 与真实 oxygent 项目对照
 
-| 真实 joybuy-chatbot | 本框架（JoySage） |
+| 真实 shopping-chatbot | 本框架（JoySage） |
 |---|---|
 | `OxyRequest` | `AgentContext` |
 | `FunctionHub` | `ToolRegistry` |
@@ -31,7 +31,7 @@
 
 ```
 agent后训练项目/
-├── joybuy_agent/
+├── shopping_agent/
 │   ├── __init__.py              # 导出 AgentContext / ToolRegistry / ShoppingAgent
 │   ├── core/
 │   │   ├── context.py           # AgentContext（对应 OxyRequest）
@@ -63,7 +63,7 @@ agent后训练项目/
 
 ### 3.1 工具名与真实项目对应
 
-| SFT 中的 tool_name | 真实 joybuy 对应 | 本框架文件 |
+| SFT 中的 tool_name | 真实 shopping 对应 | 本框架文件 |
 |---|---|---|
 | `SkuRecallShopping` | sku_recall_hub.sku_recall + scenario_recall_hub | tools/sku_recall.py |
 | `SkuRepurchaseRecall` | sku_recall_hub.sku_recall_history | tools/sku_repurchase.py |
@@ -202,7 +202,7 @@ result = registry.call("SkuRecallShopping", ctx, {
 ```
 
 **训练重点**：
-- final_response 必须包含 App 操作路径：`京东 App → 我的订单 → XX → XX`
+- final_response 必须包含 App 操作路径：`购物 App → 我的订单 → XX → XX`
 - 覆盖 10 种操作场景（退款/换货/物流/取消/价保/发票/提前还款/预约/下单/合并发货）
 
 ---
@@ -280,10 +280,10 @@ for k,v in sorted(c.items()):
 
 | 场景 | 格式 | 示例 |
 |---|---|---|
-| 基础商品池 | `jd_XXXXXXXX`（8位数字） | `jd_10001001` |
-| matching 专属 | `jd_match_XXXN` | `jd_match_001a` |
-| repurchase 历史 | `jd_rep_XXX` | `jd_rep_001` |
-| 订单相关 | `jd_order_guide` 或 `calc_result_001` | `calc_result_001` |
+| 基础商品池 | `mock_XXXXXXXX`（8位数字） | `mock_10001001` |
+| matching 专属 | `mock_match_XXXN` | `mock_match_001a` |
+| repurchase 历史 | `mock_rep_XXX` | `mock_rep_001` |
+| 订单相关 | `mock_order_guide` 或 `calc_result_001` | `calc_result_001` |
 
 ### 价格规范
 
@@ -310,13 +310,13 @@ for k,v in sorted(c.items()):
 
 ### 8.1 新增工具
 
-1. 在 `joybuy_agent/tools/` 下创建文件，实现 `__call__(ctx, params) -> dict`
+1. 在 `shopping_agent/tools/` 下创建文件，实现 `__call__(ctx, params) -> dict`
 2. 在 `tools/__init__.py` 的 `create_registry()` 中注册
 3. 在 `llm_gen_oxygen.py` 的 SYSTEM_PROMPT 规则 8 中添加工具名映射
 
 ### 8.2 新增场景
 
-1. 在 `joybuy_agent/agents/` 下创建 Agent 类（继承 ShoppingAgent）
+1. 在 `shopping_agent/agents/` 下创建 Agent 类（继承 ShoppingAgent）
 2. 在 `agents/__init__.py` 导出
 3. 在 `llm_gen_oxygen.py` 的 `agent_map` 和 `TOPICS` / `SCENARIO_CONFIG` 中添加
 

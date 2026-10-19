@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the current Joybuy Mock capability smoke suite against the live model."""
+"""Run the current Shopping Mock capability smoke suite against the live model."""
 
 import argparse
 import json
@@ -10,8 +10,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from joybuy_agent.llm.client import LLMClient
-from joybuy_agent.react.agent import ReActJoybuyAgent
+from shopping_agent.llm.client import LLMClient
+from shopping_agent.react.agent import ReActShoppingAgent
 
 
 SMOKE_CASES = [
@@ -61,7 +61,7 @@ SMOKE_CASES = [
         "id": "nl_external_price_comparison",
         "site_code": "NL-Site",
         "scenario_type": "search_recommend",
-        "query": "Wat is het prijsverschil van Red Bull tussen Joybuy en Lidl?",
+        "query": "Wat is het prijsverschil van Red Bull tussen Shopping en Lidl?",
     },
     {
         "id": "nl_nail_polish_budget",
@@ -214,7 +214,7 @@ def main() -> int:
         for attempt in range(args.retries):
             try:
                 started = time.time()
-                trajectory = ReActJoybuyAgent(
+                trajectory = ReActShoppingAgent(
                     llm=client,
                     max_steps=args.max_steps,
                     scenario_type=case["scenario_type"],

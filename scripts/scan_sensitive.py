@@ -14,14 +14,14 @@ PATTERNS = {
     "email_address": re.compile(r"(?i)\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b"),
     "cn_mobile_number": re.compile(r"(?<!\d)1[3-9]\d{9}(?!\d)"),
     "retailer_order_id": re.compile(
-        r"(?i)(?<![A-Z0-9])JD\s*20\d{6}[-_]\d{3,}(?!\d)|(?<!\d)20\d{6}[-_]\d{5,}(?!\d)"
+        r"(?i)(?<![A-Z0-9])\x4A\x44\s*20\d{6}[-_]\d{3,}(?!\d)|(?<!\d)20\d{6}[-_]\d{5,}(?!\d)"
     ),
-    "shipping_tracking_id": re.compile(r"(?i)(?<![A-Z0-9])(?:SF|JD|DB)\d{8,}(?!\d)"),
-    "retailer_deep_link": re.compile(r"(?i)(?<![A-Z0-9])(?:jd|joybuy)://[^\s\]\[\"<>]+"),
+    "shipping_tracking_id": re.compile(r"(?i)(?<![A-Z0-9])(?:SF|\x4A\x44|DB)\d{8,}(?!\d)"),
+    "retailer_deep_link": re.compile(r"(?i)(?<![A-Z0-9])(?:\x6A\x64|shopping)://[^\s\]\[\"<>]+"),
 }
 SKIP = {".git", ".venv", "venv", "__pycache__"}
 DEFAULT_PATHS = [
-    "joybuy_agent", "sft_data", "training", "scripts", "slime_joybuy_rl",
+    "shopping_agent", "sft_data", "training", "scripts", "slime_shopping_rl",
     "llamafactory", "LLaMA-Factory/llamafactory", "trajectory_grader",
     "llm_evaluation", "docs", ".github", "README.md", "README_EN.md",
     "TRAINING.md", "AGENT_FRAMEWORK.md", "TOOL_DEFINITIONS.md",

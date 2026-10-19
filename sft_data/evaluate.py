@@ -35,7 +35,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from joybuy_agent.llm.client import LLMClient
+from shopping_agent.llm.client import LLMClient
 
 OUTPUT = Path(__file__).parent / "eval_results.jsonl"
 WRITE_LOCK = threading.Lock()

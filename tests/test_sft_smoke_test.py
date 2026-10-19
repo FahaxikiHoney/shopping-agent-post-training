@@ -1,6 +1,6 @@
 import unittest
 
-from slime_joybuy_rl.joybuy_slime.sft_smoke_test import clean_final_output, format_tool_response, iter_queries
+from slime_shopping_rl.shopping_slime.sft_smoke_test import clean_final_output, format_tool_response, iter_queries
 
 
 class SftSmokeTestUtilityTest(unittest.TestCase):

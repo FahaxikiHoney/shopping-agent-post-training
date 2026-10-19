@@ -50,20 +50,20 @@ llamafactory-cli train training/lora_sft.yaml
 
 ## 4. 两阶段工具调用 SFT
 
-`slime_joybuy_rl/scripts/gpu/run_toolcall_warmup_4090_venv.sh` 训练首轮工具调用 warmup；`run_full_sft_from_warmup_4090_venv.sh` 从 warmup adapter 接着训练完整轨迹。脚本可通过环境变量覆盖 `MODEL_PATH`、`SOURCE_DATA`、`OUTPUT_DIR`、LoRA rank、epoch 和学习率。
+`slime_shopping_rl/scripts/gpu/run_toolcall_warmup_4090_venv.sh` 训练首轮工具调用 warmup；`run_full_sft_from_warmup_4090_venv.sh` 从 warmup adapter 接着训练完整轨迹。脚本可通过环境变量覆盖 `MODEL_PATH`、`SOURCE_DATA`、`OUTPUT_DIR`、LoRA rank、epoch 和学习率。
 
 ```bash
 MODEL_PATH=/models/your-base-model \
 SOURCE_DATA=/data/authorized_sharegpt.json \
 OUTPUT_DIR=/models/output/toolcall-warmup \
-bash slime_joybuy_rl/scripts/gpu/run_toolcall_warmup_4090_venv.sh
+bash slime_shopping_rl/scripts/gpu/run_toolcall_warmup_4090_venv.sh
 ```
 
 第二阶段前，确认 `WARMUP_ADAPTER_PATH` 是第一阶段产物，数据文件包含完整 tool-call/observation/final-answer 回合。具体支持参数以脚本变量为准。
 
 ## 5. 推理检查与合并
 
-使用 `slime_joybuy_rl/scripts/gpu/run_sft_test_4090_venv.sh` 做独立 smoke inference，检查模型是否先调用工具、是否使用工具返回事实、是否能结束对话。需要 Slime 或普通 HF 部署时，可用 `export_sft_lora_merged_venv.sh` 合并 adapter；合并不是继续训练的必要条件。
+使用 `slime_shopping_rl/scripts/gpu/run_sft_test_4090_venv.sh` 做独立 smoke inference，检查模型是否先调用工具、是否使用工具返回事实、是否能结束对话。需要 Slime 或普通 HF 部署时，可用 `export_sft_lora_merged_venv.sh` 合并 adapter；合并不是继续训练的必要条件。
 
 ## 6. 训练注意事项
 

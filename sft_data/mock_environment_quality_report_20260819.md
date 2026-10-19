@@ -1,12 +1,12 @@
-# Joybuy Mock 项目环境质量审计
+# Shopping Mock 项目环境质量审计
 
 日期：2026-08-19
 
 ## 总结
 
-当前 Joybuy Mock 已适合用于 SFT 轨迹生成、工具调用回归和状态化强化学习 Rollout；它是受控商品世界，不是覆盖全部长尾商品的完整商城。
+当前 Shopping Mock 已适合用于 SFT 轨迹生成、工具调用回归和状态化强化学习 Rollout；它是受控商品世界，不是覆盖全部长尾商品的完整商城。
 
-环境现已同时提供完整 Agent 入口 `ReActJoybuyAgent.run(query)` 和状态化 `JoybuyMockEnv.reset/step`，终局奖励使用确定性 `joybuy-mock-reward-v1`，不依赖 LLM Judge。
+环境现已同时提供完整 Agent 入口 `ReActShoppingAgent.run(query)` 和状态化 `ShoppingMockEnv.reset/step`，终局奖励使用确定性 `shopping-mock-reward-v1`，不依赖 LLM Judge。
 
 ## 实测结果
 
@@ -24,8 +24,8 @@
 - 本地召回延迟：P50 2.07ms，P95 5.97ms；4 进程吞吐约 689.60 QPS。优化前 P50 为 183.77ms。
 - 状态化环境测试：11/11 通过。
 - 固定 100 条 Oracle Rollout：51 条成功推荐、44 条真实空召回、5 条直接回复，平均奖励 0.741，负奖励异常 0 条。
-- RL 环境实现：`joybuy_agent/react/environment.py`。
-- 使用说明：`docs/joybuy-mock-rl-environment.md`。
+- RL 环境实现：`shopping_agent/react/environment.py`。
+- 使用说明：`docs/shopping-mock-rl-environment.md`。
 
 详细数据：`sft_data/mock_environment_600_audit_20260819.json`。
 
@@ -60,9 +60,9 @@
 
 ## 与现有 GRPO 项目的关系
 
-仓库中的 `shopping-grpo-longhorizon` 已包含 ShopSimulator 的状态化 `reset/step/reward` 框架，但它使用搜索、查看详情、选择规格和购买的长程动作协议。Joybuy Mock 使用 `sku_recall`、`scenario_related_recall` 和最终商卡协议，Joybuy 状态化环境已经完成，但尚未连接到该项目现有的 veRL AgentLoop。
+仓库中的 `shopping-grpo-longhorizon` 已包含 ShopSimulator 的状态化 `reset/step/reward` 框架，但它使用搜索、查看详情、选择规格和购买的长程动作协议。Shopping Mock 使用 `sku_recall`、`scenario_related_recall` 和最终商卡协议，Shopping 状态化环境已经完成，但尚未连接到该项目现有的 veRL AgentLoop。
 
-Joybuy RL Adapter 已完成：`reset(task)` 返回 Query、站点和工具 Schema；`step()` 执行单个工具动作或最终回复；环境保存工具历史、全局商卡编号、调用预算和终止状态；Reward v1 检查必需工具、商卡、质量门禁、重复动作和可避免空召回。下一步只需将该接口接入 veRL AgentLoop，并划分训练任务与留出评测任务。
+Shopping RL Adapter 已完成：`reset(task)` 返回 Query、站点和工具 Schema；`step()` 执行单个工具动作或最终回复；环境保存工具历史、全局商卡编号、调用预算和终止状态；Reward v1 检查必需工具、商卡、质量门禁、重复动作和可避免空召回。下一步只需将该接口接入 veRL AgentLoop，并划分训练任务与留出评测任务。
 
 ## 最终判断
 

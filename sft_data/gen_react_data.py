@@ -23,9 +23,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from joybuy_agent.llm.client import LLMClient
-from joybuy_agent.react.agent import ReActJoybuyAgent
-from joybuy_agent.react.tools import execute_tool
+from shopping_agent.llm.client import LLMClient
+from shopping_agent.react.agent import ReActShoppingAgent
+from shopping_agent.react.tools import execute_tool
 
 OUTPUT     = Path(__file__).parent / "trajectories_react.jsonl"
 WRITE_LOCK = threading.Lock()
@@ -81,7 +81,7 @@ TOPICS = {
         "买了哑铃开始健身，搭配瑜伽垫和弹力带",
     ],
     "search_no_stock": [
-        "我想买AirPods Max，京东有吗",        # 替代词：头戴式降噪耳机
+        "我想买AirPods Max，购物平台有吗",        # 替代词：头戴式降噪耳机
         "帮我找戴森V15吸尘器",                # 替代词：无线吸尘器
         "任天堂Switch OLED现在有货吗",        # 替代词：掌机/掌上游戏机
         "想买戴森Airwrap卷发棒",              # 替代词：卷发棒
@@ -217,7 +217,7 @@ def run_one(
     site_context=None,
 ) -> dict:
     scenario_type = SCENARIO_MAP.get(sc_key, sc_key)
-    agent = ReActJoybuyAgent(
+    agent = ReActShoppingAgent(
         llm=llm,
         max_steps=5,
         scenario_type=scenario_type,

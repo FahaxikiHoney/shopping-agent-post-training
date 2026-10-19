@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from slime_joybuy_rl.joybuy_slime.build_toolcall_warmup import build_records, normalize_tool_answer
+from slime_shopping_rl.shopping_slime.build_toolcall_warmup import build_records, normalize_tool_answer
 
 
 class ToolcallWarmupTest(unittest.TestCase):

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ============================================================
-# Joybuy Agent SFT 完整流程
+# Shopping Agent SFT 完整流程
 #
 # 1. LoRA SFT
 # 2. 合并 LoRA
@@ -20,23 +20,23 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 MODEL_PATH="${MODEL_PATH:-${ROOT_DIR}/models/Qwen3-0.6B}"
 LLAMAFACTORY="${LLAMAFACTORY:-${ROOT_DIR}/LLaMA-Factory}"
-JOYBUY_DIR="${ROOT_DIR}/sft_data/ready_to_run/react_sft"
+SHOPPING_DIR="${ROOT_DIR}/sft_data/ready_to_run/react_sft"
 
 # YAML
-TRAIN_YAML="${JOYBUY_DIR}/lora_qwen3_0.6b.yaml"
+TRAIN_YAML="${SHOPPING_DIR}/lora_qwen3_0.6b.yaml"
 
 # 数据
-TRAIN_DATA="${JOYBUY_DIR}/train_joybuy_react.json"
-EVAL_DATA="${JOYBUY_DIR}/eval_joybuy_react.json"
-TEST_DATA="${JOYBUY_DIR}/test_joybuy_react.json"
+TRAIN_DATA="${SHOPPING_DIR}/train_shopping_react.json"
+EVAL_DATA="${SHOPPING_DIR}/eval_shopping_react.json"
+TEST_DATA="${SHOPPING_DIR}/test_shopping_react.json"
 
 # dataset_info.json 仍然保持在官方 data 目录
-DATASET_INFO="${JOYBUY_DIR}/dataset_info.json"
+DATASET_INFO="${SHOPPING_DIR}/dataset_info.json"
 
 # 输出目录
-OUTPUT_LORA="${OUTPUT_LORA:-${LLAMAFACTORY}/output/joybuy_qwen3_0.6b_lora}"
+OUTPUT_LORA="${OUTPUT_LORA:-${LLAMAFACTORY}/output/shopping_qwen3_0.6b_lora}"
 
-OUTPUT_MERGED="${OUTPUT_MERGED:-${LLAMAFACTORY}/output/joybuy_qwen3_0.6b_merged}"
+OUTPUT_MERGED="${OUTPUT_MERGED:-${LLAMAFACTORY}/output/shopping_qwen3_0.6b_merged}"
 
 
 # ============================================================
@@ -64,7 +64,7 @@ err() {
 
 echo ""
 echo "============================================================"
-echo " Joybuy Agent SFT 完整流程"
+echo " Shopping Agent SFT 完整流程"
 echo " Qwen3-0.6B + LoRA"
 echo "============================================================"
 echo ""
@@ -185,7 +185,7 @@ if [ $TRAIN_EXIT_CODE -ne 0 ]; then
    → 检查 ${DATASET_INFO}
 
 3. 数据集注册错误
-   → 检查 joybuy_react / joybuy_react_eval
+   → 检查 shopping_react / shopping_react_eval
 
 4. 数据文件路径错误
    → 检查 dataset_info.json 的 file_name
@@ -267,8 +267,8 @@ llamafactory-cli eval \
     --template qwen3 \
     --finetuning_type full \
     --task clm \
-    --dataset joybuy_react_test \
-    --dataset_dir "${JOYBUY_DIR}" \
+    --dataset shopping_react_test \
+    --dataset_dir "${SHOPPING_DIR}" \
     --per_device_eval_batch_size 4 \
     --output_dir "$EVAL_OUTPUT"
 

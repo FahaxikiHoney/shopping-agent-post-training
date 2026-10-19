@@ -1,6 +1,6 @@
 import unittest
 
-from slime_joybuy_rl.joybuy_slime.llm_judge import (
+from slime_shopping_rl.shopping_slime.llm_judge import (
     LLMJudgeConfig,
     apply_optional_llm_judge,
     judge_completion,

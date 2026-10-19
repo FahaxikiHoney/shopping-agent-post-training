@@ -55,10 +55,10 @@ SYSTEM_PROMPT = """你是购物 Agent 的 SFT 训练数据生成器。
         "status": "SUCCESS",
         "products": [
           {
-            "product_id": "jd_12345678",
+            "product_id": "mock_12345678",
             "title": "品牌 商品名称 规格型号",
             "price": 299,
-            "is_jd_self": true,
+            "is_platform_self": true,
             "rating": 4.8,
             "key_specs": "核心卖点1/核心卖点2/核心卖点3",
             "sales": "月销2.5万件"
@@ -73,7 +73,7 @@ SYSTEM_PROMPT = """你是购物 Agent 的 SFT 训练数据生成器。
       "content": "完整的最终回复（含Markdown格式）",
       "product_cards": [
         {
-          "card_id": "jd_12345678",
+          "card_id": "mock_12345678",
           "display_price": 299,
           "reason": "推荐理由"
         }
@@ -197,7 +197,7 @@ TOPICS = {
         "白条分了12期，现在想提前还款操作步骤是什么",
         "商品显示缺货但想买，怎么设置到货提醒",
         "买了两件商品想合并发货，如何操作",
-        "京东Plus会员快到期了，续费有什么优惠",
+        "购物平台Plus会员快到期了，续费有什么优惠",
         "买的东西用快递暂存，如何延长存储时间",
     ],
 }
@@ -439,7 +439,7 @@ tool_name 使用：{tool_name}
 # ───────────── Mock 模式（无需内网）─────────────
 def run_mock_mode(n: int, scenario: str) -> None:
     """
-    使用 joybuy_agent 框架的 Mock 数据直接生成 SFT 轨迹。
+    使用 shopping_agent 框架的 Mock 数据直接生成 SFT 轨迹。
     无需内网，适合快速扩充数据集。
 
     用法：python3 llm_gen_oxygen.py -n 100 --mock
@@ -447,9 +447,9 @@ def run_mock_mode(n: int, scenario: str) -> None:
     import sys
     sys.path.insert(0, str(Path(__file__).parent.parent))
 
-    from joybuy_agent.tools import create_registry
-    from joybuy_agent.core.context import AgentContext
-    from joybuy_agent.agents import (
+    from shopping_agent.tools import create_registry
+    from shopping_agent.core.context import AgentContext
+    from shopping_agent.agents import (
         SimilarRecAgent, SkuCompAgent, SearchRecommendAgent,
         RepurchaseAgent, MatchingAgent, BundleAgent, OrderAgent,
     )
@@ -525,7 +525,7 @@ def main():
     OUTPUT = args.output
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
-    # Mock 模式：使用 joybuy_agent 框架本地生成，无需内网
+    # Mock 模式：使用 shopping_agent 框架本地生成，无需内网
     if args.mock:
         run_mock_mode(args.n, args.scenario)
         return

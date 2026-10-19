@@ -49,7 +49,7 @@ def render_trajectory_viewer(trajectory: Trajectory):
                             for p in step.tool_output.products:
                                 st.markdown(
                                     f"- `{p.product_id}` **{p.title}** — ¥{p.price}"
-                                    + (" ⭐京东自营" if p.is_jd_self else "")
+                                    + (" ⭐平台自营" if p.is_platform_self else "")
                                 )
                         else:
                             st.json({"status": step.tool_output.status})

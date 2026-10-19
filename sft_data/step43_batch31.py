@@ -63,10 +63,10 @@ T.append(make_traj(
     {"time_range": "last_7_days", "status": "in_transit", "issue": "logistics_stall"},
     [
         {
-            "product_id": "jd_logistics_037",
+            "product_id": "mock_logistics_037",
             "title": "运动跑步鞋 耐克 Air Zoom Pegasus 40 订单 [ORDER_ID]",
             "price": 899.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 5.0,
             "key_specs": "下单7月10日/揽收7月11日/最新节点:7月12日郑州中转仓/已静止4天/件重1.2kg",
             "sales": "—"
@@ -77,7 +77,7 @@ T.append(make_traj(
     "| 时间 | 节点 |\n"
     "|---|---|\n"
     "| 7月10日 16:22 | 下单成功，等待商家发货 |\n"
-    "| 7月11日 09:05 | 商家揽收，交由京东物流 |\n"
+    "| 7月11日 09:05 | 商家揽收，交由购物平台物流 |\n"
     "| 7月12日 03:41 | **郑州航空港中转仓** 已到达 |\n"
     "| 7月16日（今天）| **无新节点**，停滞约 4 天 |\n\n"
     "## 可能原因\n\n"
@@ -86,11 +86,11 @@ T.append(make_traj(
     "- 极少数情况：包裹在中转途中遗失（概率低，先排除）\n\n"
     "## 立即操作步骤\n\n"
     "**第 1 步：催单（推荐先做）**\n"
-    "1. 京东 App → 我的订单 → [ORDER_ID]\n"
+    "1. 购物 App → 我的订单 → [ORDER_ID]\n"
     "2. 点「**联系客服**」→ 选「**物流问题**」→ 「**物流超时催单**」\n"
     "3. 系统会自动通知郑州中转仓优先处理\n\n"
     "**第 2 步：申请延误补偿**\n"
-    "京东自营订单物流超时满 48 小时，可申请「**PLUS 延误补偿**」或「**京豆补偿**」，\n"
+    "平台自营订单物流超时满 48 小时，可申请「**PLUS 延误补偿**」或「**京豆补偿**」，\n"
     "在客服页面选「**物流延误赔偿**」即可，最高赔付 30 京豆。\n\n"
     "**第 3 步：若 24 小时仍无更新**\n"
     "升级至「**申请查件**」——客服会直接联系郑州仓库核查包裹位置，\n"
@@ -112,12 +112,12 @@ T.append(make_traj(
     {"time_range": "last_15_days", "status": "delivered", "issue": "return_request"},
     [
         {
-            "product_id": "jd_return_038",
+            "product_id": "mock_return_038",
             "title": "小米 空气净化器 4 Pro 订单 [ORDER_ID]",
             "price": 1699.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
-            "key_specs": "签收7月9日/在7天无理由退货期内/京东自营/未超使用损坏/支持上门取件",
+            "key_specs": "签收7月9日/在7天无理由退货期内/平台自营/未超使用损坏/支持上门取件",
             "sales": "—"
         }
     ],
@@ -129,16 +129,16 @@ T.append(make_traj(
     "- **退货类型**：7 天无理由退货（不需要解释原因）\n\n"
     "## 立即操作步骤\n\n"
     "**第 1 步：发起退货申请**\n"
-    "1. 京东 App → 我的订单 → [ORDER_ID]\n"
+    "1. 购物 App → 我的订单 → [ORDER_ID]\n"
     "2. 点「**申请售后**」\n"
     "3. 选「**我要退货**」→ 退货原因选「**不想要了**」（7 天内无需说明原因）\n"
     "4. 选择退款方式：推荐「**原路退回**」（退回原付款账户，1-7 个工作日到账）\n\n"
     "**第 2 步：打包商品**\n"
     "- 恢复原包装（外箱+内衬+配件+说明书全部放回）\n"
-    "- 不需要自己贴快递单，**京东上门取件免费**\n"
+    "- 不需要自己贴快递单，**购物平台上门取件免费**\n"
     "- 将产品恢复到未拆封或轻度使用状态即可\n\n"
     "**第 3 步：等待上门取件**\n"
-    "- 提交申请后，京东物流 **1-2 个工作日**会联系你预约取件时间\n"
+    "- 提交申请后，购物平台物流 **1-2 个工作日**会联系你预约取件时间\n"
     "- 取件后退款审核约 **1-3 个工作日**\n"
     "- 退款到账：**支付宝/微信约 1-3 天，银行卡约 3-7 天**\n\n"
     "## 注意事项\n\n"
@@ -146,12 +146,12 @@ T.append(make_traj(
     "  无法无理由退款\n"
     "- 空气净化器属于大件，**上门取件免快递费**，不用自己跑快递站\n"
     "- 如果客服审核时要求拍照，正常上传商品完好图即可\n"
-    "- 若商家以「已使用」为由拒绝，可向京东平台申请**介入仲裁**\n\n"
+    "- 若商家以「已使用」为由拒绝，可向购物平台平台申请**介入仲裁**\n\n"
     "## 退款流程时间线\n\n"
     "| 阶段 | 时长 |\n"
     "|---|---|\n"
     "| 提交申请 | 今天（立即）|\n"
-    "| 京东上门取件 | 1-2 工作日 |\n"
+    "| 购物平台上门取件 | 1-2 工作日 |\n"
     "| 仓库验货 | 1-3 工作日 |\n"
     "| 退款到账 | 1-7 工作日 |\n"
     "| **全程合计** | **约 5-12 天** |",
@@ -165,23 +165,23 @@ T.append(make_traj(
     "sft_order_039", "place_order", "购物下单",
     "下单选择颜色和内存规格",
     "帮我买一部 iPhone 16 256G，我想要黑色的，下单时怎么选规格",
-    {"product_id": "jd_iphone16_256_black", "sku": {"color": "黑色", "storage": "256GB"}, "action": "place_order"},
+    {"product_id": "mock_iphone16_256_black", "sku": {"color": "黑色", "storage": "256GB"}, "action": "place_order"},
     [
         {
-            "product_id": "jd_iphone16_256_black",
+            "product_id": "mock_iphone16_256_black",
             "title": "Apple iPhone 16 256GB 黑色 支持移动联通电信5G 双卡双待",
             "price": 5999.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
-            "key_specs": "颜色:黑色/规格:256GB/5G双卡/A18芯片/48MP主摄/京东自营/现货",
+            "key_specs": "颜色:黑色/规格:256GB/5G双卡/A18芯片/48MP主摄/平台自营/现货",
             "sales": "月销4.5万"
         }
     ],
-    "已为你找到 **iPhone 16 256GB 黑色（京东自营）¥5999**，现货可发。\n"
+    "已为你找到 **iPhone 16 256GB 黑色（平台自营）¥5999**，现货可发。\n"
     "下单时规格选择步骤如下：\n\n"
     "## 下单规格选择步骤\n\n"
     "**第 1 步：进入商品页**\n"
-    "点击上方商品卡片，进入 iPhone 16 京东自营页面。\n\n"
+    "点击上方商品卡片，进入 iPhone 16 平台自营页面。\n\n"
     "**第 2 步：选颜色**\n"
     "商品页「**选颜色**」一栏，点击「**黑色**」（共有黑/白/粉/蓝/绿 5 个颜色，\n"
     "选中后颜色块会出现蓝色边框）。\n\n"
@@ -193,17 +193,17 @@ T.append(make_traj(
     "价格显示 **¥5999**，确认无误后点「**加入购物车**」或「**立即购买**」。\n\n"
     "**第 5 步：填写收货地址 + 支付**\n"
     "- 确认收货地址（特别注意省/市/区完整）\n"
-    "- 选择支付方式（支持微信/支付宝/京东白条）\n"
+    "- 选择支付方式（支持微信/支付宝/分期服务）\n"
     "- 点「**提交订单**」完成购买\n\n"
     "## 下单前注意事项\n\n"
     "- 黑色 256GB 是热销规格，偶尔会短暂缺货；\n"
     "  若遇「**到货通知**」按钮说明暂无货，建议开启到货提醒\n"
-    "- 京东自营正品保障，下单后 **次日达**（北上广深等主要城市）\n"
+    "- 平台自营正品保障，下单后 **次日达**（北上广深等主要城市）\n"
     "- 如需开**增值税发票**，下单页面勾选「**需要发票**」→ 选「**增值税普通/专用发票**」，\n"
     "  下单后无法再索取\n"
     "- 如有「以旧换新」需求，下单页面会出现「旧机抵扣」入口，\n"
     "  先评估旧机再下单，**可省数百元**",
-    ["iPhone16 256GB黑色京东自营¥5999现货，选颜色+规格步骤已列出，次日达"],
+    ["iPhone16 256GB黑色平台自营¥5999现货，选颜色+规格步骤已列出，次日达"],
     tool_name="ShoppingPlaceOrderTool",
     thinking="用户要下单 iPhone 16 黑色 256G，调 ShoppingPlaceOrderTool 定位 SKU，逐步说明颜色和规格选择操作。"
 ))
@@ -212,14 +212,14 @@ T.append(make_traj(
 T.append(make_traj(
     "sft_order_040", "place_order", "购物下单",
     "发票开具方式及注意事项",
-    "我在京东买东西公司要报销，怎么开增值税专用发票，有什么注意事项",
+    "我在购物平台买东西公司要报销，怎么开增值税专用发票，有什么注意事项",
     {"invoice_type": "vat_special", "action": "invoice_guide"},
     [
         {
-            "product_id": "jd_invoice_040",
-            "title": "京东增值税专用发票开具指引",
+            "product_id": "mock_invoice_040",
+            "title": "购物平台增值税专用发票开具指引",
             "price": 0.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 5.0,
             "key_specs": "支持类型:增值税普票/专票/电子发票/纸质发票/需企业信息+税号+银行账号",
             "sales": "—"
@@ -247,17 +247,17 @@ T.append(make_traj(
     "**第 5 步：提交订单**\n"
     "确认发票信息无误后点「**提交订单**」，此后**无法修改**。\n\n"
     "## 重要注意事项\n\n"
-    "- 增值税**专用发票**只有京东自营和部分企业认证商家支持，\n"
+    "- 增值税**专用发票**只有平台自营和部分企业认证商家支持，\n"
     "  第三方小店通常只能开普通发票，下单前确认\n"
     "- 发票金额 = 实付金额（使用优惠券/京豆后的金额，**不是商品标价**）\n"
     "- **下单后 180 天内**可以在「我的订单」→「发票信息」下载电子版\n"
-    "- 若收到商品但发票信息有误，联系京东客服 950618 申请作废重开\n"
+    "- 若收到商品但发票信息有误，联系购物平台客服 950618 申请作废重开\n"
     "  （需在开票后 **180 天内**操作）\n\n"
     "## 常见报销坑\n\n"
     "- 填错纳税人识别号：发票作废，重开周期 3-5 个工作日\n"
     "- 下单后才想开发票：无法补开，只能重新下单\n"
-    "- 拼多多/抖音商品转到京东报销：各平台发票独立，不能混用",
-    ["京东增值税专用发票下单时选择，填公司全称+18位税号+注册地址+银行账号，电子发票24h到邮箱"],
+    "- 拼多多/抖音商品转到购物平台报销：各平台发票独立，不能混用",
+    ["购物平台增值税专用发票下单时选择，填公司全称+18位税号+注册地址+银行账号，电子发票24h到邮箱"],
     tool_name="OrderQuerySkill",
     thinking="用户问发票开具，调 OrderQuerySkill 获取发票规则，给出专用发票必填字段表格和注意事项。"
 ))
@@ -267,13 +267,13 @@ T.append(make_traj(
     "sft_order_041", "place_order", "购物下单",
     "预售商品定金支付及尾款时间",
     "看到一款耳机在搞预售，说先付定金 50 元，尾款怎么付，什么时候发货",
-    {"product_id": "jd_earphone_presale_041", "presale": True, "deposit": 50, "action": "presale_guide"},
+    {"product_id": "mock_earphone_presale_041", "presale": True, "deposit": 50, "action": "presale_guide"},
     [
         {
-            "product_id": "jd_earphone_presale_041",
+            "product_id": "mock_earphone_presale_041",
             "title": "索尼 WH-1000XM6 无线降噪耳机 预售款",
             "price": 2799.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 5.0,
             "key_specs": "预售价2799/定金50元膨胀至100元/尾款2699元/尾款支付7月20日开启/预计7月25日发货",
             "sales": "预售中"
@@ -293,7 +293,7 @@ T.append(make_traj(
     "3. 完成支付，获得预订凭证\n"
     "4. **定金 ¥50 膨胀为 ¥100 优惠券**，尾款时自动抵扣\n\n"
     "## 尾款怎么付\n\n"
-    "1. 7月20日 0:00 后，京东 App 会推送「尾款开抢」通知\n"
+    "1. 7月20日 0:00 后，购物 App 会推送「尾款开抢」通知\n"
     "2. 进入「**我的订单**」→ 找到预售订单 → 点「**去付尾款**」\n"
     "3. 系统自动用定金膨胀券抵扣，实付：**¥2799 - ¥100 = ¥2699**\n"
     "4. 完成支付后状态变为「**待发货**」\n\n"
@@ -327,28 +327,28 @@ T.append(make_traj(
     {"query": "吹风机 大功率 高速 快干", "min_wattage": 1600, "filters": {"high_speed_motor": True}},
     [
         {
-            "product_id": "jd_dryer_power_1",
+            "product_id": "mock_dryer_power_1",
             "title": "戴森 Supersonic HD15 吹风机 1600W 高速电机",
             "price": 3490.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "1600W/高速数码电机/风速105km/h/负离子护发/月销1.8万",
             "sales": "月销1.8万"
         },
         {
-            "product_id": "jd_dryer_power_2",
+            "product_id": "mock_dryer_power_2",
             "title": "徕芬 高速吹风机 LF035W 110000 转/分 1600W",
             "price": 599.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "11万转高速电机/1600W/风速62m/s/负离子/月销5.5万",
             "sales": "月销5.5万"
         },
         {
-            "product_id": "jd_dryer_power_3",
+            "product_id": "mock_dryer_power_3",
             "title": "飞利浦 BHD510 2300W 大功率快干吹风机",
             "price": 399.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "2300W/传统大功率/ThermoProtect温控/月销3.2万",
             "sales": "月销3.2万"
@@ -393,28 +393,28 @@ T.append(make_traj(
     {"query": "行李箱 高品质锁具 TSA密码锁 耐用", "filters": {"tsa_lock": True, "lock_quality": "premium"}},
     [
         {
-            "product_id": "jd_luggage_lock_1",
+            "product_id": "mock_luggage_lock_1",
             "title": "新秀丽 Samsonite Omni PC 20寸 铝框行李箱 TSA密码锁",
             "price": 1580.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "Samsonite铝框/TSA海关锁/PC材质/双向拉杆/月销2.2万",
             "sales": "月销2.2万"
         },
         {
-            "product_id": "jd_luggage_lock_2",
+            "product_id": "mock_luggage_lock_2",
             "title": "地平线八号 LEGEND 20寸 铝框箱 四轮 TSA锁",
             "price": 899.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "铝框+TSA锁/四轮360度/抗压100kg/月销1.8万",
             "sales": "月销1.8万"
         },
         {
-            "product_id": "jd_luggage_lock_3",
+            "product_id": "mock_luggage_lock_3",
             "title": "爱华仕 Airwheel 20寸 PC 轻量 TSA密码锁 双拉链",
             "price": 459.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "TSA密码锁/PC壳/轻量2.6kg/双拉链/月销4.5万",
             "sales": "月销4.5万"
@@ -462,28 +462,28 @@ T.append(make_traj(
     {"query": "保温杯 真空双层 长效保温 12小时以上", "filters": {"insulation_hours": 12, "vacuum_double_wall": True}},
     [
         {
-            "product_id": "jd_thermos_1",
+            "product_id": "mock_thermos_1",
             "title": "膳魔师 THERMOS JNL-504 500ml 不锈钢真空保温杯",
             "price": 199.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "真空双层/304不锈钢/保温24h/保冷12h/500ml/月销3.5万",
             "sales": "月销3.5万"
         },
         {
-            "product_id": "jd_thermos_2",
+            "product_id": "mock_thermos_2",
             "title": "虎牌 Tiger MTA-T060 600ml 超真空保温杯",
             "price": 259.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "日本原装进口/超真空技术/保温24h+/广口易清洗/月销2.2万",
             "sales": "月销2.2万"
         },
         {
-            "product_id": "jd_thermos_3",
+            "product_id": "mock_thermos_3",
             "title": "Stanley 探险系列 473ml 一体杯 不锈钢 保温保冷",
             "price": 329.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "18/8不锈钢/真空绝热/保温11h/颜值高/月销1.8万",
             "sales": "月销1.8万"
@@ -530,28 +530,28 @@ T.append(make_traj(
     {"query": "遮阳伞 UPF50+ 高防晒 黑胶涂层", "filters": {"upf": 50, "black_coating": True}},
     [
         {
-            "product_id": "jd_umbrella_upf_1",
+            "product_id": "mock_umbrella_upf_1",
             "title": "蕉下 双层小黑伞 UPF50+ 遮光率 99.9%",
             "price": 239.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "UPF50+/遮光率99.9%/双层黑胶/涂层不掉色/三折便携/月销8.5万",
             "sales": "月销8.5万"
         },
         {
-            "product_id": "jd_umbrella_upf_2",
+            "product_id": "mock_umbrella_upf_2",
             "title": "天堂伞 遮阳伞 黑胶防晒 UPF50+ 直伞",
             "price": 89.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.8,
             "key_specs": "UPF50+/黑胶涂层/直伞稳定/防晒隔热/月销6.2万",
             "sales": "月销6.2万"
         },
         {
-            "product_id": "jd_umbrella_upf_3",
+            "product_id": "mock_umbrella_upf_3",
             "title": "米熙 五折超轻 UPF50+ 遮阳伞 碳素骨架",
             "price": 159.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "五折超便携/碳素骨架轻量/UPF50+遮光99%/月销2.8万",
             "sales": "月销2.8万"
@@ -600,28 +600,28 @@ T.append(make_traj(
     {"query": "蓝牙音箱 Hi-Fi 低音炮 高音质", "filters": {"hi_fi": True, "bass_boost": True}},
     [
         {
-            "product_id": "jd_speaker_hifi_1",
+            "product_id": "mock_speaker_hifi_1",
             "title": "JBL Charge 5 便携蓝牙音箱 IP67防水 低音大振膜",
             "price": 1199.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "双无源辐射低音/IP67防水/30W输出/20h续航/月销2.8万",
             "sales": "月销2.8万"
         },
         {
-            "product_id": "jd_speaker_hifi_2",
+            "product_id": "mock_speaker_hifi_2",
             "title": "索尼 SRS-XB33 EXTRA BASS 蓝牙音箱 强化低音",
             "price": 999.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "EXTRA BASS低音强化/IP67/24h续航/灯光效果/月销3.5万",
             "sales": "月销3.5万"
         },
         {
-            "product_id": "jd_speaker_hifi_3",
+            "product_id": "mock_speaker_hifi_3",
             "title": "Bose SoundLink Flex 蓝牙便携音箱 PositionIQ",
             "price": 1499.0,
-            "is_jd_self": True,
+            "is_platform_self": True,
             "rating": 4.9,
             "key_specs": "PositionIQ自适应音效/IP67/12h续航/360度声场/月销1.5万",
             "sales": "月销1.5万"

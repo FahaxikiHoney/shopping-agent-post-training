@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-清理脚本：按 joybuy 真实项目场景过滤现有数据
+清理脚本：按 shopping 真实项目场景过滤现有数据
 保留：search/recommend、sku_comp、下单、相似品/复购、组合购物相关
 砍掉：外卖/机酒/PLUS价保/以旧换新/延保/物流/退换货/纯咨询等项目无对应能力的
 """
@@ -11,7 +11,7 @@ SRC = Path(__file__).parent / "trajectories.jsonl"
 DST = Path(__file__).parent / "trajectories_cleaned.jsonl"
 
 # ──── 保留白名单（按真实项目场景分类）────────────────────────────────
-# 每条标注新的 scenario_type，对应 joybuy agent_flow
+# 每条标注新的 scenario_type，对应 shopping agent_flow
 KEEP_MAP = {
     # ─── 单品搜索推荐（search/recommend）─────────────────────────
     "sft_ecom_001": "search_recommend",   # 老人按摩仪

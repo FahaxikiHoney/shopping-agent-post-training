@@ -1,8 +1,8 @@
 import json
 import unittest
 
-from joybuy_agent.react.quality_gate import evaluate_trajectory
-from joybuy_agent.react.tools import execute_tool
+from shopping_agent.react.quality_gate import evaluate_trajectory
+from shopping_agent.react.tools import execute_tool
 
 
 def build_trajectory(
@@ -207,7 +207,7 @@ class MockTrajectoryQualityGateTest(unittest.TestCase):
             arguments={"query": "composants PC"},
             final_response=(
                 "**Composants PC** : prix actuel €67.05.[product:1]\n\n"
-                "Ces prix proviennent uniquement de Joybuy ; je ne dispose pas de "
+                "Ces prix proviennent uniquement de Shopping ; je ne dispose pas de "
                 "prix externes fiables en temps réel pour confirmer l'écart.\n\n"
                 "Comment affiner ? <ClickText>Budget</ClickText> "
                 "<ClickText>Marque</ClickText>"

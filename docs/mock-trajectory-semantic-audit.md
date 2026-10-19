@@ -1,4 +1,4 @@
-# Joybuy Mock 完整轨迹语义审计
+# Shopping Mock 完整轨迹语义审计
 
 入口：`scripts/audit_mock_trajectory_semantics.py`
 

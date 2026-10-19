@@ -291,7 +291,7 @@
           "开除离职卡 离职冷暴力礼物 办公室怪气离职纪念品",
           "恶搞辞职卡片 离职纪念品 办公室黑色幽默 讽刺创意礼品"
         ],
-        "抱歉抱歉，通过多次搜索暂未能在符合\"暗示离职\"或\"表达厌恶\"的合适礼品。京东平台上的创意礼物以积极健康为导向，可能您可以考虑以下方向方案：\n\n1. **创意幽默办公文具**：比如印有\"最后一天\"的倒计时台历\n2. **职场搞笑周边礼品**：如\"办公室生存指南\"趣味手册\n3. **隐喻创意礼件**：最佳甩锅奖\"水晶奖杯\n\n<ClickText>是否需要调整搜索"
+        "抱歉抱歉，通过多次搜索暂未能在符合\"暗示离职\"或\"表达厌恶\"的合适礼品。购物平台平台上的创意礼物以积极健康为导向，可能您可以考虑以下方向方案：\n\n1. **创意幽默办公文具**：比如印有\"最后一天\"的倒计时台历\n2. **职场搞笑周边礼品**：如\"办公室生存指南\"趣味手册\n3. **隐喻创意礼件**：最佳甩锅奖\"水晶奖杯\n\n<ClickText>是否需要调整搜索"
       ],
       [
         "anonymous-session",
@@ -356,11 +356,11 @@
       [
         "anonymous-session",
         "UK-Site",
-        "which joybuy items I can use the coupon £30 when u spend over £40 coupon",
+        "which shopping items I can use the coupon £30 when u spend over £40 coupon",
         [
           "price >= £40"
         ],
-        "I currently couldn't find Joybuy items priced over £40 or above that our system. This might the coupon30-off £40 coupon might not be applicable right now. Could you please:\n\n<Click"
+        "I currently couldn't find Shopping items priced over £40 or above that our system. This might the coupon30-off £40 coupon might not be applicable right now. Could you please:\n\n<Click"
       ],
       [
         "anonymous-session",
@@ -449,7 +449,7 @@
         "NL-Site",
         "Toon al mijn momenteel beschikbare beloningen",
         [],
-        "I don't have access to view customers' account-specific reward information. Please check your available rewards through the \" app account page or contact JD Customer Service for as"
+        "I don't have access to view customers' account-specific reward information. Please check your available rewards through the \" app account page or contact shopping platform Customer Service for as"
       ],
       [
         "anonymous-session",
@@ -951,7 +951,7 @@
       [
         "anonymous-session",
         "UK-Site",
-        "which joybuy items I can use the coupon £30 when u spend over £40 coupon",
+        "which shopping items I can use the coupon £30 when u spend over £40 coupon",
         [
           "price >= £40"
         ]
@@ -1205,9 +1205,9 @@
       [
         "anonymous-session",
         "NL-Site",
-        "wat is het prijs verschil van redbull tussen joybuy en lidl",
+        "wat is het prijs verschil van redbull tussen shopping en lidl",
         [
-          "Red Bull energy drink on Joybuy",
+          "Red Bull energy drink on Shopping",
           "Red Bull energy drink on Lidl"
         ]
       ],

@@ -3,8 +3,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from slime_joybuy_rl.joybuy_slime.metrics_logger import log_rollout_metric
-from slime_joybuy_rl.joybuy_slime.summarize_metrics import load_records, summarize
+from slime_shopping_rl.shopping_slime.metrics_logger import log_rollout_metric
+from slime_shopping_rl.shopping_slime.summarize_metrics import load_records, summarize
 
 
 class MetricsLoggerTest(unittest.TestCase):

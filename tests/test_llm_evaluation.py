@@ -129,7 +129,7 @@ def test_evaluate_one_retries_transient_judge_failure():
 def test_prepare_eval_input_classifies_direct_response_requests():
     item = {
         "trajectory_id": "direct",
-        "user_query": "Can I use milk instead of water in this Joybuy coffee machine?",
+        "user_query": "Can I use milk instead of water in this Shopping coffee machine?",
         "metadata": {"tools_used": []},
         "messages": [
             {"role": "user", "content": "Can I use milk instead of water?"},

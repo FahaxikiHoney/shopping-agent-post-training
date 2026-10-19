@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Step 2: 工具名替换
-把现有数据里的工具名换成 joybuy 真实项目里的工具名
+把现有数据里的工具名换成 shopping 真实项目里的工具名
 
 参考真实工具列表（来自 core/multi_agent/*/tool_list.py）：
 - SkuRecallShopping      : 主搜索召回（最常用）

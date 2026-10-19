@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit complete Joybuy Mock trajectories with an independent LLM judge."""
+"""Audit complete Shopping Mock trajectories with an independent LLM judge."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ import urllib.error
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence
 
-from joybuy_agent.llm.client import LLMClient
+from shopping_agent.llm.client import LLMClient
 
 
 SYSTEM_PROMPT = """You are a strict shopping-agent trajectory auditor.
@@ -167,7 +167,7 @@ def _ordered_results(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Audit complete Joybuy Mock trajectories with an independent LLM judge.",
+        description="Audit complete Shopping Mock trajectories with an independent LLM judge.",
     )
     parser.add_argument("--input", required=True)
     parser.add_argument("--output", required=True)

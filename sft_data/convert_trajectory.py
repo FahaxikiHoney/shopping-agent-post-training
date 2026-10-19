@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-将真实项目跑出的轨迹数据（joybuy_trajectory_v1）转换为 SFT 训练格式。
+将真实项目跑出的轨迹数据（shopping_trajectory_v1）转换为 SFT 训练格式。
 
 输入：trajectory JSON（单条或 JSONL 文件）
 输出：与 trajectories_react.jsonl 兼容的 SFT 格式
@@ -28,7 +28,7 @@ import uuid
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-SYSTEM_PROMPT_TRAIN = """你是 Joybuy 购物助手，负责理解用户需求、调用工具搜索商品、并生成最终推荐回复。
+SYSTEM_PROMPT_TRAIN = """你是 Shopping 购物助手，负责理解用户需求、调用工具搜索商品、并生成最终推荐回复。
 
 【工具调用规则】
 - 普通商品搜索：调用 sku_recall，同时必须调用一次 scenario_related_recall 补充同品类候选
@@ -267,7 +267,7 @@ def convert_trajectory(traj: Dict) -> Optional[Dict]:
     返回 None 表示跳过（数据不合格）。
     """
     schema = traj.get("schema_version", "")
-    if schema != "joybuy_trajectory_v1":
+    if schema != "shopping_trajectory_v1":
         return None
 
     status = traj.get("status", "")
@@ -394,7 +394,7 @@ def convert_trajectory(traj: Dict) -> Optional[Dict]:
         "raw_thinking": thinking_response,
         "total_steps": len(tool_calls),
         "status": "done",
-        "sft_source": "real_joybuy_v1",
+        "sft_source": "real_shopping_v1",
     }
 
 

@@ -535,7 +535,7 @@
     },
     {
       "trajectory_id": "react_82cad9f9",
-      "query": "which joybuy items I can use the coupon £30 when u spend over £40 coupon",
+      "query": "which shopping items I can use the coupon £30 when u spend over £40 coupon",
       "site_code": "UK-Site",
       "status": "done",
       "tool_calls": 4,
@@ -1094,7 +1094,7 @@
     },
     {
       "trajectory_id": "react_ff35bfd4",
-      "query": "wat is het prijs verschil van redbull tussen joybuy en lidl",
+      "query": "wat is het prijs verschil van redbull tussen shopping en lidl",
       "site_code": "NL-Site",
       "status": "done",
       "tool_calls": 1,

@@ -1,5 +1,5 @@
 ### ============================================================
-### Joybuy Agent Qwen3-0.6B LoRA SFT
+### Shopping Agent Qwen3-0.6B LoRA SFT
 ### Windows + Git Bash + 16GB GPU
 ### ============================================================
 
@@ -38,8 +38,8 @@ lora_target: q_proj,v_proj,k_proj,o_proj,gate_proj,up_proj,down_proj
 dataset_dir: sft_data/ready_to_run/react_sft
 
 # 对应 dataset_info.json 中注册的数据集名称
-dataset: joybuy_react
-eval_dataset: joybuy_react_eval
+dataset: shopping_react
+eval_dataset: shopping_react_eval
 
 # Qwen3 模板
 template: qwen3
@@ -130,7 +130,7 @@ report_to: none
 # 11. 保存
 # ============================================================
 
-output_dir: ./output/joybuy_qwen3_0.6b_lora
+output_dir: ./output/shopping_qwen3_0.6b_lora
 
 save_strategy: steps
 

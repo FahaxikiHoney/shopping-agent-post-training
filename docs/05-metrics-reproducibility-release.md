@@ -15,10 +15,10 @@
 
 ## 2. 训练与 rollout 日志
 
-LoRA 训练输出默认写到 YAML 中的 `output_dir`。Slime 指标由 `slime_joybuy_rl/joybuy_slime/metrics_logger.py` 写入 JSONL；仪表板入口是 `metrics_dashboard.py`，启动脚本为：
+LoRA 训练输出默认写到 YAML 中的 `output_dir`。Slime 指标由 `slime_shopping_rl/shopping_slime/metrics_logger.py` 写入 JSONL；仪表板入口是 `metrics_dashboard.py`，启动脚本为：
 
 ```bash
-bash slime_joybuy_rl/scripts/gpu/run_metrics_dashboard_venv.sh
+bash slime_shopping_rl/scripts/gpu/run_metrics_dashboard_venv.sh
 ```
 
 默认端口为本机 dashboard 端口，具体以启动日志/脚本变量为准。只在受控网络中暴露 dashboard；日志可能包含 prompt、模型输出或任务内容，应按训练数据同等级别管理。

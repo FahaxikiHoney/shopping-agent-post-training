@@ -3434,7 +3434,7 @@
   },
   {
     "sample_id": "anonymous-session",
-    "query": "Finde für mich auf Joybuy eine Matratze mit bestem Preis-Leistungs-Verhältnis und folgenden Kriterien:\n- Körpergröße: 1,95 m, Gewicht: 97 kg (sportliche/athletische Statur, breite Schultern)\n- Härtegrad: H3 (fest) oder H3/H4-Wendematratze\n- Typ: 7-Zonen-Taschenfederkern (TFK) oder 7-Zonen-Kaltschaum mit hoher Schulterabsenkung\n- Kernhöhe: Mindestens 19 bis 22 cm\n- Versand: Schnellstmögliche Lieferung / Express-Zustellung (JoyExpress / Taggleiche Lieferung falls verfügbar)\nGib mir die Top 3 Treffer mit direktem Produktnamen, genauer Härtegrad-Angabe und aktuellen Preisen/Rabatten.",
+    "query": "Finde für mich auf Shopping eine Matratze mit bestem Preis-Leistungs-Verhältnis und folgenden Kriterien:\n- Körpergröße: 1,95 m, Gewicht: 97 kg (sportliche/athletische Statur, breite Schultern)\n- Härtegrad: H3 (fest) oder H3/H4-Wendematratze\n- Typ: 7-Zonen-Taschenfederkern (TFK) oder 7-Zonen-Kaltschaum mit hoher Schulterabsenkung\n- Kernhöhe: Mindestens 19 bis 22 cm\n- Versand: Schnellstmögliche Lieferung / Express-Zustellung (JoyExpress / Taggleiche Lieferung falls verfügbar)\nGib mir die Top 3 Treffer mit direktem Produktnamen, genauer Härtegrad-Angabe und aktuellen Preisen/Rabatten.",
     "difficulty": "medium",
     "training_difficulty": "medium",
     "sampling_difficulty": "hard",
@@ -11288,7 +11288,7 @@
   },
   {
     "sample_id": "anonymous-session",
-    "query": "wat is het prijs verschil van redbull tussen joybuy en lidl",
+    "query": "wat is het prijs verschil van redbull tussen shopping en lidl",
     "difficulty": "medium",
     "training_difficulty": "medium",
     "sampling_difficulty": "medium",
@@ -19950,7 +19950,7 @@
   },
   {
     "sample_id": "anonymous-session",
-    "query": "I found this on Joybuy, with delivery as soon as same day: Nespresso Original, De'Longhi EN167.W Citiz, Single Serve Espresso Maker, Coffee Pod Machine, 1.0 Liters - White | €139.99 https://m.joybuy.nl/landingPage/dp/101236551?siteCode=NL-Site , in this one i use milk instead of water",
+    "query": "I found this on Shopping, with delivery as soon as same day: Nespresso Original, De'Longhi EN167.W Citiz, Single Serve Espresso Maker, Coffee Pod Machine, 1.0 Liters - White | €139.99 https://m.shopping.nl/landingPage/dp/101236551?siteCode=NL-Site , in this one i use milk instead of water",
     "difficulty": "easy",
     "training_difficulty": "easy",
     "sampling_difficulty": "medium",
@@ -27055,7 +27055,7 @@
   },
   {
     "sample_id": "anonymous-session",
-    "query": "I found this on Joybuy, with delivery as soon as same day: SNSP 2 Pieces Of Woven Packing Bags - Luggage Express Bag - 150L - Grey | €5.98 https://m.joybuy.de/landingPage/dp/10145015?siteCode=DE-Site",
+    "query": "I found this on Shopping, with delivery as soon as same day: SNSP 2 Pieces Of Woven Packing Bags - Luggage Express Bag - 150L - Grey | €5.98 https://m.shopping.de/landingPage/dp/10145015?siteCode=DE-Site",
     "difficulty": "easy",
     "training_difficulty": "easy",
     "sampling_difficulty": "medium",
@@ -35583,7 +35583,7 @@
   },
   {
     "sample_id": "anonymous-session",
-    "query": "which joybuy items I can use the coupon £30 when u spend over £40 coupon",
+    "query": "which shopping items I can use the coupon £30 when u spend over £40 coupon",
     "difficulty": "hard",
     "training_difficulty": "hard",
     "sampling_difficulty": "medium",
@@ -43180,7 +43180,7 @@
   },
   {
     "sample_id": "anonymous-session",
-    "query": "how to find the joybuy products",
+    "query": "how to find the shopping products",
     "difficulty": "easy",
     "training_difficulty": "easy",
     "sampling_difficulty": "easy",
