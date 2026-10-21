@@ -1,23 +1,51 @@
 # Shopping Agent Post-Training
 
-[简体中文](README.md)
+[简体中文](README.md) · [Quick start](#60-second-start) · [Prepared datasets](sft_data/ready_to_run/README.md) · [Step-by-step docs](docs/00-project-overview.md) · [Open an issue](https://github.com/FahaxikiHoney/shopping-agent-post-training/issues)
 
-An end-to-end research codebase for shopping-agent post-training: trajectory construction, deterministic quality gates, LLM-as-a-Judge evaluation, LLaMA-Factory LoRA SFT, and Slime GRPO examples. The included product tools use local mock fixtures and do not access a live retailer service.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue) ![Code license](https://img.shields.io/badge/Code%20License-MIT-green) ![Version](https://img.shields.io/badge/Version-v0.1.0-orange)
 
-This is the first public release candidate (`v0.1.0`). The project will continue to improve. Questions, bug reports, documentation fixes, and ideas are welcome through GitHub Issues after the repository is published.
+**Take a shopping agent from raw trajectories to measurable, trainable, iterative post-training.**
 
-## Workflow
+This repository packages an end-to-end post-training pipeline shaped by real project engineering work. It connects **task and trajectory creation, deterministic quality gates, LLM-as-a-Judge evaluation, LoRA SFT, tool-call warmup, Slime GRPO, and training-metric review**—with code, configurations, prepared datasets, and guided documentation in one place.
 
-```text
-task/query data → agent trajectories → quality gate and LLM judge
-→ filtered ShareGPT/ChatML → LoRA SFT → optional Slime GRPO
+**You can start from the included data.** The release contains cleaned ChatML and ReAct splits plus converted RL tasks. A local mock environment lets you explore the data and gate flow before setting up model APIs, GPU training, or external RL frameworks.
+
+## What the project covers
+
+| Stage | Included capabilities | Code entry points |
+|---|---|---|
+| Task and trajectory creation | Synthetic queries, mock shopping tools, multi-turn ReAct rollout | `shopping_agent/`, `scripts/run_module.py rollout` |
+| Quality control | Deterministic gates, semantic audits, trajectory review | `shopping_agent/react/quality_gate.py`, `trajectory_grader/` |
+| LLM evaluation | Five-dimension judge, batch evaluation, result summaries | `llm_evaluation/`, `scripts/run_module.py judge` |
+| SFT | ChatML/ShareGPT conversion, tool-call warmup, LLaMA-Factory LoRA configs | `training/`, `LLaMA-Factory/` |
+| RL | Prepared task conversion, Slime rollout adapter, GRPO reward and metrics | `slime_shopping_rl/` |
+
+```mermaid
+flowchart LR
+    A[Tasks and queries] --> B[Trajectory generation and mock rollout]
+    B --> C[Rule gates and semantic audits]
+    C --> D[Five-dimension LLM judge]
+    D --> E[Filter and export ChatML / ShareGPT]
+    E --> F[LLaMA-Factory LoRA SFT]
+    F --> G[Tool-call warmup]
+    G --> H[Slime rollout and GRPO]
+    H --> I[Reward, gate, and metric review]
 ```
 
-The complete prepared dataset bundle is in [`sft_data/ready_to_run/`](sft_data/ready_to_run/README.md): 1,297/142 cleaned ChatML train/validation records, 875/100/100 ReAct train/eval/test records, 875 converted RL tasks, a 100-query sample, and trajectory evaluation examples. Rows containing unrecoverable text-encoding replacement characters were excluded from release datasets.
+## Data is included and ready to use
 
-## Quick start
+| Dataset | Size | Intended use |
+|---|---:|---|
+| ChatML v3 | 1,297 train / 142 validation | LoRA SFT with `training/lora_sft.yaml` |
+| ReAct ShareGPT | 875 train / 100 eval / 100 test | ReAct LoRA with LLaMA-Factory |
+| Slime RL tasks | 875 | Rollout and GRPO task input |
+| Query and trajectory examples | 100 queries plus evaluation examples | Data generation, gates, judging, and format walkthroughs |
 
-Run from the repository root. Python 3.10+ is recommended for data/evaluation utilities.
+The consolidated bundle is in [`sft_data/ready_to_run/`](sft_data/ready_to_run/README.md), with file counts, formats, and matching configs. Records with unrecoverable encoding damage were excluded, and retailer-specific identifiers and names were generalized. Raw online collection directories are not included.
+
+## 60-second start
+
+Run from the repository root. No GPU or model API is needed for the local mock data and gate flow:
 
 ```bash
 python scripts/run_module.py --help
@@ -25,37 +53,55 @@ python scripts/run_module.py mock-data
 python scripts/run_module.py gate
 ```
 
-To generate model-based trajectories or run the LLM judge, set `LLM_API_URL` and `LLM_API_KEY` in your environment, then run:
+For exact module-to-data mappings, see the [code and prepared-data map](docs/06-code-and-data-map.md). For a guided walkthrough, start with the [project overview](docs/00-project-overview.md).
+
+## Run each stage
+
+The unified launcher is `scripts/run_module.py`:
 
 ```bash
+# Generate local synthetic queries and run the gate
+python scripts/run_module.py mock-data
+python scripts/run_module.py gate
+
+# Model-based rollout and LLM judge (set LLM_API_URL / LLM_API_KEY)
 python scripts/run_module.py rollout --sample-size 10 --model YOUR_AGENT_MODEL --overwrite
 python scripts/run_module.py judge --count 10 --model YOUR_JUDGE_MODEL
+
+# Export SFT after rollout; training needs a base model and CUDA environment
+python scripts/run_module.py export-sft
+python scripts/run_module.py sft --model-path /path/to/Qwen3-0.6B
+
+# RL needs SFT and Megatron checkpoints plus Slime/SGLang/CUDA dependencies
+python scripts/run_module.py rl --hf-checkpoint /path/to/sft-hf --megatron-ref /path/to/megatron-ref
 ```
 
-SFT requires a compatible model checkpoint and CUDA/PyTorch environment. RL additionally requires Linux/WSL and compatible Slime, Megatron-LM, SGLang, CUDA, and converted checkpoints. See the [module/data map](docs/06-code-and-data-map.md) and [step-by-step docs](docs/00-project-overview.md). Most detailed guides are currently in Chinese.
+Mock and gate commands provide a local entry point. LLM rollout and judging require an API. SFT and RL require model weights, GPU resources, and their external frameworks. See [`docs/`](docs/00-project-overview.md) for input/output details and environment requirements.
 
-## Repository map
+## Why this codebase is useful
 
-- `shopping_agent/`: ReAct agents, tools, local mock catalog, and quality gate.
-- `sft_data/`: prepared datasets, trajectory utilities, and local evaluation examples.
-- `scripts/`: trajectory generation, quality checks, audits, exports, and unified module launcher.
-- `llm_evaluation/`: rule gates and five-dimension LLM judge.
-- `LLaMA-Factory/`: included fork and project fine-tuning configuration.
-- `slime_shopping_rl/`: Slime adapter, reward logic, task conversion, and GPU launch examples.
-- `docs/`: workflow, data schemas, evaluation, SFT, RL, and release instructions.
+- **A connected workflow:** follow how tasks become trajectories, how trajectories are evaluated and filtered, and how selected data feeds SFT and GRPO.
+- **Evaluation is part of the loop:** deterministic checks inspect structure and tool behavior before a five-dimension judge reviews intent understanding, factual accuracy, recommendation quality, completeness, and value.
+- **Usable data, not just schemas:** training splits and RL task files are already prepared and paired with configurations.
+- **Clear extension points:** replace the model API, agent, judge, data converter, or reward logic with components for your own task.
+- **Built for reproduction:** includes a local mock path, GPU configs, stage-by-stage guides, data maps, citations, and contribution templates.
 
-## License and data
+This project documents engineering methods and experiment flow; it makes no claim about a particular model score or production metric. The public mock tools do not connect to a live shopping service, and no model weights are bundled.
 
-The root [MIT License](LICENSE) applies to original project code. The included LLaMA-Factory fork has its own [Apache-2.0 license](LLaMA-Factory/LICENSE). Dataset files, model checkpoints, third-party code, generated outputs, product names, and marks may be governed by separate terms; see [`DATASET_CARD.md`](DATASET_CARD.md) and [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md). No model weights are bundled.
+## Continue exploring
 
-## Citation and contributions
+- [Project workflow and reproduction path](docs/00-project-overview.md)
+- [Data creation and trajectory schema](docs/01-data-pipeline.md)
+- [Quality gates and LLM evaluation](docs/02-quality-and-llm-evaluation.md)
+- [LoRA SFT and tool-call warmup](docs/03-sft-lora.md)
+- [Slime GRPO](docs/04-rl-grpo.md)
+- [Code, data, and command map](docs/06-code-and-data-map.md)
+- [Complete prepared data bundle](sft_data/ready_to_run/README.md)
 
-See [`CITATION.md`](CITATION.md) and [`REFERENCES.md`](REFERENCES.md) to cite this release and upstream methods. Contributions are welcome; read [`CONTRIBUTING.md`](CONTRIBUTING.md) first. For a first-time GitHub release checklist, see [`docs/07-github-first-release.md`](docs/07-github-first-release.md).
+## Contribute and get in touch
 
-See [`CHANGELOG.md`](CHANGELOG.md) for the first release contents and future updates.
+This is the first public release, and we plan to keep improving the docs, reproduction scripts, and evaluation flow. Questions, bug reports, and suggestions are welcome through [GitHub Issues](https://github.com/FahaxikiHoney/shopping-agent-post-training/issues); pull requests are welcome too. Contact the author on [Xiaohongshu](https://xhslink.cn/o/5IN1FW83UoN). Do not post API keys, real addresses, personal information, or internal logs in public issues.
 
-## Author contact
+## License and citation
 
-Contact the author through [Xiaohongshu](https://xhslink.cn/o/5IN1FW83UoN). Questions and bug reports are also welcome through GitHub Issues.
-
-
+Original project code is under the [MIT License](LICENSE). The included LLaMA-Factory fork retains its [Apache-2.0 License](LLaMA-Factory/LICENSE). Datasets, models, third-party components, and marks may have separate terms; review the [dataset card](DATASET_CARD.md) and [third-party notices](THIRD_PARTY_NOTICES.md). For citations, see [`CITATION.md`](CITATION.md) and [`REFERENCES.md`](REFERENCES.md).
