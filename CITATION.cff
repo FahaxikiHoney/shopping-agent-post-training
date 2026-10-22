@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this project, please cite the release you used and cite the relevant upstream methods listed in REFERENCES.md."
-title: "Shopping Agent Post-Training"
+title: "购智链 (Shopping Agent Post-Training)"
 type: software
 version: 0.1.0
 repository-code: "https://github.com/OWNER/shopping-agent-post-training"

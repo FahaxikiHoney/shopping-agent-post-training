@@ -1,4 +1,6 @@
-# Shopping Agent Post-Training
+# 购智链｜购物 Agent 全链路后训练
+
+**Shopping Agent Post-Training**
 
 [English](README_EN.md) · [快速开始](#60-秒上手) · [完整数据包](sft_data/ready_to_run/README.md) · [分步文档](docs/00-project-overview.md) · [提交问题](https://github.com/FahaxikiHoney/shopping-agent-post-training/issues)
 
@@ -6,7 +8,9 @@
 
 **把购物 Agent 从一条轨迹，带到可评估、可训练、可迭代。**
 
-这是从真实项目工程实践中整理出来的一套购物 Agent 后训练流水线。它不只包含一个 SFT 脚本，而是把**任务与轨迹数据制造、质量门禁、LLM 评估、LoRA SFT、工具调用 warmup、Slime GRPO 和训练指标复盘**连成完整流程，并配好代码、配置、现成数据和逐步说明。
+**购智链**是一套基于大型互联网企业真实购物 Agent 项目实践改造而来的后训练工程。我们将实际项目中的**任务与轨迹数据制造、质量门禁、LLM 评估、LoRA SFT、工具调用 warmup、Slime GRPO 和训练指标复盘**整理为完整流程，并对代码、数据与业务信息做了通用化和脱敏，配套提供可直接使用的数据、配置和逐步文档。
+
+公开版本面向研究与工程实践，使用通用化项目名称及本地 Mock 工具环境，方便从轨迹生成一路复现到 SFT 和 RL。
 
 **克隆后即可从现成数据开始。** 仓库提供清洗后的 ChatML/ReAct 训练集和已转换的 RL tasks；本地 Mock 环境可先跑通数据、工具调用与 Gate。需要模型 API、GPU 或外部训练框架的步骤也明确标出入口和依赖。
 

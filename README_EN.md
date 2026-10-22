@@ -1,4 +1,4 @@
-# Shopping Agent Post-Training
+# 购智链 | Shopping Agent Post-Training
 
 [简体中文](README.md) · [Quick start](#60-second-start) · [Prepared datasets](sft_data/ready_to_run/README.md) · [Step-by-step docs](docs/00-project-overview.md) · [Open an issue](https://github.com/FahaxikiHoney/shopping-agent-post-training/issues)
 
@@ -6,7 +6,9 @@
 
 **Take a shopping agent from raw trajectories to measurable, trainable, iterative post-training.**
 
-This repository packages an end-to-end post-training pipeline shaped by real project engineering work. It connects **task and trajectory creation, deterministic quality gates, LLM-as-a-Judge evaluation, LoRA SFT, tool-call warmup, Slime GRPO, and training-metric review**—with code, configurations, prepared datasets, and guided documentation in one place.
+**Gouzhilian (购智链)** is an end-to-end shopping-agent post-training project adapted from real project experience at a large technology company. It brings together **task and trajectory creation, deterministic quality gates, LLM-as-a-Judge evaluation, LoRA SFT, tool-call warmup, Slime GRPO, and training-metric review**. The public release generalizes and redacts code, data, and business details, and includes prepared datasets, configurations, and step-by-step documentation.
+
+The release uses generalized project names and local mock tools, so you can follow the workflow from trajectory generation through SFT and RL.
 
 **You can start from the included data.** The release contains cleaned ChatML and ReAct splits plus converted RL tasks. A local mock environment lets you explore the data and gate flow before setting up model APIs, GPU training, or external RL frameworks.
 
