@@ -10,6 +10,21 @@ This directory groups the project's prepared inputs in one place. Files are rele
 | `query/` | 100 anonymized sample queries | Generate new mock-agent trajectories |
 | `trajectory/` | 58 cleaned trajectories and 97 scored trajectories | Gate and LLM-as-a-Judge evaluation |
 
+## Start the included ReAct LoRA SFT
+
+The `react_sft/` directory is already registered for the bundled LLaMA-Factory fork. From the repository root, install the fork in your Python 3.11+ CUDA environment and launch training:
+
+```bash
+cd LLaMA-Factory
+python -m pip install -e ".[torch,metrics]"
+cd ..
+llamafactory-cli train LLaMA-Factory/llamafactory/lora_qwen3_0.6b.yaml
+```
+
+This trains on 875 examples and evaluates on 100. The default base model is `Qwen/Qwen3-0.6B`; edit `model_name_or_path` in the config to use a local model. For automatic venv setup and launch, run `python scripts/run_module.py sft --model-path /absolute/path/to/Qwen3-0.6B` from the repository root (Linux, WSL, or Git Bash).
+
+For the separate 1,297-example ChatML dataset in `chatml/`, run `llamafactory-cli train training/lora_sft.yaml` from the repository root. Its default base model is `Qwen/Qwen2.5-0.5B-Instruct`.
+
 Run all entry points from the repository root using `python scripts/run_module.py --help`. Quick examples:
 
 ```bash

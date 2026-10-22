@@ -49,6 +49,33 @@ flowchart LR
 
 集中数据包在 [`sft_data/ready_to_run/`](sft_data/ready_to_run/README.md)，其中说明了每份文件对应的配置、命令和格式。数据集中的无法恢复编码记录已排除，订单/物流标识和平台品牌字段也已泛化。原始线上采集目录不在公开版中。
 
+### 直接启动 LLaMA-Factory SFT
+
+875 条 ReAct 训练集、100 条验证集和已配好的 LLaMA-Factory 配置都在仓库里。准备好 Python 3.11+、匹配 CUDA 的 PyTorch 和基座模型后，在仓库根目录执行：
+
+```bash
+cd LLaMA-Factory
+python -m pip install -e ".[torch,metrics]"
+cd ..
+llamafactory-cli train LLaMA-Factory/llamafactory/lora_qwen3_0.6b.yaml
+```
+
+该命令读取 `sft_data/ready_to_run/react_sft/` 中现成的训练/验证数据，默认基座模型为 `Qwen/Qwen3-0.6B`。本机已有模型时，先把配置中的 `model_name_or_path` 改为模型目录。也可以用仓库的一键脚本自动准备训练环境并启动同一份 ReAct SFT：
+
+```bash
+python scripts/run_module.py sft --model-path /absolute/path/to/Qwen3-0.6B
+```
+
+一键脚本需要 Linux、WSL 或 Git Bash，并会安装 CUDA PyTorch 与仓库内的 LLaMA-Factory fork。另有基于 1,297/142 条 ChatML 数据的配置，见 [`docs/06-code-and-data-map.md`](docs/06-code-and-data-map.md)。
+
+如果要训练 1,297 条 ChatML 数据，则使用另一份现成配置：
+
+```bash
+llamafactory-cli train training/lora_sft.yaml
+```
+
+这份配置对应 `sft_data/ready_to_run/chatml/`，默认基座模型为 `Qwen/Qwen2.5-0.5B-Instruct`；更换模型时编辑 `training/lora_sft.yaml` 的 `model_name_or_path`。
+
 ## 60 秒上手
 
 从仓库根目录运行。无需 GPU 或模型 API，可先生成查询并跑本地质量门禁：

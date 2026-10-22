@@ -62,6 +62,14 @@ llamafactory-cli train training/lora_sft.yaml
 
 该方案使用 LLaMA-Factory fork 内的项目配置、数据注册和 875/100/100 train/eval/test 切分。准备好本地 Qwen3-0.6B（或兼容模型）和 CUDA 环境后：
 
+如果已安装好训练环境，也可以直接从仓库根目录调用 LLaMA-Factory CLI：
+
+```bash
+llamafactory-cli train LLaMA-Factory/llamafactory/lora_qwen3_0.6b.yaml
+```
+
+首次使用先按上文在 `LLaMA-Factory/` 安装本地 fork。该配置指向现成的 `sft_data/ready_to_run/react_sft/` 数据目录。
+
 ```bash
 MODEL_PATH=/models/Qwen3-0.6B \
 RUN_TRAIN=1 \

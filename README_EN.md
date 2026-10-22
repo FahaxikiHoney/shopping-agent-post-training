@@ -45,6 +45,33 @@ flowchart LR
 
 The consolidated bundle is in [`sft_data/ready_to_run/`](sft_data/ready_to_run/README.md), with file counts, formats, and matching configs. Records with unrecoverable encoding damage were excluded, and retailer-specific identifiers and names were generalized. Raw online collection directories are not included.
 
+### Run LLaMA-Factory SFT on the included data
+
+The repository includes 875 ReAct training examples, 100 validation examples, and a matching LLaMA-Factory config. With Python 3.11+, a CUDA-compatible PyTorch install, and a base model available, run from the repository root:
+
+```bash
+cd LLaMA-Factory
+python -m pip install -e ".[torch,metrics]"
+cd ..
+llamafactory-cli train LLaMA-Factory/llamafactory/lora_qwen3_0.6b.yaml
+```
+
+This uses the prepared data under `sft_data/ready_to_run/react_sft/` and defaults to `Qwen/Qwen3-0.6B`. To use a local model, set `model_name_or_path` in the config to its directory. The repository also provides a one-command script that creates the training environment and launches the same ReAct SFT:
+
+```bash
+python scripts/run_module.py sft --model-path /absolute/path/to/Qwen3-0.6B
+```
+
+The setup script requires Linux, WSL, or Git Bash and installs CUDA PyTorch plus the bundled LLaMA-Factory fork. A separate config for the 1,297/142 ChatML dataset is documented in [`docs/06-code-and-data-map.md`](docs/06-code-and-data-map.md).
+
+To train the separate 1,297-example ChatML dataset, run:
+
+```bash
+llamafactory-cli train training/lora_sft.yaml
+```
+
+This config uses `sft_data/ready_to_run/chatml/` and defaults to `Qwen/Qwen2.5-0.5B-Instruct`. Set `model_name_or_path` in `training/lora_sft.yaml` to use another base model.
+
 ## 60-second start
 
 Run from the repository root. No GPU or model API is needed for the local mock data and gate flow:
